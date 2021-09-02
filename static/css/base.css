@@ -9,14 +9,25 @@ body {
     font-family: Roboto;
 }
 
+#brand-logo {
+  width: 9.4rem;
+}
+
 #home-header {
     background: url('/media/hero_image.jpg') no-repeat center;
     background-size: cover;
-    height: 40rem;
+}
+
+.main-heading {
+  margin-top: 5rem;
+}
+
+.sub-heading {
+  color: #fafafa;
 }
 
 main {
-    min-height: calc(100vh - 10.3rem);
+  min-height: calc(100vh - 10.3rem);
 }
 
 
