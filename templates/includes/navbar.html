@@ -1,97 +1,81 @@
-<nav class="navbar navbar-expand-lg navbar-light w-100">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="{% url 'home' %}">
-            <img src="{{ MEDIA_URL }}logo_trail.png" alt="Website logo" id="brand-logo" loading="lazy">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        TRAIL RUNNING HOLIDAYS
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="#">TOUR DU MONT BLANC, FRANCE</a></li>
-                        <li><a class="dropdown-item" href="#">AZORES, PORTUGAL</a></li>
-                        <li><a class="dropdown-item" href="#">FAROE ISLANDS</a></li>
-                        <li><a class="dropdown-item" href="#">ITALIAN DOLOMITES</a></li>
-                        <li><a class="dropdown-item" href="#">JULIAN ALPS, SLOVENIA</a></li>
-                        <li><a class="dropdown-item" href="#">GRAUBÜNDEN, SWITZERLAND</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        ABOUT US
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="#">GIVING BACK</a></li>
-                        <li><a class="dropdown-item" href="#">OUR TEAM</a></li>
-                        <li><a class="dropdown-item" href="#">CONTACT US</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">SHOP</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">BLOG</a>
-                </li>
-            </ul>
-        </div>
-        <!-- Code resource with a modicfication: CI walkthrough project - Boutique Ado -->
-        <!-- Search -->
-        <button class="d-xl-none nav-item btn nav-link fs-3" type="button" id="mobileSearchDropdown" 
-            data-bs-toggle="dropdown" aria-expanded="false"> 
-            <i class="fas fa-search"></i>
-        </button>
-        <div class="dropdown-menu mobile-search-dropdown-menu dropdown-menu-end border border-2 position-absolute p-0"
-            aria-labelledby="mobileSearchDropdown">
-            <form class="mobile-search-dropdown-form p-2" method="GET" action="">
-                <div class="input-group">
-                    <input id="mobileSearchInput" type="text" class="form-control search-input" name="q"
-                        placeholder="Search" aria-label="Search" maxlength="50" aria-describedby="search-button">
-                    <button class="btn btn-success rounded-right" type="submit" id="search-button">GO</button>
-                </div>
-            </form>
-        </div>
-        <div class="col-12 col-lg-4 my-auto py-1">
-            <ul class="list-inline list-unstyled text-center text-lg-right my-0">
-                <li class="list-inline-item dropdown">
-                    <a class="nav-link" href="" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <div class="text-center">
-                            <i class="fas fa-user fa-lg"></i>
-                        </div>
-                    </a>
-                    <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                        {% if request.user.is_authenticated %}
-                            {% if request.user.is_superuser %}
-                                <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
-                            {% endif %}
+<nav class="navbar navbar-expand-lg sticky-top navbar-light py-lg-0">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand mx-auto" href="{% url 'home' %}">
+        <img src="{{ MEDIA_URL }}logo_trail.png" alt="Website logo" id="brand-logo" loading="lazy">
+    </a>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    TRAIL RUNNING HOLIDAYS
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">TOUR DU MONT BLANC, FRANCE</a></li>
+                    <li><a class="dropdown-item" href="#">AZORES, PORTUGAL</a></li>
+                    <li><a class="dropdown-item" href="#">FAROE ISLANDS</a></li>
+                    <li><a class="dropdown-item" href="#">ITALIAN DOLOMITES</a></li>
+                    <li><a class="dropdown-item" href="#">JULIAN ALPS, SLOVENIA</a></li>
+                    <li><a class="dropdown-item" href="#">GRAUBÜNDEN, SWITZERLAND</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    ABOUT US
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">GIVING BACK</a></li>
+                    <li><a class="dropdown-item" href="#">OUR TEAM</a></li>
+                    <li><a class="dropdown-item" href="#">CONTACT US</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">SHOP</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">BLOG</a>
+            </li>
+        </ul>
+    </div>
+    <!-- Code resource with a modicfication: CI walkthrough project - Boutique Ado -->
+    <div class="col my-auto py-1 py-lg-0">
+        <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+            <li class="list-inline-item dropdown">
+                <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <div class="text-center">
+                        <div><i class="fas fa-user fa-lg"></i></div>
+                    </div>
+                </a>
+                <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                    {% if request.user.is_authenticated %}
+                        {% if request.user.is_superuser %}
+                            <a href="{% url 'add_product' %}" class="dropdown-item">Add new product</a>
+                            <a href="" class="dropdown-item nav-link">Add new blog</a>
+                        {% endif %}
                             <a href="" class="dropdown-item nav-link">My Profile</a>
                             <a href="{% url 'account_logout' %}" class="dropdown-item nav-link">Logout</a>
-                        {% else %}
-                            <a href="{% url 'account_signup' %}" class="dropdown-item nav-link">Register</a>
-                            <a href="{% url 'account_login' %}" class="dropdown-item nav-link">Login</a>
-                        {% endif %}
+                    {% else %}
+                        <a href="{% url 'account_signup' %}" class="dropdown-item nav-link">Register</a>
+                        <a href="{% url 'account_login' %}" class="dropdown-item nav-link">Login</a>
+                    {% endif %}
+                </div>
+            </li>
+            <li class="list-inline-item">
+                <a class="nav-link py-0 {% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %}" 
+                    href="">
+                    <div class="text-center">
+                        <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                        <p class="my-0">
+                            {% if grand_total %}
+                                ${{ grand_total|floatformat:2 }}
+                            {% else %}
+                                $0.00
+                            {% endif %}
+                        </p>
                     </div>
-                </li>
-                <li class="list-inline-item">
-                    <a class="nav-link py-0 {% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %}" 
-                        href="">
-                        <div class="text-center">
-                            <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-                            <p class="my-0">
-                                {% if grand_total %}
-                                    ${{ grand_total|floatformat:2 }}
-                                {% else %}
-                                    $0.00
-                                {% endif %}
-                            </p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </div>
+                </a>
+            </li>
+        </ul>
     </div>
 </nav>

@@ -6,11 +6,20 @@ html {
 }
 
 body {
-    font-family: Roboto;
+  font-family: Roboto;
+  width: auto;
 }
 
 #brand-logo {
-  width: 9.4rem;
+  width: 7.5rem;
+}
+
+/* Expandable search - code source: https://codepen.io/menelaosly/pen/rZddyb */
+
+
+#hero-content {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 #home-header {
@@ -20,6 +29,11 @@ body {
 
 .main-heading {
   margin-top: 5rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.15 rem;
+  color: #000000;
+  text-shadow: 0.07rem 0.06rem #fafafa;
 }
 
 .sub-heading {
@@ -39,12 +53,18 @@ main {
   and (max-width : 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
 
+  #brand-logo {
+    width: 9.4rem;
+  }
 }
 
 /* Display on large devices */
 @media screen 
   and (min-width: 1024px) {
 
+    #brand-logo {
+      width: 9.4rem;
+    }
 }
 
 /* For iPad Pro 12.9" 

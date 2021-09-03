@@ -37,12 +37,12 @@
   </head>
   <body>
     <!-- Header and Navigation -->
-    <header class="container-fluid fixed-top">
+    <header class="container-fluid">
       <div class="row bg-white">
           {% include 'includes/navbar.html' %}
       </div>
-      <div class="main-header">
-        <div class="container-fluid">
+      <div class="header-content">
+        <div class="container-fluid" id="hero-content">
           <div class="row">
             {% block header_content %}
             {% endblock %}
