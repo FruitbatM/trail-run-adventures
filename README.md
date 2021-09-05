@@ -44,3 +44,21 @@ with Django*
 10. [Disclaimer](#disclaimer)
 
 </details>
+
+
+# Testing
+
+Testing process was written in a separate file. 
+Please click [here](TESTING.md) for the testing process.
+
+
+## Version Control
+
+[Git](https://git-scm.com/) as a local repository and [GitHub](https://github.com/) as a remote repository were used for this project. Detailed elaboration please find below:
+
+1. Create a remote repository in GitHub by clicking **"New repository"** on the main page<br>
+
+2. Use **Code Institute Template**, put the repository name and click Create Repository making sure to select public<br>
+
+3. Open the repository with [Gitpod](https://www.gitpod.io/). By using Code Institue Template, initialisation including initial commit is done so no need to do `git init` command when open IDE, or to use `git push -u origin main` command for my first commit. `gitignore` file, which is very important for the project including some confidential information, is created with Code Institute template so not necessary to create it.<br>
+
