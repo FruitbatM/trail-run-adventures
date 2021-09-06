@@ -98,6 +98,22 @@ body {
   text-shadow: 0.1rem 0.1rem #505559;
 }
 
+.section-heading-1 {
+  margin-top: 6rem;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.15 rem;
+}
+
+.section-button {
+  background-color: #7ecbce;
+  color: #000000;
+}
+
+.section-button:hover, .section-button:active {
+  background-color: #439B94;
+  transform: scale(1.05);
+}
+
 .btn-outline-success {
   color: #fafafa !important;
   border-color: #fafafa !important;
@@ -110,8 +126,96 @@ body {
   transform: scale(1.05);
 }
 
+.trail-p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+.page-background {
+  background: url('/media/mountains_background.png') no-repeat center;
+    background-size: cover;
+    height: 20rem;
+    margin-top: 2rem;
+}
+
+.section-heading-2 {
+  margin-top: 5rem;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.15 rem;
+  font-size: 3rem;
+  color: #439B94;
+}
+
 main {
   min-height: calc(100vh - 10.3rem);
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/* Tour cards */
+
+.tour-card {
+  max-width: 300px;
+  background-color: #FFF;
+  border-radius: 5px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.tour-card img {
+  height: 40vh;
+  transition: all 0.25s linear;
+}
+
+.tour-card .card-content {
+  position: relative;
+  padding: 15px;
+  background-color: #FFF;
+}
+
+.tour-card .card-title {
+  font-weight: bold;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: -70px;
+  color: #FFF;
+  font-size: 17px;
+}
+
+
+.tour-card .card-description {
+  color: #777;
+  font-size: 12px;
+  padding: 10px;
+}
+
+.tour-card .tour-content::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  top: -10px;
+  left: 0px;
+  right: 0px;
+  background-color: #FFF;
+  z-index: 0;
+  transform: skewY(3deg);
+}
+
+.tour-card:hover img {
+  transform: rotate(5deg) scale(1.1, 1.1);
+  filter: brightness(110%);
+}
+
+.card-button {
+  background-color: #7ecbce;
 }
 
 
@@ -126,6 +230,11 @@ main {
   #brand-logo {
     width: 9.4rem;
   }
+
+  .tour-card img {
+    height: 25vh;
+  }
+
 }
 
 /* Display on large devices */
