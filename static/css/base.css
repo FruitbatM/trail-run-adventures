@@ -218,6 +218,13 @@ a {
   background-color: #7ecbce;
 }
 
+/* Home - Shop section */
+.category-card-img img {
+  height: fit-content;
+  width: 165px;
+  margin: 1.1rem auto 0 auto;
+}
+
 /* Benefits card - WHY TRΛIL RUN ΛDVENTURES  */
 .benefit-card img {
   height: 65vh;
