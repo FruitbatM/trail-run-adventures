@@ -190,7 +190,6 @@ a {
   font-size: 17px;
 }
 
-
 .tour-card .card-description {
   color: #777;
   font-size: 12px;
@@ -218,19 +217,80 @@ a {
   background-color: #7ecbce;
 }
 
+/* Benefits card - WHY TRΛIL RUN ΛDVENTURES  */
 .benefit-card img {
-  height: 50vh;
+  height: 65vh;
   transition: all 0.25s linear;
 }
 
 .benefit-title {
-  font-weight: bold;
+  display: flex;
   position: absolute;
-  left: 0px;
-  right: 0px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
   color: #fafafa;
   font-size: 1.2rem;
   text-shadow: 0.1rem 0.1rem #222324;
+}
+
+/* Blog  */
+.blog-post .blog-title {
+  font-size: 1rem;
+  color: #666666;
+  font-weight: 600;
+}
+
+.post .blog-header {
+  margin-bottom: 0.94rem;
+}
+
+.blog-post .blog-header {
+  margin-bottom: 0.9rem;
+}
+
+.blog-post .blog-content {
+  -webkit-box-shadow: 1px 0px 20px 1px rgba(0, 0, 0, 0.15);
+          box-shadow: 1px 0px 20px 1px rgba(0, 0, 0, 0.15);
+  padding: 1.875rem;
+  position: relative;
+  background: #fff;
+  margin-top: -4.68rem;
+}
+
+.blog-post .blog-overlay {
+  position: relative;
+  left: 1.56rem;
+  margin-bottom: 0;
+}
+
+.blog-post .blog-overview p:last-of-type {
+  margin-bottom: 0;
+}
+
+.blog-post .blog-footer {
+  border-top: 1px solid #ebebeb;
+  padding-top: 0.94rem;
+  margin-top: 1.25rem;
+}
+
+#footer-link > a {
+  color: #33706c;
+}
+
+.footer-meta > a {
+  color: #aaa;
+  font-size: 0.94rem;
+  margin-right: 0.31rem;
+}
+
+.blog-post .blog-footer .footer-meta a i {
+  font-size: 1rem;
+  margin-left: 0.125rem;
 }
 
 
@@ -258,6 +318,15 @@ a {
 
     #brand-logo {
       width: 9.4rem;
+    }
+
+    .blog-post .blog-content {
+      -webkit-box-shadow: 1px 0px 20px 1px rgba(0, 0, 0, 0.15);
+              box-shadow: 1px 0px 20px 1px rgba(0, 0, 0, 0.15);
+      padding: 1.875rem;
+      position: relative;
+      background: #fafafa;
+      margin-top: -4.68rem;
     }
 }
 
