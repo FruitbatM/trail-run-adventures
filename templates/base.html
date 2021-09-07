@@ -33,8 +33,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
-        <!-- Project JS -->
-        <script src="{% static 'js/script.js' %}"></script>
       {% endblock %}
 
       {% block extra_js %}
@@ -62,6 +60,10 @@
     <main>
       {% block content %}
       {% endblock %}
+      <!--Scroll Back to Top Arrow-->
+      <button onclick="topFunction()" id="arrow_2top" title="Go to top">
+        <i class="fas fa-chevron-circle-up fa-3x" aria-hidden="true"></i>
+      </button>
     </main>
 
     <!-- Footer -->
@@ -72,6 +74,8 @@
     {% endif %}
 
     {% block postloadjs %}
+      <!-- Project JS -->
+      <script src="{% static 'js/script.js' %}"></script>
     {% endblock %}
     
   </body>
