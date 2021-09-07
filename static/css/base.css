@@ -127,13 +127,14 @@ body {
 }
 
 .trail-p {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: #212529;
   font-size: 1.2rem;
   line-height: 1.5rem;
 }
 
 .page-background {
-  background: url('/media/mountains_background.png') no-repeat center;
+  background: url('/static/images/mountains_background.png') no-repeat center;
     background-size: cover;
     height: 20rem;
     margin-top: 2rem;
@@ -291,6 +292,34 @@ a {
 .blog-post .blog-footer .footer-meta a i {
   font-size: 1rem;
   margin-left: 0.125rem;
+}
+
+.qoute-section {
+  margin-top: 8rem !important;
+}
+
+.carousel-background {
+  background: url('/static/images/hills_background.jpg') no-repeat center;
+  background-size: cover;
+  height: 170vh;
+}
+
+/* Carousel */
+.width-auto {
+  width: auto;
+}
+
+.text-lg {
+  font-size: 2rem;
+}
+
+.carousel-indicators li {
+  border: none;
+  background: #ccc;
+}
+
+.carousel-indicators li.active {
+  background: #28a745;
 }
 
 
