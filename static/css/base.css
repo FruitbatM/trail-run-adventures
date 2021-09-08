@@ -225,6 +225,10 @@ a {
   margin: 1.1rem auto 0 auto;
 }
 
+.category-card-button {
+  z-index: 1;
+}
+
 /* Benefits card - WHY TRΛIL RUN ΛDVENTURES  */
 .benefit-card img {
   height: 65vh;
@@ -361,6 +365,10 @@ https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 
 #arrow_2top:hover {
   color:#149285;
+}
+
+.bg-light {
+  background-color: #f3f8f8!important;
 }
 
 /* Media Queries */
