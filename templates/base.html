@@ -42,18 +42,29 @@
   </head>
   <body>
     <!-- Header and Navigation -->
-    <header class="container-fluid">
-      <div class="row bg-white">
-          {% include 'includes/navbar.html' %}
-      </div>
-      <div class="header-content">
-        <div class="container-fluid" id="hero-content">
-          <div class="row">
-            {% block header_content %}
-            {% endblock %}
-          </div>
+    <header>
+        <div class="container-fluid d-none d-lg-flex" id="top-nav">
+            <div class="container">
+                <div class="row bg-white">
+                    {% include 'includes/top-nav.html' %}
+                    </div>
+            </div>
         </div>
-      </div>
+        <div class="container-fluid" id="main-nav">
+            <div class="container">
+                <div class="row bg-white ps-3">
+                    {% include 'includes/navbar.html' %}
+                </div>
+            </div>
+        </div>
+        <div class="header-content">
+            <div class="container-fluid" id="hero-content">
+                <div class="row">
+                    {% block header_content %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
     </header>
 
     <!-- Page Content -->

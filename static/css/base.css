@@ -14,8 +14,12 @@ body {
   width: 7.5rem;
 }
 
-/* Expandable search - code source: https://codepen.io/ahmadbassamemran/pen/rNjMXqg */
+.navbar-light .navbar-nav .nav-link {
+  color: #000;
+}
 
+
+/* Expandable search bar - code source: https://codepen.io/ahmadbassamemran/pen/rNjMXqg */
 .search-form {
   width: fit-content;
   height: fit-content;
@@ -371,6 +375,11 @@ https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
   background-color: #f3f8f8!important;
 }
 
+hr {
+  color: #33706c;
+  height: 0.1rem !important;
+}
+
 /* Media Queries */
 /* Display on tablet devices */  
 
@@ -386,7 +395,6 @@ https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
   .tour-card img {
     height: 25vh;
   }
-
 }
 
 /* Display on large devices */
@@ -404,6 +412,10 @@ https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
       position: relative;
       background: #fafafa;
       margin-top: -4.68rem;
+    }
+
+    .search-mob {
+      display: none;
     }
 }
 
