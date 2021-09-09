@@ -1,0 +1,38 @@
+[
+  {
+    "pk": 1,
+    "model": "about.team",
+    "fields": {
+      "name": "Allison Mitchell",
+      "title": "Co-founder & Guide",
+      "about": "I’ve been a running fanatic since the age of 16 when I was convinced to join my high school cross country team. That decision led to a life built around running: a successful collegiate career, 2012 & 2016 Olympic Marathon Trials qualifiers, and the founding of TRΛIL RUN ΛDVENTURES. For me, travel is the only love that rivals that of running, and I truly believe that both endeavors are life-changing in so many ways. I cannot think of anything in the world I’d rather be doing than combining the two and sharing it with others through TRΛIL RUN ΛDVENTURES!"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "about.team",
+    "fields": {
+      "name": "Brian Powell",
+      "title": "Co-founder & Guide",
+      "about": "Adventure was instilled at an early age for me.  Weekends were often spent exploring wild caves with my dad, camping with family, and enjoying travels all over the Great Britain. After college I was confronted with the choice of climbing the corporate ladder or chasing adventure. At the time I felt that I was supposed to get a good job, buy a new car and maybe a house. It never seemed like a good fit. I soon found myself living on the road climbing, kayaking and mountain biking all over North America. Fast forward a few years: I met an amazing adventurous girl, Allison, whose thirst for travel equaled my own, and we soon spent a year traveling throughout Southeast Asia together. Allison’s running accomplishments inspired me to progress beyond casual running, and I now feel most comfortable exploring new trails off the beaten path, enjoying the simplicity of running."
+    }
+  },
+  {
+    "pk": 3,
+    "model": "about.team",
+    "fields": {
+      "name": "Nina Kerry",
+      "title": "Guide",
+      "about": "Running has been a major part of my life since… forever. As the daughter of two coaches, I grew up around the sport and have been running since I was able to walk. I ran cross country and track throughout high school and college. Time abroad opened my eyes to the world around me and reinforced my desire to explore the globe. If it were up to me, I would spend my days traveling, discovering new places on foot, and taking in different cultural experiences by living like the locals. I am so excited to work and run with TRΛIL RUN ΛDVENTURES - an opportunity that allows me to live out my dreams with others that share the same passion!"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "about.team",
+    "fields": {
+      "name": "Simon Meehan",
+      "title": "Guide",
+      "about": "Growing up on a farm in rural Ireland has instilled in me a deep connection with nature and a love of adventure in the outdoors. Surrounded by forests, lakes, mountains, and rivers at home I follow any pursuit that gets me out there; running, hiking, camping, biking, kayaking, you name it. Several years ago, I left a job in the corporate engineering world, put a backpack on, and headed off in search of adventure in Central America. Since then, I’ve travelled to over 50 countries, living in several, and working as sports event manager or guide in over 15 of them. Running with TRΛIL RUN ΛDVENTURES is the perfect vehicle to keep the education going! Excited to share the trails ahead with interesting folks carving out their own adventurous lifestyle!"
+    }
+  }
+]
