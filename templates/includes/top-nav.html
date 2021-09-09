@@ -19,7 +19,7 @@
 <div class="col-lg-4 my-auto py-1 py-lg-0">
     <ul class="list-inline list-unstyled text-center text-lg-right my-0">
         <li class="list-inline-item dropdown">
-            <a class="nav-link text-black" href="" id="user-options" data-mdb-toggle="dropdown" 
+            <a class="nav-link text-black" href="#" id="user-options" data-bs-toggle="dropdown" 
                 aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-user fa-lg icon"></i>
                 <br>
@@ -28,15 +28,15 @@
             <div class="dropdown-menu border-0" aria-labelledby="user-options">
                 {% if request.user.is_authenticated %}
                     {% if request.user.is_superuser %}
-                        <a class="dropdown-item nav-link" href="">ADD NEW PRODUCT</a>
-                        <a class="dropdown-item nav-link" href="">ADD NEW BLOG</a>
+                        <a class="dropdown-item" href="">PRODUCT MANAGEMENT</a>
+                        <a class="dropdown-item" href="">ADD NEW BLOG</a>
                         <div class="line d-lg-none"></div>
                     {% endif %}
-                    <a class="dropdown-item nav-link" href="{% url 'profile' %}">MY PROFILE</a>
-                    <a class="dropdown-item nav-link" href="{% url 'account_logout' %}">LOGOUT</a>
+                    <a class="dropdown-item" href="">MY PROFILE</a>
+                    <a class="dropdown-item" href="{% url 'account_logout' %}">LOGOUT</a>
                 {% else %}
-                    <a class="dropdown-item nav-link" href="{% url 'account_signup' %}">REGISTER</a>
-                    <a class="dropdown-item nav-link" href="{% url 'account_login' %}">LOGIN</a>
+                    <a class="dropdown-item" href="{% url 'account_signup' %}">REGISTER</a>
+                    <a class="dropdown-item" href="{% url 'account_login' %}">LOGIN</a>
                 {% endif %}
             </div>
         </li>
