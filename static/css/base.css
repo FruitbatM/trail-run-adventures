@@ -18,6 +18,14 @@ body {
   color: #000;
 }
 
+.nav-link:hover {
+  border-bottom: 0.15rem solid #439B94;
+  padding-bottom: 0.15rem;
+}
+
+.list-inline {
+  padding-left: 7rem;
+}
 
 /* Expandable search bar - code source: https://codepen.io/ahmadbassamemran/pen/rNjMXqg */
 .search-form {
