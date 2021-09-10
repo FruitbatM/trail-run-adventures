@@ -327,7 +327,7 @@ a {
   height: 170vh;
 }
 
-/* Carousel */
+/* Quote Carousel */
 .width-auto {
   width: auto;
 }
@@ -358,6 +358,33 @@ footer {
 .footer-phone a {
   color: #fafafa;
   text-decoration: underline;
+}
+
+/* About pages */
+
+#team-header {
+  background: url('/static/images/team.jpg') no-repeat center;
+  background-size: cover;
+  min-height: 75vh;
+}
+
+.team-heading {
+  margin-top: 7.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.15 rem;
+  color: #fafafa;
+  text-shadow: 0.15rem 0.15rem #000000;
+}
+
+.team-sub-heading {
+    color: #fafafa;
+    text-shadow: 0.1rem 0.1rem #505559;
+    font-family: 'Lato', sans-serif;
+}
+
+.instructor-image-block {
+  margin-top: 4rem;
 }
 
 /* Back to top arrow - code with small modification taken from: 

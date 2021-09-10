@@ -1,17 +1,27 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %}Extraordinary Running Experiences{% endblock %}
+{% block title %}- Team{% endblock %}
 
 {% block header_content %}
-{% endblock %}
-
-{% block content %}
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                The team:
+    <div id="team-header">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12 my-auto ms-4">
+                    <h1 class="display-4 team-heading text-uppercase">
+                        Meet our team
+                    </h1>
+                    <h4 class="team-sub-heading pt-4">
+                        Meet the members of TRΛIL RUN ΛDVENTURES. <br>
+                        We are a team of passionate trail runners.
+                    </h4>
+                </div>
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block content %}
+    {% include 'about/includes/meet_team_1.html' %}
+    {% include 'about/includes/meet_team_2.html' %}
 {% endblock %}
