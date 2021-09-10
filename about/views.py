@@ -14,7 +14,7 @@ def our_team(request):
     A view to show the team information. Team data (name, title and about)
     will be returning from the Team model.
     """
-    team = Team.object.all()
+    team = Team.objects.all()
     context = {
         'team': team,
     }
