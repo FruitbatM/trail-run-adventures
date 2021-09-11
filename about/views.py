@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Team
+from .models import Instructor
 
 
 def our_story(request):
@@ -14,9 +14,9 @@ def our_team(request):
     A view to show the team information. Team data (name, title and about)
     will be returning from the Team model.
     """
-    team = Team.objects.all()
+    instructors = Instructor.objects.all()
     context = {
-        'team': team,
+        'instructors': instructors,
     }
     return render(request, 'about/our_team.html', context)
 

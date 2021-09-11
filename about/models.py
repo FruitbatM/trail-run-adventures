@@ -1,7 +1,10 @@
 from django.db import models
 
 
-class Team(models.Model):
+class Instructor(models.Model):
+    """
+    Instructor Profile Model
+    """
 
     name = models.CharField(max_length=50)
     title = models.CharField(max_length=75)

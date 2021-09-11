@@ -1,8 +1,8 @@
 from django.contrib import admin
-from .models import Team
+from .models import Instructor
 
 
-class TeamAdmin(admin.ModelAdmin):
+class InstructorAdmin(admin.ModelAdmin):
     list_display = (
         'name',
         'title',
@@ -10,4 +10,4 @@ class TeamAdmin(admin.ModelAdmin):
     )
 
 
-admin.site.register(Team, TeamAdmin)
+admin.site.register(Instructor, InstructorAdmin)
