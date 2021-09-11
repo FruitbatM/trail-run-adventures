@@ -4,14 +4,16 @@
         <div class="col-12">
             <div class="instructor-image-block">
                 <div class="instructor-image text-center">
-                    <img src="/static/images/allison.jpg" alt="Allison guide and co-founder" 
+                    <img src="{{ MEDIA_URL }}instructors/allison.jpg" alt="Allison guide and co-founder" 
                         class="img-fluid">
                 </div>
                 <div class="instructor-name">
-
+                    {% for instructor in instructors %}
+                        <h2>{{ instructor.name }}</h2>
+                    {% endfor %}
                 </div>
                 <div class="instructor-title">
-
+                     <h2></h2>
                 </div>
             </div>
         </div>
