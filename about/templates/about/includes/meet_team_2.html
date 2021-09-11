@@ -2,20 +2,15 @@
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <div class="instructor-image-block">
-                <div class="instructor-image text-center">
-                    <img src="{{ MEDIA_URL }}instructors/allison.jpg" alt="Allison guide and co-founder" 
-                        class="img-fluid">
+            {% for instructor in instructors %}
+                <div class="card text-white instructor-image-block mx-auto">
+                    <img src="{{ MEDIA_URL }}instructors/allison.jpg" class="card-img" alt="Allison guide and co-founder">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title instructor-name">{{ instructor.name }}</h5>
+                            <p class="card-text instructor-title">{{ instructor.title }}</p>
+                        </div>
                 </div>
-                <div class="instructor-name">
-                    {% for instructor in instructors %}
-                        <h2>{{ instructor.name }}</h2>
-                    {% endfor %}
-                </div>
-                <div class="instructor-title">
-                     <h2></h2>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </div>

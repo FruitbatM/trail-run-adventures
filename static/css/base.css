@@ -387,6 +387,14 @@ footer {
   margin-top: 4rem;
 }
 
+.instructor-image-block {
+  width: 60%;
+}
+
+.instructor-name {
+  text-transform: uppercase;
+}
+
 /* Back to top arrow - code with small modification taken from: 
 https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 #arrow_2top {
