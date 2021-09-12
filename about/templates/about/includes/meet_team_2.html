@@ -3,14 +3,32 @@
     <div class="row">
         <div class="col-12">
             {% for instructor in instructors %}
-                <div class="card text-black instructor-image-block mx-auto">
+                <div class="card text-black instructor-image-block mx-auto text-center">
                     <img src="{{ MEDIA_URL }}{{ instructor.image }}" class="card-img" alt="Instructor image">
-                        <div class="card-img-overlay">
-                            <h3 class="card-title instructor-name">{{ instructor.name }}</h3>
-                            <h5 class="card-text instructor-title text-uppercase">{{ instructor.title }}</h5>
+                        <div class="card-img-overlay align-items-center">
+                            <h3 class="instructor-name">
+                                {{ instructor.name }}
+                            </h3>
+                            <h5 class="instructor-title text-uppercase">
+                                {{ instructor.title }}
+                            </h5>
+                            <button class="btn btn-success instructor-card-button {{ forloop.counter }}
+                                justify-content-center my-3" type="button" data-bs-toggle="collapse" data-bs-toggle="collapse" 
+                                    data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                CLICK FOR BIO
+                            </button>
+                            <div class="collapse" id="collapseExample">
+                                <div class="instructor-about text-start">
+                                    <p></p>
+                                    {{ instructor.about }}
+                                </div>
+                            </div>
                         </div>
                 </div>
             {% endfor %}
         </div>
+    </div>
+    <div class="row m-5">
+
     </div>
 </div>
