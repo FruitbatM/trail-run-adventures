@@ -3,11 +3,11 @@
     <div class="row">
         <div class="col-12">
             {% for instructor in instructors %}
-                <div class="card text-white instructor-image-block mx-auto">
-                    <img src="{{ MEDIA_URL }}instructors/allison.jpg" class="card-img" alt="Allison guide and co-founder">
+                <div class="card text-black instructor-image-block mx-auto">
+                    <img src="{{ MEDIA_URL }}{{ instructor.image }}" class="card-img" alt="Instructor image">
                         <div class="card-img-overlay">
-                            <h5 class="card-title instructor-name">{{ instructor.name }}</h5>
-                            <p class="card-text instructor-title">{{ instructor.title }}</p>
+                            <h3 class="card-title instructor-name">{{ instructor.name }}</h3>
+                            <h5 class="card-text instructor-title text-uppercase">{{ instructor.title }}</h5>
                         </div>
                 </div>
             {% endfor %}
