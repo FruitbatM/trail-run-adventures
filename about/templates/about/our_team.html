@@ -25,3 +25,8 @@
     {% include 'about/includes/meet_team_1.html' %}
     {% include 'about/includes/meet_team_2.html' %}
 {% endblock %}
+
+{% block extra_js %}
+{{ block.supper }}
+    <script src="{% static 'about/js/team.js' %}"></script>
+{% endblock %}
