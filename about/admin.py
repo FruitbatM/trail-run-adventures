@@ -6,7 +6,7 @@ class InstructorAdmin(admin.ModelAdmin):
     list_display = (
         'name',
         'title',
-        'about',
+        'about_content_1',
     )
 
 
