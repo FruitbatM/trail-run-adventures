@@ -362,8 +362,14 @@ footer {
 
 /* About pages */
 
-#team-header {
-  background: url('/static/images/team.jpg') no-repeat center;
+#team-header_1 {
+  background: url('/static/images/about/our_story.jpg') no-repeat center;
+  background-size: cover;
+  min-height: 75vh;
+}
+
+#team-header_2 {
+  background: url('/static/images/about/team.jpg') no-repeat center;
   background-size: cover;
   min-height: 75vh;
 }
@@ -395,6 +401,10 @@ footer {
 
 .card-img-overlay {
   padding: 5rem;
+}
+
+.story-image {
+  width: 65%;
 }
 
 /* Back to top arrow - code with small modification taken from: 

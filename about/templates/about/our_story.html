@@ -1,17 +1,27 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block title %}Extraordinary Running Experiences{% endblock %}
+{% block title %}| Our Story{% endblock %}
 
 {% block header_content %}
-{% endblock %}
-
-{% block content %}
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h1>This is OUR STORY!</h1>
+    <div id="team-header_1">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12 my-auto ms-4">
+                    <h1 class="display-4 team-heading text-uppercase">
+                        Our story
+                    </h1>
+                    <h4 class="team-sub-heading pt-4">
+                        Find out more about TRΛIL RUN ΛDVENTURES & the reasons 
+                        <br> 
+                        to run with us.
+                    </h4>
+                </div>
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block content %}
+    {% include 'about/includes/story_1.html' %}
 {% endblock %}
