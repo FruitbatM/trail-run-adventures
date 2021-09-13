@@ -12,16 +12,20 @@
                             <h5 class="instructor-title text-uppercase">
                                 {{ instructor.title }}
                             </h5>
-                            <button class="btn btn-success instructor-card-button {{ forloop.counter }}
-                                justify-content-center my-3" type="button" data-bs-toggle="collapse" data-bs-toggle="collapse" 
-                                    data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            <button class="btn btn-success instructor-card-button justify-content-center my-3" 
+                                type="button" data-bs-toggle="collapse" data-bs-toggle="collapse" 
+                                data-bs-target="#bioButton-{{ forloop.counter }}" aria-expanded="false" aria-controls="bioButton">
                                 CLICK FOR BIO
                             </button>
                         </div>
-                        <div class="collapse" id="collapseExample">
-                            <div class="text-start" id="instructor-about">
+                        <div class="collapse" id="bioButton-{{ forloop.counter }}">
+                            <div class="text-start px-3" id="instructor-about">
+                                <br>
                                 <p>
-                                {{ instructor.about_content_1 }}
+                                    {{ instructor.about_content_1 }}
+                                </p>
+                                <p>
+                                    {{ instructor.about_content_2}}
                                 </p>
                             </div>
                         </div>
