@@ -380,6 +380,12 @@ footer {
   min-height: 75vh;
 }
 
+#blog-header {
+  background: url('/static/images/blog/blog_header.jpg') no-repeat center;
+  background-size: cover;
+  min-height: 75vh;
+}
+
 .team-heading {
   margin-top: 7.5rem;
   font-family: 'Roboto', sans-serif;
