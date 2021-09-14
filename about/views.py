@@ -19,10 +19,3 @@ def our_team(request):
         'instructors': instructors,
     }
     return render(request, 'about/our_team.html', context)
-
-
-def contact(request):
-    """
-    A view to return the contact page and render the form.
-    """
-    return render(request, 'about/contact.html')

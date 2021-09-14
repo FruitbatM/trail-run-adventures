@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 mb-5">
+            <form method="POST" action="{% url 'contact' %}">
+                {% csrf_token %}
+                {{ contact_form|crispy }}
+                <div class="text-center mb-2 mt-4">
+                    <button type="submit" id="contact-form-btn" class="btn button-green uppercase w-100">
+                        SEND
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
