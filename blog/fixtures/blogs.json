@@ -1,0 +1,28 @@
+[
+    {
+        "pk": 1,
+        "model": "blog.blog",
+        "fields": {
+            "author": "Marina",
+            "published_date": "2021-09-14",
+            "header_image": "",
+            "title": "A Beginners Guide to Trail Running",
+            "slug": "a-beginners-guide-to-trail-running",
+            "intro_paragraph_1": "Regardless of your running background, you have made an excellent choice by considering getting into trail running. We may be biased here at TRΛIL RUN ΛDVENTURES, but we feel that trail running is an extremely good way to spend your time and keep fit. Leaving the tarmac behind, every run you make feels like an adventure, the pressure that is often associated with road running is lifted from your shoulders, as you explore new trails you may not have known existed.",
+            "intro_paragraph_2": "Forget minute mileage and split times and start thinking about bubbling brooks and hilltops to stop and soak up the view. Trail running is a sport that also becomes a lifestyle, stepping out of your front door and running a trail that leads to endless fulfilment, in tune with the natural world around you.",
+            "subheading_1": "Welcome to the trail running community!",
+            "blog_content_1": "Non-runners and road-runners may assume there is a barrier to getting off-road; that you need a supply of specialist kit, that the risks of twisting an ankle or hurting yourself are high, or that a lack of navigation skills will have you lost in the wilds. None of which is true. We’ll set out a few easy and simple steps to help you on your way, to get you off-road and started on a richly rewarding journey into the world of trail running.",
+            "subheading_2": "WHAT IS TRAIL RUNNING?",
+            "blog_content_2": "Trail Running in our eyes is anything off-road, this constitutes a footpath, bridleway or anything dirty which is undulating and provides a route which preferably involves a bit of elevation gain or loss along the way. Forests, meadows, fields, river banks, mountains, fells, seashores, and hills, these are all trails and many of which will be waiting within just a few minutes of your front door.",
+            "blog_content_3": "A huge benefit of running on trails is that the nature of the terrain makes running a lot slower than you would otherwise experience on the road. The reason being is that underfoot conditions can be so changeable (especially with varying weather conditions) that it pays to take some care and attention of the surface you are running on. What that means is that you can take your time, you are encouraged to walk all of the uphill bits and to take it steady on the downhill bits. It’s important to remember that it doesn’t matter how fast or slow you are, focus on the adventure you are experiencing.",
+            "blog_image_1": "",
+            "subheading_3": "DO I NEED SPECIALIST GEAR?",
+            "blog_content_4": "Put simply no, you don’t need any specialist gear when you are first starting, however, we need to be careful as the broad term trail running applies to a variety of terrain; everything from a local field to mountain trails. For the beginner trail runner heading out on a dry, warm day, running across a flat meadow or a well sign-posted forest footpath you can easily afford to put on a normal pair of running trainers and feel the benefits immediately.",
+            "blog_content_5": "Aside from trainers and if you are keen to explore a broader range of trails in your local area or maybe further afield it would be worth investing in a running watch which includes a GPS (budget dependent) and a map and compass. A smartphone will do the job on smaller, local trail that is easily accessible. You can download many apps that provide a free route planning service, but if you intend to go further afield a phone cannot be solely relied upon and appropriate planning would need to be considered.",
+            "blog_content_6": "For longer trail runs we suggest packing a lightweight waterproof, as well as a small running pack to help carry your gear with you. A cap or hat may be necessary and a bottle of water with a handful of snacks to keep you hydrated and energized. A headtorch regardless of the time of day and year is always essential. This might sound overkill, but use your common sense before heading out. If you are planning on running in a new area it’s better to be prepared for all weather conditions.",
+            "blog_image_2": "",
+            "subheading_4": "NOW, IT’S DOWN TO YOU.",
+            "blog_content_7": "Trail running is the most rewarding sport we have ever come across, so much so that we decide to create a business around it. Take courage and confidence that whatever your experience or ability to run, you are capable of becoming a trail runner yourself. Access to trails is everywhere, even if you live in the middle of a city you will be surprised how easy it is to access the countryside. It is also a great way to explore a new environment whenever travelling away from home for a visit or on holiday. Be adventurous and be creative, set yourself achievable goals and you will soon find the rich rewards that this sport offers."
+        }
+    }
+]
