@@ -46,6 +46,22 @@ with Django*
 </details>
 
 
+### Features and Django Apps
+
+TRΛIL RUN ΛDVENTURES consists of 9 Django applications listed below. 
+As explained in Django's documentation - a Django application describes a Python package that provides some set of features. Applications may be reused in various projects.
+
+* `home`
+* `about`
+* `contact`
+* `blog`
+* `team`
+* `products`
+* `cart`
+* `checkout`
+* `profiles`
+
+
 # Testing
 
 Testing process was written in a separate file. 
