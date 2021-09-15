@@ -404,6 +404,27 @@ footer {
   min-height: 75vh;
 }
 
+.blog-post-header {
+  height: 30rem;
+}
+
+.blog-post-header img {
+  min-height: 75vh;
+  width: 100%;
+}
+
+.blog-post-heading {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.15 rem;
+  color: #fafafa;
+  text-shadow: 0.15rem 0.15rem #000000;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .team-heading {
   margin-top: 7.5rem;
   font-family: 'Roboto', sans-serif;
