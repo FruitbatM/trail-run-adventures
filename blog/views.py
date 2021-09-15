@@ -1,4 +1,5 @@
 from django.shortcuts import render
+
 from .models import BlogPost
 
 
@@ -13,4 +14,4 @@ def blog(request):
         'blogs': blogs,
     }
 
-    return render(request, 'blog/blog.html', context)
+    return render(request, 'blog/basecampblog.html', context)

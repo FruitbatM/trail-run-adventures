@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}| Blog{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'blog/css/blog.css' %}">
+{% endblock %}
+
+{% block header_content %}
+    <div id="blog-header">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12 my-auto ms-4">
+                    <h1 class="display-4 team-heading text-uppercase">
+                        News from base camp
+                    </h1>
+                    <h4 class="team-sub-heading pt-4">
+                        Adventure Blogs and updates from the trail
+                        
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <!-- Blog Section-->
+    <section>
+        <div class="container mt-2">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="section-heading-2 text-uppercase text-center mb-4">
+                        Blogs from the base camp
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row mt-3">
+                    <p class="font-italic lead">
+                        Looking for an interesting read? You've come to the right place! TRΛIL RUN ΛDVENTURES team is always on the hunt for 
+                        meaningful topics about trail running. Most of our articles are inspired by questions about top spots to trail run,
+                        gear, training and trail running in general.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                {% if blogs %}
+                    {% for blog in blogs %}
+                        <div class="col-12 col-md-6 mb-5">
+                            {% include 'blog/includes/blog_template.html' %}
+                        </div>
+                    {% endfor %}
+                {% else %}
+                        <div class="col-12">
+                            <p class="text-center font-italic mb-5">
+                                We are currently working on new, exciting trail running content.
+                                Check out what we've prepared for you in a bit!
+                            </p>
+                        </div>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
