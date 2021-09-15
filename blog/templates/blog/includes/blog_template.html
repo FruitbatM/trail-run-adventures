@@ -40,7 +40,7 @@
                             <p class="blog-card-text">
                                 {{ blog.intro_paragraph_1|truncatechars:160 }}
                                 <span>
-                                    <a href="#" class="blog-link">Read more &#8594;</a>
+                                    <a href="{% url 'blog_post' blog.slug %}" class="blog-link">Read more &#8594;</a>
                                 </span>
                             </p>
                             <p class="blog-date text-secondary">
