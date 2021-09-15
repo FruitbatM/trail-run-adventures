@@ -52,20 +52,18 @@
     <section>
         <div class="container">
             <div class="row">
-                {% if blogs %}
-                    {% for blog in blogs %}
-                        <div class="col-12 col-md-6 mb-5">
-                            {% include 'blog/includes/blog_template.html' %}
+                {% for blog in blogs %}
+                    <div class="col-12 col-md-6 mb-5">
+                        <div class="card blog-card" style="width: 18rem;">
+                            <img src="{{ MEDIA_URL }}{{ blog.header_image }}" class="card-img-top img-fluid" alt="Blog">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ blog.title }}</h5>
+                                <p class="card-text"></p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
                         </div>
-                    {% endfor %}
-                {% else %}
-                        <div class="col-12">
-                            <p class="text-center font-italic mb-5">
-                                We are currently working on new, exciting trail running content.
-                                Check out what we've prepared for you in a bit!
-                            </p>
-                        </div>
-                {% endif %}
+                    </div>
+                {% endfor %}
             </div>
         </div>
     </section>
