@@ -307,6 +307,19 @@ a {
   margin-top: 1.25rem;
 }
 
+/* Blogs from Base Camp */
+.blog-card-title {
+  color: #439B94;
+}
+
+.blog-link {
+  color: #439B94;
+}
+
+.blog-link:hover {
+  color: #83cac4;
+}
+
 #footer-link > a {
   color: #33706c;
 }

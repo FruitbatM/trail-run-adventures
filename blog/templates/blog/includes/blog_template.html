@@ -1,7 +1,55 @@
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            {{ blog.author }}
+<!-- Blog Header-->
+ <section>
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="section-heading-2 text-uppercase text-center mb-4">
+                    Blogs from the base camp
+                </h3>
+            </div>
         </div>
     </div>
-</div>
+    <div class="container-fluid mb-5">
+        <div class="container">
+            <div class="row mt-3">
+                <p class="font-italic lead">
+                    Looking for an interesting read? You've come to the right place! TRΛIL RUN ΛDVENTURES team is always on the hunt for 
+                    meaningful topics about trail running. Most of our articles are inspired by questions about top spots to trail run,
+                    gear, training and trail running in general.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Blog Posts-->
+<section>
+    <div class="container">
+        <div class="row">
+            {% for blog in blogs %}
+                <div class="col-12 col-md-6 mb-5">
+                    <div class="blog-card" style="width: 18rem;">
+                        <div class="blog-image">
+                            <a href="#">
+                                <img src="{{ MEDIA_URL }}{{ blog.header_image }}" class="card-img-top img-fluid" alt="{{ blog.title}}">
+                            </a>
+                        </div>
+                        <div class="blog-card-body pt-4">
+                            <h5 class="blog-card-title">
+                                {{ blog.title }}
+                            </h5>
+                            <p class="blog-card-text">
+                                {{ blog.intro_paragraph_1|truncatechars:160 }}
+                                <span>
+                                    <a href="#" class="blog-link">Read more &#8594;</a>
+                                </span>
+                            </p>
+                            <p class="blog-date text-secondary">
+                                {{ blog.published_date }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

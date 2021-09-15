@@ -26,46 +26,5 @@
 {% endblock %}
 
 {% block content %}
-    <!-- Blog Section-->
-    <section>
-        <div class="container mt-2">
-            <div class="row">
-                <div class="col-12">
-                    <h3 class="section-heading-2 text-uppercase text-center mb-4">
-                        Blogs from the base camp
-                    </h3>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row mt-3">
-                    <p class="font-italic lead">
-                        Looking for an interesting read? You've come to the right place! TRΛIL RUN ΛDVENTURES team is always on the hunt for 
-                        meaningful topics about trail running. Most of our articles are inspired by questions about top spots to trail run,
-                        gear, training and trail running in general.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <div class="row">
-                {% for blog in blogs %}
-                    <div class="col-12 col-md-6 mb-5">
-                        <div class="card blog-card" style="width: 18rem;">
-                            <img src="{{ MEDIA_URL }}{{ blog.header_image }}" class="card-img-top img-fluid" alt="Blog">
-                            <div class="card-body">
-                                <h5 class="card-title">{{ blog.title }}</h5>
-                                <p class="card-text"></p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-                {% endfor %}
-            </div>
-        </div>
-    </section>
-
+    {% include 'blog/includes/blog_template.html' %}
 {% endblock %}

@@ -4,7 +4,7 @@
         "model": "blog.blogpost",
         "fields": {
             "author": "Marina",
-            "published_date": "2021-09-14",
+            "published_date": "",
             "header_image": "blog/post_1_header.jpg",
             "title": "A Beginners Guide to Trail Running",
             "slug": "a-beginners-guide-to-trail-running",
