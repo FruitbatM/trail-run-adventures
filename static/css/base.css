@@ -503,6 +503,10 @@ hr {
   and (max-width : 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
 
+  body {
+    padding-top: 3.75rem;
+  }
+
   #brand-logo {
     width: 9.4rem;
   }
@@ -519,7 +523,7 @@ hr {
   .blog-post-header {
     display: inline-block;
   }
-  */
+*/
 }
 
 /* Display on large devices */
