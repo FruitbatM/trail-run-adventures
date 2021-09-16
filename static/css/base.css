@@ -416,15 +416,20 @@ footer {
   min-height: 75vh;
 }
 
-/*
-.blog-post-header {
-  height: 30rem;
+#blog-post-header {
+  position: relative;
 }
-*/
 
-.blog-post-header img {
-  min-height: 75vh;
-  width: 100%;
+.blog-header-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.15 rem;
+  color: #fafafa;
+  text-shadow: 0.15rem 0.15rem #000000;
 }
 
 .blog-post-heading {
@@ -525,11 +530,6 @@ hr {
     top: 50%;
   }
 
-  /*
-  .blog-post-header {
-    display: inline-block;
-  }
-*/
 }
 
 /* Display on large devices */
