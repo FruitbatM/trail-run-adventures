@@ -9,69 +9,37 @@
     </div>
     <div class="container mb-5">
         <div class="row">
-            <div class="col-md-6">
-                <article class="blog-post">
-                    <figure class="blog">
-                        <div class="blog-overlay">
-                            <a href="">
-                                <img src="{{ MEDIA_URL }}blog_1.jpg" alt="blog image">
-                            </a>
-                        </div>
-                    </figure>
-                    <div class="blog-content">
-                        <div class="blog-header">
-                            <h3 class="blog-title">
-                                <a href="">Test Blog</a>
-                            </h3>
-                            <div class="blog-meta">
-                                <div class="blog-date">07/09/2021</div>
-                                <div class="blog-author">Author</div>
-                            </div>
-                        </div>
-                        <div class="blog-overview">
-                            <p>We look at the top five places in Europe to trail run</p>
-                        </div>
-                        <div class="blog-footer">
-                            <div class="row">
-                                <div class="col-6 text-left" id="footer-link">
-                                    <a href="#" class="more-link">Read More</a>
-                                </div>
-                                <div class="col-6 text-right footer-meta">
-                                    <a href="" class="blog-comment">
-                                        <i class="fas fa-comment-alt" aria-hidden="true"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <div class="col-md-6">
+            {% for blog in blog_home %}
+            <div class="col-md-6 col-sm-12">
                     <article class="blog-post">
                         <figure class="blog">
                             <div class="blog-overlay">
-                                <a href="">
-                                    <img src="{{ MEDIA_URL }}blog_1.jpg" alt="blog image">
+                                <a href="{% url 'blog_post' blog.slug %}">
+                                    <img src="{{ MEDIA_URL }}{{ blog.blog_image_1 }}" class="card-img-top img-fluid" alt="blog image">
                                 </a>
                             </div>
                         </figure>
                         <div class="blog-content">
                             <div class="blog-header">
-                                <h3 class="blog-title">
-                                    <a href="">Test Blog</a>
-                                </h3>
+                                <h5 class="blog-card-title">
+                                    <a href="{% url 'blog_post' blog.slug %}">{{ blog.title }}</a>
+                                </h5>
                                 <div class="blog-meta">
-                                    <div class="blog-date">07/09/2021</div>
-                                    <div class="blog-author">Author</div>
+                                    <div class="blog-date">{{ blog.published_date}}</div>
+                                    <div class="blog-author">{{ blog.author}}</div>
                                 </div>
                             </div>
-                            <div class="blog-overview">
-                                <p>We look at the top five places in Europe to trail run</p>
+                            <div class="blog-overview blog-card-text">
+                                <p>
+                                    {{ blog.intro_paragraph_1|truncatechars:160 }}
+                                </p>
                             </div>
                             <div class="blog-footer">
                                 <div class="row">
                                     <div class="col-6 text-left" id="footer-link">
-                                        <a href="#" class="more-link">Read More</a>
+                                        <span>
+                                            <a href="{% url 'blog_post' blog.slug %}" class="blog-link">Read more &#8594;</a>
+                                        </span>
                                     </div>
                                     <div class="col-6 text-right footer-meta">
                                         <a href="" class="blog-comment">
@@ -83,8 +51,8 @@
                             </div>
                         </div>
                     </article>
-                </div>
-            </div> 
+                {% endfor %}
+            </div>
         </div>
     </div>
     <!-- Quotes section -->
