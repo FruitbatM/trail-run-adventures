@@ -328,7 +328,7 @@ a {
 
 .blog-card-img-top {
   width: 100%;
-  height: 15vw;
+  height: 40vw;
   object-fit: cover;
 }
 
@@ -534,6 +534,9 @@ hr {
     font-size: 3rem;
   }
 
+  .blog-card-img-top {
+    height: 22vw;
+  }
 }
 
 /* Display on large devices */
@@ -555,6 +558,10 @@ hr {
 
     .search-mob {
       display: none;
+    }
+
+    .blog-card-img-top {
+      height: 15vw;
     }
 }
 
