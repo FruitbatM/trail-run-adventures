@@ -29,13 +29,13 @@
                 <div class="col-lg-4 col-md-6 mb-5">
                     <div class="blog-card" style="width: 18rem;">
                         <div class="blog-image">
-                            <a href="#">
+                            <a href="{% url 'blog_post' blog.slug %}">
                                 <img src="{{ MEDIA_URL }}{{ blog.header_image }}" class="blog-card-img-top img-fluid" alt="{{ blog.title}}">
                             </a>
                         </div>
                         <div class="blog-card-body pt-4">
                             <h5 class="blog-card-title">
-                                {{ blog.title }}
+                                <a href="{% url 'blog_post' blog.slug %}">{{ blog.title }}</a>
                             </h5>
                             <p class="blog-card-text">
                                 {{ blog.intro_paragraph_1|truncatechars:160 }}
