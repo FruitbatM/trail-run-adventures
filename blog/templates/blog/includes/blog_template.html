@@ -24,13 +24,13 @@
 <!-- Blog Posts-->
 <section>
     <div class="container">
-        <div class="row">
+        <div class="row justify-content-center">
             {% for blog in blogs %}
-                <div class="col-12 col-md-6 mb-5">
-                    <div class="blog-card" style="width: 18rem;">
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="blog-card mx-auto" style="width: 18rem;">
                         <div class="blog-image">
                             <a href="#">
-                                <img src="{{ MEDIA_URL }}{{ blog.header_image }}" class="card-img-top img-fluid" alt="{{ blog.title}}">
+                                <img src="{{ MEDIA_URL }}{{ blog.blog_image_1}}" class="card-img-top" alt="{{ blog.title}}">
                             </a>
                         </div>
                         <div class="blog-card-body pt-4">
