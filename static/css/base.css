@@ -410,9 +410,11 @@ footer {
   min-height: 75vh;
 }
 
+/*
 .blog-post-header {
   height: 30rem;
 }
+*/
 
 .blog-post-header img {
   min-height: 75vh;
@@ -508,6 +510,16 @@ hr {
   .tour-card img {
     height: 25vh;
   }
+
+  .blog-post-heading {
+    top: 50%;
+  }
+
+  /*
+  .blog-post-header {
+    display: inline-block;
+  }
+  */
 }
 
 /* Display on large devices */
