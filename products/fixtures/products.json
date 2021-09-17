@@ -1,0 +1,196 @@
+[
+  {
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+      "name": "Tour du Mont Blanc",
+      "country":"France",
+      "holiday_header_image": "",
+      "header_paragraph": "Discover a world of unique and impressive high mountains with a breath-taking show of summits and glaciers everywhere. The Mont Blanc range is fascinatingly beautiful, like a diamond, from every angle.",
+      "duration": "8",
+      "distance": "165",
+      "level": 1,
+      "price": 2450.00,
+      "single_supplement": "true",
+      "rating": 4.9,
+      "number_of_runners": 10,
+      "age": "18+",
+      "start_date": "06-08-2022",
+      "end_date": "14-08-2022",
+      "guide": 1,
+      "overview_paragraph_1": "This is a 8 day and 165 Km journey with lots of ups and downs...to be specific, almost 10,000 meters of elevation gain. Remember, this is the Alps, rocky and steep terrain, high alpine meadows, glaciers, peaks, streams, lakes and amazing scenery. The route takes us from Chamonix - France through Italy, Switzerland, and back to Chamonix.",
+      "overview_paragraph_2": "This journey is fully supported with luggage transfers so you will only need to carry a day running pack, shuttles to and from Geneva airport, all accommodations and meals. The accommodation varies from mountain huts to hotels. Some of the huts only offer dormitories, in the hotel it will be twin rooms. Single occupancy is available for an additional cost. The Tour du Mont Blanc (TMB) is one of the most famous trail running and hiking routes and a dream for many trail runners around the world.",
+      "overview_paragraph_3": "The path encircles Western Europe’s highest peak, and it combines inspiring mountain scenery with cultural vibrancy in the alpine regions of France, Switzerland and Italy. The tour is challenging, rewarding and enjoyable, there will be long and steep runs but still time to relax, to recover and to have a beer or two in the afternoon. The alps and the TMB is a challenging route, but you’ll run and hike with a light vest and in the company of an experienced International Mountain Leader (UIMLA) that will be with you all the time.",
+      "running_days": "5",
+      "min_elavation": "750",
+      "max_elavation": "2500",
+      "elevation_gain": "10.000",
+      "itinerary": "True",
+      "includes": "True",
+      "excludes": "True",
+      "is_holiday": "True",
+      "faq": "True",
+      "image_1": "",
+      "image_2": "",
+      "image_3": "",
+      "route_image": ""
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+      "name": "Azores",
+      "country":"Portugal",
+      "holiday_header_image": "",
+      "header_paragraph": "Spectacular trail running adventure as we journey to the Azores. We’ll cross the island via the ancient Whalers Great Route and the 10 Volcanoes trails, heading through lush forests, volcanic beaches and majestic scenery every step of the way.",
+      "duration": "6",
+      "distance": "76",
+      "level": 2,
+      "price": 1590.00,
+      "single_supplement": "true",
+      "rating": 5,
+      "number_of_runners": "12",
+      "age": "16+",
+      "start_date": "24-06-2022",
+      "end_date": "30-06-2022",
+      "guide": 2,
+      "overview_paragraph_1": "On our fully serviced small group running adventure, we head to the spectacular Azores where we’ll split our time between two idyllic islands located in the middle of the North Atlantic Ocean. ",
+      "overview_paragraph_2": "We base ourselves on the pretty island of Faial where we’ll be running a range of wonderful trails. It’s an action-packed seven-day program where no two days will be the same. We’ll be making a crossing of the island of Faial as we follow the ancient Whalers Great Route, as well as the 10 Volcanoes trails. ",
+      "overview_paragraph_3": "Aside from running, we have a day set aside for us to hike a 10km trail which takes us to the summit of the mighty Mount Pico which is located on a neighbouring island that shares the same name with an afternoon spent out on the water whale watching. To give ourselves a break from running we also have a full day of mountain biking which gives us scope to explore some other curious parts of this wonderful island.",
+      "running_days": "4",
+      "min_elavation": "4",
+      "max_elavation": "2.276",
+      "elevation_gain": "4.430",
+      "itinerary": "True",
+      "includes": "True",
+      "excludes": "True",
+      "is_holiday": "True",
+      "faq": "True",
+      "image_1": "",
+      "image_2": "",
+      "image_3": "",
+      "route_image": ""
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+      "sku": "TRA123M1",
+      "category": 1, 
+      "name": "Male T-Shirt Orange",
+      "description": "Lightweight and compressive arm sleeves for optimised thermoregulation during the toughest of trail races. The seamless microfibre is exceptionally soft and fits likes a second skin, eliminating chafing and quickly wicking away sweat as the kilometres wear on.",
+      "price": 26.50,
+      "has_size": "True",
+      "rating": 5.0,
+      "is_holiday": "False",
+      "image_1": ""
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+      "sku": "TRA123M2",
+      "category": 1, 
+      "name": "Male T-Shirt Yellow",
+      "description": "Lightweight and compressive arm sleeves for optimised thermoregulation during the toughest of trail races. The seamless microfibre is exceptionally soft and fits likes a second skin, eliminating chafing and quickly wicking away sweat as the kilometres wear on.",
+      "price": 26.50,
+      "has_size": "True",
+      "rating": 5.0,
+      "is_holiday": "False",
+      "image_1": ""
+    }
+  },
+  {
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+      "sku": "TRA123M3",
+      "category": 1, 
+      "name": "Male T-Shirt Yellow",
+      "description": "Lightweight and compressive arm sleeves for optimised thermoregulation during the toughest of trail races. The seamless microfibre is exceptionally soft and fits likes a second skin, eliminating chafing and quickly wicking away sweat as the kilometres wear on.",
+      "price": 26.50,
+      "has_size": "True",
+      "rating": 5.0,
+      "is_holiday": "False",
+      "image_1": ""
+    }
+  },
+  {
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+      "sku": "TRA123M4",
+      "category": 1, 
+      "name": "Male T-Shirt White",
+      "description": "Lightweight and compressive arm sleeves for optimised thermoregulation during the toughest of trail races. The seamless microfibre is exceptionally soft and fits likes a second skin, eliminating chafing and quickly wicking away sweat as the kilometres wear on.",
+      "price": 26.50,
+      "has_size": "True",
+      "rating": 4.8,
+      "is_holiday": "False",
+      "image_1": ""
+    }
+  },
+  {
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+      "sku": "TRA123M5",
+      "category": 1, 
+      "name": "Male Sweathshirt White",
+      "description": "Lightweight and compressive arm sleeves for optimised thermoregulation during the toughest of trail races. The seamless microfibre is exceptionally soft and fits likes a second skin, eliminating chafing and quickly wicking away sweat as the kilometres wear on.",
+      "price": 35.50,
+      "has_size": "True",
+      "rating": 4.9,
+      "is_holiday": "False",
+      "image_1": ""
+    }
+  },
+  {
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+      "sku": "TRA123F1",
+      "category": 1, 
+      "name": "Female T-Shirt White",
+      "description": "Lightweight and compressive arm sleeves for optimised thermoregulation during the toughest of trail races. The seamless microfibre is exceptionally soft and fits likes a second skin, eliminating chafing and quickly wicking away sweat as the kilometres wear on.",
+      "price": 25.50,
+      "has_size": "True",
+      "rating": 4.9,
+      "is_holiday": "False",
+      "image_1": ""
+    }
+  },
+  {
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+      "sku": "TRA123MER1",
+      "category": 2, 
+      "name": "Mask with Logo",
+      "description": "Lightweight",
+      "price": 4.50,
+      "has_size": "False",
+      "rating": 4.9,
+      "is_holiday": "False",
+      "image_1": ""
+    }
+  },
+  {
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+      "sku": "TRA123D1",
+      "category": 3, 
+      "name": "Cup with logo",
+      "description": "Lightweight",
+      "price": 5.50,
+      "has_size": "False",
+      "rating": 4.8,
+      "is_holiday": "False",
+      "image_1": ""
+    }
+  }
+]

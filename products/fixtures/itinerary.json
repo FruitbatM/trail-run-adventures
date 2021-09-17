@@ -1,0 +1,50 @@
+[
+  {
+    "pk": 1,
+    "model": "products.itinerary",
+    "fields": {
+      "name": "Tour du Mont Blanc",
+      "holiday": 1
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.itinerary",
+    "fields": {
+      "name": "Azores",
+      "holiday": 2
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.itinerary",
+    "fields": {
+      "name": "Faroe Islands",
+      "holiday": 3
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.itinerary",
+    "fields": {
+      "name": "Italian Dolomites",
+      "holiday": 4
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.itinerary",
+    "fields": {
+      "name": "Julian Alps",
+      "holiday": 5
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.itinerary",
+    "fields": {
+      "name": "Graubünden",
+      "holiday": 6
+    }
+  }
+]

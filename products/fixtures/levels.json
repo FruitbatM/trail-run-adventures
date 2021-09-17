@@ -1,0 +1,26 @@
+[
+  {
+    "pk": 1,
+    "model": "products.level",
+    "fields": {
+      "name": "Easy",
+      "description": "Daily distances of up to 24 kilometers (15 miles) with up to 500m (1640ft) of cumulative ascent each day. Following easy, undulating trails, tours graded as Easy are ideal itineraries for runners just taking up trail running. They include plenty of time to enjoy the scenery."
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.level",
+    "fields": {
+      "name": "Moderate",
+      "description": "Daily distances ranging between 22 – 40 kilometers (15 – 25 miles) with up to around 1000m (3280ft) of cumulative ascent each day. Tours graded as Moderate may include some steeper sections on challenging but not particularly technical terrain. Good fitness is required."
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.level",
+    "fields": {
+      "name": "Demanding",
+      "description": "Daily distances of over 40 kilometers (25 miles) with up to around 6561ft (2000m) of cumulative ascent each day. Tours graded as Demanding fall into two categories. Some feature long distances over less topographically challenging terrain. Others involve shorter daily mileages, but they tackle steep or long ascents, often over challenging or technical terrain. Expect longer running days of up to eight hours."
+    }
+  }
+]
