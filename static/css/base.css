@@ -567,6 +567,10 @@ hr {
     .blog-card-img-top {
       height: 15vw;
     }
+
+    #blog-post-header-img {
+      width: 100%;
+    }
 }
 
 /* For iPad Pro 12.9" 
