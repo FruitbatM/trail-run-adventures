@@ -24,6 +24,51 @@ class Level(models.Model):
         return self.name
 
 
+class Itinerary(models.Model):
+
+    class Meta:
+        verbose_name_plural = 'itineraries'
+
+    name = models.CharField(max_length=254, null=True)
+    holiday = models.OneToOneField('Product', null=True, blank=True,
+                                   on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.name
+
+
+class ItineraryDay(models.Model):
+    itinerary = models.ForeignKey('Itinerary', null=True, blank=True,
+                                  on_delete=models.CASCADE)
+    day_1 = models.CharField(max_length=254, null=True)
+    day_1_overview = models.TextField(max_length=800)
+    day_1_data = models.TextField(max_length=400)
+    day_2 = models.CharField(max_length=254, null=True)
+    day_2_overview = models.TextField(max_length=800)
+    day_2_data = models.TextField(max_length=400)
+    day_3 = models.CharField(max_length=254, null=True)
+    day_3_overview = models.TextField(max_length=800)
+    day_3_data = models.TextField(max_length=400)
+    day_4 = models.CharField(max_length=254, null=True)
+    day_4_overview = models.TextField(max_length=800)
+    day_4_data = models.TextField(max_length=400)
+    day_5 = models.CharField(max_length=254, null=True)
+    day_5_overview = models.TextField(max_length=800)
+    day_5_data = models.TextField(max_length=400)
+    day_6 = models.CharField(max_length=254, null=True)
+    day_6_overview = models.TextField(max_length=800)
+    day_6_data = models.TextField(max_length=400)
+    day_7 = models.CharField(max_length=254, null=True)
+    day_7_overview = models.TextField(max_length=800)
+    day_7_data = models.TextField(max_length=400)
+    day_8 = models.CharField(max_length=254, null=True)
+    day_8_overview = models.TextField(max_length=800)
+    day_8_data = models.TextField(max_length=400)
+
+    def __str__(self):
+        return self.day_1
+
+
 class Product(models.Model):
     category = models.ForeignKey('Category', null=True, blank=True,
                                  on_delete=models.SET_NULL)

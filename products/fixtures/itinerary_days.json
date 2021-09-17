@@ -65,7 +65,7 @@
     "pk": 3,
     "model": "products.itineraryday",
     "fields": {
-      "itinerary": 2,
+      "itinerary": 3,
       "day_1": "Chamonix",
       "day_1_overview": "Transfer from Geneva Airport to Chamonix. Depending on your time of arrival you will have time to walk around the vibrant village of Chamonix, make last minute gear shopping or just relax at the pool and outdoor patio of our chosen hotel in Chamonix. In the evening we will have a group safety briefing, followed by dinner. ",
       "day_1_data": "",
@@ -96,7 +96,7 @@
     "pk": 4,
     "model": "products.itineraryday",
     "fields": {
-      "itinerary": 2,
+      "itinerary": 4,
       "day_1": "Chamonix",
       "day_1_overview": "Transfer from Geneva Airport to Chamonix. Depending on your time of arrival you will have time to walk around the vibrant village of Chamonix, make last minute gear shopping or just relax at the pool and outdoor patio of our chosen hotel in Chamonix. In the evening we will have a group safety briefing, followed by dinner. ",
       "day_1_data": "",
@@ -127,7 +127,7 @@
     "pk": 5,
     "model": "products.itineraryday",
     "fields": {
-      "itinerary": 2,
+      "itinerary": 5,
       "day_1": "Chamonix",
       "day_1_overview": "Transfer from Geneva Airport to Chamonix. Depending on your time of arrival you will have time to walk around the vibrant village of Chamonix, make last minute gear shopping or just relax at the pool and outdoor patio of our chosen hotel in Chamonix. In the evening we will have a group safety briefing, followed by dinner. ",
       "day_1_data": "",
@@ -158,7 +158,7 @@
     "pk": 6,
     "model": "products.itineraryday",
     "fields": {
-      "itinerary": 2,
+      "itinerary": 6,
       "day_1": "Chamonix",
       "day_1_overview": "Transfer from Geneva Airport to Chamonix. Depending on your time of arrival you will have time to walk around the vibrant village of Chamonix, make last minute gear shopping or just relax at the pool and outdoor patio of our chosen hotel in Chamonix. In the evening we will have a group safety briefing, followed by dinner. ",
       "day_1_data": "",
