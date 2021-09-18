@@ -26,5 +26,16 @@
 {% endblock %}
 
 {% block content %}
-    {{ products }}
+    <div class="container mt-2 mb-5">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="section-heading-2 text-uppercase text-center mb-4">
+                    All Products
+                </h3>
+            </div>
+        </div>
+    </div>
+
+    {% include 'products/includes_products/product_card.html' %}
+
 {% endblock %}

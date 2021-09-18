@@ -74,9 +74,9 @@ class Product(models.Model):
                                  on_delete=models.SET_NULL)
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
-    country = models.CharField(max_length=80)
+    country = models.CharField(max_length=80, null=True, blank=True)
     holiday_header_image = models.ImageField(null=True, blank=True)
-    header_paragraph = models.TextField(max_length=800)
+    header_paragraph = models.TextField(max_length=800, null=True, blank=True)
     duration = models.IntegerField(null=True, blank=True,
                                    validators=[MinValueValidator(1),
                                                MaxValueValidator(10)])
@@ -99,12 +99,13 @@ class Product(models.Model):
                               validators=[MinValueValidator(16),
                                           MaxValueValidator(76)])
     start_date = models.DateField(auto_now=False, auto_now_add=False,
-                                  null=True)
-    end_date = models.DateField(auto_now=False, auto_now_add=False, null=True)
-    guide = models.CharField(max_length=80)
-    overview_paragraph_1 = models.TextField(max_length=500)
-    overview_paragraph_2 = models.TextField(max_length=800)
-    overview_paragraph_3 = models.TextField(max_length=800)
+                                  null=True, blank=True)
+    end_date = models.DateField(auto_now=False, auto_now_add=False, null=True,
+                                blank=True)
+    guide = models.CharField(max_length=80, null=True, blank=True)
+    overview_paragraph_1 = models.TextField(max_length=500, null=True, blank=True)
+    overview_paragraph_2 = models.TextField(max_length=800, null=True, blank=True)
+    overview_paragraph_3 = models.TextField(max_length=800, null=True, blank=True)
     running_days = models.IntegerField(null=True, blank=True,
                                        validators=[MinValueValidator(1),
                                                    MaxValueValidator(10)])
@@ -123,7 +124,7 @@ class Product(models.Model):
     image_2 = models.ImageField(upload_to="holidays", null=True, blank=True)
     image_3 = models.ImageField(upload_to="holidays", null=True, blank=True)
     route_image = models.ImageField(blank=True)
-    description = models.TextField(max_length=800)
+    description = models.TextField(max_length=800, null=True, blank=True)
     has_sizes = models.BooleanField(default=False, null=True, blank=True)
 
     def __str__(self):

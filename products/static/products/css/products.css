@@ -2,6 +2,21 @@
 #shop-header {
     background: url('/static/images/products/shop_header.jpg') no-repeat center;
     background-size: cover;
-    min-height: 75vh;
+    min-height: 76vh;
 }
 
+.product-card-img {
+    height: 35vh;
+    object-fit: cover;
+  }
+
+.card-footer {
+    border-top: 0;
+}
+
+
+#product-divider {
+    background: #439B94;
+    height: 0.1rem !important;
+    border-radius: 100%;
+}
