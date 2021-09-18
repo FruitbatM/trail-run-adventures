@@ -49,9 +49,9 @@
                     SHOP
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="#">SHIRTS</a></li>
-                    <li><a class="dropdown-item" href="#">ACCESSORIES</a></li>
-                    <li><a class="dropdown-item" href="#">DRINKWARE</a></li>
+                    <li><a class="dropdown-item" href="{% url 'products' %}?category=shirts">SHIRTS</a></li>
+                    <li><a class="dropdown-item" href="{% url 'products' %}?category=accessories">ACCESSORIES</a></li>
+                    <li><a class="dropdown-item" href="{% url 'products' %}?category=drinkware">DRINKWARE</a></li>
                     <li><a class="dropdown-item" href="{% url 'products' %}">ALL PRODUCTS</a></li>
                 </ul>
             </li>
