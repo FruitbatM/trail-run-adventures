@@ -5,12 +5,12 @@
             <div class="col-lg-4 col-md-6 col-sm-6 align-items-stretch">
                 <div class="card h-100 border-0 mt-2">
                     {% if product.image %}
-                        <a href="#" class="text-center mt-3 p-2">
+                        <a href="{% url 'product_detail' product.id %}" class="text-center mt-3 p-2">
                             <img src="{{ MEDIA_URL }}{{ product.image }}" alt="{{ product.name }}" 
                                 class="img-fluid product-card-img">
                         </a>
                     {% else %}
-                        <a href="#" class="text-center mt-3">
+                        <a href="{% url 'product_detail' product.id %}" class="text-center mt-3">
                             <img src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}" class="img-fluid">
                         </a>
                     {% endif %}
