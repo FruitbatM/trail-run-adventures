@@ -5,8 +5,8 @@
     <a class="nav-link d-lg-none d-md-flex" href="{% url 'home' %}">
         <img src="{{ MEDIA_URL }}logo_trail.png" alt="Website logo" id="brand-logo" loading="lazy">
     </a>
-    <!-- Shopping Bag -->
-    <a href="#" class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} 
+    <!-- Shopping Cart -->
+    <a href="{% url 'view_cart' %}" class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} 
         nav-link d-lg-none d-xl-none cart-link-mob">
         <div class="text-center">
             <div><i class="fas fa-shopping-bag fa-lg"></i></div>

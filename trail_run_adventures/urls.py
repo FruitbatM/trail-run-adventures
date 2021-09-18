@@ -24,6 +24,7 @@ urlpatterns = [
     path('', include('home.urls')),
     path('', include('about.urls')),
     path('products/', include('products.urls')),
+    path('cart/', include('cart.urls')),
     path('', include('contact.urls')),
     path('basecampblog/', include('blog.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
