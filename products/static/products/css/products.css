@@ -1,0 +1,7 @@
+/* Shop section */
+#shop-header {
+    background: url('/static/images/products/shop_header.jpg') no-repeat center;
+    background-size: cover;
+    min-height: 75vh;
+}
+
