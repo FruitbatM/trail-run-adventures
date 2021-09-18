@@ -209,7 +209,7 @@
       "has_sizes": "True",
       "rating": 5.0,
       "is_holiday": "False",
-      "image_1": ""
+      "image": ""
     }
   },
   {
@@ -224,7 +224,7 @@
       "has_sizes": "True",
       "rating": 5.0,
       "is_holiday": "False",
-      "image_1": ""
+      "image": ""
     }
   },
   {
@@ -239,7 +239,7 @@
       "has_sizes": "True",
       "rating": 5.0,
       "is_holiday": "False",
-      "image_1": ""
+      "image": ""
     }
   },
   {
@@ -254,7 +254,7 @@
       "has_sizes": "True",
       "rating": 4.8,
       "is_holiday": "False",
-      "image_1": ""
+      "image": ""
     }
   },
   {
@@ -269,7 +269,7 @@
       "has_sizes": "True",
       "rating": 4.9,
       "is_holiday": "False",
-      "image_1": ""
+      "image": ""
     }
   },
   {
@@ -284,7 +284,7 @@
       "has_sizes": "True",
       "rating": 4.9,
       "is_holiday": "False",
-      "image_1": ""
+      "image": ""
     }
   },
   {
@@ -299,7 +299,7 @@
       "has_sizes": "False",
       "rating": 4.9,
       "is_holiday": "False",
-      "image_1": ""
+      "image": ""
     }
   },
   {
@@ -314,7 +314,7 @@
       "has_sizes": "False",
       "rating": 4.8,
       "is_holiday": "False",
-      "image_1": ""
+      "image": ""
     }
   }
 ]

@@ -274,10 +274,6 @@ a {
   margin-bottom: 0.94rem;
 }
 
-.blog-post .blog-header {
-  margin-bottom: 0.9rem;
-}
-
 .blog-post .blog-content {
   -webkit-box-shadow: 1px 0px 20px 1px rgba(0, 0, 0, 0.15);
           box-shadow: 1px 0px 20px 1px rgba(0, 0, 0, 0.15);
@@ -475,6 +471,13 @@ footer {
 
 .story-image {
   width: 65%;
+}
+
+/* Shop */
+#shop-header {
+  background: url('/static/images/products/shop_header.jpg') no-repeat center;
+  background-size: cover;
+  min-height: 75vh;
 }
 
 

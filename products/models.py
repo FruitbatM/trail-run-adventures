@@ -118,9 +118,10 @@ class Product(models.Model):
                                          validators=[MinValueValidator(100),
                                                      MaxValueValidator(12000)])
     is_holiday = models.BooleanField(default=False)
-    image_1 = models.ImageField(null=True, blank=True)
-    image_2 = models.ImageField(null=True, blank=True)
-    image_3 = models.ImageField(null=True, blank=True)
+    image = models.ImageField(upload_to="products", null=True, blank=True)
+    image_1 = models.ImageField(upload_to="holidays", null=True, blank=True)
+    image_2 = models.ImageField(upload_to="holidays", null=True, blank=True)
+    image_3 = models.ImageField(upload_to="holidays", null=True, blank=True)
     route_image = models.ImageField(blank=True)
     description = models.TextField(max_length=800)
     has_sizes = models.BooleanField(default=False, null=True, blank=True)
