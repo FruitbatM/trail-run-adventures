@@ -1,5 +1,6 @@
 {% extends "base.html"%}
 {% load static %}
+{% load bag_tools %}
 {% block extra_title %}| Cart{% endblock %}
 
 {% block header_content %}
@@ -49,7 +50,7 @@
                                         </td>
                                         <td class="py-3 w-25">
                                             <td class="py-3">
-                                                <form class="form update-form" method="POST" action="">
+                                                <form class="form update-form" method="POST" action="{% url 'adjust_cart' item.item_id %}">
                                                     {% csrf_token %}
                                                     <div class="form-group">
                                                         <div class="input-group">
@@ -85,7 +86,7 @@
                                             </td>
                                         </td>
                                         <td class="py-3">
-                                            <p class="my-0">${{ item.product.price}}</p>
+                                            <p class="my-0">${{ item.product.price | calc_subtotal:item.quantity}}</p>
                                         </td>
                                     </tr>
                                 {% endfor %}
