@@ -371,6 +371,11 @@ footer {
   text-decoration: underline;
 }
 
+.update-link,
+.remove-item {
+  cursor: pointer;
+}
+
 /* About pages */
 
 #team-header_1 {
