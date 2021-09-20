@@ -10,9 +10,9 @@
     <div class="container">
         <div class="row text-center">
             {% for product in shop_home %}
-                <div class="col-lg-4 col-md-6 col-12">
+                <div class="col-md-4" id="shop-column">
                     <div class="card card-body h-100 border-success">
-                        <div class="category-card-img d-flex text-center mt-auto mb-auto text-uppercase">
+                        <div class="category-card-img img-fluid d-flex text-center mt-auto mb-auto text-uppercase">
                             <img src="{{ MEDIA_URL }}{{ product.image }}" alt="{{ product.category.name }}">
                         </div>
                         <div class="card-img-overlay d-flex justify-content-center">
