@@ -356,6 +356,12 @@ a {
   background: #28a745;
 }
 
+/* extra space for carousel arrows */
+.carousel-control-prev,
+.carousel-control-next {
+  margin: -1rem;
+}
+
 /* Footer */
 footer {
   background-color: #3e4551;

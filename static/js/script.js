@@ -19,17 +19,6 @@ function topFunction() {
 }
 
 
-// Bootstrap carousel
-$(document).ready(function() {
-    $('#quote-carousel').carousel(
-      {
-        pause: true,
-        interval: 4000,
-    });
-  });
-
-
-
 // Bootstrap navbar dropdown with hover effect
 // Code source: https://bootstrap-menu.com/detail-basic-hover.html
 document.addEventListener("DOMContentLoaded", function(){
