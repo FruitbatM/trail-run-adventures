@@ -335,7 +335,7 @@ a {
 .carousel-background {
   background: url('/static/images/hills_background.jpg') no-repeat center;
   background-size: cover;
-  height: 170vh;
+  height: auto;
 }
 
 /* Quote Carousel */

@@ -21,12 +21,13 @@ function topFunction() {
 
 // Bootstrap carousel
 $(document).ready(function() {
-    //Set the carousel options
-    $('.carousel').carousel({
-      pause: true,
-      interval: 4000,
+    $('#quote-carousel').carousel(
+      {
+        pause: true,
+        interval: 4000,
     });
   });
+
 
 
 // Bootstrap navbar dropdown with hover effect
