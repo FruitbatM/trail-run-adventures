@@ -9,45 +9,21 @@
     </div>
     <div class="container">
         <div class="row text-center">
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="card card-body h-100 border-success">
-                    <div class="category-card-img d-flex text-center mt-auto mb-auto">
-                        <img src="{{ MEDIA_URL }}product_1.png" alt="Shirt Image">
-                    </div>
-                    <div class="card-img-overlay d-flex justify-content-center">
-                        <a href="#" class="card-link"></a>
-                    </div>
-                    <div class="category-card-button d-flex justify-content-center my-3">
-                        <a href="" class="btn btn-success">SHIRTS</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="card card-body h-100 border-success">
-                    <div class="category-card-img d-flex text-center mt-auto mb-auto">
-                        <img src="{{ MEDIA_URL }}product_3.png" alt="Cap Image">
-                    </div>
-                    <div class="card-img-overlay d-flex">
-                        <a href="#" class="card-link"></a>
-                    </div>
-                    <div class="category-card-button d-flex justify-content-center my-3">
-                        <a href="" class="btn btn-success">ACCESSORIZE</a>
+            {% for product in shop_home %}
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card card-body h-100 border-success">
+                        <div class="category-card-img d-flex text-center mt-auto mb-auto text-uppercase">
+                            <img src="{{ MEDIA_URL }}{{ product.image }}" alt="{{ product.category.name }}">
+                        </div>
+                        <div class="card-img-overlay d-flex justify-content-center">
+                            <a href="#" class="card-link"></a>
+                        </div>
+                        <div class="category-card-button d-flex justify-content-center text-uppercase my-3">
+                            <a href="{% url 'products' %}?category={{ product.category.name }}" class="btn btn-success">{{ product.category.name }}</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="card card-body h-100 border-success">
-                    <div class="category-card-img d-flex text-center mt-auto mb-auto">
-                        <img src="{{ MEDIA_URL }}product_4.jpg" alt="Cup Image">
-                    </div>
-                    <div class="card-img-overlay d-flex justify-content-end">
-                        <a href="#" class="card-link"></a>
-                    </div>
-                    <div class="category-card-button d-flex justify-content-center my-3">
-                        <a href="" class="btn btn-success">DRINKWARE</a>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
         <div class="row text-center">
             <div class="shop-all-button mt-5">
