@@ -24,7 +24,7 @@ def all_products(request):
                 sortkey = 'lower_name'
                 products = products.annotate(lower_name=Lower('name'))
             if sortkey == 'category':
-                sortykey = 'category__name'
+                sortkey = 'category__name'
 
             if 'direction' in request.GET:
                 direction = request.GET['direction']
@@ -81,11 +81,11 @@ def holidays(request):
     context = {
         'holidays': holidays,
     }
-    print(holidays)
+
     return render(request, 'products/holidays.html', context)
 
 
-def holiday_details(request, holiday_id):
+def holiday_detail(request, holiday_id):
     """
     A view to display a single holiday adventure details page"
     """
@@ -101,4 +101,6 @@ def holiday_details(request, holiday_id):
         'itinerary_day': itinerary_day,
     }
 
-    return render(request, 'products/holiday_details.html', context)
+    print(holiday)
+    print(holiday_id)
+    return render(request, 'products/holiday_detail.html', context)
