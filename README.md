@@ -49,7 +49,7 @@ with Django*
 
 The project was created as a **Milestone Project 4** as a part of **Diploma in Full Stack Software Development** with **Code Institute**. The project is developed using Django, a high-level Python web framework, JavaScript, HTML, CSS, and Bootstrap framework.
 
-TRΛIL RUN ΛDVENTURES is a multi-page eCommerce web application for trail running enthusiasts and everyone who enjoys being outdoors.
+**TRΛIL RUN ΛDVENTURES** is a multi-page eCommerce web application for trail running enthusiasts and everyone who enjoys being outdoors.
 
 Trail running is simply defined as going for a run at the heart of nature. It's an extremely all-round non-stadia sport that and you don't need to be high in the mountains to go trail running. You simply need to be in nature.
 
@@ -57,10 +57,10 @@ Trail running is simply defined as going for a run at the heart of nature. It's 
 
 Test transaction details:
 
-credit card: 4242 4242 4242 4242
-expiration date: 04 / 24
-CVC: 424
-ZIP: 42424
+credit card: 4242 4242 4242 4242 <br>
+expiration date: 04 / 24 <br>
+CVC: 424 <br>
+ZIP: 42424 <br>
 
 # User Experience (UX)
 

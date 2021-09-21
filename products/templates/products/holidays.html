@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}| Trail Runing Holidays{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'products/css/holidays.css' %}">
+{% endblock %}
+
+{% block header_content %}
+    <div id="holidays-header">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12 my-auto mx-auto">
+                    <h1 class="display-4 team-heading text-uppercase">
+                        Trail Running Holidays
+                    </h1>
+                    <h4 class="team-sub-heading pt-4">
+                        Join a running experience to the world's most extraordinary trails <br>
+                        or talk to us about creating your own bespoke running adventure.
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    
+{% endblock %}
+
+{% block postloadjs %}
+{% endblock %}

@@ -74,14 +74,31 @@ def product_detail(request, product_id):
     return render(request, 'products/product_detail.html', context)
 
 
-
 def holidays(request):
     """ A view to display all holiday adventures"""
 
     holidays = Product.objects.filter(is_holiday=True)
-
     context = {
         'holidays': holidays,
     }
 
     return render(request, 'products/holidays.html', context)
+
+
+def holiday_details(request, holiday_id):
+    """
+    A view to display a single holiday adventure details page"
+    """
+
+    all_holidays = Product.objects.filter(is_holiday=True)
+    holiday = get_object_or_404(all_holidays, pk=holiday_id)
+    itinerary = Itinerary.objects.get(holiday=holiday)
+    itinerary_day = ItineraryDay.objects.filter(itinerary=itinerary)
+
+    context = {
+        'holiday': holiday,
+        'itinerary': itinerary,
+        'itinerary_day': itinerary_day,
+    }
+
+    return render(request, 'products/holiday_details.html', context)
