@@ -25,7 +25,27 @@
 {% endblock %}
 
 {% block content %}
-    
+<!-- Trail Runing Holidays -->
+<section class="mb-5">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col mt-1 mb-4 ms-4">
+                <h2 class="section-heading-2 text-center">TRAIL RUNNING EXPERIENCES</h2>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            {% for holiday in holidays %}
+                <div class="col-md-4">
+                    <div class="experiences-card">
+                        {% include 'products/includes_holidays/holiday_card.html' %}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
 {% endblock %}
 
 {% block postloadjs %}

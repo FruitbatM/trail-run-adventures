@@ -81,7 +81,7 @@ def holidays(request):
     context = {
         'holidays': holidays,
     }
-
+    print(holidays)
     return render(request, 'products/holidays.html', context)
 
 
