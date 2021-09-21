@@ -8,26 +8,27 @@
 {% endblock %}
 
 {% block header_content %}
-    <div id="holidays-header">
-        {{ product.holiday_header_image }}
+    <div id="header">
+        
         <div class="container">
+            <img src="{{ MEDIA_URL }}{{ holiday.holiday_header_image }}" class="img-fluid" alt="{{ holiday.name }}">
             <div class="row text-center">
                 <div class="col-12 my-auto mx-auto">
                     <h1 class="display-4 team-heading text-uppercase">
-                        {{ product.name }}
+                        {{ holiday.name }}
                     </h1>
                     <h4 class="team-sub-heading pt-4">
-                        {{ product.header_paragraph }}
+                        {{ holiday.header_paragraph }}
                     </h4>
                 </div>
                 <p class="">
-                    {{ product.duration }}
+                    {{ holiday.duration }}
                 </p>
                 <p class="">
-                    {{ product.distance }}
+                    {{ holiday.distance }}
                 </p>
                 <p>
-                    {{ product.level }}
+                    {{ holiday.level }}
                 </p>
             </div>
         </div>
