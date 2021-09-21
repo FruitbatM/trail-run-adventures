@@ -24,3 +24,11 @@ a.category-badge > span.badge:hover {
     background: #212529 !important;
     color: #fafafa !important;
 }
+
+/* Trail Running Holidays */
+
+#holidays-header {
+    background: url('/static/images/products/adventures_header.jpg') no-repeat center;
+    background-size: cover;
+    min-height: 76vh;
+}
