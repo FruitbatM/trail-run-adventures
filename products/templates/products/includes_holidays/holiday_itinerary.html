@@ -1,7 +1,45 @@
-<div class="col-12">
-    <h2 class=" holiday-heading text-uppercase text-center mt-5">Itinerary</h2>
-    <p>Click below to explore in more detail.</p>
-</div>
-
+{% if itinerary_day %}
+    <div class="col-md-6 offset-md-3">
+        <h2 class=" holiday-heading text-uppercase text-center mt-5">Itinerary</h2>
+        <p>Click below to explore in more detail.</p>
+    </div>
+        <div class="col-md-6 offset-md-3 pt-3">
+            {% for day in itinerary_day %}
+            <div class="itinerary-block text-start">
+                <p class="itinerary-day text-uppercase">
+                    <strong>+ day 1: {{ day.day_1 }}</strong>
+                    <p>{{ day.day_1_overview }}</p>
+                    <p>{{ day.day_1_overview }}</p>
+                    <p>{{day.day_1_data}}</p>
+                </p>
+                <p class="itinerary-day text-uppercase">
+                    <strong>+ day 2: {{ day.day_2 }}</strong>
+                    <p>{{ day.day_2_overview }}</p>
+                    <p>{{day.day_2_data}}</p>
+                </p>
+                <p class="itinerary-day text-uppercase">
+                    <strong>+ day 3: {{ day.day_3 }}</strong>
+                    <p>{{ day.day_3_overview }}</p>
+                    <p>{{day.day_3_data}}</p>
+                </p>
+                <p class="itinerary-day text-uppercase">
+                    <strong>+ day 4: {{ day.day_4 }}</strong>
+                    <p>{{ day.day_4_overview }}</p>
+                    <p>{{day.day_4_data}}</p>
+                </p>
+                <p class="itinerary-day text-uppercase">
+                    <strong>+ day 5: {{ day.day_5 }}</strong>
+                    <p>{{ day.day_5_overview }}</p>
+                    <p>{{day.day_5_data}}</p>
+                </p>
+                <p class="itinerary-day text-uppercase">
+                    <strong>+ day 6: {{ day.day_6 }}</strong>
+                    <p>{{ day.day_6_overview }}</p>
+                    <p>{{day.day_6_data}}</p>
+                </p>
+            </div>
+            {% endfor %}
+        </div>
+{% endif %}
 
 

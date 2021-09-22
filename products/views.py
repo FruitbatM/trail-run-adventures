@@ -101,6 +101,4 @@ def holiday_detail(request, holiday_id):
         'itinerary_day': itinerary_day,
     }
 
-    print(holiday)
-    print(holiday_id)
     return render(request, 'products/holiday_detail.html', context)
