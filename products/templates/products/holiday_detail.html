@@ -8,34 +8,79 @@
 {% endblock %}
 
 {% block header_content %}
-    <div id="header">
-        
+    <div id="adventure-header">
+        <img src="{{ MEDIA_URL }}{{ holiday.holiday_header_image }}" id="adventure-header-img" alt="{{ holiday.name }}">
         <div class="container">
-            <img src="{{ MEDIA_URL }}{{ holiday.holiday_header_image }}" class="img-fluid" alt="{{ holiday.name }}">
             <div class="row text-center">
                 <div class="col-12 my-auto mx-auto">
-                    <h1 class="display-4 team-heading text-uppercase">
-                        {{ holiday.name }}
-                    </h1>
-                    <h4 class="team-sub-heading pt-4">
-                        {{ holiday.header_paragraph }}
-                    </h4>
+                    <div id="adventure-header-block">
+                        <h1 class="display-4 team-heading text-uppercase">
+                            {{ holiday.name }}
+                        </h1>
+                        <div class="col-6">
+                            
+                        </div>
+                        <h5 class="team-sub-heading pt-4">
+                            {{ holiday.header_paragraph }}
+                        </h5>
+                        <p class="adventure-header-info pb-5">
+                            <i class="fas fa-history fa-2x icon"></i>
+                            <span>{{ holiday.duration }} nights</span>
+                            <i class="fas fa-ruler fa-3x icon"></i>
+                            <span>{{ holiday.distance }} km</span>
+                            <i class="fab fa-cloudscale fa-3x icon"></i>
+                            <span>{{ holiday.level }}</span>
+                            <span><i class="fas fa-info-circle"></i></span>
+                            <p class="text-white">{{ holiday.price }}</p>
+                        </p>
+                    </div>
                 </div>
-                <p class="">
-                    {{ holiday.duration }}
-                </p>
-                <p class="">
-                    {{ holiday.distance }}
-                </p>
-                <p>
-                    {{ holiday.level }}
-                </p>
             </div>
         </div>
     </div>
 {% endblock %}
 
+{% block content %}
+    <div class="container">
+        <div class="row my-5">
+            <div class="col-lg-6">
+                <div class="">
+                    <h2 class="holiday-heading text-uppercase text-right">
+                        {{ holiday.name }}
+                    </h2>
+                </div>
+                <p class="holiday-date text-uppercase">
+                    Date: {{ holiday.start_date }} - {{ holiday.end_date }}
+                </p>
+                <p><small>RISK FREE BOOKING POLICY. GET A FULL REFUND IN CASE 
+                    OF CANCELLATION.</small></p>
+            </div>
+            <div class="col-lg-6">
+                <div class="holiday-pric-info text-uppercase">
+                    <p>Early Bird available now until 01 NOVEMBER 2021</p>
+                </div>
+                <p class="holiday-date text-uppercase">
+                    <p>Early Bird available now until 01 NOVEMBER 2021</p>
+                </p>
+                <div class="pt-5">
+                    <a href="" class="btn btn-lg justify-content-center section-button text-white">
+                        BOOK NOW
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div class="container">
+        <img src="{{ MEDIA_URL }}{{holiday.image_1}}" class="img-fluid" alt="{{ holiday.name }}">
+    </div>
+    <div class="overview-section">
+        <div class="row">
+            {% include 'products/includes_holidays/holiday_overview.html' %}
+        </div>
+    </div>
+{% endblock %}
+
+
 {% block postloadjs %}
-    {{ block.super }}
-    {% include 'products/includes_products/quantity_input_script.html' %}
 {% endblock %}
