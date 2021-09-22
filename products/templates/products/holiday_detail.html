@@ -72,15 +72,27 @@
         <hr>
     </div>
     <div class="container">
-        <img src="{{ MEDIA_URL }}{{holiday.image_1}}" class="img-fluid" alt="{{ holiday.name }}">
-    </div>
-    <div class="overview-section">
         <div class="row">
-            {% include 'products/includes_holidays/holiday_overview.html' %}
+            <img src="{{ MEDIA_URL }}{{holiday.image_1}}" class="img-fluid" alt="{{ holiday.name }}">
         </div>
     </div>
+    <!-- Overview -->
+    <section class="overview-section">
+        <div class="container">
+            <div class="row text-center">
+                {% include 'products/includes_holidays/holiday_overview.html' %}
+            </div>
+        </div>
+    </section>
+    <!-- Itinerary -->
+    <section class="itinerary-section">
+        <div class="container">
+            <div class="row text-center">
+                {% include 'products/includes_holidays/holiday_itinerary.html' %}
+            </div>
+        </div>
+    </section>
 {% endblock %}
-
 
 {% block postloadjs %}
 {% endblock %}

@@ -1,3 +1,22 @@
 <div class="col-12">
-    <h2 class=" holiday-heading text-uppercase text-center mt-5">Overview</h2>
+    <h2 class=" holiday-heading text-uppercase text-center mt-5">Experience Overview</h2>
+</div>
+<div class="col-12-sm lead">
+    <p>{{ holiday.overview_paragraph_1}}</p>
+    <p>{{ holiday.overview_paragraph_2}}</p>
+    <p>{{ holiday.overview_paragraph_3}}</p>
+</div>
+<div id="overview-block text-uppercase">
+    <p class="holiday-date text-uppercase">
+      <strong>Date:</strong> {{ holiday.start_date }} - {{ holiday.end_date }}
+    </p>
+    <p class="text-uppercase">
+        <strong>Trip adventure grade: </strong> 
+        {{ holiday.level }}
+    </p>
+    <p class="text-uppercase">
+        <strong>MAX: </strong> 
+        {{ holiday.number_of_runners}} runners 
+    </p>
+    <hr>
 </div>

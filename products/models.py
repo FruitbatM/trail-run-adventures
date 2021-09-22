@@ -55,15 +55,15 @@ class ItineraryDay(models.Model):
     day_5 = models.CharField(max_length=254, null=True)
     day_5_overview = models.TextField(max_length=800)
     day_5_data = models.TextField(max_length=400)
-    day_6 = models.CharField(max_length=254, null=True)
+    day_6 = models.CharField(max_length=254, null=True, blank=True)
     day_6_overview = models.TextField(max_length=800)
-    day_6_data = models.TextField(max_length=400)
-    day_7 = models.CharField(max_length=254, null=True)
-    day_7_overview = models.TextField(max_length=800)
-    day_7_data = models.TextField(max_length=400)
-    day_8 = models.CharField(max_length=254, null=True)
-    day_8_overview = models.TextField(max_length=800)
-    day_8_data = models.TextField(max_length=400)
+    day_6_data = models.TextField(max_length=400, null=True, blank=True)
+    day_7 = models.CharField(max_length=254, null=True, blank=True)
+    day_7_overview = models.TextField(max_length=800, null=True, blank=True)
+    day_7_data = models.TextField(max_length=400, null=True, blank=True)
+    day_8 = models.CharField(max_length=254, null=True, blank=True)
+    day_8_overview = models.TextField(max_length=800, null=True, blank=True)
+    day_8_data = models.TextField(max_length=400, null=True, blank=True)
 
     def __str__(self):
         return self.day_1
