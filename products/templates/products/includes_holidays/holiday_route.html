@@ -1,0 +1,31 @@
+<div class="col-12">
+    <h2 class=" holiday-heading text-uppercase text-center mt-5">Our Route</h2>
+</div>
+<div class="route-details">
+    <div class="row">
+        <div class="col-lg-5 col-sm-12 lead">
+            <p>Approximate details*</p>
+            <ul>
+                <li><strong>Total Distance:</strong> approx. {{ holiday.distance }} km</li>
+                <li class="py-3"><strong>Total Running Days:</strong> {{ holiday.running_days }} days</li>
+                <li><strong>Lowest Elevation:</strong> {{ holiday.min_elavation }} m</li>
+                <li class="py-3"><strong>Highest Elevation:</strong> {{ holiday.max_elavation }} m</li>
+                <li class="pb-3"><strong>Elevation Gain: </strong>{{ holiday.elevation_gain }} m</li>
+            </ul>
+            <p>*The daily distances and itinerary may change according to local
+                weather conditions and the groups condition.</p>
+        </div>
+        <div class="col-lg-7 col-sm-12">
+            <img src="{{ MEDIA_URL }}{{holiday.route_image}}" class="img-fluid" alt="{{ holiday.name }}">
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="py-5 text-center mx-auto">
+                    <a href="" class="btn btn-lg section-button text-white">
+                        BOOK NOW
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -74,7 +74,23 @@
             {% endfor %}
         </div>
 {% endif %}
-
+<hr class="mt-4">
+<div class="row">
+    <div class="col-12">
+        <h5 class="text-center mt-4">Interested to have more detail on this trip?</h5>
+    </div>
+    <div>
+        <button class="btn btn-large btn-success text-uppercase my-5">Request more info</button>
+    </div>
+</div>
+<div class="row mx-auto">
+    <div class="col-md-6 col-sm-12 my-5">
+        <img src="{{ MEDIA_URL }}{{holiday.image_2}}" class="img-fluid" alt="{{ holiday.name }}">
+    </div>
+    <div class="col-md-6 col-sm-12 my-5">
+        <img src="{{ MEDIA_URL }}{{holiday.image_3}}" class="img-fluid" alt="{{ holiday.name }}">
+    </div>
+</div>
 {% block postloadjs %}
     <script type="text/javascript">
         $('.itinerary-day').click(function () {
