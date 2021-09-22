@@ -66,6 +66,11 @@ a.category-badge > span.badge:hover {
     margin-top: 2rem;
 }
 
+/* Itinerary */
+.itinerary-hidden {
+    display: none;
+}
+
 
 /* Media Queries */
 /* Display on tablet devices */  
