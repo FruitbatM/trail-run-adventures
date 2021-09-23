@@ -448,6 +448,23 @@ footer {
   width: 65%;
 }
 
+/* Bootstrap toasts*/
+
+.message-container {
+  position: fixed;
+  top: 4.5rem;
+  right: 0.95rem;
+  z-index: 99999;
+}
+
+.custom-toast {
+  overflow: visible;
+}
+
+.toast-capper {
+  height: 0.125rem;
+}
+
 /* Back to top arrow - code with small modification taken from: 
 https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 #arrow_2top {

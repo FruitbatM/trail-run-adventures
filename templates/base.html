@@ -28,11 +28,14 @@
       {% endblock %}
 
       {% block corejs %}
-
+        <!-- Font Awesome icons-->
         <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
+        <!-- Bootstrap JavaScript, Popper, jQuery -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+
+        <script src="{% static 'js/script.js' %}"></script>
       {% endblock %}
 
       {% block extra_js %}
@@ -74,25 +77,42 @@
 
     <!-- Page Content -->
     <main>
-      {% block content %}
-      {% endblock %}
-      <!--Scroll Back to Top Arrow-->
-      <button onclick="topFunction()" id="arrow_2top" title="Go to top">
-        <i class="fas fa-chevron-circle-up fa-3x" aria-hidden="true"></i>
-      </button>
+        {% block content %}
+        {% endblock %}
+        <!--Scroll Back to Top Arrow-->
+        <button onclick="topFunction()" id="arrow_2top" title="Go to top">
+            <i class="fas fa-chevron-circle-up fa-3x" aria-hidden="true"></i>
+        </button>
     </main>
 
     <!-- Footer -->
     {% include 'includes/footer.html' %}
 
     {% if messages %}
-      <div class="message-container"></div>
+        <div class="message-container">
+            {% for message in messages %}
+                {% with message.level as level %}
+                    {% if level == 40 %}
+                        {% include 'includes/toasts/toast_error.html' %}
+                    {% elif level == 30 %}
+                        {% include 'includes/toasts/toast_warning.html' %}
+                    {% elif level == 25 %}
+                        {% include 'includes/toasts/toast_success.html' %}
+                    {% else %}
+                        {% include 'includes/toasts/toast_info.html' %}
+                    {% endif %}
+                {% endwith %}
+            {% endfor %}
+        </div>
     {% endif %}
 
     {% block postloadjs %}
-      <!-- Project JS -->
-      <script src="{% static 'js/script.js' %}"></script>
+        <script>
+            let toastMessage = [].slice.call(document.querySelectorAll('.toast'));   
+            let message = toastMessage.map(function (toastEl) {
+                return new bootstrap.Toast(toastEl).show();
+            });
+        </script>
     {% endblock %}
-    
   </body>
 </html>
