@@ -92,7 +92,7 @@
                                 {% endfor %}
                                 <tr>
                                     <td colspan="5" class="pt-5 text-right">
-                                        <h6><strong>Bag Total: ${{ total|floatformat:2 }}</strong></h6>
+                                        <h6><strong>Cart Total: ${{ total|floatformat:2 }}</strong></h6>
                                         <h6>Delivery: ${{ delivery|floatformat:2 }}</h6>
                                         <h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
                                         {% if free_delivery_delta > 0 %}
@@ -151,7 +151,7 @@
             let csrfToken = "{{ csrf_token }}";
             let itemId = $(this).attr('id').split('remove_')[1];
             let size = $(this).data('product_size');
-            let url = `/bag/remove/${itemId}/`;
+            let url = `/cart/remove/${itemId}/`;
             let data = {'csrfmiddlewaretoken': csrfToken, 'product_size': size};
     
             $.post(url, data)
