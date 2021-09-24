@@ -35,7 +35,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
 
-        <script src="{% static 'js/script.js' %}"></script>
+        <!-- Stripe -->
+        <script src="https://js.stripe.com/v3/"></script>
       {% endblock %}
 
       {% block extra_js %}
@@ -107,6 +108,8 @@
     {% endif %}
 
     {% block postloadjs %}
+        <script src="{% static 'js/script.js' %}"></script>
+
         <script>
             let toastMessage = [].slice.call(document.querySelectorAll('.toast'));   
             let message = toastMessage.map(function (toastEl) {
