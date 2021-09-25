@@ -32,6 +32,59 @@ body {
   padding-left: 7rem;
 }
 
+/* Allauth form formatting */
+.allauth-form-inner-content input {
+  margin-top: 1.5rem;
+  color: #439B94;
+}
+
+.allauth-form-inner-content p {
+  border-color: #000;
+  border-radius: 0.5rem;
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+  display: none;
+}
+
+.allauth-form-inner-content input::placeholder {
+  color: #aab7c4;
+}
+
+.allauth-form-inner-content button,
+.allauth-form-inner-content input[type='submit'] {
+	/* btn */
+	display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #000;
+    border: 1px solid #000;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0;
+
+    /* standard bootstrap btn transitions */
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type='submit']:hover {	
+	color: #fff;
+    background-color: #222;
+    border-color: #222;
+}
+
+.allauth-form-inner-content a {
+	color: #17a2b8; /* text-info */
+}
+
 /*
 Expandable search bar - code source: https://codepen.io/ahmadbassamemran/pen/rNjMXqg
 .search-form {
@@ -91,6 +144,10 @@ Expandable search bar - code source: https://codepen.io/ahmadbassamemran/pen/rNj
   transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
 }
 */
+
+input[name='q']::placeholder {
+  color: #aab7c4;
+}
 
 #hero-content {
   padding-left: 0 !important;
