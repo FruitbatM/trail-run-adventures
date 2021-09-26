@@ -76,18 +76,56 @@ ZIP: 42424 <br>
 
 ### Features and Django Apps
 
-TRΛIL RUN ΛDVENTURES consists of 9 Django applications listed below. 
+TRΛIL RUN ΛDVENTURES consists of 8 Django applications listed below. 
 As explained in Django's documentation - a Django application describes a Python package that provides some set of features. Applications may be reused in various projects.
 
 * `home`
 * `about`
 * `contact`
 * `blog`
-* `team`
 * `products`
 * `cart`
 * `checkout`
 * `profiles`
+
+
+## Technologies
+## Languages
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML5) was used to complete the structure of the website.
+- [CSS3](https://en.wikipedia.org/wiki/CSS) was used to style the website.
+- [Python](https://www.python.org/) was used was used for the backend of the website.
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript) was used to make webpage interactive.
+
+## Frameworks, Libraries and Programs
+
+- [Bootstrap v.5.1](https://getbootstrap.com/docs/5.1/getting-started/introduction/) was used to aid in responsive, mobile-first website design. I used Bootstrap to create grid layouts, navbar, cards, forms, buttons and other features.
+- [SQLite](https://www.sqlite.org/index.html) Django built-in database as a database in development mode.
+- [PostgreSQL](https://landing.aiven.io/en/aiven-for-postgresql/) (Heroku built-in) as a database in production mode.
+- [Django](https://www.djangoproject.com/) 
+- [Stripe](https://stripe.com/)
+- [AWS](https://aws.amazon.com/) (Amazon Web Services) for hosting static files and images for the website
+- [jQuery](https://jquery.com/) was used to simplify DOM manipulation.
+- [Figma](https://www.figma.com/) was used to create the wireframes for the website.
+- [Font Awesome](https://fontawesome.com/) icons were used throughout the website for better user experience.
+- [Google Fonts](https://fonts.google.com/) was used to import the fonts to the website.
+- [Favicon](https://favicon.io/favicon-converter/) was used to create the favicon for the website.
+- [CSS Tricks](https://css-tricks.com/) was used as a general source.
+- [W3School](https://www.w3schools.com/) was used as a general source.
+- [Stackoverflow](https://stackoverflow.com/) was used as a general source.
+- [GitHub](https://github.com/) was used for repository hosting and for storing the source code.
+- [Gitpod](https://gitpod.io/) was used as the development environment for writing the code.
+- [Git](https://git-scm.com/) was used as version control system to add, commit and push code to GitHub.
+- [Adobe Photoshop Express](https://photoshop.adobe.com/) was used for resizing and cropping the images used on the website.
+- [TinyJPG](https://tinyjpg.com/) was used for compressing images while preserving transparency.
+- [Techsini](http://techsini.com/multi-mockup/index.php) was used to create the responsive mockup image.
+- [Paint 3D](https://www.microsoft.com/en-us/p/paint-3d/9nblggh5fv99?activetab=pivot:overviewtab) was used to modifiy couple of images.
+- [Coolors](https://coolors.co/) was used for colour palette used on the website.
+- [CSS Autoprefixer](https://autoprefixer.github.io/) was used for adding CSS vendor prefixes.
+- [Google Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools) was used to test and debug the code.
+- [Animate On Scroll Library](https://michalsnik.github.io/aos/) was used to integrate animate on scroll effect on home page.
+- [Randomkeygen](https://randomkeygen.com/) was used to generate random passwords and keys.
+- [Canva](https://www.canva.com/) was used to design and create the brand logo and favicon
 
 
 # Testing
