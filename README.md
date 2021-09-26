@@ -144,3 +144,39 @@ Please click [here](TESTING.md) for the testing process.
 
 3. Open the repository with [Gitpod](https://www.gitpod.io/). By using Code Institue Template, initialisation including initial commit is done so no need to do `git init` command when open IDE, or to use `git push -u origin main` command for my first commit. `gitignore` file, which is very important for the project including some confidential information, is created with Code Institute template so not necessary to create it.<br>
 
+
+# Credits
+
+## Code
+- Back to top arrow code with small modification was sourced from [w3schools](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp)
+
+## Media
+
+### Images
+
+### Icons
+- All icons were sourced from [Font Awesome](https://fontawesome.com/)
+
+
+## Content
+
+Below website was used for a general layout inspiration:
+TBA
+
+
+# Acknowledgements
+
+- My mentor, Mr. Spencer Barriball, for the helpful feedback and guidance.
+- [Code Institute](https://codeinstitute.net/) for all course materials and ongoing support.
+- Fellow Code Institute students for their feedback and suggestions.
+- My family and friends for testing and useful feedback.
+
+# Disclaimer
+
+The information provided on this website is for educational purposes only.
+
+# Support
+
+For any issue resolution or assistance, please email  Marina Pavlovic at mar.pavlovic@gmail.com
+
+> [Back to Top](#table-of-contents) 
