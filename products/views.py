@@ -4,6 +4,8 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category, Itinerary, ItineraryDay
 
+from .forms import ProductForm
+
 
 def all_products(request):
     """
@@ -102,3 +104,14 @@ def holiday_detail(request, holiday_id):
     }
 
     return render(request, 'products/holiday_detail.html', context)
+
+
+def add_product(request):
+    """ A view allowing admin to add a product to the shop """
+    product_form = ProductForm(request.POST, request.FILES)
+    template = 'products/add_product.html'
+    context = {
+        'product_form': product_form,
+    }
+
+    return render(request, template, context)

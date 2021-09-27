@@ -7,4 +7,5 @@ urlpatterns = [
     path('holidays/', views.holidays, name='holidays'),
     path('holidays/<int:holiday_id>/', views.holiday_detail,
          name='holiday_detail'),
+    path('add/', views.add_product, name='add_product'),
 ]
