@@ -108,7 +108,17 @@ def holiday_detail(request, holiday_id):
 
 def add_product(request):
     """ A view allowing admin to add a product to the shop """
-    product_form = ProductForm(request.POST, request.FILES)
+    if request.method == 'POST':
+        product_form = ProductForm(request.POST, request.FILES)
+        if product_form.is_valid():
+            product = product_form.save()
+            messages.success(request, 'Successfully added product!')
+            return redirect(reverse('add_product', args=[product.id]))
+        else:
+            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+    else:
+        product_form = ProductForm()
+        
     template = 'products/add_product.html'
     context = {
         'product_form': product_form,
