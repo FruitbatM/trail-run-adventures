@@ -17,13 +17,13 @@
         <div class="offset-lg-2 col-lg-8 offset-lg-2 col-md-10 offset-md-2 mb-3 px-2">
             <form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
                 {% csrf_token %}
-                {{ product_form.name | as_crispy_field }}
-                {{ product_form.description | as_crispy_field }}
-                {{ product_form.category | as_crispy_field }}
-                {{ product_form.sku| as_crispy_field }}
-                {{ product_form.price | as_crispy_field }}
-                {{ product_form.rating | as_crispy_field }} <br>
-                {{ product_form.image | as_crispy_field }}
+                {{ form.name | as_crispy_field }}
+                {{ form.description | as_crispy_field }}
+                {{ form.category | as_crispy_field }}
+                {{ form.sku| as_crispy_field }}
+                {{ form.price | as_crispy_field }}
+                {{ form.rating | as_crispy_field }} <br>
+                {{ form.image | as_crispy_field }}
                 <div class="text-start mt-4">
                     <a class="btn btn-warning rounded-1" href="{% url 'products' %}">Cancel</a>
                     <button class="btn btn-success rounded-1" type="submit">Add Product</button>
