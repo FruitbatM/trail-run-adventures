@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category, Itinerary, ItineraryDay
@@ -106,8 +107,14 @@ def holiday_detail(request, holiday_id):
     return render(request, 'products/holiday_detail.html', context)
 
 
+@login_required
 def add_product(request):
     """ A view allowing admin to add a product to the shop """
+    if not request.user.is_superuser:
+        messages.error(request, 'Access denied!\
+            Sorry, only shop owners have this permission.')
+        return redirect(reverse('home'))
+    
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
@@ -127,8 +134,14 @@ def add_product(request):
     return render(request, template, context)
 
 
+@login_required
 def edit_product(request, product_id):
     """ A view allowing admin to edit a product in the shop """
+    if not request.user.is_superuser:
+        messages.error(request, 'Access denied!\
+            Sorry, only shop owners have this permission.')
+        return redirect(reverse('home'))
+    
     product = get_object_or_404(Product, pk=product_id)
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES, instance=product)
@@ -152,8 +165,14 @@ def edit_product(request, product_id):
     return render(request, template, context)
 
 
+@login_required
 def delete_product(request, product_id):
     """ Delete a product from the shop """
+    if not request.user.is_superuser:
+        messages.error(request, 'Access denied!\
+            Sorry, only shop owners have this permission.')
+        return redirect(reverse('home'))
+
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
     messages.success(request, 'Product deleted!')
