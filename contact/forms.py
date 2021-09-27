@@ -3,7 +3,7 @@ from django import forms
 
 class ContactForm(forms.Form):
     """
-    Contact form for Contact Us Page
+    Contact form for Contact Page
     """
 
     full_name = forms.CharField(required=True, label="Full Name")

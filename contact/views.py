@@ -3,6 +3,7 @@ from django.core.mail import send_mail, BadHeaderError
 from django.conf import settings
 from django.http import HttpResponse
 from .forms import ContactForm
+from profiles.models import UserProfile
 
 
 def contact(request):
@@ -29,6 +30,18 @@ def contact(request):
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
         else:
-            contact_form = ContactForm()
+            if request.user.is_authenticated:
+                profile = UserProfile.objects.get(user=request.user)
+                user_email = profile.user.email
+                contact_form = ContactForm(initial={
+                    'full_name': profile.default_full_name,
+                    'email': profile.default_email,
+                    })
+            else:
+                contact_form = ContactForm()
 
-        return render(request, 'contact/contact.html')
+        context = {
+            'contact_form': contact_form,
+        }
+
+        return render(request, 'contact/contact.html', context)
