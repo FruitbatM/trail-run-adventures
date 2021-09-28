@@ -628,7 +628,14 @@ hr {
   border-radius: 0;
 }
 
-
+/* Contact Form */
+#contact-form-button:hover,
+#contact-form-button:focus,
+#contact-form-button:active {
+  background-color: #149285 !important;
+  border-color: #149285 !important;
+  border: 0.12rem solid;
+}
 
 /* Media Queries */
 /* Display on tablet devices */  
