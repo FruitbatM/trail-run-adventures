@@ -214,9 +214,9 @@ input[name='q']::placeholder {
 
 .page-background {
   background: url('/static/images/mountains_background.png') no-repeat center;
-    background-size: cover;
-    height: 20rem;
-    margin-top: 2rem;
+  background-size: cover;
+  height: 20rem;
+  margin-top: 2rem;
 }
 
 .section-heading-2 {
@@ -636,6 +636,18 @@ hr {
   border-color: #149285 !important;
   border: 0.12rem solid;
 }
+
+.form-group {
+  padding-bottom: 1rem;
+}
+
+#runners-image {
+  background: url('/static/images/running-up-the-hill.jpg') no-repeat center;
+  background-size: cover;
+  height: auto;
+  margin-top: 2rem;
+}
+
 
 /* Media Queries */
 /* Display on tablet devices */  

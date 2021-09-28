@@ -1,10 +1,18 @@
 <div class="container">
     <div class="row">
-        <div class="offset-lg-2 col-lg-8 offset-md-2 col-md-8 mb-5 justify-content-center contact-form px-4">
+        <div class="col-lg-4">
+            <h5>Get in touch with us to start your trail running holiday.</h5>
+            <p class="lead">TRΛIL RUN ΛDVENTURES team work to usual Irish office hours (09:00-17:00); 
+                however, we are happy to chat travel after our opening hours. 
+            </p>
+            <p class="lead">Submit an enquiry form or give us a call on the number below to kick start your trip.</p>
+            <h5 class="mb-5"> +353 (0) 875555222</h5>
+        </div>
+        <div class="col-lg-8 justify-content-center contact-form px-4">
             <form method="POST" action="{% url 'contact' %}" id="contact-form">
                 {% csrf_token %}
                 {{ contact_form|crispy }}
-                <div class="text-center mb-2 mt-4">
+                <div class="text-center mb-5 mt-4">
                     <button type="submit" class="btn btn-success btn-lg uppercase" id="contact-form-button"
                         aria-label="Submit the contact form">
                         SEND
