@@ -1,5 +1,6 @@
 from django.db import models
 from django.core.validators import MinLengthValidator
+from django.contrib.auth.models import User
 
 
 class BlogPost(models.Model):
@@ -7,7 +8,8 @@ class BlogPost(models.Model):
     class Meta:
         ordering = ['-published_date']
 
-    author = models.CharField(max_length=50, null=True, blank=True)
+    author = models.ForeignKey(User, on_delete=models.CASCADE,
+                               null=True, blank=True)
     published_date = models.DateTimeField(auto_now_add=True)
     # image will be uploaded to MEDIA_ROOT/blog
     header_image = models.ImageField(upload_to="blog", null=True, blank=True)
@@ -42,3 +44,14 @@ class BlogPost(models.Model):
 
     def __str__(self):
         return self.title + '|' + str(self.author)
+
+
+class Comment(models.Model):
+    post = models.ForeignKey(BlogPost, related_name="comments",
+                             on_delete=models.CASCADE)
+    name = models.CharField(max_length=255)
+    body = models.TextField()
+    date_added = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return 'Comment {} by {}'.format(self.post, self.name)
