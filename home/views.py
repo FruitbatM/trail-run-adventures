@@ -20,5 +20,4 @@ def index(request):
         'holidays_home': holidays_home,
     }
 
-    print(holidays_home)
     return render(request, 'home/index.html', context)
