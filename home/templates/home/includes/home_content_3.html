@@ -16,7 +16,7 @@
                             <img src="{{ MEDIA_URL }}{{ product.image }}" alt="{{ product.category.name }}">
                         </div>
                         <div class="card-img-overlay d-flex justify-content-center">
-                            <a href="#" class="card-link"></a>
+                            <a href="{% url 'products' %}?category={{ product.category.name }}" class="card-link"></a>
                         </div>
                         <div class="category-card-button d-flex justify-content-center text-uppercase my-3">
                             <a href="{% url 'products' %}?category={{ product.category.name }}" class="btn btn-success">{{ product.category.name }}</a>

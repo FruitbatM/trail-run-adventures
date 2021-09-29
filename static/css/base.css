@@ -319,16 +319,15 @@ a {
 
 /* Benefits card - WHY TRΛIL RUN ΛDVENTURES  */
 /* Code source with modification: https://codepen.io/maheshambure21/embed/GgVbVW?default-tab=result&theme-id=0#html-box */
-.grid {
+.benefit-card-block {
   position: relative;
-  margin: 0 auto;
-  padding: 1em 0 4em;
+  /* padding: 1em 3em 1em; */
   max-width: 1000px;
   list-style: none;
   text-align: center;
 }
 
-.grid .benefit-card {
+.benefit-card-block .benefit-card {
   position: relative;
   float: left;
   overflow: hidden;
@@ -342,7 +341,7 @@ a {
   cursor: pointer;
 }
 
-.grid .benefit-card img {
+.benefit-card-block .benefit-card img {
   position: relative;
   display: block;
   min-height: 100%;
@@ -350,7 +349,7 @@ a {
   opacity: 0.8;
 }
 
-.grid .card-img-overlay {
+.benefit-card-block .card-img-overlay {
   padding: 2em;
   color: #fff;
   text-transform: uppercase;
@@ -359,13 +358,13 @@ a {
   backface-visibility: hidden;
 }
 
-.grid .card-img-overlay::before,
-.grid .card-img-overlay::after {
+.benefit-card-block .card-img-overlay::before,
+.benefit-card-block .card-img-overlay::after {
   pointer-events: none;
 }
 
-.grid .card-img-overlay,
-.grid .card-img-overlay > a {
+.benefit-card-block .card-img-overlay,
+.benefit-card-block .card-img-overlay > a {
   position: absolute;
   top: 0;
   left: 0;
@@ -374,7 +373,7 @@ a {
 }
 
 /* Anchor will cover the whole item by default */
-.grid .card-img-overlay > a {
+.benefit-card-block .card-img-overlay > a {
   z-index: 1000;
   text-indent: 200%;
   white-space: nowrap;
@@ -382,17 +381,17 @@ a {
   opacity: 0;
 }
 
-.grid figure h3 {
+.benefit-card-block figure h3 {
   word-spacing: -0.15em;
   font-weight: 300;
 }
 
-.grid .benefit-card h2,
-.grid .benefit-card p {
+.benefit-card-block .benefit-card h2,
+.benefit-card-block .benefit-card p {
   margin: 0;
 }
 
-.grid .benefit-car p {
+.benefit-card-block .benefit-car p {
   letter-spacing: 1px;
   font-size: 68.5%;
 }
@@ -525,7 +524,7 @@ a {
 
 .blog-post .blog-overlay {
   position: relative;
-  left: 1.56rem;
+  left: 1.35rem;
   margin-bottom: 0;
 }
 
