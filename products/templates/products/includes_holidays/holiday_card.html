@@ -1,11 +1,13 @@
 <div class="card tour-card text-center">
-    <img src="{{ MEDIA_URL }}{{holiday.image_2}}" alt="{{ holiday.name }}" class="img-fluid">
+    <a href="{% url 'holiday_detail' holiday.id %}">
+        <img src="{{ MEDIA_URL }}{{holiday.image_2}}" alt="{{ holiday.name }}" class="img-fluid">
+    </a>
     <div class="card-content">
         <div class="card-title">
             {{ holiday.name }}
         </div>
         <div class="card-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quaerat ex magni modi aperiam consequatur quibusdam 
+            {{ holiday.header_paragraph|truncatechars:95}}
         </div>
         <div class="row">
             <div class="col-12">

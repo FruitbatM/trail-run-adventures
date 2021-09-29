@@ -3,7 +3,9 @@
     <div class="col-md-4">
         <div class="experiences-card">
             <div class="card tour-card text-center">
-                <img src="{{ MEDIA_URL }}{{ holiday.image_1 }}" alt="{{ holiday.name }}" class="img-fluid">
+                <a href="{% url 'holiday_detail' holiday.id %}">
+                    <img src="{{ MEDIA_URL }}{{ holiday.image_1 }}" alt="{{ holiday.name }}" class="img-fluid">
+                </a>
                 <div class="card-content">
                     <div class="card-title text-uppercase">
                         {{ holiday.name}}
@@ -16,4 +18,3 @@
         </div>
     </div>
 {% endfor %}
-
