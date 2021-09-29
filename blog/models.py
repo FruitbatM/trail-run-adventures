@@ -9,7 +9,7 @@ class BlogPost(models.Model):
         ordering = ['-published_date']
 
     author = models.ForeignKey(User, on_delete=models.CASCADE,
-                               null=True, blank=True)
+                               null=True, blank=True, related_name='blog_posts')
     published_date = models.DateTimeField(auto_now_add=True)
     # image will be uploaded to MEDIA_ROOT/blog
     header_image = models.ImageField(upload_to="blog", null=True, blank=True)
@@ -54,4 +54,4 @@ class Comment(models.Model):
     date_added = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return 'Comment {} by {}'.format(self.post, self.name)
+        return '%s - %s' % (self.post.title, self.name)

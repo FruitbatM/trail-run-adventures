@@ -1,4 +1,37 @@
 <div class="offset-lg-1 col-lg-10 offset-lg-1" id="blog-comment-section">
-    <h5>This is my first comment!</h5>
+    {% if not post.comments.all %}
+        <h6>No Comments yet for this post. <br><br>
+            <hr>
+        </h6>
+    {% else %}
+        <h2>{{ post.comments.count }} Comments</h2>
+        {% for comment in post.comments.all %}
+            <div class="user-comment mt-2">
+                <strong>
+                    {{ comment.name }}
+                </strong> - 
+                {{ comment.date_added }}
+            </div>
+            <div class="mt-1 mb-5">
+                {{ comment.body }}
+            </div>
+        {% endfor %}
+    {% endif %}
 </div>
-
+<hr>
+{% if user.is_authenticated %}
+    <div class="blog-comment-form">
+        <h4>Please leave a comment</h4>
+        <form method="POST" action="{% url 'blog_post' post.id %}">
+            {% csrf_token %}
+            {{ comment_form|crispy }}
+            <button class="btn btn-success mx-auto mb-5" action="submit" aria-label="Blog Comment submit button">Submit Comment</button>
+        </form>
+    </div>
+{% else %}
+    <div class="mt-4">
+        <p>To leave a comment, please 
+            <a href="{% url 'account_login' %}">log in.</a>
+        </p>
+    </div>
+{% endif %}

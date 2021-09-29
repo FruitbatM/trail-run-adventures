@@ -11,5 +11,12 @@ class BlogPostAdmin(admin.ModelAdmin):
     )
 
 
+class CommentAdmin(admin.ModelAdmin):
+    list_display = (
+        'name',
+        'date_added',
+    )
+
+
 admin.site.register(BlogPost, BlogPostAdmin)
-admin.site.register(Comment)
+admin.site.register(Comment, CommentAdmin)
