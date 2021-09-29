@@ -318,25 +318,190 @@ a {
 }
 
 /* Benefits card - WHY TRΛIL RUN ΛDVENTURES  */
-.benefit-card img {
-  height: 65vh;
-  transition: all 0.25s linear;
+/* Code source with modification: https://codepen.io/maheshambure21/embed/GgVbVW?default-tab=result&theme-id=0#html-box */
+.grid {
+  position: relative;
+  margin: 0 auto;
+  padding: 1em 0 4em;
+  max-width: 1000px;
+  list-style: none;
+  text-align: center;
 }
 
-.benefit-title {
-  display: flex;
-  position: absolute;
-  font-weight: bold;
-  justify-content: center;
-  align-items: center;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  color: #fafafa;
-  font-size: 1.2rem;
-  text-shadow: 0.1rem 0.1rem #222324;
+.grid .benefit-card {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 320px;
+  max-width: 480px;
+  max-height: 360px;
+  width: 48%;
+  background: #439B94;
+  text-align: center;
+  cursor: pointer;
 }
+
+.grid .benefit-card img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0.8;
+}
+
+.grid .card-img-overlay {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.grid .card-img-overlay::before,
+.grid .card-img-overlay::after {
+  pointer-events: none;
+}
+
+.grid .card-img-overlay,
+.grid .card-img-overlay > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+.grid .card-img-overlay > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+.grid figure h3 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+}
+
+.grid .benefit-card h2,
+.grid .benefit-card p {
+  margin: 0;
+}
+
+.grid .benefit-car p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+
+.benefit-card img {
+  height: 24.4rem;
+}
+
+.card-img-overlay {
+  padding: 3em;
+}
+
+.card-img-overlay::before,
+.card-img-overlay::after {
+  position: absolute;
+  content: '';
+  opacity: 0;
+}
+
+.card-img-overlay::before {
+  top: 50px;
+  right: 30px;
+  bottom: 50px;
+  left: 30px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: scale(0,1);
+  transform: scale(0,1);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.card-img-overlay::after {
+  top: 30px;
+  right: 50px;
+  bottom: 30px;
+  left: 50px;
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  -webkit-transform: scale(1,0);
+  transform: scale(1,0);
+  -webkit-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+}
+
+.card-img-overlay h3 {
+  padding-top: 26%;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+}
+
+.card-img-overlay p {
+  padding: 0.5em 2em;
+  text-transform: none;
+  opacity: 0;
+  -webkit-transform: translate3d(0,-10px,0);
+  transform: translate3d(0,-10px,0);
+}
+
+.card-img-overlay img,
+.card-img-overlay h3 {
+  -webkit-transform: translate3d(0,-30px,0);
+  transform: translate3d(0,-30px,0);
+}
+
+.card-img-overlay img,
+.card-img-overlay::before,
+.card-img-overlay::after,
+.card-img-overlay p {
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+.card-img-overlay:hover img {
+  opacity: 0.7;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+
+.benefit-card:hover .card-img-overlay::before,
+.benefit-card:hover .card-img-overlay::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.benefit-card:hover .card-img-overlay::before,
+.benefit-card:hover .card-img-overlay::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.benefit-card:hover h3,
+.benefit-card:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.benefit-card:hover .card-img-overlay::after,
+.benefit-card:hover h3,
+.benefit-card:hover p,
+.benefit-card:hover img {
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+}
+
 
 /* Blog section on home page */
 
