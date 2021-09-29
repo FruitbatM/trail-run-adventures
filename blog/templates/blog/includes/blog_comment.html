@@ -1,19 +1,19 @@
 <div class="offset-lg-1 col-lg-10 offset-lg-1" id="blog-comment-section">
-    {% if not blog_post.comments.all %}
+    {% if not post.comments.all %}
         <h6>No Comments yet for this post. <br><br>
             <hr>
-            <p><a href="#">Please leave your comment.</a></p>
+            <p><a href="">Please leave your comment.</a></p>
         </h6>
     {% else %}
-        <h2>{{ blog_post.comments.count }} Comments</h2>
-            {% for comment in blog_post.comments.all %}
+        <h2>{{ post.comments.count }} Comments</h2>
+            {% for comment in post.comments.all %}
                 <div class="user-comment mt-2">
                     <strong>
                         {{ comment.name }}
                     </strong> - 
                     {{ comment.date_added }}
                 </div>
-                <div class="mt-1">
+                <div class="mt-1 mb-5">
                     {{ comment.body }}
                 </div>
             {% endfor %}

@@ -1,5 +1,7 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, reverse, get_object_or_404
 from django.contrib import messages
+from django.contrib.auth.models import User
+from django.http import HttpResponseRedirect
 
 from .models import BlogPost, Comment
 from .forms import CommentForm
@@ -17,26 +19,35 @@ def blog(request):
     return render(request, 'blog/basecampblog.html', context)
 
 
-def blog_post(request, slug):
-    """ A view to add blog post to the blog """
+def blog_post(request, post_id):
+    """ A view to show an individual blog post and posting comments. """
 
-    blog = get_object_or_404(BlogPost, slug=slug)
-    new_comment = None
+    post = get_object_or_404(BlogPost, pk=post_id)
+    comment_form = CommentForm
 
     if request.method == 'POST':
-        comment_form = CommentForm(data=request.POST)
+        comment_form = CommentForm(request.POST)
+        name = get_object_or_404(User, id=request.user.id)
+        if name.is_superuser:
+            name = ""
+        comment_form = comment_form.save(commit=False)
+        comment_form.post = post
+        comment_form.name = name
         if comment_form.is_valid():
-            new_comment = comment_form.save(commit=False)
-            new_comment.post = blog_post
-            new_comment.save()
-            comment_form = CommentForm()
-            messages.success(request, 'Comment was successfully posted.')
-    else:
-        comment_form = CommentForm()
+            comment_form.post = post
+            comment_form.name = name
+            comment_form.save()
+            messages.success(request, 'Comment was successfully added!')
+            return HttpResponseRedirect(reverse(
+                'blog_post', args=[str(post_id)]))
+        else:
+            messages.error(request, 'It seems that your comment cannot \
+                be posted!')
+            return HttpResponseRedirect(reverse(
+                'blog_post', args=[str(post_id)]))
 
     context = {
-        'blog': blog,
-        'blog_post': blog_post,
+        'post': post,
         'comment_form': comment_form,
     }
 

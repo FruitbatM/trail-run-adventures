@@ -29,18 +29,18 @@
                 <div class="col-lg-4 col-md-6 mb-5 justify-content-center d-flex">
                     <div class="blog-card" style="width: 18rem;">
                         <div class="blog-image">
-                            <a href="{% url 'blog_post' blog.slug %}">
+                            <a href="{% url 'blog_post' blog.id %}">
                                 <img src="{{ MEDIA_URL }}{{ blog.header_image }}" class="blog-card-img-top img-fluid" alt="{{ blog.title}}">
                             </a>
                         </div>
                         <div class="blog-card-body pt-4">
                             <h5 class="blog-card-title">
-                                <a href="{% url 'blog_post' blog.slug %}">{{ blog.title }}</a>
+                                <a href="{% url 'blog_post' blog.id %}">{{ blog.title }}</a>
                             </h5>
                             <p class="blog-card-text">
                                 {{ blog.intro_paragraph_1|truncatechars:160 }}
                                 <span>
-                                    <a href="{% url 'blog_post' blog.slug %}" class="blog-link">Read more &#8594;</a>
+                                    <a href="{% url 'blog_post' blog.id %}" class="blog-link">Read more &#8594;</a>
                                 </span>
                             </p>
                             <p class="blog-date text-secondary">
