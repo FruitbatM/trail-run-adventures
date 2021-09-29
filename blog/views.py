@@ -21,30 +21,21 @@ def blog(request):
 
 def blog_post(request, post_id):
     """ A view to show an individual blog post and posting comments. """
-
     post = get_object_or_404(BlogPost, pk=post_id)
     comment_form = CommentForm
 
     if request.method == 'POST':
         comment_form = CommentForm(request.POST)
-        name = get_object_or_404(User, id=request.user.id)
-        if name.is_superuser:
-            name = ""
-        comment_form = comment_form.save(commit=False)
-        comment_form.post = post
-        comment_form.name = name
         if comment_form.is_valid():
-            comment_form.post = post
-            comment_form.name = name
-            comment_form.save()
+            new_comment = comment_form.save(commit=False)
+            # Assign the current post to the comment
+            new_comment.post_id = post_id
+            # Save the comment to the database
+            new_comment.save()
+            comment_form = CommentForm()
             messages.success(request, 'Comment was successfully added!')
-            return HttpResponseRedirect(reverse(
-                'blog_post', args=[str(post_id)]))
-        else:
-            messages.error(request, 'It seems that your comment cannot \
-                be posted!')
-            return HttpResponseRedirect(reverse(
-                'blog_post', args=[str(post_id)]))
+    else:
+        comment_form = CommentForm()
 
     context = {
         'post': post,
