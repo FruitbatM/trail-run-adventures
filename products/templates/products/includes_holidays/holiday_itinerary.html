@@ -5,6 +5,7 @@
     </div>
         <div class="col-md-6 offset-md-3 pt-3 text-start">
             {% for day in itinerary_day %}
+            <!-- Bootstrap Accordion - code source: https://getbootstrap.com/docs/5.1/components/accordion/ -->
                 <div id="accordion" class="accordion-style">
                     <div class="card">
                         <div class="card-header" id="headingOne">
@@ -129,6 +130,27 @@
                                 <p class="itinerary-day-overview">{{ day.day_6_meal }}</p>
                                     <i class="fas fa-running"></i>
                                 <p class="itinerary-day-overview">{{day.day_6_data}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingSeven">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed text-uppercase" data-bs-toggle="collapse" 
+                                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    <strong>+ day 7: {{ day.day_7 }}</strong>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-bs-parent="#accordion">
+                            <div class="card-body position-relative">
+                                <p class="itinerary-day-overview">{{ day.day_7_overview }}</p>
+                                    <i class="fas fa-bed"></i>
+                                <p class="itinerary-day-overview">{{ day.day_7_hotel }}</p>
+                                    <i class="fas fa-utensils"></i>
+                                <p class="itinerary-day-overview">{{ day.day_7_meal }}</p>
+                                    <i class="fas fa-running"></i>
+                                <p class="itinerary-day-overview">{{day.day_7_data}}</p>
                             </div>
                         </div>
                     </div>
