@@ -1,9 +1,8 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
-from django.http import HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
 
-from .models import BlogPost, Comment
+from .models import BlogPost
 from .forms import CommentForm, BlogForm
 
 
@@ -50,7 +49,8 @@ def add_blog(request):
     """ Add a post to the blog """
 
     if not request.user.is_superuser:
-        messages.error(request, 'Only TRΛIL RUN ΛDVENTURES Team has permission to add a Blog post.')
+        messages.error(request, 'Only TRΛIL RUN ΛDVENTURES Team has permission\
+                                to add a Blog post.')
         return redirect(reverse('home'))
 
     if request.method == 'POST':
