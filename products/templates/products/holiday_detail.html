@@ -8,36 +8,65 @@
 {% endblock %}
 
 {% block header_content %}
-    <div id="adventure-header">
-        <img src="{{ MEDIA_URL }}{{ holiday.holiday_header_image }}" id="adventure-header-img" alt="{{ holiday.name }}">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-12 my-auto mx-auto">
-                    <div id="adventure-header-block">
-                        <h1 class="display-4 team-heading text-uppercase">
-                            {{ holiday.name }}
-                        </h1>
-                        <div class="col-6">
-                            
+    <div class="container-fluid">
+        <div id="adventure-header">
+            <img src="{{ MEDIA_URL }}{{ holiday.holiday_header_image }}" id="adventure-header-img" alt="{{ holiday.name }}">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12 my-auto mx-auto">
+                        <div id="adventure-header-block">
+                            <h1 class="display-4 team-heading text-uppercase">
+                                {{ holiday.name }}
+                            </h1>
+                            <h5 class="team-sub-heading col-lg-8 offset-lg-2 pt-4">
+                                {{ holiday.header_paragraph }}
+                            </h5>
+                            <div class="adventure-header-info py-5">
+                                <div class="d-inline pe-4">
+                                    <i class="fas fa-history fa-2x icon"></i>
+                                    <span>{{ holiday.duration }} nights</span>
+                                </div>
+                                <div class="d-inline ps-4 pe-4">
+                                    <i class="fas fa-ruler fa-3x icon d-inline"></i>
+                                    <span>{{ holiday.distance }} km</span>
+                                </div>
+                                <div class="d-inline ps-4 pe-4">
+                                    <i class="fab fa-cloudscale fa-3x icon d-inline"></i>
+                                    <span>{{ holiday.level }}</span>
+                                    <span>
+                                        <a href="#myModal" data-bs-toggle="modal">
+                                            <i class="fas fa-info-circle text-start"></i></span>
+                                        </a>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade text-black" id="myModal" aria-hidden="true" aria-labelledby="myModalLabel" aria-hidden="true" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="myModalLabel">Tour difficulty explained</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                          <h4>{{ holiday.level }}</h4>
+                                          <p>{{ holiday.level.description }}</p>
+                                      </div>
+                                        <div class="modal-footer">
+                                          <button class="btn btn-success" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                <div class="pt-5">
+                                    <p class="text-white">€ {{ holiday.price }} per person</p>
+                                </div>
+                            </div>
                         </div>
-                        <h5 class="team-sub-heading pt-4">
-                            {{ holiday.header_paragraph }}
-                        </h5>
-                        <p class="adventure-header-info pb-5">
-                            <i class="fas fa-history fa-2x icon"></i>
-                            <span>{{ holiday.duration }} nights</span>
-                            <i class="fas fa-ruler fa-3x icon"></i>
-                            <span>{{ holiday.distance }} km</span>
-                            <i class="fab fa-cloudscale fa-3x icon"></i>
-                            <span>{{ holiday.level }}</span>
-                            <span><i class="fas fa-info-circle"></i></span>
-                            <p class="text-white">€ {{ holiday.price }} per person</p>
-                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
 {% endblock %}
 
 {% block content %}
