@@ -73,3 +73,18 @@ def add_blog(request):
     }
 
     return render(request, 'blog/add_blog.html', context)
+
+
+@login_required
+def delete_blog(request, post_id):
+    """ Delete a blog post """
+
+    if not request.user.is_superuser:
+        messages.error(request, 'Only TRΛIL RUN ΛDVENTURES Team has permission\
+                                to delete a Blog post.')
+        return redirect(reverse('home'))
+
+    post = get_object_or_404(BlogPost, pk=post_id)
+    post.delete()
+    messages.success(request, 'Blog post was deleted!')
+    return redirect(reverse('blog'))
