@@ -3,102 +3,134 @@
         <h2 class=" holiday-heading text-uppercase text-center mt-5">Itinerary</h2>
         <p>Click on each day to explore in more detail.</p>
     </div>
-        <div class="col-md-6 offset-md-3 pt-3">
+        <div class="col-md-6 offset-md-3 pt-3 text-start">
             {% for day in itinerary_day %}
-                <div class="itinerary-block text-start">
-                    <div class="itinerary-day">
-                        <p class="text-uppercase">
-                            <strong>+ day 1: {{ day.day_1 }}</strong>
-                        </p>
+                <div id="accordion" class="accordion-style">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed text-uppercase" data-bs-toggle="collapse" 
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    <strong>+ day 1: {{ day.day_1 }}</strong>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+                            <div class="card-body position-relative">
+                                <p class="itinerary-day-overview">{{ day.day_1_overview }}</p>
+                                    <i class="fas fa-bed"></i>
+                                <p class="itinerary-day-overview">{{ day.day_1_hotel }}</p>
+                                    <i class="fas fa-utensils"></i>
+                                <p class="itinerary-day-overview">{{ day.day_1_meal }}</p>
+                                    <i class="fas fa-running"></i>
+                                <p class="itinerary-day-overview">{{day.day_1_data}}</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="itinerary-hidden">
-                        <p class="itinerary-day-overview">{{ day.day_1_overview }}</p>
-                        <i class="fas fa-bed"></i>
-                        <p class="itinerary-day-overview">{{ day.day_1_hotel }}</p>
-                        <i class="fas fa-utensils"></i>
-                        <p class="itinerary-day-overview">{{ day.day_1_meal }}</p>
-                        <i class="fas fa-running"></i>
-                        <p class="itinerary-day-overview">{{day.day_1_data}}</p>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed text-uppercase" data-bs-toggle="collapse" 
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <strong>+ day 2: {{ day.day_2 }}</strong>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                            <div class="card-body position-relative">
+                                <p class="itinerary-day-overview">{{ day.day_2_overview }}</p>
+                                    <i class="fas fa-bed"></i>
+                                <p class="itinerary-day-overview">{{ day.day_2_hotel }}</p>
+                                    <i class="fas fa-utensils"></i>
+                                <p class="itinerary-day-overview">{{ day.day_2_meal }}</p>
+                                    <i class="fas fa-running"></i>
+                                <p class="itinerary-day-overview">{{day.day_2_data}}</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="itinerary-block text-start">
-                    <div class="itinerary-day">
-                        <p class="text-uppercase">
-                            <strong>+ day 2: {{ day.day_2 }}</strong>
-                        </p>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed text-uppercase" data-bs-toggle="collapse" 
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <strong>+ day 3: {{ day.day_3 }}</strong>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordion">
+                            <div class="card-body position-relative">
+                                <p class="itinerary-day-overview">{{ day.day_3_overview }}</p>
+                                    <i class="fas fa-bed"></i>
+                                <p class="itinerary-day-overview">{{ day.day_3_hotel }}</p>
+                                    <i class="fas fa-utensils"></i>
+                                <p class="itinerary-day-overview">{{ day.day_3_meal }}</p>
+                                    <i class="fas fa-running"></i>
+                                <p class="itinerary-day-overview">{{day.day_3_data}}</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="itinerary-hidden">
-                        <p class="itinerary-day-overview">{{ day.day_2_overview }}</p>
-                        <i class="fas fa-bed"></i>
-                        <p class="itinerary-day-overview">{{ day.day_2_hotel }}</p>
-                        <i class="fas fa-utensils"></i>
-                        <p class="itinerary-day-overview">{{ day.day_2_meal }}</p>
-                        <i class="fas fa-running"></i>
-                        <p class="itinerary-day-overview">{{day.day_2_data}}</p>
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed text-uppercase" data-bs-toggle="collapse" 
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <strong>+ day 4: {{ day.day_4 }}</strong>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-bs-parent="#accordion">
+                            <div class="card-body position-relative">
+                                <p class="itinerary-day-overview">{{ day.day_4_overview }}</p>
+                                    <i class="fas fa-bed"></i>
+                                <p class="itinerary-day-overview">{{ day.day_4_hotel }}</p>
+                                    <i class="fas fa-utensils"></i>
+                                <p class="itinerary-day-overview">{{ day.day_4_meal }}</p>
+                                    <i class="fas fa-running"></i>
+                                <p class="itinerary-day-overview">{{day.day_4_data}}</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="itinerary-block text-start">
-                    <div class="itinerary-day">
-                        <p class="text-uppercase">
-                            <strong>+ day 3: {{ day.day_3 }}</strong>
-                        </p>
+                    <div class="card">
+                        <div class="card-header" id="headingFive">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed text-uppercase" data-bs-toggle="collapse" 
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    <strong>+ day 5: {{ day.day_5 }}</strong>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-bs-parent="#accordion">
+                            <div class="card-body position-relative">
+                                <p class="itinerary-day-overview">{{ day.day_5_overview }}</p>
+                                    <i class="fas fa-bed"></i>
+                                <p class="itinerary-day-overview">{{ day.day_5_hotel }}</p>
+                                    <i class="fas fa-utensils"></i>
+                                <p class="itinerary-day-overview">{{ day.day_5_meal }}</p>
+                                    <i class="fas fa-running"></i>
+                                <p class="itinerary-day-overview">{{day.day_5_data}}</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="itinerary-hidden">
-                        <p class="itinerary-day-overview">{{ day.day_3_overview }}</p>
-                        <i class="fas fa-bed"></i>
-                        <p class="itinerary-day-overview">{{ day.day_3_hotel }}</p>
-                        <i class="fas fa-utensils"></i>
-                        <p class="itinerary-day-overview">{{ day.day_3_meal }}</p>
-                        <i class="fas fa-running"></i>
-                        <p class="itinerary-day-overview">{{day.day_3_data}}</p>
-                    </div>
-                </div>
-                <div class="itinerary-block text-start">
-                    <div class="itinerary-day">
-                        <p class="text-uppercase">
-                            <strong>+ day 4: {{ day.day_4 }}</strong>
-                        </p>
-                    </div>
-                    <div class="itinerary-hidden">
-                        <p class="itinerary-day-overview">{{ day.day_4_overview }}</p>
-                        <i class="fas fa-bed"></i>
-                        <p class="itinerary-day-overview">{{ day.day_4_hotel }}</p>
-                        <i class="fas fa-utensils"></i>
-                        <p class="itinerary-day-overview">{{ day.day_4_meal }}</p>
-                        <i class="fas fa-running"></i>
-                        <p class="itinerary-day-overview">{{day.day_4_data}}</p>
-                    </div>
-                </div>
-                <div class="itinerary-block text-start">
-                    <div class="itinerary-day">
-                        <p class="text-uppercase">
-                            <strong>+ day 5: {{ day.day_5 }}</strong>
-                        </p>
-                    </div>
-                    <div class="itinerary-hidden">
-                        <p class="itinerary-day-overview">{{ day.day_5_overview }}</p>
-                        <i class="fas fa-bed"></i>
-                        <p class="itinerary-day-overview">{{ day.day_5_hotel }}</p>
-                        <i class="fas fa-utensils"></i>
-                        <p class="itinerary-day-overview">{{ day.day_5_meal }}</p>
-                        <i class="fas fa-running"></i>
-                        <p class="itinerary-day-overview">{{day.day_5_data}}</p>
-                    </div>
-                </div>
-                <div class="itinerary-block text-start">
-                    <div class="itinerary-day">
-                        <p class="text-uppercase">
-                            <strong>+ day 6: {{ day.day_6 }}</strong>
-                        </p>
-                    </div>
-                    <div class="itinerary-hidden">
-                        <p class="itinerary-day-overview">{{ day.day_6_overview }}</p>
-                        <i class="fas fa-bed"></i>
-                        <p class="itinerary-day-overview">{{ day.day_6_hotel }}</p>
-                        <i class="fas fa-utensils"></i>
-                        <p class="itinerary-day-overview">{{ day.day_6_meal }}</p>
-                        <i class="fas fa-running"></i>
-                        <p class="itinerary-day-overview">{{day.day_6_data}}</p>
+                    <div class="card">
+                        <div class="card-header" id="headingSix">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed text-uppercase" data-bs-toggle="collapse" 
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    <strong>+ day 6: {{ day.day_6 }}</strong>
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-bs-parent="#accordion">
+                            <div class="card-body position-relative">
+                                <p class="itinerary-day-overview">{{ day.day_6_overview }}</p>
+                                    <i class="fas fa-bed"></i>
+                                <p class="itinerary-day-overview">{{ day.day_6_hotel }}</p>
+                                    <i class="fas fa-utensils"></i>
+                                <p class="itinerary-day-overview">{{ day.day_6_meal }}</p>
+                                    <i class="fas fa-running"></i>
+                                <p class="itinerary-day-overview">{{day.day_6_data}}</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             {% endfor %}
