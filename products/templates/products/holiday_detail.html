@@ -132,7 +132,17 @@
             </div>
         </div>
     </section>
+    <section class="">
+        <div class="container">
+            <div class="row">
+                <!--Form-->
+                {% include 'products/includes_holidays/holiday_form.html' %}
+            </div>
+        </div>
+    </section>
 {% endblock %}
 
-{% block postloadjs %}
+{% block extra_js %}
+    {{ block.super }}
+        {% include 'products/includes_holidays/participant_input_script.html' %}
 {% endblock %}
