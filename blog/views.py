@@ -75,6 +75,50 @@ def add_blog(request):
     return render(request, 'blog/add_blog.html', context)
 
 
+def edit_blog(request, post_id):
+    """ Edit a blog post """
+
+    if not request.user.is_superuser:
+        messages.error(request, 'Only TRΛIL RUN ΛDVENTURES Team has permission\
+                                to add a Blog post.')
+        return redirect(reverse('home'))
+
+    post = get_object_or_404(BlogPost, pk=post_id)
+
+    if request.method == 'POST':
+        blog_form = BlogForm(request.POST, instance=post)
+
+        if blog_form.is_valid():
+            # Create Blog object but don't save to database yet
+            new_blog = blog_form.save(commit=False)
+            # Assign the auther to the new blog and save it
+            new_blog.author = request.user
+            new_blog.save()
+            messages.success(request, f'You updated {post.title}!')
+
+            if 'last_item' in request.session:
+                del request.session['last_item']
+
+            return redirect(reverse('blog', args=[post.id]))
+        else:
+            messages.error(request, 'Failed to update the blog. \
+                           Please ensure the form is valid.')
+
+    else:
+        blog_form = BlogForm(instance=post)
+
+        messages.info(
+                request, f'You are editing a product details: {post.title}')
+
+        template = 'blog/edit_blog.html'
+        context = {
+            'blog_form': blog_form,
+            'blog_post': blog_post,
+        }
+
+        return render(request, template, context)
+
+
 @login_required
 def delete_blog(request, post_id):
     """ Delete a blog post """
@@ -87,4 +131,4 @@ def delete_blog(request, post_id):
     post = get_object_or_404(BlogPost, pk=post_id)
     post.delete()
     messages.success(request, 'Blog post was deleted!')
-    return redirect(reverse('blog'))
+    return redirect('blog/basecampblog.html')

@@ -14,7 +14,7 @@ class BlogPost(models.Model):
                                related_name='blog_posts')
     published_date = models.DateTimeField(auto_now_add=True)
     # image will be uploaded to MEDIA_ROOT/blog
-    header_image = models.ImageField(upload_to="blog", null=True, default=None)
+    header_image = models.ImageField(upload_to="blog", null=True, blank=True)
     title = models.CharField(max_length=80)
     slug = models.SlugField(max_length=150, unique=True)
     intro_paragraph_1 = RichTextField(blank=True, null=True)
