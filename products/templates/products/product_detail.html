@@ -38,13 +38,13 @@
                     {% if product.category %}
                     <p class="small mt-1 mb-0">
                         <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
-                            <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
+                            <i class="fas fa-running"></i><span class="ms-1">{{ product.category.friendly_name }}</span>
                         </a>
                     </p>
                     {% endif %}
                     {% if product.rating %}
-                        <small class="text-muted">
-                            <i class="fas fa-star mr-1"></i>{{ product.rating }} / 5
+                        <small class="rating">
+                            <i class="fas fa-star"></i><span class="ms-1">{{product.rating}} / 5</span>
                         </small>
                     {% else %}
                         <small class="text-muted">
@@ -104,13 +104,13 @@
                                 </div>
                             </div>
                             <div class="col{% if s %}-12 mt-2{% endif %}">
-                                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
+                                <a href="{% url 'products' %}" class="btn btn-warning rounded-1 mt-5">
                                     <span class="icon">
                                         <i class="fas fa-chevron-left"></i>
                                     </span>
                                     <span class="text-uppercase">Keep Shopping</span>
                                 </a>
-                                <input type="submit" class="btn button-success rounded-0 text-uppercase mt-5" value="Add to Cart">
+                                <input type="submit" class="btn btn-success rounded-1 text-uppercase mt-5" value="Add to Cart">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                             {% endwith %}
