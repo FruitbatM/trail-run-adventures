@@ -149,3 +149,18 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Faq(models.Model):
+    holiday = models.OneToOneField('Product', null=True, blank=True,
+                                   on_delete=models.CASCADE)
+    flights = models.TextField(max_length=800, null=True, blank=True)
+    visa = models.TextField(max_length=300, null=True, blank=True)
+    group_management = models.TextField(max_length=800, null=True, blank=True)
+    trail_running_1 = models.TextField(max_length=800, null=True, blank=True)
+    trail_running_2 = models.TextField(max_length=800, null=True, blank=True)
+    temperature = models.TextField(max_length=500, null=True, blank=True)
+    luggage = models.TextField(max_length=800, null=True, blank=True)
+
+    def __str__(self):
+        return self.holiday

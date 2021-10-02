@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Product, Category, Level, Itinerary, ItineraryDay
+from .models import Product, Category, Level, Itinerary, ItineraryDay, Faq
 
 
 class ProductAdmin(admin.ModelAdmin):
@@ -42,8 +42,15 @@ class ItineraryDayAdmin(admin.ModelAdmin):
     )
 
 
+class FaqAdmin(admin.ModelAdmin):
+    list_display = (
+        'holiday',
+    )
+
+
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Level, LevelAdmin)
 admin.site.register(Itinerary, ItineraryAdmin)
 admin.site.register(ItineraryDay, ItineraryDayAdmin)
+admin.site.register(Faq, FaqAdmin)

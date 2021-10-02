@@ -1,0 +1,85 @@
+[
+  {
+    "pk": 1,
+    "model": "products.faq",
+    "fields": {
+      "holiday": 1,
+      "flights": "We specialise in arranging excellent trail running holidays, but do not book International flights. There a great variety of flights departing from all over the world to Geneva airport",
+      "visa": "European Union citizens do not need a visa to visit France.",
+      "group_management": "Being a group of max. 12 runners with a mixture of ages and running abilities we may decide to split into flexible groups, all of which will be supported by our running guides who will travel with us on the trip.By splitting the group will allow us all to move more fluidly, allowing all team members to run at their own comfortable pace, without feeling pressured.",
+      "trail_running_1": "",
+      "trail_running_2": "",
+      "temperature": "",
+      "luggage": "We recommend packing one set of running kit per day, with warm and cold options, plus a change of clothes for each evening. It can be cold in the evenings and even during the day, particularly when we are up high in the mountains. A lightweight running pack with the ability to carry water & other necessary items, plus a good quality waterproof jacket (gore-tex or equivalent) are also required. For each trip, we will send you a list of essential items and a suggested packing list. Please contact us if you have any concerns about what you need to bring on one of our trips."
+    }
+  }, 
+  {
+    "pk": 2,
+    "model": "products.faq",
+    "fields": {
+      "holiday": 2,
+      "flights": "We specialise in arranging excellent trail running holidays, but do not book International flights. There a great variety of flights departing from all over the world to Horta International Airport (HOR) which transit via Lisbon.",
+      "visa": "European Union citizens do not need a visa to visit Portugal.",
+      "group_management": "Being a group of max. 12 runners with a mixture of ages and running abilities we may decide to split into flexible groups, all of which will be supported by our running guides who will travel with us on the trip.By splitting the group will allow us all to move more fluidly, allowing all team members to run at their own comfortable pace, without feeling pressured.",
+      "trail_running_1": "You can expect everything from hilly - forested trails, inclusive of our longest day where we will run 35km+ as we follow the 10 Volcanoes trail and cross the island of Faial. The Azores are a wild and remote archipelago located in the North Atlantic that is characterised by wonderful landscapes, fishing villages, mountain trails, lagoons, and luscious green pastures. Typically the trails are hard packed that gets rockier on our summit day when we head to Mount Pico.",
+      "trail_running_2": "The terrain is undulating and includes some steep up hill sections which we walk, as well as some steeper down hill sections at times. We have some back to back days where we trail run relatively longer distances which you will need to prepare for.",
+      "temperature": "In September we expect long, warm days with blue skies and temperatures to sit comfortably around 20 degrees C. It’s a mild climate year round, but being in the North Atlantic unpredictable weather can come it at anytime of year and there is always a chance of rain and wind."
+    }
+  }, 
+  {
+    "pk": 3,
+    "model": "products.faq",
+    "fields": {
+      "holiday": 3,
+      "flights": "We specialise in arranging excellent trail running holidays, but do not book International flights. As there is a great variety of value flights departing from all over the world to Vágar Airport.",
+      "visa": "European Union citizens do not need a visa to visit Faroe Islands.",
+      "group_management": "Being a group of max. 12 runners with a mixture of ages and running abilities we may decide to split into flexible groups, all of which will be supported by our running guides who will travel with us on the trip.By splitting the group will allow us all to move more fluidly, allowing all team members to run at their own comfortable pace, without feeling pressured.",
+      "trail_running_1": "Faroes Islands are the unspoiled, unexplored, and unbelievable destination for all trail runners who enjoy running up hills and mountains, along cliffs, and through small fishing villages.",
+      "trail_running_2": "",
+      "temperature": "",
+      "luggage": "We recommend packing one set of running kit per day, with warm and cold options, plus a change of clothes for each evening. It can be cold in the evenings and even during the day, particularly when we are up high in the mountains. A lightweight running pack with the ability to carry water & other necessary items, plus a good quality waterproof jacket (gore-tex or equivalent) are also required. For each trip, we will send you a list of essential items and a suggested packing list. Please contact us if you have any concerns about what you need to bring on one of our trips."
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.faq",
+    "fields": {
+      "holiday": 4,
+      "flights": "",
+      "visa": "European Union citizens do not need a visa to visit Italy.",
+      "group_management": "Being a group of max. 12 runners with a mixture of ages and running abilities we may decide to split into flexible groups, all of which will be supported by our running guides who will travel with us on the trip.By splitting the group will allow us all to move more fluidly, allowing all team members to run at their own comfortable pace, without feeling pressured.",
+      "trail_running_1": "The Italian Dolomites have some of the best trail running in Europe! We’ll run inn to inn, taking in spectacular views of the region along smooth singletrack and over high cols. ",
+      "trail_running_2": "",
+      "temperature": "",
+      "luggage": "We recommend packing one set of running kit per day, with warm and cold options, plus a change of clothes for each evening. It can be cold in the evenings and even during the day, particularly when we are up high in the mountains. A lightweight running pack with the ability to carry water & other necessary items, plus a good quality waterproof jacket (gore-tex or equivalent) are also required. For each trip, we will send you a list of essential items and a suggested packing list. Please contact us if you have any concerns about what you need to bring on one of our trips."
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.faq",
+    "fields": {
+      "holiday": 5,
+      "flights": "We specialise in arranging excellent trail running holidays, but do not book International flights. There a great variety of flights departing from all over the world to Ljubljana Jože Pučnik Airport.",
+      "visa": "European Union citizens do not need a visa to visit Slovenia.",
+      "group_management": "Being a group of max. 12 runners with a mixture of ages and running abilities we may decide to split into flexible groups, all of which will be supported by our running guides who will travel with us on the trip.By splitting the group will allow us all to move more fluidly, allowing all team members to run at their own comfortable pace, without feeling pressured.",
+      "trail_running_1": "Trail running in Slovenia is an absolute treat. Our route is challenging and involves distances of approx. 14 miles daily, inclusive of steep up hill (up to 1400m) and steep down hill sections (as much as -1000m). We can expect to be on our feet from anywhere between 4 - 6+ hours.",
+      "trail_running_2": "",
+      "temperature": "In July we expect long, summer days with blue skies and lots of sun. Being above 1,000m should mean that daily temperatures are perfect for trail running, but it must be stressed that given our journey routes around the Julian Alps we need to be prepared for all weather with the possibility of rain and foggy conditions. At night/early morning temperatures outside will dip, but these soon vanish as soon as the sun comes up.",
+      "luggage": "We recommend packing one set of running kit per day, with warm and cold options, plus a change of clothes for each evening. It can be cold in the evenings and even during the day, particularly when we are up high in the mountains. A lightweight running pack with the ability to carry water & other necessary items, plus a good quality waterproof jacket (gore-tex or equivalent) are also required. For each trip, we will send you a list of essential items and a suggested packing list. Please contact us if you have any concerns about what you need to bring on one of our trips."
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.faq",
+    "fields": {
+      "holiday": 6,
+      "flights": "We specialise in arranging excellent trail running holidays, but do not book International flights. There a great variety of flights departing from all over the world to Berne (BRN) Airport which is 53.7 km away.",
+      "visa": "",
+      "group_management": "Being a group of max. 12 runners with a mixture of ages and running abilities we may decide to split into flexible groups, all of which will be supported by our running guides who will travel with us on the trip.By splitting the group will allow us all to move more fluidly, allowing all team members to run at their own comfortable pace, without feeling pressured.",
+      "trail_running_1": "The Swiss Alps could be considered the home of trail running. Mountain runners have been weaving their way along alp paths for decades, and are practically exalted here. The Eiger Ultra incorporates unrivaled dramatic mountain scenery.",
+      "trail_running_2": "The diversity of the Jungfrau Region is a huge draw for trail running enthusiasts, with  everything from easy trails through forests and meadows to technically challenging trails in alpine terrain. Some trail running routes are also popular with hikers.",
+      "temperature": "",
+      "luggage": "We recommend packing one set of running kit per day, with warm and cold options, plus a change of clothes for each evening. It can be cold in the evenings and even during the day, particularly when we are up high in the mountains. A lightweight running pack with the ability to carry water & other necessary items, plus a good quality waterproof jacket (gore-tex or equivalent) are also required. For each trip, we will send you a list of essential items and a suggested packing list. Please contact us if you have any concerns about what you need to bring on one of our trips."
+    }
+  }
+]
