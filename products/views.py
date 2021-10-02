@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
-from .models import Product, Category, Itinerary, ItineraryDay
+from .models import Product, Category, Itinerary, ItineraryDay, Faq
 
 from .forms import ProductForm
 
@@ -97,11 +97,13 @@ def holiday_detail(request, holiday_id):
     holiday = get_object_or_404(all_holidays, pk=holiday_id)
     itinerary = Itinerary.objects.get(holiday=holiday)
     itinerary_day = ItineraryDay.objects.filter(itinerary=itinerary)
+    faq = Faq.objects.filter(holiday=holiday)
 
     context = {
         'holiday': holiday,
         'itinerary': itinerary,
         'itinerary_day': itinerary_day,
+        'faq': faq,
     }
 
     return render(request, 'products/holiday_detail.html', context)

@@ -162,5 +162,8 @@ class Faq(models.Model):
     temperature = models.TextField(max_length=500, null=True, blank=True)
     luggage = models.TextField(max_length=800, null=True, blank=True)
 
+    class Meta:
+        verbose_name_plural = 'FAQ'
+
     def __str__(self):
-        return self.holiday
+        return self.flights

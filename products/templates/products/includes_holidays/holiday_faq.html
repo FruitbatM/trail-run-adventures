@@ -1,0 +1,52 @@
+<div class="col-12">
+    <hr class="mt-4">
+    <h2 class=" holiday-heading text-uppercase text-start mt-5">FAQ</h2>
+</div>
+<div class="route-details">
+    <div class="row">
+        {% for faq in faq %}
+        <div class="col-lg-6 col-sm-12">
+            <div class="mb-3">
+                <p><strong>FLIGHTS</strong><p>
+            </div>
+            <div>
+                <p>{{ faq.flights }}</p>
+            </div>
+            <div class="mb-3">
+                <p><strong>VISAS</strong></p>
+            </div>
+            <div>
+                <p>{{ faq.visa }}</p>
+            </div>
+            <div class="mb-3">
+                <p><strong>GROUP MANAGEMENT</strong></p>
+            </div>
+            <div>
+                <p>{{ faq.group_management }}</p>
+            </div>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+            <div class="mb-3">
+                <p><strong>TRAIL RUNNING</strong></p>
+            </div>
+            <div>
+                <p>{{ faq.trail_running_1 }}</p>
+                <p>{{ faq.trail_running_2 }}</p>
+            </div>
+            <div class="mb-3">
+                <p><strong>TEMPERATURE</strong></p>
+            </div>
+            <div>
+                <p>{{ faq.temperature }}</p>
+            </div>
+            <div class="mb-3">
+                <p><strong>LUGGAGE</strong></p>
+            </div>
+            <div>
+                <p>{{ faq.luggage }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<hr class="mt-4">
