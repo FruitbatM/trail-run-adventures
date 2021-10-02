@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+404
+{% endblock %}
+
+{% block content%}
+<!-- 404 Error -->
+<div class="container-fluid  error-container">
+    <div class="row ">
+        <div class="col-12 text-center">
+            <h1 class="uppercase font-weight-bold error-heading"> 
+                <span class="text-black"> 404</span>&nbsp;error
+            </h1>
+            <h3 class="mt-5 error-sub-heading">
+                Looks like you took a wrong turn. <br>
+                Click below to get back to the home page.
+            </h3>
+            <a href="{% url 'home' %}" class="btn button-green btn-lg mt-5">
+                <i class="fas fa-home mr-1 text-uppercase"></i>&nbsp;Back&nbsp;Home
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}
