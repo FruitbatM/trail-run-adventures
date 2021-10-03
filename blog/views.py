@@ -78,13 +78,12 @@ def add_blog(request):
 @login_required
 def edit_blog(request, post_id):
     """ Edit a blog post """
+    post = get_object_or_404(BlogPost, pk=post_id)
 
     if not request.user.is_superuser:
         messages.error(request, 'Only TRΛIL RUN ΛDVENTURES Team has permission\
                                 to add a Blog post.')
         return redirect(reverse('home'))
-
-    post = get_object_or_404(BlogPost, pk=post_id)
 
     if request.method == 'POST':
         blog_form = BlogForm(request.POST, instance=post)
@@ -95,12 +94,10 @@ def edit_blog(request, post_id):
             # Assign the auther to the new blog and save it
             new_blog.author = request.user
             new_blog.save()
-            messages.success(request, f'You updated {post.title}!')
+            messages.success(request, f'You successfully \
+                                        updated {post.title}!')
 
-            if 'last_item' in request.session:
-                del request.session['last_item']
-
-            return redirect(reverse('blog', args=[post.id]))
+            return redirect(reverse('blog_post', args=[post.id]))
         else:
             messages.error(request, 'Failed to update the blog. \
                            Please ensure the form is valid.')
@@ -109,12 +106,12 @@ def edit_blog(request, post_id):
         blog_form = BlogForm(instance=post)
 
         messages.info(
-                request, f'You are editing a product details: {post.title}')
+                request, f'You are editing a blog details: {post.title}')
 
         template = 'blog/edit_blog.html'
         context = {
             'blog_form': blog_form,
-            'blog_post': blog_post,
+            'post': post,
         }
 
         return render(request, template, context)
