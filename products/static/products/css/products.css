@@ -177,6 +177,16 @@ img {
     bottom: 0;
 }
 
+.modal-button {
+    border: none;
+    background-color: transparent;
+    padding: 0px;
+}
+
+.modal-button:focus, .modal-button:active, .modal-button:hover {
+    outline: transparent;
+}
+
 /* Media Queries */
 /* Display on tablet devices */  
 

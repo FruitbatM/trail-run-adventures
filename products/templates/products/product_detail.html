@@ -52,8 +52,31 @@
                     {% if request.user.is_superuser %}
                         <small class="ms-3">
                             <a href="{% url 'edit_product' product.id %}">Edit</a> |
-                            <a href="{% url 'delete_product' product.id %}" class="text-danger">Delete</a>
+                             <!-- Delete Modal Button -->
+                             <button type="button" class="modal-button" data-bs-toggle="modal" data-bs-target="#deleteModal{{ product.id }}">
+                                <span class="text-danger">Delete</span>
+                            </button>
                         </small>
+                        <!-- Delete Modal -->
+                        <div class="modal fade" id="deleteModal{{ product.id }}" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+                            <div class="modal-dialog text-center" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="deleteModalLabel-{{product.id }}">You are about to delete a product</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <i class="far fa-trash-alt fa-2x icon text-danger mb-2"></i>
+                                        <h5 class="">Are you sure you want to delete</h5>
+                                        <h5 class="text-danger">{{ product.name }}?</h5>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cancel</button>
+                                        <a href="{% url 'delete_product' product.id %}" class="btn btn-danger">Delete</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     {% endif %}
                     <p class="mt-2">{{ product.description }}</p>
                     <!-- Product Form -->
