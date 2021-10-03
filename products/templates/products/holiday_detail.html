@@ -94,11 +94,14 @@
                 <p class="holiday-date text-uppercase">
                     <p>Early Bird available now until 01 NOVEMBER 2021</p>
                 </p>
-                <div class="pt-5">
-                    <a href="" class="btn btn-lg justify-content-center section-button text-white">
-                        BOOK NOW
-                    </a>
+                <div class="py-5">
+                    <!-- Book Modal Button -->
+                    <button type="button" class="btn btn-lg justify-content-center section-button text-white" 
+                        data-bs-toggle="modal" data-bs-target="#bookModal{{ holiday.id }}">
+                        <span>BOOK NOW</span>
+                    </button>
                 </div>
+                {% include 'products/includes_holidays/book_modal.html' %}
             </div>
         </div>
         <hr>
@@ -149,7 +152,7 @@
     </section>
 {% endblock %}
 
-{% block extra_js %}
+{% block postloadjs %}
     {{ block.super }}
         {% include 'products/includes_holidays/participant_input_script.html' %}
 {% endblock %}

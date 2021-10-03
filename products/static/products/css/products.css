@@ -187,6 +187,13 @@ img {
     outline: transparent;
 }
 
+.modal-title {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.15 rem;
+    font-size: 2.2rem;
+    color: #439B94;
+}
+
 /* Media Queries */
 /* Display on tablet devices */  
 

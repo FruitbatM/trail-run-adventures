@@ -1,0 +1,16 @@
+<!-- Book Modal -->
+<div class="modal fade" id="bookModal{{ holiday.id }}" tabindex="-1" role="dialog" aria-labelledby="bookModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header flex-column position-relative text-uppercase">
+                <h2 class="modal-title modal-title" id="bookModalLabel-{{ holiday.id }}">{{ holiday.name }}</h2>
+                <br>
+                <h5 class="text-muted">{{ holiday.start_date }} - {{ holiday.end_date }}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body ps-5 pb-5">
+                {% include 'products/includes_holidays/holiday_form.html' %}
+            </div>
+        </div>
+    </div>
+</div>
