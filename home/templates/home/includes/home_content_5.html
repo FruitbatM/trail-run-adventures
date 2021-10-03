@@ -26,8 +26,8 @@
                                     <a href="{% url 'blog_post' blog.id %}">{{ blog.title }}</a>
                                 </h5>
                                 <div class="blog-meta">
-                                    <div class="blog-date">{{ blog.published_date}}</div>
-                                    <div class="blog-author">{{ blog.author}}</div>
+                                    <div class="blog-date text-muted">{{ blog.published_date}}</div>
+                                    <div class="blog-author text-muted pb-2">{{ blog.author}}</div>
                                 </div>
                             </div>
                             <div class="blog-overview blog-card-text">
@@ -43,8 +43,9 @@
                                         </span>
                                     </div>
                                     <div class="col-6 text-right footer-meta">
-                                        <a href="" class="blog-comment">
-                                            <i class="fas fa-comment-alt" aria-hidden="true"></i>
+                                        <a href="{% url 'blog_post' blog.id %}" class="blog-comment">
+                                            <i class="fas fa-comment-alt pe-1" aria-hidden="true"></i>
+                                            {{ blog.comments.count }}
                                         </a>
                                     </div>
                                 </div>
