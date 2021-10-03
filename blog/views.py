@@ -75,6 +75,7 @@ def add_blog(request):
     return render(request, 'blog/add_blog.html', context)
 
 
+@login_required
 def edit_blog(request, post_id):
     """ Edit a blog post """
 
@@ -122,13 +123,13 @@ def edit_blog(request, post_id):
 @login_required
 def delete_blog(request, post_id):
     """ Delete a blog post """
+    post = get_object_or_404(BlogPost, pk=post_id)
 
-    if not request.user.is_superuser:
-        messages.error(request, 'Only TRΛIL RUN ΛDVENTURES Team has permission\
+    if request.user.is_superuser:
+        post.delete()
+        messages.success(request, 'Blog Post was successfully deleted!')
+        return redirect(reverse('basecampblog'))
+    else:
+        messages.error(request, 'Only TRΛIL RUN ΛDVENTURES Team has permission \
                                 to delete a Blog post.')
         return redirect(reverse('home'))
-
-    post = get_object_or_404(BlogPost, pk=post_id)
-    post.delete()
-    messages.success(request, 'Blog post was deleted!')
-    return redirect('blog/basecampblog.html')
