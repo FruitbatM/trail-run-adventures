@@ -2,7 +2,7 @@
 <section class="bg-light pb-5">
     <div class="container">
         <div class="row">
-            <div class="col mt-1 mb-4 ms-4">
+            <div class="col mt-1 mb-4 ms-4" data-aos="zoom-in-down">
                 <h2 class="section-heading-2">SHOP</h2>
             </div>
         </div>
@@ -11,7 +11,7 @@
         <div class="row text-center">
             {% for product in shop_home %}
                 <div class="col-md-4" id="shop-column">
-                    <div class="card card-body h-100 border-success">
+                    <div class="card card-body h-100 border-success" data-aos="zoom-in-down">
                         <div class="category-card-img img-fluid d-flex text-center mt-auto mb-auto text-uppercase">
                             <img src="{{ MEDIA_URL }}{{ product.image }}" alt="{{ product.category.name }}">
                         </div>

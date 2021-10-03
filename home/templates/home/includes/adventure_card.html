@@ -1,7 +1,7 @@
 <!-- Running Experinces Cards -->
 {% for holiday in holidays_home %}
     <div class="col-md-4">
-        <div class="experiences-card">
+        <div class="experiences-card" data-aos="zoom-in-down">
             <div class="card tour-card text-center">
                 <a href="{% url 'holiday_detail' holiday.id %}">
                     <img src="{{ MEDIA_URL }}{{ holiday.image_1 }}" alt="{{ holiday.name }}" class="img-fluid">
