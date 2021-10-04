@@ -1,0 +1,1 @@
+web: gunicorn trail_run_adventures.wsgi:application

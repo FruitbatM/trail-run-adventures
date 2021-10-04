@@ -43,7 +43,7 @@
     "pk": 6,
     "model": "products.itinerary",
     "fields": {
-      "name": "Graubünden",
+      "name": "Eiger",
       "holiday": 6
     }
   }
