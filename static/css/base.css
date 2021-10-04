@@ -661,7 +661,7 @@ footer {
 }
 
 .instructor-image-block {
-  width: 60%;
+  width: 80%;
   margin-top: 4rem;
   text-shadow: 0.07rem 0.06rem #fafafa;
 }
@@ -781,11 +781,6 @@ https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
   background-color: #f3f8f8!important;
 }
 
-hr {
-  color: #33706c;
-  height: 0.1rem !important;
-}
-
 /* Product Form */
 .btn-file {
   position: relative;
@@ -885,7 +880,6 @@ hr {
       font-size: 3.2rem;
       font-weight: 700;
     }
-    
 
     .blog-post .blog-content {
       -webkit-box-shadow: 1px 0px 20px 1px rgba(0, 0, 0, 0.15);
@@ -926,6 +920,10 @@ hr {
     .carousel-control-prev,
     .carousel-control-next {
       margin: -3rem;
+    }
+
+    .instructor-image-block {
+      width: 70% !important;
     }
 }
 
