@@ -3,10 +3,10 @@
     <div class="row">
         <div class="col-12">
             {% for instructor in instructors %}
-                <div class="card text-black instructor-image-block mx-auto text-center">
+                <div class="card text-black instructor-image-block mx-auto text-center" data-aos="zoom-in-down">
                     <img src="{{ MEDIA_URL }}{{ instructor.image }}" class="card-img" alt="Instructor image">
-                        <div class="card-img-overlay align-items-center">
-                            <h3 class="instructor-name">
+                        <div class="card-img-overlay-team align-items-center">
+                            <h3 class="instructor-name pt-3">
                                 {{ instructor.name }}
                             </h3>
                             <h5 class="instructor-title text-uppercase">

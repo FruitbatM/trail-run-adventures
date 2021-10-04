@@ -11,7 +11,7 @@ html, body {
 }
 
 body {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   width: auto;
 }
 
@@ -627,7 +627,6 @@ footer {
 }
 
 /* About pages */
-
 #team-header_1 {
   background: url('/static/images/about/our_story.jpg') no-repeat center;
   background-size: cover;
@@ -669,11 +668,23 @@ footer {
 
 .instructor-name {
   text-transform: uppercase;
+  color: #575a7b;
+  font-weight: bold;
+  font-family: Lato;
 }
 
-.card-img-overlay {
-  padding: 5rem;
+.instructor-title {
+  color: #575a7b;
 }
+
+/*
+.card-img-overlay-team {
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+*/
 
 .story-image {
   width: 65%;
@@ -868,6 +879,13 @@ hr {
     #brand-logo {
       width: 9.4rem;
     }
+
+    .section-heading-2 {
+      letter-spacing: 0.2 rem;
+      font-size: 3.2rem;
+      font-weight: 700;
+    }
+    
 
     .blog-post .blog-content {
       -webkit-box-shadow: 1px 0px 20px 1px rgba(0, 0, 0, 0.15);
