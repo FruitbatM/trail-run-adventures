@@ -5,14 +5,14 @@
     "fields": {
       "name": "Tour du Mont Blanc",
       "country":"France",
-      "holiday_header_image": "",
+      "holiday_header_image": "mont_blanc_header.jpg",
       "header_paragraph": "Discover a world of unique and impressive high mountains with a breath-taking show of summits and glaciers everywhere. The Mont Blanc range is fascinatingly beautiful, like a diamond, from every angle.",
       "duration": "8",
       "distance": "165",
       "level": 1,
       "price": 2450.00,
       "single_supplement": "True",
-      "rating": 4.9,
+      "rating": 5,
       "number_of_runners": 10,
       "age": "18",
       "start_date": "2022-08-06",
@@ -26,9 +26,9 @@
       "max_elavation": "2500",
       "elevation_gain": "10000",
       "is_holiday": "True",
-      "image_1": "",
-      "image_2": "",
-      "image_3": "",
+      "image_1": "mont_blanc_image_1.jpg",
+      "image_2": "mont_blanc_image_2.jpg",
+      "image_3": "mont_blanc_image_3.jpg",
       "route_image": ""
     }
   },
@@ -38,7 +38,7 @@
     "fields": {
       "name": "Azores",
       "country":"Portugal",
-      "holiday_header_image": "",
+      "holiday_header_image": "azores_header.jpg",
       "header_paragraph": "Spectacular trail running adventure as we journey to the Azores. We’ll cross the island via the ancient Whalers Great Route and the 10 Volcanoes trails, heading through lush forests, volcanic beaches and majestic scenery every step of the way.",
       "duration": "6",
       "distance": "76",
@@ -59,10 +59,10 @@
       "max_elavation": "2276",
       "elevation_gain": "4430",
       "is_holiday": "True",
-      "image_1": "",
-      "image_2": "",
-      "image_3": "",
-      "route_image": ""
+      "image_1": "azores_image_1.jpg",
+      "image_2": "azores_image_2.jpg",
+      "image_3": "azores_image_3.jpg",
+      "route_image": "azores_route.png"
     }
   },
   {
@@ -71,9 +71,9 @@
     "fields": {
       "name": "Faroe Islands",
       "country":"Faroe Islands",
-      "holiday_header_image": "",
-      "header_paragraph": "",
-      "duration": "6",
+      "holiday_header_image": "faroe_islands_header.jpg",
+      "header_paragraph": "5 day trail and mountain running in the picturesque Faroes Islands in autumn",
+      "duration": "5",
       "distance": "76",
       "level": 1,
       "price": 1590.00,
@@ -84,17 +84,17 @@
       "start_date": "2022-06-24",
       "end_date": "2022-06-28",
       "guide": "Brian",
-      "overview_paragraph_1": "On our fully serviced small group running adventure, we head to the spectacular Azores where we’ll split our time between two idyllic islands located in the middle of the North Atlantic Ocean. ",
-      "overview_paragraph_2": "We base ourselves on the pretty island of Faial where we’ll be running a range of wonderful trails. It’s an action-packed seven-day program where no two days will be the same. We’ll be making a crossing of the island of Faial as we follow the ancient Whalers Great Route, as well as the 10 Volcanoes trails. ",
-      "overview_paragraph_3": "Aside from running, we have a day set aside for us to hike a 10km trail which takes us to the summit of the mighty Mount Pico which is located on a neighbouring island that shares the same name with an afternoon spent out on the water whale watching. To give ourselves a break from running we also have a full day of mountain biking which gives us scope to explore some other curious parts of this wonderful island.",
+      "overview_paragraph_1": "Faroes Islands are unspoiled, unexplored and unbelievable destination for all trail runners who enjoy running up hills and mountains, along cliffs and through small fishing villages. Among places visited is Gásadalur, a small picturesque village which offers unparalelled view of the fjord and the surrounding islets. Until recently the only way to get to charming Gásadalur was on foot from another village and over the mountain.",
+      "overview_paragraph_2": "Fell running up the Slættaratindur, the highest mountain in the Faroe Islands (882m), we get a grand view of the Faroese archipelago. From here we get a good view over surrounding mountains and islands and the whole of Eysturoy (eastern island).",
+      "overview_paragraph_3": "Running of 12-25 km each day.",
       "running_days": "4",
       "min_elavation": "4",
       "max_elavation": "2276",
-      "elevation_gain": "4430",
+      "elevation_gain": "2700",
       "is_holiday": "True",
-      "image_1": "",
-      "image_2": "",
-      "image_3": "",
+      "image_1": "faroe_islands_image_1.jpg",
+      "image_2": "faroe_islands_image_2.jpg",
+      "image_3": "faroe_islands_image_3.jpg",
       "route_image": ""
     }
   },
@@ -104,22 +104,22 @@
     "fields": {
       "name": "Italian Dolomites",
       "country":"Italy",
-      "holiday_header_image": "",
-      "header_paragraph": "Spectacular trail running adventure as we journey to the Azores. We’ll cross the island via the ancient Whalers Great Route and the 10 Volcanoes trails, heading through lush forests, volcanic beaches and majestic scenery every step of the way.",
-      "duration": "6",
+      "holiday_header_image": "dolomites_header_image.jpg",
+      "header_paragraph": "",
+      "duration": "7",
       "distance": "76",
       "level": 2,
       "price": 1590.00,
       "single_supplement": "True",
-      "rating": 5,
+      "rating": 7,
       "number_of_runners": "12",
       "age": "16",
       "start_date": "2022-06-28",
       "end_date": "2022-06-28",
       "guide": "Brian",
-      "overview_paragraph_1": "On our fully serviced small group running adventure, we head to the spectacular Azores where we’ll split our time between two idyllic islands located in the middle of the North Atlantic Ocean. ",
-      "overview_paragraph_2": "We base ourselves on the pretty island of Faial where we’ll be running a range of wonderful trails. It’s an action-packed seven-day program where no two days will be the same. We’ll be making a crossing of the island of Faial as we follow the ancient Whalers Great Route, as well as the 10 Volcanoes trails. ",
-      "overview_paragraph_3": "Aside from running, we have a day set aside for us to hike a 10km trail which takes us to the summit of the mighty Mount Pico which is located on a neighbouring island that shares the same name with an afternoon spent out on the water whale watching. To give ourselves a break from running we also have a full day of mountain biking which gives us scope to explore some other curious parts of this wonderful island.",
+      "overview_paragraph_1": "Take the high route this summer in the incredible Italian Dolomites in the northeastern corner of Italy. The Italian Dolomites, a UNESCO World Heritage Site since 2009, have been described by the explorer Reinhold Messner as “the most beautiful mountains in the world.” On this hut-to-hut  runcation, or trail running/hiking adventure, we'll crest the impressionable rock spires, mountain passes, and descend through alpine meadows along the famous Alta Via 1 along some of the most beautiful trails in the world.",
+      "overview_paragraph_2": "Along the way, we'll take respite from the trail in scenic and comfortable staffed mountain lodges, or rifugios, which offer warm lodges, scenic vistas, and four-course Italian dinners as well as a full bar and beverage list. On this guided trail running tour, our hut-to-hut adventure ensures that we'll be waking up and falling asleep to spectacular mountain sunrises and sunsets by sleeping up high at the foot of these impressive mountains.",
+      "overview_paragraph_3": "This retreat adventure is open to ages 15 and up of any pace. Must be able to complete 8-15 miles/day of hiking/running at altitude, including 2,000-6,000 feet of elevation gain per day.",
       "running_days": "4",
       "min_elavation": "4",
       "max_elavation": "2276",
@@ -137,8 +137,8 @@
     "fields": {
       "name": "Julian Alps",
       "country":"Slovenia",
-      "holiday_header_image": "",
-      "header_paragraph": "Spectacular trail running adventure as we journey to the Azores. We’ll cross the island via the ancient Whalers Great Route and the 10 Volcanoes trails, heading through lush forests, volcanic beaches and majestic scenery every step of the way.",
+      "holiday_header_image": "julian_alps_header_image.jpg",
+      "header_paragraph": "Spectacular trail running adventure as we journey to the Julian Alps. We’ll cross the island via the ancient Whalers Great Route and the 10 Volcanoes trails, heading through lush forests, volcanic beaches and majestic scenery every step of the way.",
       "duration": "6",
       "distance": "76",
       "level": 3,
@@ -170,7 +170,7 @@
     "fields": {
       "name": "Eiger",
       "country":"Switzerland",
-      "holiday_header_image": "",
+      "holiday_header_image": "eiger_header_image.jpg",
       "header_paragraph": "Spectacular trail running adventure as we journey to the Azores. We’ll cross the island via the ancient Whalers Great Route and the 10 Volcanoes trails, heading through lush forests, volcanic beaches and majestic scenery every step of the way.",
       "duration": "6",
       "distance": "76",
@@ -209,7 +209,7 @@
       "has_sizes": "True",
       "rating": 5.0,
       "is_holiday": "False",
-      "image": ""
+      "image": "TRA123M1.png"
     }
   },
   {
@@ -224,7 +224,7 @@
       "has_sizes": "True",
       "rating": 5.0,
       "is_holiday": "False",
-      "image": ""
+      "image": "TRA123M2.png"
     }
   },
   {
@@ -233,13 +233,13 @@
     "fields": {
       "sku": "TRA123M3",
       "category": 1, 
-      "name": "Male T-Shirt Yellow",
+      "name": "Male T-Shirt White",
       "description": "Lightweight and compressive arm sleeves for optimised thermoregulation during the toughest of trail races. The seamless microfibre is exceptionally soft and fits likes a second skin, eliminating chafing and quickly wicking away sweat as the kilometres wear on.",
       "price": 26.50,
       "has_sizes": "True",
       "rating": 5.0,
       "is_holiday": "False",
-      "image": ""
+      "image": "TRA123M3 .png"
     }
   },
   {
@@ -248,69 +248,324 @@
     "fields": {
       "sku": "TRA123M4",
       "category": 1, 
-      "name": "Male T-Shirt White",
+      "name": "Male T-Shirt Red",
       "description": "Lightweight and compressive arm sleeves for optimised thermoregulation during the toughest of trail races. The seamless microfibre is exceptionally soft and fits likes a second skin, eliminating chafing and quickly wicking away sweat as the kilometres wear on.",
       "price": 26.50,
       "has_sizes": "True",
       "rating": 4.8,
       "is_holiday": "False",
-      "image": ""
+      "image": "TRA123M4.png"
     }
   },
   {
     "pk": 11,
     "model": "products.product",
     "fields": {
-      "sku": "TRA123M5",
+      "sku": "TRA123W1",
       "category": 1, 
-      "name": "Male Sweathshirt White",
+      "name": "Women T-Shirt White with logo",
       "description": "Lightweight and compressive arm sleeves for optimised thermoregulation during the toughest of trail races. The seamless microfibre is exceptionally soft and fits likes a second skin, eliminating chafing and quickly wicking away sweat as the kilometres wear on.",
-      "price": 35.50,
+      "price": 24.50,
       "has_sizes": "True",
       "rating": 4.9,
       "is_holiday": "False",
-      "image": ""
+      "image": "TRA123W1.jpg"
     }
   },
   {
     "pk": 12,
     "model": "products.product",
     "fields": {
-      "sku": "TRA123F1",
+      "sku": "TRA123W2",
       "category": 1, 
-      "name": "Female T-Shirt White",
+      "name": "Women Tank Top White",
       "description": "Lightweight and compressive arm sleeves for optimised thermoregulation during the toughest of trail races. The seamless microfibre is exceptionally soft and fits likes a second skin, eliminating chafing and quickly wicking away sweat as the kilometres wear on.",
       "price": 25.50,
       "has_sizes": "True",
       "rating": 4.9,
       "is_holiday": "False",
-      "image": ""
-    }
-  },
-  {
-    "pk": 12,
-    "model": "products.product",
-    "fields": {
-      "sku": "TRA123MER1",
-      "category": 2, 
-      "name": "Mask with Logo",
-      "description": "Lightweight",
-      "price": 4.50,
-      "has_sizes": "False",
-      "rating": 4.9,
-      "is_holiday": "False",
-      "image": ""
+      "image": "TRA123W2.jpg"
     }
   },
   {
     "pk": 13,
     "model": "products.product",
     "fields": {
-      "sku": "TRA123D1",
+      "sku": "TRA123W3",
+      "category": 1, 
+      "name": "Women T-Shirt Yellow",
+      "description": "Lightweight",
+      "price": 26.50,
+      "has_sizes": "False",
+      "rating": 4.9,
+      "is_holiday": "False",
+      "image": "TRA123W3.jpg"
+    }
+  },
+  {
+    "pk": 14,
+    "model": "products.product",
+    "fields": {
+      "sku": "TRA123W3",
+      "category": 1, 
+      "name": "Women Tank Top Yellow",
+      "description": "Lightweight",
+      "price": 25.50,
+      "has_sizes": "False",
+      "rating": 4.8,
+      "is_holiday": "False",
+      "image": "TRA123W4.jpg"
+    }
+  },
+  {
+    "pk": 15,
+    "model": "products.product",
+    "fields": {
+      "sku": "TRA223M1",
+      "category": 1, 
+      "name": "Men Tank Top Yellow",
+      "description": "Lightweight",
+      "price": 25.50,
+      "has_sizes": "False",
+      "rating": 4.9,
+      "is_holiday": "False",
+      "image": "TRA223M1.jpg"
+    }
+  },
+  {
+    "pk": 16,
+    "model": "products.product",
+    "fields": {
+      "sku": "TRA223M2",
+      "category": 1, 
+      "name": "Men Tank Top Orange",
+      "description": "Lightweight",
+      "price": 25.50,
+      "has_sizes": "False",
+      "rating": 4.9,
+      "is_holiday": "False",
+      "image": "TRA223M2.jpg"
+    }
+  },
+  {
+    "pk": 17,
+    "model": "products.product",
+    "fields": {
+      "sku": "TRA456M1",
+      "category": 1, 
+      "name": "Men Sweatshirt Yellow",
+      "description": "Lightweight",
+      "price": 45.50,
+      "has_sizes": "False",
+      "rating": 4.8,
+      "is_holiday": "False",
+      "image": "TRA456M1.jpg"
+    }
+  },
+  {
+    "pk": 18,
+    "model": "products.product",
+    "fields": {
+      "sku": "TRA456U2",
+      "category": 1, 
+      "name": "Unisex Sweatshirt Ochre",
+      "description": "Lightweight",
+      "price": 45.50,
+      "has_sizes": "False",
+      "rating": 5,
+      "is_holiday": "False",
+      "image": "TRA456U2.jpg"
+    }
+  },
+  {
+    "pk": 19,
+    "model": "products.product",
+    "fields": {
+      "sku": "TRA457U1",
+      "category": 1, 
+      "name": "Unisex Hoodie White",
+      "description": "Lightweight",
+      "price": 47.50,
+      "has_sizes": "False",
+      "rating": 5,
+      "is_holiday": "False",
+      "image": "TRA457U1.jpg"
+    }
+  },
+  {
+    "pk": 20,
+    "model": "products.product",
+    "fields": {
+      "sku": "TRA457U2",
+      "category": 1, 
+      "name": "Unisex Hoodie Brown",
+      "description": "Lightweight",
+      "price": 47.50,
+      "has_sizes": "False",
+      "rating": 4.8,
+      "is_holiday": "False",
+      "image": "TRA457U2.jpg"
+    }
+  },
+  {
+    "pk": 21,
+    "model": "products.product",
+    "fields": {
+      "sku": "TRA457U3",
+      "category": 1, 
+      "name": "Unisex Hoodie Orange",
+      "description": "Lightweight",
+      "price": 47.50,
+      "has_sizes": "False",
+      "rating": 5,
+      "is_holiday": "False",
+      "image": "TRA457U3.jpg"
+    }
+  },
+  {
+    "pk": 22,
+    "model": "products.product",
+    "fields": {
+      "sku": "TRA567U2",
+      "category": 1, 
+      "name": "Unisex T-Shirt Three Quarter Sleeves",
+      "description": "Lightweight",
+      "price": 22.50,
+      "has_sizes": "False",
+      "rating": 4.8,
+      "is_holiday": "False",
+      "image": "TRA567U2.jpg"
+    }
+  },
+  {
+    "pk": 23,
+    "model": "products.product",
+    "fields": {
+      "sku": "TRA1122U1",
+      "category": 2, 
+      "name": "Mask with logo",
+      "description": "Lightweight",
+      "price": 5.50,
+      "has_sizes": "False",
+      "rating": 4.8,
+      "is_holiday": "False",
+      "image": "TRA1122U1.png"
+    }
+  },
+  {
+    "pk": 24,
+    "model": "products.product",
+    "fields": {
+      "sku": "TRA1122U2",
+      "category": 2, 
+      "name": "Cap Orange with Logo",
+      "description": "Lightweight",
+      "price": 12.50,
+      "has_sizes": "False",
+      "rating": 4.9,
+      "is_holiday": "False",
+      "image": "TRA1122U2.png"
+    }
+  },
+  {
+    "pk": 25,
+    "model": "products.product",
+    "fields": {
+      "sku": "TRA1122U5",
+      "category": 2, 
+      "name": "Cap Orange with Logo",
+      "description": "Lightweight",
+      "price": 12.50,
+      "has_sizes": "False",
+      "rating": 4.9,
+      "is_holiday": "False",
+      "image": "TRA1122U5.png"
+    }
+  },
+  {
+    "pk": 26,
+    "model": "products.product",
+    "fields": {
+      "sku": "TRA1122U6",
+      "category": 2, 
+      "name": "Cap Purple with Logo",
+      "description": "Lightweight",
+      "price": 12.50,
+      "has_sizes": "False",
+      "rating": 4.9,
+      "is_holiday": "False",
+      "image": "TRA1122U6.png"
+    }
+  },
+  {
+    "pk": 27,
+    "model": "products.product",
+    "fields": {
+      "sku": "TRA1122U3",
+      "category": 2, 
+      "name": "Tote Bag with Logo",
+      "description": "Lightweight",
+      "price": 7.50,
+      "has_sizes": "False",
+      "rating": 5,
+      "is_holiday": "False",
+      "image": "TRA1122U3.jpg"
+    }
+  },
+  {
+    "pk": 28,
+    "model": "products.product",
+    "fields": {
+      "sku": "TRA1122U4",
+      "category": 3, 
+      "name": "Tote Bag with Logo",
+      "description": "Lightweight",
+      "price": 7.50,
+      "has_sizes": "False",
+      "rating": 5,
+      "is_holiday": "False",
+      "image": "TRA1122U4.jpg"
+    }
+  },
+  {
+    "pk": 29,
+    "model": "products.product",
+    "fields": {
+      "sku": "TRA2251A1",
       "category": 3, 
       "name": "Cup with logo",
       "description": "Lightweight",
       "price": 5.50,
+      "has_sizes": "False",
+      "rating": 4.8,
+      "is_holiday": "False",
+      "image": "TRA2251A1.jpg"
+    }
+  },
+  {
+    "pk": 30,
+    "model": "products.product",
+    "fields": {
+      "sku": "TRA2251A2",
+      "category": 3, 
+      "name": "Enamel Mug with logo",
+      "description": "Lightweight",
+      "price": 7.50,
+      "has_sizes": "False",
+      "rating": 5,
+      "is_holiday": "False",
+      "image": "TRA2251A2.jpg"
+    }
+  },
+  {
+    "pk": 31,
+    "model": "products.product",
+    "fields": {
+      "sku": "TRA2251A3",
+      "category": 3, 
+      "name": "Glass Cup with logo",
+      "description": "Lightweight",
+      "price": 7.50,
       "has_sizes": "False",
       "rating": 4.8,
       "is_holiday": "False",
