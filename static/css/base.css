@@ -159,7 +159,7 @@ input[name='q']::placeholder {
 }
 
 #home-header {
-    background: url('/media/hero_image.jpg') no-repeat center;
+    background: url('/static/hero_image.jpg') no-repeat center;
     background-size: cover;
 }
 
