@@ -6,17 +6,19 @@
 }
 
 .products-heading {
-    margin-top: 3rem;
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.15 rem;
     font-size: 2.2rem;
     color: #439B94;
 }
 
-.product-card-img {
-    height: 35vh;
-    object-fit: cover;
-  }
+
+.card-product-title {
+    font-size: 1.3rem;
+    color: #575a7b;
+}
 
 .card-footer {
     border-top: 0;
@@ -38,6 +40,10 @@ a.category-badge > span.badge:hover {
 
 .rating {
     color: #439B94;
+}
+
+.product-card {
+    border: 0;
 }
 
 /* Trail Running Holidays */
@@ -220,4 +226,9 @@ img {
     .product-card-img {
         height: 45vh;
       }
+
+    .products-heading {
+        font-size: 2.3rem;
+        margin-top: 5rem;
+    }
 }
