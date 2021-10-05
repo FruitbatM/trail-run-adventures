@@ -1,11 +1,11 @@
 # TRΛIL RUN ΛDVENTURES
 
-<h2 align="center"><img src="media/logo_trail.png" target="_blank"></h2>
+<h2 align="center"><img src="static/images/logo_trail.png" target="_blank"></h2>
 
 *Developed and designed as part of Milestone Project 4: Full Stack Frameworks
 with Django*
 
-[Please view the live project here]()
+<!-- [Please view the live project here](https://trail-run-adventures.herokuapp.com/) -->
 
 ## Table of Contents
 
@@ -79,9 +79,9 @@ ZIP: 42424 <br>
 TRΛIL RUN ΛDVENTURES consists of 8 Django applications listed below. 
 As explained in Django's documentation - a Django application describes a Python package that provides some set of features. Applications may be reused in various projects.
 
-* `home`
 * `about`
 * `contact`
+* `home`
 * `blog`
 * `products`
 * `cart`
