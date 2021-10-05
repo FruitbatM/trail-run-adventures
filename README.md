@@ -66,7 +66,26 @@ ZIP: 42424 <br>
 
 ## User Stories
 
-### Visitor Stories
+|      As a/an...      |                         I want the ability to...                         | So that...                                      |
+|:--------------------:|:------------------------------------------------------------------------:|:-----------------------------------------------:|
+|                      |                                                                          |                                                 |
+|                      |                                                                          |                                                 |
+| Anonymous user       | easily navigate through the site on all devices                          | find what I am looking for with an ease         |
+| Anonymous user       | gain understanding of the website's purpose from the home page           | decide will I continue browsing the site.       |
+| Anonymous user       | read about the company details, goals and aims;                          | gain confidence that I am supporting a viable   |
+| Anonymous user       | search for projects;                                                     | quickly browse which projects are available to support                |
+|          ---         |                                    ---                                   |                              --                 |
+| Shopper user         | view products by categories                                              | I know where to search when I look for a specific product                |
+| Shopper user         | view product details                                                     | I know the product price, size description      |
+| Shopper user         | search for a product by a keyword(s)                                     | I can find a specific product                   |
+| Shopper user         | get purchase confirmation                                                | I can ensure the purchase was confirmed         |
+| Shopper user         | register on the site                                                     | I can create my personal account                |
+|          ---         |                                    ---                                   |                              --                 |
+| Site admin/superuser | add new products                                                         | new products can be added to sell               |
+| Site admin/superuser | edit and update products                                                 | products are up to date in terms of price, description, etc.                   |
+| Site admin/superuser | delete products                                                          | products can be removed from the site in case out of stock or not availbale anymore            |
+| Site admin/superuser | create blog posts                                                        | the website users are informed on interesting stories from the base camp     |
+| Site admin/superuser | delete blog posts                                                        | the blog post is removed in case it becomes outdated |
 
 
 ## Strategy
