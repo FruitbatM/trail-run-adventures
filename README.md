@@ -185,7 +185,7 @@ TRΛIL RUN ΛDVENTURES project is hosted on the [Heroku](https://www.heroku.com/
 
 Below is the process of deploying the website to Heroku and setting up static files & images in AWS.
 
-**HEROKU**
+### **HEROKU**
 
 1. Crate a new app in Heroku. Click on **New** --> **Create new app**
 
@@ -236,7 +236,7 @@ Below is the process of deploying the website to Heroku and setting up static fi
 15. Check the Activity Feed in Heroku to see Build in Progress to confirm automatic deployment is working.
 
 
-**AWS (Amazon Web Services)**
+### **AWS (Amazon Web Services)**
 
 1. Open AWS S3 and create a new bucket, which stores the files, by completing the name and the region.
 
@@ -268,6 +268,54 @@ Below is the process of deploying the website to Heroku and setting up static fi
 7. Create a user and add it to the group. When the user is added to the group, it creates csv file containing Access Key ID and Secret access key which are used to authenticate them from Django app. *It is very important to download the file and save it as you cannot download it again.*
 
 <h2 align="center"><img src="readme-files/deployment/aws_user.jpg" alt="AWS add user" target="_blank" width="60%" height="60%"></h2>
+
+### **Connecting to DJANGO** 
+
+1. Install two new packages, `pip3 install boto3` and `pip3 install django-storages`, and run `pip3 freeze > requirements.txt` command to add them to the requirments.txt file.
+
+2. Update `settings.py` file to tell Django which bucket it should be communicating with. *It is very important to keep AWS access keys secrets as these can be used to store or move data in the bucket and you will be charged by Amazon for it*
+
+<h2 align="center"><img src="readme-files/deployment/settings_aws.jpg" alt="settings.py file" target="_blank" width="60%" height="60%"></h2>
+
+3. Add AWS keys to Heroku and set USE_AWS = True under the app 'Settings' tab --> 'Config Vars'
+
+<h2 align="center"><img src="readme-files/deployment/heroku_aws.jpg" alt="aws keys" target="_blank" width="60%" height="60%"></h2>
+<h2 align="center"><img src="readme-files/deployment/heroku_use_aws.jpg" alt="aws" target="_blank" width="60%" height="60%"></h2>
+
+4. Create `custome_storages.py` to tell Django to use S3 to store static files and upload images when it is in production
+
+<h2 align="center"><img src="readme-files/deployment/custom_storages.jpg" alt="custom_storages.py file" target="_blank" width="60%" height="60%"></h2>
+
+5. Add `AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'` to tell Django where the static files come from in production and add some settings for Static and Media files to settings.py file.
+
+<h2 align="center"><img src="readme-files/deployment/aws_settings.jpg" alt="aws settings" target="_blank" width="60%" height="60%"></h2>
+
+6. Add all the updates in git, commit it and push it to GitHub. Heroku runs `python3 manage.py` to collectstatic during the process which also searches through all the apps and project folders looking for static files. Then, it uses S3 domain settings in conjunction with the custom storage classes that tell the location at the URL where the things should be saved when it is in production. This can be checked in S3 bucket.
+
+<h2 align="center"><img src="readme-files/deployment/s3_bucket.jpg" alt="s3 bucket folders" target="_blank" width="50%" height="50%"></h2>
+
+7. Add Cache control to `settings.py` as static files do not change often and to improve the performance for users.
+
+<h2 align="center"><img src="readme-files/deployment/cache_control.jpg" alt="aws cache control" target="_blank" width="60%" height="60%"></h2>
+
+8. Upload product images via S3. Create a folder, and upload images.
+
+<h2 align="center"><img src="readme-files/deployment/s3_upload_images.jpg" alt="aws cache control" target="_blank" width="50%" height="50%"></h2>
+
+9. Verify a superuser's email address on Heroku Postgres. Login admin and check the VERIFIED and PRIMARY boxes
+
+<h2 align="center"><img src="readme-files/deployment/admin_user.jpg" target="_blank" width="50%" height="50%"></h2>
+
+10. Add Stripe keys to Heroku Config Vars and create a new webhook endpoint.
+
+<h2 align="center"><img src="readme-files/deployment/heroku_stripe.jpg" target="_blank" width="50%" height="50%"></h2>
+
+<h2 align="center"><img src="readme-files/deployment/stripe_webhook.jpg" alt="stipe webhook" target="_blank" width="50%" height="50%"></h2>
+
+11. Create Gmail account, add email host pass & user to Heroku Config Vars and add code to `settings.py` file.
+
+<h2 align="center"><img src="readme-files/deployment/heroku_email.jpg" alt="email settings" target="_blank" width="50%" height="50%"></h2>
+<h2 align="center"><img src="readme-files/deployment/settings_email.jpg" alt="email settings" target="_blank" width="50%" height="50%"></h2>
 
 
 # Credits
