@@ -180,6 +180,61 @@ git commit -m "Example commit" = commit the work on the stage in git before push
 git push = update the repository in GitHub for main / master branch
 ```
 
+## Deployment
+TRΛIL RUN ΛDVENTURES project is hosted on the [Heroku](https://www.heroku.com/) platform with static files and user-uploaded images being hosted on [AWS S3 Basket](https://aws.amazon.com/). Heroku Postgres is used for the database. 
+
+Below is the process of deploying the website to Heroku and setting up static files & images in AWS.
+
+**HEROKU**
+
+1. Crate a new app in Heroku. Click on **New** --> **Create new app**
+
+<h2 align="center"><img src="readme-files/deployment/heroku_create_app.jpg" alt="Heroku new app" target="_blank" width="60%" height="60%"></h2>
+
+2. Then put the App name and select the region. Finally click 'Create app' button to create a new app.
+
+<h2 align="center"><img src="readme-files/deployment/heroku_new_app.jpg" alt="Heroku new app" target="_blank" width="60%" height="60%"></h2>
+
+3. Add Heroku Postgres for the database
+
+<h2 align="center"><img src="readme-files/deployment/heroku_postgres.jpg" alt="New repository" target="_blank" width="60%" height="60%"></h2>
+
+4. Install `dj_database_url` and `psycopg2-binary` to use Heroku Postgres, and run `pip3 freeze > requirements.txt` command to add them on requirments.txt.
+
+<h2 align="center"><img src="readme-files/deployment/dj_database.jpg" alt="dj_database_url" width="60%" height="60%"></h2>
+
+<h2 align="center"><img src="readme-files/deployment/psycopg2.jpg" alt="psycopg2-binary" width="60%" height="60%"></h2>
+
+5. Update `settings.py` file located under the project directory trail_run_adventures. Import `dj_database_url`, comment out sqlite databases and add dj databases variable temporary while the database is transferred to Heroku Postgres.
+
+<h2 align="center"><img src="readme-files/deployment/databases.jpg" alt="settings.py" target="_blank" width="60%" height="60%"></h2>
+
+6. Run `python3 manage.py showmigrations` command to see the status of migrations (currently not migrated). Run `python3 manage.py migrate` command to migrate.
+
+7. Import all products data. Run `python3 manage.py loaddata` command to load the **categories** first, next **levels**, **itinerary**, **itinerary_days**, **faq**  and the **products** the last. The order of loading is important as all the products are associated with categories, levels, itinerary, itinerary days and faq (frequently asked questions). Afterwards import **team** data.
+
+8. Create a superuser with `python3 manage.py createsuperuser` command.
+
+9. Install `gunicorn` which acts as the webserver, and freeze it into requirements file with the command `pip3 freeze > requirements.txt`
+
+10. Create a **Procfile** which specifies the commands that are executed by the app on the startup
+
+<h2 align="center"><img src="readme-files/deployment/procfile.jpg" alt="settings.py" target="_blank" width="60%" height="60%"></h2>
+
+11. Temporary disable collectstatic by setting `heroku config:set DISABLE_COLLECTSTATIC = 1` and host name of Heroku to allowed hosts in `settings.py`
+
+12. Initialise Heroku in git with `heroku: git:remote -a trail-run-adventures` and put git into Heroku with `git push heroku main`
+
+13. Set up the automatic deployment when git is pushed to GitHub. Go to Deployment on [Heroku](https//:heroku.com), search the GitHub repository, connect and click Enable Automatic Deploys.
+
+<h2 align="center"><img src="readme-files/deployment/heroku_deploy.jpg" alt="automatic deployment" target="_blank" width="60%" height="60%"></h2>
+
+14. Generate a new secret key, set it in Heroku and update `settings.py` file. Change the setting of Debug mode that only True in Development mode.
+
+<h2 align="center"><img src="readme-files/deployment/settings_debug.jpg" alt="settings.py" target="_blank" width="60%" height="60%"></h2>
+
+15. Check the Activity Feed in Heroku to see Build in Progress to confirm automatic deployment is working.
+
 # Credits
 
 ## Code
