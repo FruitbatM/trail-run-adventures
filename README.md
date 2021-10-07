@@ -108,6 +108,55 @@ As explained in Django's documentation - a Django application describes a Python
 * `profiles`
 
 
+# Information Architecture
+
+## Database
+
+During the development phase I worked with sqlite3 database which is installed with Django. For deployment(production), a PostgreSQL database is provided by Heroku as an add-on.
+
+## Data Models
+
+### **About app**
+
+**INSTRUCTOR**
+
+
+### **Blog app**
+
+**BLOG POST**
+
+**COMMENT**
+
+### **Checkout app**
+
+**ORDER**
+
+**ORDER LINE ITEM**
+
+### **Products app**
+
+**CATEGORY**
+
+| **Name** | **Database Key** | **Field Type** | **Validation** |
+---        | ---              | ---            | ---            |
+Programmatic Name | name | CharField | max_length=254
+Friendly Name | friendly_name | CharField | max_length=254, null=True, blank=True
+
+**LEVEL**
+
+**ITINERARY**
+
+**ITINERARY DAY**
+
+**PRODUCT**
+
+**FAQ**
+
+### **Profiles app**
+
+**USER PROFILE**
+
+
 ## Technologies
 ## Languages
 
