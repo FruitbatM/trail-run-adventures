@@ -157,12 +157,28 @@ Please click [here](TESTING.md) for the testing process.
 
 [Git](https://git-scm.com/) as a local repository and [GitHub](https://github.com/) as a remote repository were used for this project. Detailed elaboration please find below:
 
-1. Create a remote repository in GitHub by clicking **"New repository"** on the main page<br>
+1. Create a remote repository in GitHub by clicking **"New"** green button or **"New repository"** on the main page.<br>
 
-2. Use **Code Institute Template**, put the repository name and click Create Repository making sure to select public<br>
+<h2 align="center"><img src="readme-files/general/new_repository.jpg" alt="New repo button" target="_blank" width="60%" height="60%"></h2>
 
-3. Open the repository with [Gitpod](https://www.gitpod.io/). By using Code Institue Template, initialisation including initial commit is done so no need to do `git init` command when open IDE, or to use `git push -u origin main` command for my first commit. `gitignore` file, which is very important for the project including some confidential information, is created with Code Institute template so not necessary to create it.<br>
+2. Use **Code Institute Template**, put the repository name and click Create Repository making sure to select public.<br>
 
+<h2 align="center"><img src="readme-files/general/new_repository_create.jpg" alt="New repository" target="_blank" width="60%" height="60%"></h2>
+
+3. Open the repository with [Gitpod](https://www.gitpod.io/). By using Code Institue Template, initialisation including initial commit is done. `gitignore` file, which is very important for the project including some confidential information, is created with Code Institute template so not necessary to create it.<br>
+
+<h2 align="center"><img src="readme-files/general/repo_gitpod_button.jpg" alt="New repository" target="_blank" width="60%" height="60%"></h2>
+
+**Commits**
+- When a section or even a group of work is completed, it is committed in git and pushed into GitHub to make sure to keep the history of the work logged properly.. Below commands are used for this:
+
+```
+git status = to check the status of new/modified folders, files, and documents
+git add . = to put all new and updated work on the stage in git
+git add <specific file> = used when different types of work are done but do not want to commit everything on the same commitment
+git commit -m "Example commit" = commit the work on the stage in git before pushing it to GitHub
+git push = update the repository in GitHub for main / master branch
+```
 
 # Credits
 
