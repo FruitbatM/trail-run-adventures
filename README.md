@@ -170,7 +170,7 @@ Please click [here](TESTING.md) for the testing process.
 <h2 align="center"><img src="readme-files/general/repo_gitpod_button.jpg" alt="New repository" target="_blank" width="60%" height="60%"></h2>
 
 **Commits**
-- When a section or even a group of work is completed, it is committed in git and pushed into GitHub to make sure to keep the history of the work logged properly.. Below commands are used for this:
+- When a section or even a group of work is completed, it is committed in git and pushed into GitHub to make sure to keep the history of the work logged properly. Below commands are used for this:
 
 ```
 git status = to check the status of new/modified folders, files, and documents
@@ -189,11 +189,11 @@ Below is the process of deploying the website to Heroku and setting up static fi
 
 1. Crate a new app in Heroku. Click on **New** --> **Create new app**
 
-<h2 align="center"><img src="readme-files/deployment/heroku_create_app.jpg" alt="Heroku new app" target="_blank" width="60%" height="60%"></h2>
+<h2 align="center"><img src="readme-files/deployment/heroku_new_app.jpg" alt="Heroku new app" target="_blank" width="60%" height="60%"></h2>
 
 2. Then put the App name and select the region. Finally click 'Create app' button to create a new app.
 
-<h2 align="center"><img src="readme-files/deployment/heroku_new_app.jpg" alt="Heroku new app" target="_blank" width="60%" height="60%"></h2>
+<h2 align="center"><img src="readme-files/deployment/heroku_create_app.jpg" alt="Heroku new app" target="_blank" width="60%" height="60%"></h2>
 
 3. Add Heroku Postgres for the database
 
@@ -234,6 +234,41 @@ Below is the process of deploying the website to Heroku and setting up static fi
 <h2 align="center"><img src="readme-files/deployment/settings_debug.jpg" alt="settings.py" target="_blank" width="60%" height="60%"></h2>
 
 15. Check the Activity Feed in Heroku to see Build in Progress to confirm automatic deployment is working.
+
+
+**AWS (Amazon Web Services)**
+
+1. Open AWS S3 and create a new bucket, which stores the files, by completing the name and the region.
+
+<h2 align="center"><img src="readme-files/deployment/aws_create_bucket.jpg" alt="Create bucket in AWS S3" target="_blank" width="60%" height="60%"></h2>
+
+2. Set up the basic settings. Enable static website hosting so that it gives a new endpoint for accessing from the internet. Put index.html and error.html as default values.
+
+<h2 align="center"><img src="readme-files/deployment/aws_hosting.jpg" alt="AWS bucket basic settings" target="_blank" width="60%" height="60%"></h2>
+<h2 align="center"><img src="readme-files/deployment/aws_index_document.jpg" alt="AWS bucket basic settings" target="_blank" width="60%" height="60%"></h2>
+
+3. Set up CORS configuration which is the access between Heroku and AWS S3 Bucket.
+
+<h2 align="center"><img src="readme-files/deployment/aws_cors.jpg" alt="AWS bucket CORS" target="_blank" width="60%" height="60%"></h2>
+
+4. Set up a **Bucket Policy**. Generate a policy with AWS policy generator. Add **/*** at the end of Resource to allow access to all resources in the bucket.
+
+<h2 align="center"><img src="readme-files/deployment/aws_policy.jpg" alt="AWS bucket policy" target="_blank" width="60%" height="60%"></h2>
+
+5. Create a user to access the bucket. Go to IAM (Identity and Access Management) and create a group for the user. Then, create a policy by importing pre-built policy.
+
+<h2 align="center"><img src="readme-files/deployment/aws_iam.jpg" alt="AWS IAM" target="_blank" width="60%" height="60%"></h2>
+<h2 align="center"><img src="readme-files/deployment/aws_iam_policy.jpg" alt="AWS IAM" target="_blank" width="60%" height="60%"></h2>
+
+6. Attach the policy to the group
+
+<h2 align="center"><img src="readme-files/deployment/aws_permissions_policies.jpg" alt="AWS permissions policies" target="_blank" width="60%" height="60%"></h2>
+<h2 align="center"><img src="readme-files/deployment/aws_policy_name.jpg" alt="" target="_blank" width="60%" height="60%"></h2>
+
+7. Create a user and add it to the group. When the user is added to the group, it creates csv file containing Access Key ID and Secret access key which are used to authenticate them from Django app. *It is very important to download the file and save it as you cannot download it again.*
+
+<h2 align="center"><img src="readme-files/deployment/aws_user.jpg" alt="AWS add user" target="_blank" width="60%" height="60%"></h2>
+
 
 # Credits
 
