@@ -99,7 +99,35 @@ ZIP: 42424 <br>
 I've used [Lucidchart](https://www.lucidchart.com/) to draw Page Structure
 
 
-### Features and Django Apps
+# Features
+## Existing Features
+
+- Navbar
+    - responsive on all devices
+    - the logo is located in the top left corner on large devices (desktop) and in the center on the smaller devices (tablets and mobile phones). When logo is clicked it redirects a user to the home page. On smaller devices (tablet, mobile) the navbar is collapsed into a toggler.
+    - a search box is loacted at upper center of navbar where a user can search for products. On mobile and tablet devices it is located under the toggler.
+    - navbar contains as well my account and cart icons. The cart icon with grand total will be displayed if there are items assed to the cart. It changes colour to the green when a product is added to the cart to catch the user's attention. Clicking the cart icon redirects a user to the shopping cart page.
+    - the difference in My Account display is for a regular user and for admin (super user).
+
+    <br>
+    For **Admin user** it contains Product Management, Add New Blog, My Profile, and Logout links. Under the Product Management page, the admin can add new products <br>
+
+    <h2 align="center"><img src="readme-files/features/admin_user.jpg" alt="my account" target="_blank" width="50%" height="50%"></h2>
+
+    For a **Regular user** it contains My Profile, Logout and Order History (only if order was placed) links. <br>
+
+    <h2 align="center"><img src="readme-files/features/regular_user.jpg" alt="my account" target="_blank" width="50%" height="50%"></h2>
+
+- Footer
+    - the footer is standard across all pages on the website.
+    - it contains fast access links, contact details and social media. There is also a copyright information.
+
+
+## Future Implementation
+
+
+
+# Django Apps
 
 TRΛIL RUN ΛDVENTURES consists of 8 Django applications listed below. 
 As explained in Django's documentation - a Django application describes a Python package that provides some set of features. Applications may be reused in various projects.
