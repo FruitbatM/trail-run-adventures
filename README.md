@@ -92,6 +92,12 @@ ZIP: 42424 <br>
 ### Project Goals
 
 
+## Page Structure
+
+<h2 align="center"><img src="readme-files/general/page_structure.jpg" alt="Page structure" target="_blank" width="90%" height="90%"></h2>
+
+I've used [Lucidchart](https://www.lucidchart.com/) to draw Page Structure
+
 
 ### Features and Django Apps
 
@@ -106,7 +112,6 @@ As explained in Django's documentation - a Django application describes a Python
 * `cart`
 * `checkout`
 * `profiles`
-
 
 # Information Architecture
 
@@ -164,10 +169,9 @@ During the development phase I worked with sqlite3 database which is installed w
 
 ### Model Relationship Data Schema
 
-I've used [DBDiagram](https://dbdiagram.io/home) to draw up a Database Schema
+I've used [DBDiagram](https://dbdiagram.io/home) to draw up a Database Schema.
 
-<h2 align="center"><img src="readme-files/general/trail_run_adventures_schema.png" alt="data schema" target="_blank" width="80%" height="80%"></h2>
-
+<h2 align="center"><img src="readme-files/general/trail_run_adventures_schema.png" alt="data schema" target="_blank" width="95%" height="95%"></h2>
 
 ## Technologies
 ## Languages
