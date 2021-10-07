@@ -114,47 +114,59 @@ As explained in Django's documentation - a Django application describes a Python
 
 During the development phase I worked with sqlite3 database which is installed with Django. For deployment(production), a PostgreSQL database is provided by Heroku as an add-on.
 
-## Data Models
+## Apps and Data Models
 
 ### **About app**
 
 **INSTRUCTOR**
-
+- Stores information about adventure holidays 
 
 ### **Blog app**
 
 **BLOG POST**
+- Stores information about the Blog posts.
 
 **COMMENT**
+- Stores information used in the Comment Form. It uses Django's auth's User model as a Foreign Key to allow only Registered users to post comments.
 
 ### **Checkout app**
 
 **ORDER**
+- Stores information about each placed order.
 
 **ORDER LINE ITEM**
+- Stores inormation from the order, used in the calculation in Order model. 
 
 ### **Products app**
 
 **CATEGORY**
-
-| **Name** | **Database Key** | **Field Type** | **Validation** |
----        | ---              | ---            | ---            |
-Programmatic Name | name | CharField | max_length=254
-Friendly Name | friendly_name | CharField | max_length=254, null=True, blank=True
+- Stores information about the product categories.
 
 **LEVEL**
+- Stores information about holiday products difficulty levels.
 
 **ITINERARY**
+- Stores information about holiday product itinerary
 
 **ITINERARY DAY**
+- Stores information about holiday product itinerary data, classified into days.
 
-**PRODUCT**
+**PRODUCT MODEL**
+- Stores product information, both shop products and holiday products.
 
 **FAQ**
+- Stores information about holiday products frequently asked questions.
 
 ### **Profiles app**
 
 **USER PROFILE**
+- Stores information about registered users and order history.
+
+### Model Relationship Data Schema
+
+I've used [DBDiagram](https://dbdiagram.io/home) to draw up a Database Schema
+
+<h2 align="center"><img src="readme-files/general/trail_run_adventures_schema.png" alt="data schema" target="_blank" width="80%" height="80%"></h2>
 
 
 ## Technologies
