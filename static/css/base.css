@@ -712,14 +712,20 @@ footer {
   overflow: visible;
 }
 
-.toast-capper {
-  height: 0.125rem;
-}
-
 .cart-notification-wrapper {
   height: 6.25rem;
   overflow-x: hidden;
   overflow-y: auto;
+}
+
+.checkout-button {
+  background-color: #11766e;
+  color: #fafafa;
+}
+
+.checkout-button:hover, .checkout-button:active {
+  background-color: #13867d;
+  color: #fafafa;
 }
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
