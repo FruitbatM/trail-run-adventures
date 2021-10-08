@@ -728,6 +728,16 @@ footer {
   color: #fafafa;
 }
 
+.adjust-button {
+  background-color: #656996;
+  color: #fafafa;
+}
+
+.adjust-button:hover, .adjust-button:active {
+  background-color: #575a7b;
+  color: #fafafa;
+}
+
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
     width: 0; 
