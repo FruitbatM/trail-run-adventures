@@ -105,26 +105,91 @@ I've used [Lucidchart](https://www.lucidchart.com/) to draw Page Structure
 - Navbar
     - responsive on all devices
     - the logo is located in the top left corner on large devices (desktop) and in the center on the smaller devices (tablets and mobile phones). When logo is clicked it redirects a user to the home page. On smaller devices (tablet, mobile) the navbar is collapsed into a toggler.
-    - a search box is loacted at upper center of navbar where a user can search for products. On mobile and tablet devices it is located under the toggler.
+    - a search box is a part of the top navigation loacted at upper center of navbar where a user can search for products. On mobile and tablet devices it is located under the toggler.
     - navbar contains as well my account and cart icons. The cart icon with grand total will be displayed if there are items assed to the cart. It changes colour to the green when a product is added to the cart to catch the user's attention. Clicking the cart icon redirects a user to the shopping cart page.
-    - the difference in My Account display is for a regular user and for admin (super user).
+    - the difference in My Account display is for a regular user and for admin (super user).<br>
+    
 
-    <br>
     For **Admin user** it contains Product Management, Add New Blog, My Profile, and Logout links. Under the Product Management page, the admin can add new products <br>
 
-    <h2 align="center"><img src="readme-files/features/admin_user.jpg" alt="my account" target="_blank" width="50%" height="50%"></h2>
+    <h2 align="center"><img src="readme-files/features/admin_user.jpg" alt="my account" target="_blank" width="30%" height="30%"></h2>
 
     For a **Regular user** it contains My Profile, Logout and Order History (only if order was placed) links. <br>
 
-    <h2 align="center"><img src="readme-files/features/regular_user.jpg" alt="my account" target="_blank" width="50%" height="50%"></h2>
+    <h2 align="center"><img src="readme-files/features/regular_user.jpg" alt="my account" target="_blank" width="30%" height="30%"></h2>
+
+- Search Functionality
+    - as previously mentioned, a search box is part of the top navigation and is, therefore, accessible on all pages.
+    - it is collapsed under the hamburger menu on tablet and mobile devices as shown in the image below.
+    - it allows customers to enter keywords associated with the products they wish to purchase.
+    - the search results show the number of products found for the search query, as well as inform the user if no products were found.
+    
+    <br>
+
+    <h2 align="center"><img src="readme-files/features/search_bar.jpg" alt="my account" target="_blank" width="50%" height="50%"></h2>
 
 - Footer
     - the footer is standard across all pages on the website.
     - it contains fast access links, contact details and social media. There is also a copyright information.
+    
+    <br>
 
+    <h2 align="center"><img src="readme-files/features/footer.jpg" alt="footer screenshot" target="_blank" width="60%" height="60%"></h2>
+
+
+- Home App
+
+- About App
+
+- Blog App
+
+- Contact App
+
+- Products App
+
+- Cart App
+
+- Checkout App
+
+- Profiles App
+
+
+- Toasts
+    - alert messages to site visitors divided into 4 categories: `toast_success`, `toast_info`, `toast_warning`, and `toast_error`
+    - toasts appear on every page whenever a certain action has been done by the user.
+    - their purpose is to give feedback on the action a user has just performed, such as logging in, logging out, adding a product to the cart, etc
+
+- Django allauth
+    - `django-allauth` is a Python package. According to the [django-allauth](https://django-allauth.readthedocs.io/en/latest/) docs, it is an "integrated set of Django applications addressing authentication, registration, account management as well as 3rd party (social) account authentication."
+    - it provides a set of features such as signup, login, logout and password change
+    - after register, a verification e-mail is sent to the registered e-mail to confirm it. Once confirmed, the user can log in with their credentials and access the profile
+
+- Interactive
+    - back to top arrow button will appear on the lower right of the page when the user starts to scroll down the page
+    - animate on scroll library (AOS)
+
+- Social media
+    - social media icons will be located in the footer section
+    - allow users to find more information on TRΛIL RUN ΛDVENTURES on the social media
+
+- Responsiveness
+    - the website is fully responsive on all devices
+
+- 404 and 500 error pages
+    - if a user navigates to a page which does not exist or if they do not have permission to access, they will be directed to a 404 error page
+    - if there are an internal problems with the server, a 500 error page will appear
 
 ## Future Implementation
 
+- Wishlist
+    - a feature that allows authenticated users to save (wishlist) items for later purchase.
+
+- Product reviews
+    - the idea would be to implement ratings and product reviews on product pages.
+
+- Pagination
+
+- Real time chat
 
 
 # Django Apps
