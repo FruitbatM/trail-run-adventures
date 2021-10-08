@@ -1,19 +1,35 @@
-<div class="card tour-card text-center">
-    <a href="{% url 'holiday_detail' holiday.id %}">
-        <img src="{{ MEDIA_URL }}{{holiday.image_2}}" alt="{{ holiday.name }}" class="img-fluid">
-    </a>
-    <div class="card-content">
-        <div class="card-title text-uppercase">
+<div id="container-holiday-card">  
+    <div class="product-details">
+        <h5 class="text-uppercase pb-2">
             {{ holiday.name }}
+        </h5>
+        <div class="d-inline pe-4 py-2">
+            <i class="fas fa-history"></i>
+            <span>{{ holiday.duration }} nights</span>
         </div>
-        <div class="card-description">
-            {{ holiday.header_paragraph|truncatechars:95}}
+        <div class="pe-4 py-2">
+            <i class="fas fa-ruler d-inline"></i>
+            <span>{{ holiday.distance }} km</span>
         </div>
-        <div class="row">
-            <div class="col-12">
+        <div class="pe-4 pb-5">
+            <i class="fab fa-cloudscale d-inline"></i>
+            <span>{{ holiday.level }}</span>
+        </div>
+        <div class="control">
+            <button class="btn-holiday-card">
                 <a href="{% url 'holiday_detail' holiday.id %}" class="btn btn-sm justify-content-center card-button">
                     EXPLORE
                 </a>
+            </button>
+        </div>
+    </div>
+    <div class="product-image">
+        <a href="{% url 'holiday_detail' holiday.id %}">
+                <img src="{{ MEDIA_URL }}{{holiday.image_2}}" alt="{{ holiday.name }}" class="img-fluid">
+        </a>
+        <div class="info">
+            <div class="p-2">
+                {{ holiday.header_paragraph|truncatechars:120}}
             </div>
         </div>
     </div>
