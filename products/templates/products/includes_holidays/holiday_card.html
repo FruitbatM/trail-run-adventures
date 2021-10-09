@@ -1,58 +1,36 @@
 <div class="wrapper">
     <div id="product-container">
-      <div class="top">
-        <a href="{% url 'holiday_detail' holiday.id %}">
-            <img src="{{ MEDIA_URL }}{{holiday.image_2}}" alt="{{ holiday.name }}" class="img-fluid">
-        </a>
-      </div>
-      <div class="bottom">
-        <div class="left">
-          <div class="details">
-            <h5 class="text-uppercase" id="holiday-card-name">{{ holiday.name }}</h5>
-            <p id="holiday-duration">{{ holiday.duration }} nights</p>
-          </div>
+        <div class="top">
+            <a href="{% url 'holiday_detail' holiday.id %}">
+                <img src="{{ MEDIA_URL }}{{holiday.image_2}}" alt="{{ holiday.name }}" class="img-fluid">
+            </a>
         </div>
-      </div>
+        <div class="bottom">
+            <div class="left">
+                <div class="details pb-2">
+                <h5 class="text-uppercase pb-2" id="holiday-card-name">{{ holiday.name }}</h5>
+                <p id="holiday-duration" class="text-uppercase">{{ holiday.duration }} nights</p>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="inside">
-      <div class="icon">
-        <i class="fas fa-info-circle info_outline"></i>
+        <div class="icon">
+        <i class="fas fa-info-circle"></i>
     </div>
-      <div class="contents">
-        <table>
-          <tr>
-            <th>Width</th>
-            <th>Height</th>
-          </tr>
-          <tr>
-            <td>3000mm</td>
-            <td>4000mm</td>
-          </tr>
-          <tr>
-            <th>Something</th>
-            <th>Something</th>
-          </tr>
-          <tr>
-            <td>200mm</td>
-            <td>200mm</td>
-          </tr>
-          <tr>
-            <th>Something</th>
-            <th>Something</th>
-          </tr>
-          <tr>
-            <td>200mm</td>
-            <td>200mm</td>
-          </tr>
-          <tr>
-            <th>Something</th>
-            <th>Something</th>
-          </tr>
-          <tr>
-            <td>200mm</td>
-            <td>200mm</td>
-          </tr>
-        </table>
-      </div>
+        <div class="contents text-white">
+            <p class="ps-2 pe-2 holiday-date">
+                Date: {{ holiday.start_date }} - {{ holiday.end_date }}
+            </p>
+            <p class="ps-2 pe-2">
+                Total distance: <span>{{ holiday.distance }} km</span>
+            </p>
+            <p class="ps-2 pe-2">
+                Difficulty level: <span>{{ holiday.level|upper }}</span>
+            </p>
+            <p class="ps-2 pe-2">
+                Price: € {{ holiday.price }} per person
+            </p>
+        </div>
     </div>
-  </div>
+</div>
