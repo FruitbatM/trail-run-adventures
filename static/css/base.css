@@ -28,6 +28,11 @@ body {
   padding-bottom: 0.15rem;
 }
 
+.active-nav-link {
+  color: #439B94 !important;
+  font-weight: bold;
+}
+
 .list-inline {
   padding-left: 7rem;
 }
@@ -162,10 +167,6 @@ input[name='q']::placeholder {
   padding-right: 0 !important;
 }
 
-#bg-banner {
-  background-color: #076158;
-}
-
 #home-header {
     background: url('/static/images/hero_image.jpg') no-repeat center;
     background-size: cover;
@@ -190,7 +191,6 @@ input[name='q']::placeholder {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.15 rem;
 }
-
 
 .section-button {
   background-color: #439B94;

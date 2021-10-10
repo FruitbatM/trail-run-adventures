@@ -21,9 +21,10 @@
     </a>
     <div class="collapse navbar-collapse" id="main_nav">
         <ul class="navbar-nav mx-auto mr-2">
-            <li class="nav-item dropdown pe-5">
-                <a class="nav-link active dropdown-toggle" aria-current="page" href="#" id="navbarDropdown" 
-                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <li class="nav-item active dropdown pe-5">
+                <a class="nav-link dropdown-toggle {% if request.get_full_path == '/holidays/' %}active-nav-link{% endif %}" 
+                    aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" 
+                    aria-expanded="false">
                     TRAIL RUNNING HOLIDAYS
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -51,7 +52,8 @@
                 </ul>
             </li>
             <li class="nav-item dropdown pe-5">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" 
+                    data-bs-toggle="dropdown" aria-expanded="false">
                     ABOUT US
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -60,7 +62,8 @@
                 </ul>
             </li>
             <li class="nav-item pe-5">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle {% if request.get_full_path == '/products/' %}active-nav-link{% endif %}" 
+                    href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     SHOP
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -71,10 +74,16 @@
                 </ul>
             </li>
             <li class="nav-item pe-5">
-                <a class="nav-link" href="{% url 'basecampblog' %}">BLOG</a>
+                <a class="nav-link {% if request.get_full_path == '/basecampblog/' %}active-nav-link{% endif %}" 
+                    href="{% url 'basecampblog' %}">
+                    BLOG
+                </a>
             </li>
             <li class="nav-item pe-5">
-                <a class="nav-link" href="{% url 'contact' %}">CONTACT</a>
+                <a class="nav-link {% if request.get_full_path == '/contact/' %}active-nav-link{% endif %}" 
+                    href="{% url 'contact' %}">
+                    CONTACT
+                </a>
             </li>
             <hr class="d-lg-none">
             <!-- NAV account links -->
