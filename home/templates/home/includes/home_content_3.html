@@ -11,7 +11,7 @@
         <div class="row text-center">
             {% for product in shop_home %}
                 <div class="col-md-4" id="shop-column">
-                    <div class="card card-body h-100 border-success" data-aos="zoom-in-down">
+                    <div class="card zoom-effect h-100 border-success" data-aos="zoom-in-down">
                         <div class="category-card-img img-fluid d-flex text-center mt-auto mb-auto text-uppercase">
                             <img src="{{ MEDIA_URL }}{{ product.image }}" alt="{{ product.category.name }}">
                         </div>

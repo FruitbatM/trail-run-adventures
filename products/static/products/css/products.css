@@ -14,6 +14,15 @@
     color: #439B94;
 }
 
+.product-card-img {
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+}
+
+.zoom-effect:hover .product-card-img {
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+}
 
 .card-product-title {
     font-size: 1.3rem;
@@ -45,6 +54,17 @@ a.category-badge > span.badge:hover {
 .product-card {
     border: 0;
 }
+
+.product-image img {
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+}
+
+.zoom-effect:hover .product-image img {
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+}
+
 
 /* Trail Running Holidays */
 #holidays-header {

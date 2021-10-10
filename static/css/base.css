@@ -313,14 +313,17 @@ a {
   margin-bottom: 3rem;
 }
 
-.shop-card {
-  max-width: 18.75rem;
-}
-
 .category-card-img img {
   height: fit-content;
-  width: 165px;
+  width: 10.30rem;
   margin: 1.1rem auto 0 auto;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.zoom-effect:hover .category-card-img img {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
 }
 
 .category-card-button {
@@ -925,10 +928,6 @@ https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 
     #blog-post-header-img {
       width: 100%;
-    }
-
-    #shop-column {
-      margin-bottom: 0;
     }
 
     .card-img-top {

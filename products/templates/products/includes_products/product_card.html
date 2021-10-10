@@ -3,7 +3,7 @@
         <!-- Product Card -->
         {% for product in products %}
         <div class="col-lg-4 col-md-6 col-sm-6 align-items-stretch mb-2" data-aos="zoom-in-down">
-            <div class="card h-100 border-0 mt-2">
+            <div class="card zoom-effect h-100 border-0 mt-2">
             {% if product.image %}
                 <a href="{% url 'product_detail' product.id %}" class="text-center mt-3 p-2">
                     <img src="{{ MEDIA_URL }}{{ product.image }}" alt="{{ product.name }}" 
