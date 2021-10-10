@@ -33,6 +33,10 @@ body {
   font-weight: bold;
 }
 
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  background-color:#daf7f7;
+}
+
 .list-inline {
   padding-left: 7rem;
 }
