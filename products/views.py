@@ -112,45 +112,42 @@ def holiday_detail(request, holiday_id):
 @login_required
 def add_product(request):
     """ A view allowing admin to add a product/
-    holiday adventure to the shop
+    holiday adventure to the site
     """
     if not request.user.is_superuser:
         messages.error(request, 'Access denied!\
-            Sorry, only shop owners have this permission.')
+            Sorry, only site owners have this permission.')
         return redirect(reverse('home'))
 
     if request.method == 'POST':
         if 'product' in request.POST:
             product_form = ProductForm(request.POST, request.FILES,
                                        prefix='product')
-
             if product_form.is_valid():
-                product = product_form.save(commit=False)
-                product.save()
+                product = product_form.save()
                 messages.success(request, 'Successfully added product!')
                 return redirect(reverse('product_detail', args=[product.id]))
-        else:
-            messages.error(request, 'Failed to add product. Please ensure \
-                                     the form is valid.')
-
-        holiday_form = HolidayForm(prefix='holiday')
-    elif 'holiday' in request.POST:
-        holiday_form = HolidayForm(request.POST, request.FILES,
-                                   prefix='holiday')
-        if holiday_form.is_valid():
-            holiday = holiday_form.save(commit=False)
-            holiday.is_holiday = True
-            holiday.save()
-            itinerary = Itinerary.objects.create(holiday=holiday,
-                                                 name=holiday.name)
-            itinerary.save()
-            holiday.save()
-            messages.success(request, 'Successfully added adventure holiday!')
-            return redirect(reverse('holiday_detail', args=[holiday.id]))
-        else:
-            messages.error(request, 'Failed to add holiday. \
+            else:
+                messages.error(request, 'Failed to add product. \
                                 Please ensure the form is valid.')
-            product_form = ProductForm(prefix='product')
+            holiday_form = HolidayForm(prefix='holiday')
+        elif 'holiday' in request.POST:
+            holiday_form = HolidayForm(request.POST, request.FILES,
+                                       prefix='holiday')
+            if holiday_form.is_valid():
+                holiday = holiday_form.save(commit=False)
+                holiday.is_holiday = True
+                holiday.save()
+                itinerary = Itinerary.objects.create(holiday=holiday,
+                                                     name=holiday.name)
+                itinerary.save()
+                holiday.save()
+                messages.success(request, 'Successfully added holiday!')
+                return redirect(reverse('holiday_detail', args=[holiday.id]))
+            else:
+                messages.error(request, 'Failed to add holiday. \
+                                Please ensure the form is valid.')
+        product_form = ProductForm(prefix='product')
     else:
         product_form = ProductForm(prefix='product')
         holiday_form = HolidayForm(prefix='holiday')
@@ -168,7 +165,7 @@ def edit_product(request, product_id):
     """ A view allowing admin to edit a product in the shop """
     if not request.user.is_superuser:
         messages.error(request, 'Access denied!\
-            Sorry, only shop owners have this permission.')
+            Sorry, only site owners have this permission.')
         return redirect(reverse('home'))
 
     product = get_object_or_404(Product, pk=product_id)
@@ -200,10 +197,23 @@ def delete_product(request, product_id):
     """ Delete a product from the shop """
     if not request.user.is_superuser:
         messages.error(request, 'Access denied!\
-            Sorry, only shop owners have this permission.')
+            Sorry, only site owners have this permission.')
         return redirect(reverse('home'))
 
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
-    messages.success(request, 'Product deleted!')
+    messages.success(request, f'{product.name} was successfully deleted!')
     return redirect(reverse('products'))
+
+
+@login_required
+def delete_holiday(request, holiday_id):
+    """ A view to allow admin user to delete a holiday from the site """
+    if not request.user.is_superuser:
+        messages.error(request, 'Access denied!\
+             Only site owners can delete services.')
+        return redirect(reverse('home'))
+    holiday = get_object_or_404(Product, pk=holiday_id)
+    holiday.delete()
+    messages.info(request, f'{holiday.name} was successfully deleted.')
+    return redirect(reverse('holidays'))
