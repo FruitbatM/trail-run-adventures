@@ -1,6 +1,6 @@
 # TRΛIL RUN ΛDVENTURES
 
-<h2 align="center"><img src="static/images/logo_trail.png" target="_blank"></h2>
+<h2 align="center"><img src="static/images/logo_trail.png" target="_blank" width="30%" height="30%"></h2>
 
 *Developed and designed as part of Milestone Project 4: Full Stack Frameworks
 with Django*
@@ -53,7 +53,7 @@ The project was created as a **Milestone Project 4** as a part of **Diploma in F
 
 Trail running is simply defined as going for a run at the heart of nature. It's an extremely all-round non-stadia sport that and you don't need to be high in the mountains to go trail running. You simply need to be in nature.
 
-<h2 align="center"><img src="readme-files/general/project_mockup_1.jpg" alt="my account" target="_blank" width="60%" height="60%"></h2>
+<h2 align="center"><img src="readme-files/general/project_mockup_1.jpg" alt="my account" target="_blank" width="70%" height="70%"></h2>
 
 **Please note, this project is for educational purposes only and provided information is fictional. Nevertheless, all the website functionalities work.**
 

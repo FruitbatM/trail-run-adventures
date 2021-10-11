@@ -5,7 +5,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category, Itinerary, ItineraryDay, Faq
 
-from .forms import ProductForm
+from .forms import ProductForm, HolidayForm
 
 
 def all_products(request):
@@ -111,28 +111,55 @@ def holiday_detail(request, holiday_id):
 
 @login_required
 def add_product(request):
-    """ A view allowing admin to add a product to the shop """
+    """ A view allowing admin to add a product/
+    holiday adventure to the shop
+    """
     if not request.user.is_superuser:
         messages.error(request, 'Access denied!\
             Sorry, only shop owners have this permission.')
         return redirect(reverse('home'))
 
     if request.method == 'POST':
-        form = ProductForm(request.POST, request.FILES)
-        if form.is_valid():
-            product = form.save()
-            messages.success(request, 'Successfully added product!')
-            return redirect(reverse('product_detail', args=[product.id]))
+        if 'product' in request.POST:
+            product_form = ProductForm(request.POST, request.FILES,
+                                       prefix='product')
+
+            if product_form.is_valid():
+                product = product_form.save(commit=False)
+                product.save()
+                messages.success(request, 'Successfully added product!')
+                return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+            messages.error(request, 'Failed to add product. Please ensure \
+                                     the form is valid.')
+
+        holiday_form = HolidayForm(prefix='holiday')
+    elif 'holiday' in request.POST:
+        holiday_form = HolidayForm(request.POST, request.FILES,
+                                   prefix='holiday')
+        if holiday_form.is_valid():
+            holiday = holiday_form.save(commit=False)
+            holiday.is_holiday = True
+            holiday.save()
+            itinerary = Itinerary.objects.create(holiday=holiday,
+                                                 name=holiday.name)
+            itinerary.save()
+            holiday.save()
+            messages.success(request, 'Successfully added adventure holiday!')
+            return redirect(reverse('holiday_detail', args=[holiday.id]))
+        else:
+            messages.error(request, 'Failed to add holiday. \
+                                Please ensure the form is valid.')
+            product_form = ProductForm(prefix='product')
     else:
-        form = ProductForm()
+        product_form = ProductForm(prefix='product')
+        holiday_form = HolidayForm(prefix='holiday')
 
     template = 'products/add_product.html'
     context = {
-        'form': form,
+        'product_form': product_form,
+        'holiday_form': holiday_form,
     }
-
     return render(request, template, context)
 
 
@@ -152,7 +179,8 @@ def edit_product(request, product_id):
             messages.success(request, 'The product was successfully updated!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to update the product. Please ensure the form is valid.')
+            messages.error(request, 'Failed to update the product. Please\
+                                     ensure the form is valid.')
 
     else:
         form = ProductForm(instance=product)

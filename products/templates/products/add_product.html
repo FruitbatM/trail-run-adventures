@@ -15,20 +15,64 @@
         <div class="row my-5">
         <!-- Add Product -->
         <div class="offset-lg-2 col-lg-8 offset-lg-2 col-md-10 offset-md-2 mb-3 px-2">
-            <form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
-                {% csrf_token %}
-                {% for field in form %}
-                    {% if field.name != 'image' %}
-                        {{ field | as_crispy_field }}
-                    {% else %}
-                        {{ field }}
-                    {% endif %}
-                {% endfor %}
-                <div class="text-start mt-4">
-                    <a class="btn btn-warning rounded-1" href="{% url 'products' %}">Cancel</a>
-                    <button class="btn btn-success rounded-1" type="submit">Add Product</button>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Add a Product
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
+                                {% csrf_token %}
+                                    {{ product_form.name | as_crispy_field }}
+                                    {{ product_form.description | as_crispy_field }}
+                                    {{ product_form.category | as_crispy_field }}
+                                    {{ product_form.sku| as_crispy_field }}
+                                    {{ product_form.price | as_crispy_field }}
+                                    {{ product_form.rating | as_crispy_field }}
+                                    {{ product_form.image | as_crispy_field }}
+                                    <div class="text-start mt-4">
+                                        <a class="btn adjust-button rounded-1" href="{% url 'products' %}">Cancel</a>
+                                        <button class="btn checkout-button rounded-1" type="submit">Add Product</button>
+                                    </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-            </form>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            Add a Holiday
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
+                                {% csrf_token %}
+                                    {{ holiday_form.name | as_crispy_field }}
+                                    {{ holiday_form.holiday_header_image | as_crispy_field }}
+                                    {{ holiday_form.header_paragraph | as_crispy_field }}
+                                    {{ holiday_form.price | as_crispy_field }}
+                                    {{ holiday_form.duration| as_crispy_field }}
+                                    {{ holiday_form.distance | as_crispy_field }}
+                                    {{ holiday_form.level | as_crispy_field }}
+                                    {{ holiday_form.start_date | as_crispy_field }}
+                                    {{ holiday_form.end_date | as_crispy_field }}
+                                    {{ holiday_form.overview_paragraph_1 | as_crispy_field }}
+                                    {{ holiday_form.running_days | as_crispy_field }}
+                                    {{ holiday_form.image_1 | as_crispy_field }}
+                                    {{ holiday_form.image_2 | as_crispy_field }}
+                                    <div class="text-start mt-4">
+                                        <a class="btn adjust-button rounded-1" href="{% url 'products' %}">Cancel</a>
+                                        <button class="btn checkout-button rounded-1" type="submit">Add Holiday</button>
+                                    </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 {% endblock %}
