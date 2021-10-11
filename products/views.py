@@ -207,11 +207,42 @@ def delete_product(request, product_id):
 
 
 @login_required
+def edit_holiday(request, holiday_id):
+    """ A view to allow admin user to edit a holiday tour on the site """
+    if not request.user.is_superuser:
+        messages.error(request, 'Access denied!\
+             Only site owners can edit holiday tours.')
+        return redirect(reverse('home'))
+    holiday = get_object_or_404(Product, pk=holiday_id)
+    if request.method == 'POST':
+        form = HolidayForm(request.POST, request.FILES, instance=holiday)
+        if form.is_valid():
+            holiday = form.save(commit=False)
+            holiday.is_holiday = True
+            holiday.save()
+            messages.success(request, 'Successfully updated holiday tour!')
+            return redirect(reverse('holiday_detail', args=[holiday.id]))
+        else:
+            messages.error(request, 'Failed to update holiday tour.\
+                 Please ensure the form is valid.')
+    else:
+        form = HolidayForm(instance=holiday)
+        messages.info(request, f'You are editing {holiday.name}')
+
+    template = 'products/edit_holiday.html'
+    context = {
+        'form': form,
+        'holiday': holiday,
+    }
+    return render(request, template, context)
+
+
+@login_required
 def delete_holiday(request, holiday_id):
     """ A view to allow admin user to delete a holiday from the site """
     if not request.user.is_superuser:
         messages.error(request, 'Access denied!\
-             Only site owners can delete services.')
+             Only site owners can delete holiday tours.')
         return redirect(reverse('home'))
     holiday = get_object_or_404(Product, pk=holiday_id)
     holiday.delete()
