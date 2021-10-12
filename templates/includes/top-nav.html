@@ -29,6 +29,7 @@
                 {% if request.user.is_authenticated %}
                     {% if request.user.is_superuser %}
                         <a class="dropdown-item" href="{% url 'add_product' %}">PRODUCT MANAGEMENT</a>
+                        <a class="dropdown-item" href="{% url 'add_holiday' %}">HOLIDAY MANAGEMENT</a>
                         <a class="dropdown-item" href="{% url 'add_blog' %}">ADD NEW BLOG</a>
                         <div class="line d-lg-none"></div>
                     {% endif %}

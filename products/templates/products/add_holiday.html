@@ -1,32 +1,32 @@
 {% extends "base.html"%}
 {% load static %}
 {% load bag_tools %}
-{% block extra_title %}| Product Management{% endblock %}
+{% block extra_title %}| Add Holiday Tour{% endblock %}
 
 {% block content %}
     <div class="container">
         <div class="row text-center mt-2">
             <div class="col-12">
                 <h3 class="text-uppercase mt-5 mb-5">Product Management</h3>
-                <h5 class="text-muted">Add a Product</h5>
+                <h5 class="text-muted">Add a Holiday Tour</h5>
                 <hr>
             </div>
         </div>
         <div class="row my-5">
         <!-- Add Product -->
         <div class="offset-lg-2 col-lg-8 offset-lg-2 col-md-10 offset-md-2 mb-3 px-2">
-            <form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
+            <form method="POST" action="{% url 'add_holiday' %}" class="form mb-2" enctype="multipart/form-data">
                 {% csrf_token %}
-                {% for field in form %}
-                    {% if field.name != 'image' %}
-                        {{ field | as_crispy_field }}
-                    {% else %}
-                        {{ field }}
+                    {% for field in form %}
+                        {% if field.name != 'image' %}
+                            {{ field | as_crispy_field }}
+                        {% else %}
+                            {{ field }}
                     {% endif %}
                 {% endfor %}
                 <div class="text-start mt-4">
-                    <a class="btn btn-warning rounded-1" href="{% url 'products' %}">Cancel</a>
-                    <button class="btn btn-success rounded-1" type="submit">Add Product</button>
+                    <a class="btn adjust-button rounded-1" href="{% url 'holidays' %}">Cancel</a>
+                    <button class="btn checkout-button rounded-1" type="submit">Add Holiday</button>
                 </div>
             </form>
         </div>

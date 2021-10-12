@@ -111,52 +111,58 @@ def holiday_detail(request, holiday_id):
 
 @login_required
 def add_product(request):
-    """ A view allowing admin to add a product/
-    holiday adventure to the site
-    """
+    """ A view allowing admin to add a product to the site """
     if not request.user.is_superuser:
         messages.error(request, 'Access denied!\
             Sorry, only site owners have this permission.')
         return redirect(reverse('home'))
 
     if request.method == 'POST':
-        if 'product' in request.POST:
-            product_form = ProductForm(request.POST, request.FILES,
-                                       prefix='product')
-            if product_form.is_valid():
-                product = product_form.save()
-                messages.success(request, 'Successfully added product!')
-                return redirect(reverse('product_detail', args=[product.id]))
-            else:
-                messages.error(request, 'Failed to add product. \
-                                Please ensure the form is valid.')
-            holiday_form = HolidayForm(prefix='holiday')
-        elif 'holiday' in request.POST:
-            holiday_form = HolidayForm(request.POST, request.FILES,
-                                       prefix='holiday')
-            if holiday_form.is_valid():
-                holiday = holiday_form.save(commit=False)
-                holiday.is_holiday = True
-                holiday.save()
-                itinerary = Itinerary.objects.create(holiday=holiday,
-                                                     name=holiday.name)
-                itinerary.save()
-                holiday.save()
-                messages.success(request, 'Successfully added holiday!')
-                return redirect(reverse('holiday_detail', args=[holiday.id]))
-            else:
-                messages.error(request, 'Failed to add holiday. \
-                                Please ensure the form is valid.')
-        product_form = ProductForm(prefix='product')
+        form = ProductForm(request.POST, request.FILES)
+        if form.is_valid():
+            product = form.save()
+            messages.success(request, 'Successfully added product!')
+            return redirect(reverse('product_detail', args=[product.id]))
+        else:
+            messages.error(request, 'Failed to add product. Please ensure\
+                           the form is valid.')
     else:
-        product_form = ProductForm(prefix='product')
-        holiday_form = HolidayForm(prefix='holiday')
+        form = ProductForm()
 
     template = 'products/add_product.html'
     context = {
-        'product_form': product_form,
-        'holiday_form': holiday_form,
+        'form': form,
     }
+
+    return render(request, template, context)
+
+
+@login_required
+def add_holiday(request):
+    """ A view allowing admin to add a holiday tour to the site """
+    if not request.user.is_superuser:
+        messages.error(request, 'Access denied!\
+            Sorry, only shop owners have this permission.')
+        return redirect(reverse('home'))
+
+    if request.method == 'POST':
+        form = HolidayForm(request.POST, request.FILES)
+        if form.is_valid():
+            holiday = form.save()
+            messages.success(request, 'Successfully added holiday tour!')
+            return redirect(reverse('holiday_detail', args=[holiday.id]))
+        else:
+            messages.error(request, 'Failed to add holiday tour. Please ensure \
+                           the form is valid.')
+    else:
+        form = HolidayForm()
+        
+    print(form)
+    template = 'products/add_holiday.html'
+    context = {
+        'form': form,
+    }
+
     return render(request, template, context)
 
 

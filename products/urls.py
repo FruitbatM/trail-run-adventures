@@ -8,6 +8,7 @@ urlpatterns = [
     path('holidays/<int:holiday_id>/', views.holiday_detail,
          name='holiday_detail'),
     path('add/', views.add_product, name='add_product'),
+    path('holidays/add/', views.add_holiday, name='add_holiday'),
     path('edit/<int:product_id>/', views.edit_product, name='edit_product'),
     path('holidays/edit/<int:holiday_id>/', views.edit_holiday,
          name='edit_holiday'),
