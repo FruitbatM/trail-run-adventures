@@ -36,10 +36,32 @@
                     <h5 class="text-uppercase py-2">Itinerary</h5>
                 </div>
                 <div class="div">
+                    {% csrf_token %}
                     {{ itinerary_form.day_1 | as_crispy_field }}
+                    {{ itinerary_form.day_1_meal | as_crispy_field }}
                     {{ itinerary_form.day_1_overview | as_crispy_field }}
                     {{ itinerary_form.day_1_hotel | as_crispy_field }}
                     {{ itinerary_form.day_1_data | as_crispy_field }}
+                    {{ itinerary_form.day_2 | as_crispy_field }}
+                    {{ itinerary_form.day_2_meal | as_crispy_field }}
+                    {{ itinerary_form.day_2_overview | as_crispy_field }}
+                    {{ itinerary_form.day_2_hotel | as_crispy_field }}
+                    {{ itinerary_form.day_2_data | as_crispy_field }}
+                    {{ itinerary_form.day_3 | as_crispy_field }}
+                    {{ itinerary_form.day_3_meal | as_crispy_field }}
+                    {{ itinerary_form.day_3_overview | as_crispy_field }}
+                    {{ itinerary_form.day_3_hotel | as_crispy_field }}
+                    {{ itinerary_form.day_3_data | as_crispy_field }}
+                    {{ itinerary_form.day_4 | as_crispy_field }}
+                    {{ itinerary_form.day_4_meal | as_crispy_field }}
+                    {{ itinerary_form.day_4_overview | as_crispy_field }}
+                    {{ itinerary_form.day_4_hotel | as_crispy_field }}
+                    {{ itinerary_form.day_4_data | as_crispy_field }}
+                    {{ itinerary_form.day_5 | as_crispy_field }}
+                    {{ itinerary_form.day_5_meal | as_crispy_field }}
+                    {{ itinerary_form.day_5_overview | as_crispy_field }}
+                    {{ itinerary_form.day_5_hotel | as_crispy_field }}
+                    {{ itinerary_form.day_5_data | as_crispy_field }}
                 </div>
                 <div class="text-start mt-4">
                     <a class="btn adjust-button rounded-1" href="{% url 'holidays' %}">Cancel</a>

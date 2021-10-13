@@ -89,21 +89,7 @@ class ItineraryForm(forms.ModelForm):
 
     class Meta:
         model = ItineraryDay
-        fields = (
-            'itinerary', 'day_1', 'day_1_overview', 'day_1_hotel',
-            'day_1_data'
-            )
+        fields = '__all__'
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-
-        labels = {
-            'itinerary': 'Itinerary',
-            'day_1': 'Day 1',
-            'day_1_overview': 'Day 1 Overview',
-            'day_1_hotel': 'Day 1 Hotel',
-            'day_1_data': 'Day 1 Data',
-        }
-
-        for field in self.fields:
-            self.fields[field].label = labels[field]
