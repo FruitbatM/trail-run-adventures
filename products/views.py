@@ -156,6 +156,10 @@ def add_holiday(request):
                                                  name=holiday.name)
             itinerary.save()
             holiday.save()
+            itinerary_form = itinerary_form.save(commit=False)
+            itinerary_form.itinerary = holiday.itinerary
+            holiday.save()
+            itinerary_form.save()
             messages.success(request, 'Successfully added holiday tour!')
             return redirect(reverse('holiday_detail', args=[holiday.id]))
         else:
@@ -168,7 +172,7 @@ def add_holiday(request):
     template = 'products/add_holiday.html'
     context = {
         'holiday_form': holiday_form,
-        'itinerary_form': itinerary_form
+        'itinerary_form': itinerary_form,
     }
 
     return render(request, template, context)

@@ -66,8 +66,8 @@ class HolidayForm(forms.ModelForm):
             'duration': 'Duration (in days)',
             'distance': 'Distance (in km) *',
             'level': 'Dificulty level *',
-            'start_date': 'Start date',
-            'end_date': 'End date',
+            'start_date': 'Start date format Y-m-d',
+            'end_date': 'End date format Y-m-d',
             'overview_paragraph_1': 'Overview paragraph',
             'image_url': 'Image URL',
             'running_days': 'Running days',
@@ -81,6 +81,8 @@ class HolidayForm(forms.ModelForm):
         self.fields['header_paragraph'].widget.attrs['rows'] = 2
         self.fields['price'].widget.attrs['min'] = 500
         self.fields['price'].widget.attrs['max'] = 3500
+        self.fields['start_date'].input_formats = ['%Y-%m-%d']
+        self.fields['end_date'].input_formats = ['%Y-%m-%d']
 
 
 class ItineraryForm(forms.ModelForm):
@@ -88,13 +90,15 @@ class ItineraryForm(forms.ModelForm):
     class Meta:
         model = ItineraryDay
         fields = (
-            'day_1', 'day_1_overview', 'day_1_hotel', 'day_1_data'
+            'itinerary', 'day_1', 'day_1_overview', 'day_1_hotel',
+            'day_1_data'
             )
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
         labels = {
+            'itinerary': 'Itinerary',
             'day_1': 'Day 1',
             'day_1_overview': 'Day 1 Overview',
             'day_1_hotel': 'Day 1 Hotel',
