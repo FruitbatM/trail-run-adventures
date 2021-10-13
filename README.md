@@ -96,7 +96,7 @@ ZIP: 42424 <br>
 
 ## Page Structure
 
-<h2 align="center"><img src="readme-files/general/page_structure.jpg" alt="Page structure" target="_blank" width="90%" height="90%"></h2>
+<h2 align="center"><img src="readme-files/general/page_structure.jpeg" alt="Page structure" target="_blank" width="90%" height="90%"></h2>
 
 I've used [Lucidchart](https://www.lucidchart.com/) to draw Page Structure
 
