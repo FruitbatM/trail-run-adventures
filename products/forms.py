@@ -45,21 +45,28 @@ class HolidayForm(forms.ModelForm):
 
     class Meta:
         model = Product
-        fields = ('name', 'price', 'duration', 'header_paragraph',
+        fields = ('name', 'country', 'price', 'duration', 'header_paragraph',
                   'holiday_header_image', 'header_paragraph',
                   'distance', 'level', 'start_date', 'end_date',
-                  'overview_paragraph_1', 'running_days', 'image_1', 'image_2',
+                  'number_of_runners', 'overview_paragraph_1',
+                  'overview_paragraph_2', 'running_days', 'min_elavation',
+                  'max_elavation', 'elevation_gain', 'route_image',
+                  'image_1', 'image_2', 'image_3'
                   )
     holiday_header_image = forms.ImageField(label='Header Image', required=True)
-    image_1 = forms.ImageField(label='Header Image', required=False)
-    image_2 = forms.ImageField(label='Header Image', required=False)
+    image_1 = forms.ImageField(required=True)
+    image_2 = forms.ImageField(required=False)
+    image_3 = forms.ImageField(required=False)
+    route_image = forms.ImageField(required=False)
     duration = forms.IntegerField(required=True)
     distance = forms.IntegerField(required=True)
+    number_of_runners = forms.IntegerField()
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         labels = {
             'name': 'Holiday Name',
+            'country': 'Country',
             'price': 'Price(€)',
             'header_paragraph': 'Header paragraph',
             'holiday_header_image': 'Header Image URL',
@@ -68,11 +75,18 @@ class HolidayForm(forms.ModelForm):
             'level': 'Dificulty level *',
             'start_date': 'Start date format Y-m-d',
             'end_date': 'End date format Y-m-d',
+            'number_of_runners': 'number_of_runners',
             'overview_paragraph_1': 'Overview paragraph',
+            'overview_paragraph_2': 'Overview paragraph',
+            'min_elavation': 'max_elavation',
+            'max_elavation': 'max_elavation',
+            'elevation_gain': 'elevation_gain',
+            'route_image': 'route_image',
             'image_url': 'Image URL',
             'running_days': 'Running days',
             'image_1': 'Image',
             'image_2': 'Image',
+            'image_3': 'Image',
         }
 
         for field in self.fields:

@@ -35,7 +35,7 @@
     </div>
 </div>
 {% if request.user.is_superuser %}
-    <small class="ms-3">
+    <small class="superuser-buttons">
         <a href="{% url 'edit_holiday' holiday.id %}">Edit</a> |
         <!-- Delete Modal Button -->
         <button type="button" class="modal-button" data-bs-toggle="modal" data-bs-target="#deleteModal{{ holiday.id }}">

@@ -390,4 +390,8 @@ img {
         font-size: 2.3rem;
         margin-top: 5rem;
     }
+
+    .superuser-buttons {
+        margin-left: 2.1rem;
+    }
 }
