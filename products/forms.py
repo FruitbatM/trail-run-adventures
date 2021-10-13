@@ -1,6 +1,7 @@
 from django import forms
+import datetime
 from .widgets import CustomClearableFileInput
-from .models import Product, Category, ItineraryDay
+from .models import Product, Category, ItineraryDay, Itinerary
 
 
 class ProductForm(forms.ModelForm):
@@ -53,8 +54,7 @@ class HolidayForm(forms.ModelForm):
     image_1 = forms.ImageField(label='Header Image', required=False)
     image_2 = forms.ImageField(label='Header Image', required=False)
     duration = forms.IntegerField(required=True)
-    start_date = forms.DateField(required=True)
-    end_date = forms.DateField(required=True)
+    distance = forms.IntegerField(required=True)
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)

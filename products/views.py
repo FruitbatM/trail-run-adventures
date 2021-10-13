@@ -5,7 +5,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category, Itinerary, ItineraryDay, Faq
 
-from .forms import ProductForm, HolidayForm
+from .forms import ProductForm, HolidayForm, ItineraryForm
 
 
 def all_products(request):
@@ -142,25 +142,33 @@ def add_holiday(request):
     """ A view allowing admin to add a holiday tour to the site """
     if not request.user.is_superuser:
         messages.error(request, 'Access denied!\
-            Sorry, only shop owners have this permission.')
+            Sorry, only site owners have this permission.')
         return redirect(reverse('home'))
 
     if request.method == 'POST':
-        form = HolidayForm(request.POST, request.FILES)
-        if form.is_valid():
-            holiday = form.save()
+        holiday_form = HolidayForm(request.POST, request.FILES)
+        itinerary_form = ItineraryForm(request.POST, request.FILES)
+        if holiday_form.is_valid() and itinerary_form.is_valid():
+            holiday = holiday_form.save(commit=False)
+            holiday.is_holiday = True
+            holiday.save()
+            itinerary = Itinerary.objects.create(holiday=holiday,
+                                                 name=holiday.name)
+            itinerary.save()
+            holiday.save()
             messages.success(request, 'Successfully added holiday tour!')
             return redirect(reverse('holiday_detail', args=[holiday.id]))
         else:
             messages.error(request, 'Failed to add holiday tour. Please ensure \
                            the form is valid.')
     else:
-        form = HolidayForm()
-        
-    print(form)
+        holiday_form = HolidayForm()
+        itinerary_form = ItineraryForm()
+
     template = 'products/add_holiday.html'
     context = {
-        'form': form,
+        'holiday_form': holiday_form,
+        'itinerary_form': itinerary_form
     }
 
     return render(request, template, context)
@@ -168,7 +176,7 @@ def add_holiday(request):
 
 @login_required
 def edit_product(request, product_id):
-    """ A view allowing admin to edit a product in the shop """
+    """ A view allowing admin user to edit a product on the site """
     if not request.user.is_superuser:
         messages.error(request, 'Access denied!\
             Sorry, only site owners have this permission.')
@@ -200,7 +208,7 @@ def edit_product(request, product_id):
 
 @login_required
 def delete_product(request, product_id):
-    """ Delete a product from the shop """
+    """ Delete a product from the site """
     if not request.user.is_superuser:
         messages.error(request, 'Access denied!\
             Sorry, only site owners have this permission.')
