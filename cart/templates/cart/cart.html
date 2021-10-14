@@ -20,13 +20,12 @@
         <div class="row">
             <div class="col">
                 {% if cart_items %}
-                    <div class="table-responsive rounded d-none d-md-block">
+                    <div class="table-responsive rounded">
                         <table class="table table-sm table-borderless">
-                            <thead class="text-black">
-                                <tr>
-                                    <th scope="col" class="ps-3">Product Info</th>
-                                    <br>
-                                    <th scope="col"></th>
+                            <thead class="font-italic">
+                                <tr class="hrline">
+                                    <th scope="col">Product</th>
+                                    <th scope="col" class="ps-4" style="width: 35%;">Description</th>
                                     <th scope="col">Price</th>
                                     <th scope="col">Quantity</th>
                                     <th scope="col">Subtotal</th>
@@ -34,21 +33,21 @@
                             </thead>
                             {% for item in cart_items %}
                                 <tr>
-                                    <td class="p-3 w-25">
+                                    <td class="py-4 pe-4 cart-image text-center">
                                         {% include "cart/includes/product_image.html" %}
                                     </td>
-                                    <td class="py-3">
+                                    <td class="py-4 ps-4 text-center">
                                         {% include "cart/includes/product_info.html" %}
                                     </td>
-                                    <td class="py-3">
+                                    <td class="py-5 pe-1 text-center">
                                         <p class="my-1">
                                             €{{ item.product.price }}
                                         </p>
                                     </td>
-                                    <td class="py-3 w-25">
+                                    <td class="py-4 w-25 text-center">
                                         {% include "cart/includes/cart_update_form.html" %}
                                     </td>
-                                    <td class="py-3">
+                                    <td class="py-4 text-center">
                                         <p class="my-1">€{{ item.product.price | calc_subtotal:item.quantity}}</p>
                                     </td>
                                 </tr>

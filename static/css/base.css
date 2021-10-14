@@ -809,6 +809,25 @@ https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
   margin-top: 2rem;
 }
 
+/* Cart */
+
+thead th {
+  padding-bottom: 0.5rem !important;
+  text-align: center;
+}
+
+.hrline {
+  border-bottom: 0.1rem solid #439B94;
+}
+
+.cart-image {
+  width: 15%;
+}
+
+.cart-quantity {
+  margin-left: 4.4rem;
+}
+
 /* Login / Register button */
 
 .button-primary {
