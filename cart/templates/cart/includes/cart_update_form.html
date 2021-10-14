@@ -5,18 +5,18 @@
             <div class="input-group cart-quantity">
                 <div class="input-group-prepend">
                     <button class="decrement-qty btn btn-sm btn-black rounded-1" 
-                        data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
+                        data-item_id="{{ holiday.id }}" id="decrement-qty_{{ holiday.id }}">
                         <span>
                             <i class="fas fa-minus fa-sm"></i>
                         </span>
                     </button>
                 </div>
                 <input class="form-control form-control-sm qty_input" type="number"
-                    name="quantity" value="{{ item.quantity }}" min="1" max="12"
-                    data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}">
+                    name="quantity" value="1" min="1" max="12"
+                    data-item_id="{{ holiday.id }}" id="id_qty_{{ holiday.id }}">
                 <div class="input-group-append">
                     <button class="increment-qty btn btn-sm btn-black rounded-1"
-                        data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
+                        data-item_id="{{ holiday.id }}" id="increment-qty_{{ holiday.id }}">
                         <span>
                             <i class="fas fa-plus fa-sm"></i>
                         </span>
