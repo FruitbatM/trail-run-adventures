@@ -49,12 +49,6 @@ body {
   color: #33a9a0
 }
 
-/* Allauth form formatting */
-.allauth-form-inner-content input {
-  margin-top: 1.5rem;
-  color: #439B94;
-}
-
 .allauth-form-inner-content p {
   border-color: #000;
   border-radius: 0.5rem;
@@ -813,6 +807,17 @@ https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
   background-size: cover;
   height: auto;
   margin-top: 2rem;
+}
+
+/* Login / Register button */
+
+.button-primary {
+  background-color: #149285 !important;
+  border: none;
+}
+
+.button-primary:hover, .button-primary:active {
+  background-color: #11796e !important;
 }
 
 
