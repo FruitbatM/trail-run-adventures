@@ -53,7 +53,7 @@ The project was created as a **Milestone Project 4** as a part of **Diploma in F
 
 Trail running is simply defined as going for a run at the heart of nature. It's an extremely all-round non-stadia sport that and you don't need to be high in the mountains to go trail running. You simply need to be in nature.
 
-<h2 align="center"><img src="readme-files/general/project_mockup_1.jpg" alt="my account" target="_blank" width="70%" height="70%"></h2>
+<h2 align="center"><img src="readme-files/general/project_mockup_1.jpg" alt="my account" target="_blank" width="85%" height="85%"></h2>
 
 **Please note, this project is for educational purposes only and provided information is fictional. Nevertheless, all the website functionalities work.**
 
@@ -106,13 +106,13 @@ I've used [Lucidchart](https://www.lucidchart.com/) to draw Page Structure
 
 - Navbar
     - responsive on all devices
-    - the logo is located in the top left corner on large devices (desktop) and in the center on the smaller devices (tablets and mobile phones). When logo is clicked it redirects a user to the home page. On smaller devices (tablet, mobile) the navbar is collapsed into a toggler.
-    - a search box is a part of the top navigation loacted at upper center of navbar where a user can search for products. On mobile and tablet devices it is located under the toggler.
-    - navbar contains as well my account and cart icons. The cart icon with grand total will be displayed if there are items assed to the cart. It changes colour to the green when a product is added to the cart to catch the user's attention. Clicking the cart icon redirects a user to the shopping cart page.
+    - the logo is located in the top left corner on large devices (desktop) and in the center on the smaller devices (tablets and mobile phones). When logo is clicked it redirects a user to the home page. On smaller devices (tablet, mobile) the navbar is collapsed into a hamburger menu.
+    - a search box is a part of the top navigation loacted at upper center of navbar where a user can search for products. On mobile and tablet devices it is located under the hamburger menu.
+    - navbar contains also my account and cart icons. The cart icon with grand total will be displayed if there are items assed to the cart. It changes colour to the green when a product is added to the cart to catch the user's attention. Clicking the cart icon redirects a user to the shopping cart page.
     - the difference in My Account display is for a regular user and for admin (super user).<br>
     
 
-    For **Admin user** it contains Product Management, Add New Blog, My Profile, and Logout links. Under the Product Management page, the admin can add new products <br>
+    For **Admin user** (superuser) it contains Product Management, Holiday Management, Add New Blog, My Profile, and Logout links. Under the Product Management page, the admin can add new products <br>
 
     <h2 align="center"><img src="readme-files/features/admin_user.jpg" alt="my account" target="_blank" width="30%" height="30%"></h2>
 
@@ -123,12 +123,12 @@ I've used [Lucidchart](https://www.lucidchart.com/) to draw Page Structure
 - Search Functionality
     - as previously mentioned, a search box is part of the top navigation and is, therefore, accessible on all pages.
     - it is collapsed under the hamburger menu on tablet and mobile devices as shown in the image below.
-    - it allows customers to enter keywords associated with the products they wish to purchase.
+    - it allows customers to enter keywords associated with the shop products they wish to purchase. 
     - the search results show the number of products found for the search query, as well as inform the user if no products were found.
     
     <br>
 
-    <h2 align="center"><img src="readme-files/features/search_bar.jpg" alt="my account" target="_blank" width="50%" height="50%"></h2>
+    <h2 align="center"><img src="readme-files/features/search_bar.jpg" alt="my account" target="_blank" width="60%" height="60%"></h2>
 
 - Footer
     - the footer is standard across all pages on the website.
@@ -140,6 +140,21 @@ I've used [Lucidchart](https://www.lucidchart.com/) to draw Page Structure
 
 
 - Home App
+    - The main purpose of the home page is to allure new users to the website, give a clear understanding of the business and to capture their interest by using the website's functionalities. Smooth animation on scroll is applied throughout the pages. The home page consists of 7 sections.
+
+        - **Hero image** contains a full-screen background image, main heading with a sub-heading and "Explore" button that redirects a user to the Trail running holidays page. The purpose of the effective hero image is used to gain instant user attention and to call to an action.
+
+        - **Introduction** section contains an introduction about the company, what it offers and what can be explored on the website. It contains a heading, a paragraph section and "Find out more" button which redirects to Our Story page. Also a mountain range image is placed as a background in order to grab users attention.
+
+        - **Trail Running Holidays** section displays three trail running holiday tour cards. Holiday tour cards consist of animated on hover image with tour title, and a card content section. On the bottom section par, a button "Explore more" is located that redirects to the Trail Running Holidays page.
+
+        - **Shop products** section displays three product categories (Shirts, Accessories, and Drinkware) along with a button "Shop All" which redirects to the Products page.
+
+        - **Benefits** section provides information to the user about some of the advantages of the company and why to make the business with us. Three cards with animation were stratigically placed. When the user hovers over each image, additional text with animation will appear. Also when the user clicks on the each image it redirects the user to Our Story page.
+
+        - **Blog** section (News from Basecamp) contains two blog post with an image and a blog content. At the bottom a 'comment' icon is located which indicates are there any comments added to a particular blog post.
+
+        - **Customer Reviews** section contains the customer's reviews carousel. This section is static but it is planned to implement a dynamic showcase of user's reviews.
 
 - About App
 
