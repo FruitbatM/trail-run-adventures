@@ -156,11 +156,19 @@ I've used [Lucidchart](https://www.lucidchart.com/) to draw Page Structure
 
         - **Customer Reviews** section contains the customer's reviews carousel. This section is static but it is planned to implement a dynamic showcase of user's reviews.
 
-- About App
+- About Us
+    - About Us consists of two pages **Our Story** and **Our Team**. Our Story page provider an information to the user about the main focus of the website, the company, purpose and benefits booking a tour or make a purchase on the website shop. Our Team page gives a shrot introduction to TRΛIL RUN ΛDVENTURES Team with a image and short bio of each team member.
 
 - Blog App
+    - this page mostly relies on textual content with images and can be divided into 3 parts - basecampblog , blogs posts and admin blog management activities.
+        - **basecampblog** displays short introductions to all available blog posts and links to them.
+        - **blog posts** are individual blog entries, each adressing a topic related to trail running, outdoors, sustainability, and similar subjects.
+        - **admin blog management** includes adding, editing and deleting blog posts. Users with admin rights have permission to do that directly in the UI through forms. In case of deleting a blog post, a modal will open to check if the user really wants to proceed with this action.
 
 - Contact App
+    - contact page consists of 2 sections:
+        - *Contact form* where users can reach the company by inputing their details (full name, email) and write a subjet and a message inquiry. The email will be sent to the website admin.
+        - *Company contact details* provides an information about the working hours and telephone number.
 
 - Products App
 
