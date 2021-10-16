@@ -108,7 +108,7 @@ I've used [Lucidchart](https://www.lucidchart.com/) to draw Page Structure
     - responsive on all devices
     - the logo is located in the top left corner on large devices (desktop) and in the center on the smaller devices (tablets and mobile phones). When logo is clicked it redirects a user to the home page. On smaller devices (tablet, mobile) the navbar is collapsed into a hamburger menu.
     - a search box is a part of the top navigation loacted at upper center of navbar where a user can search for products. On mobile and tablet devices it is located under the hamburger menu.
-    - navbar contains also my account and cart icons. The cart icon with grand total will be displayed if there are items assed to the cart. It changes colour to the green when a product is added to the cart to catch the user's attention. Clicking the cart icon redirects a user to the shopping cart page.
+    - navbar contains also my account and cart icons. The cart icon with grand total will be displayed if there are items added to the cart. It changes colour to the green when a product is added to the cart to catch the user's attention. Clicking the cart icon redirects a user to the shopping cart page.
     - the difference in My Account display is for a regular user and for admin (super user).<br>
     
 
@@ -173,6 +173,12 @@ I've used [Lucidchart](https://www.lucidchart.com/) to draw Page Structure
 - Products App
 
 - Cart App
+    - cart is a standard eCommerce functionality which aids the checkout process. A cart icon is displayed in the top right website's corner. 
+    - The cart icon with the grand total will be displayed if there are items added to the cart. The cart icon changes the color to green when a product is added to the cart to catch the user's attention. 
+    - After clickign on the cart icon, the user gets an overview of all the products put into the cart. The user can also modify the quantity of the added products as well as remove the products from the cart. 
+    - all the products in the cart are also linked to their product details page so that the user has an easy access to each item in case they whish to check it again before proceeding with the checkout process.
+    - if the user tries to access their empty cart, a message gets displayed that nothing has been added yet and encourage them to go to the shop.
+
 
 - Checkout App
 
