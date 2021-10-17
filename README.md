@@ -93,6 +93,13 @@ ZIP: 42424 <br>
 ## Strategy
 ### Project Goals
 
+## Design
+### Color Scheme
+
+<h2 align="center"><img src="readme-files/general/color_palette.png" alt="color palette" target="_blank" width="70%" height="70%"></h2>
+
+[Coolors](https://coolors.co/) was used to create a color palette.
+
 
 ## Page Structure
 
@@ -181,6 +188,8 @@ I've used [Lucidchart](https://www.lucidchart.com/) to draw Page Structure
 
 
 - Checkout App
+
+
 
 - Profiles App
 
@@ -328,7 +337,7 @@ I've used [DBDiagram](https://dbdiagram.io/home) to draw up a Database Schema.
 - [TinyJPG](https://tinyjpg.com/) was used for compressing images while preserving transparency.
 - [Techsini](http://techsini.com/multi-mockup/index.php) was used to create the responsive mockup image.
 - [Paint 3D](https://www.microsoft.com/en-us/p/paint-3d/9nblggh5fv99?activetab=pivot:overviewtab) was used to modifiy couple of images.
-- [Coolors](https://coolors.co/) was used for colour palette used on the website.
+- [Coolors](https://coolors.co/) was used for color palette used on the website.
 - [CSS Autoprefixer](https://autoprefixer.github.io/) was used for adding CSS vendor prefixes.
 - [Google Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools) was used to test and debug the code.
 - [Animate On Scroll Library](https://michalsnik.github.io/aos/) was used to integrate animate on scroll effect on home page.
