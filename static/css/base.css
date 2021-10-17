@@ -790,13 +790,21 @@ https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 }
 
 /* Contact Form */
+
+#contact-form-button {
+  background-color: #149285;
+  color: #fafafa;
+}
+
 #contact-form-button:hover,
 #contact-form-button:focus,
 #contact-form-button:active {
-  background-color: #149285 !important;
-  border-color: #149285 !important;
+  background-color: #B3D5D2 !important;
+  border-color: #B3D5D2 !important;
+  color: #000;
   border: 0.12rem solid;
 }
+
 
 .form-group {
   padding-bottom: 1rem;
