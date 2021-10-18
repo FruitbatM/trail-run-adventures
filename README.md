@@ -100,6 +100,14 @@ The site will consist of the homepage which will give an overview of the site pu
 
 Furthermore the website will contain Trail Running Holidays page with all informations the users might need for each trail runing holiday tour the company currently offers. Also, the website will contain About Us page with sub-pages Our Story and Our Team, and Shop, Blog and Contact pages.
 
+## Strucutre
+
+Below is the website page structure to show the core relationships between the pages.
+
+<h2 align="center"><img src="readme-files/general/page_structure.jpeg" alt="Page structure" target="_blank" width="90%" height="90%"></h2>
+
+I've used [Lucidchart](https://www.lucidchart.com/) to draw Page Structure
+
 ## Skeleton
 The wireframes were created in [Figma](https://www.figma.com/)
 
@@ -108,8 +116,8 @@ Wireframes created at the start of the project for desktop and mobile can be vie
 Desktop Wireframes | Mobile Wireframes
 ------------------ | ----------------
 [Homepage](readme-files/wireframes/desktop_homepage.jpg) | [Homepage]()
-[Trail Running Holidays](readme-files/wireframes/.jpg) | [Trail Running Holidays]()
-[Trail Running Holidays - detail](readme-files/wireframes/holiday_detail.jpg) | [Trail Running Holidays]()    
+[Trail Running Holidays](readme-files/wireframes/.jpg) | [Trail Running Holidays]() - TBA
+[Trail Running Holidays - detail](readme-files/wireframes/desktop_holiday_detail.jpg) | [Trail Running Holidays]()    
 [Our Story](readme-files/wireframes/desktop_about_our_story.jpg) | [Our Story]()
 [Our Team](readme-files/wireframes/desktop_our_team.jpg) | [Our Team]()
 [Shop](readme-files/wireframes/desktop_shop_all_products.jpg) | [Shop]()
@@ -154,22 +162,14 @@ Charcoal (#3E4551) will be used only for footer section and it combines great wi
 
 - Fonts were imported from [Google Fonts](https://fonts.google.com/).
 
-
 ## Imagery
 ### Logo
 
-- I used [Canva](https://www.canva.com/) to design the custom logo which was used only for favicon.
+- I used [Canva](https://www.canva.com/) to design the custom website logo and favicon. 
 
 ### Icons
 
 Icons should be obvious and very intuitive so that users can easily understand what a particular icon represents.
-
-## Page Structure
-
-<h2 align="center"><img src="readme-files/general/page_structure.jpeg" alt="Page structure" target="_blank" width="90%" height="90%"></h2>
-
-I've used [Lucidchart](https://www.lucidchart.com/) to draw Page Structure
-
 
 # Features
 ## Existing Features
@@ -309,8 +309,6 @@ As explained in Django's documentation - a Django application describes a Python
 * `checkout`
 * `profiles`
 
-# Information Architecture
-
 ## Database
 
 During the development phase I worked with sqlite3 database which is installed with Django. For deployment(production), a PostgreSQL database is provided by Heroku as an add-on.
@@ -414,7 +412,7 @@ Testing process was written in a separate file.
 Please click [here](TESTING.md) for the testing process.
 
 
-## Version Control
+# Version Control
 
 [Git](https://git-scm.com/) as a local repository and [GitHub](https://github.com/) as a remote repository were used for this project. Detailed elaboration please find below:
 
@@ -441,12 +439,39 @@ git commit -m "Example commit" = commit the work on the stage in git before push
 git push = update the repository in GitHub for main / master branch
 ```
 
-## Deployment
+# Deployment
+The master branch of this repository is the most current version and has been used for the deployed version of the site. Separate branches were used for implementing features and fixes.
+
 TRΛIL RUN ΛDVENTURES project is hosted on the [Heroku](https://www.heroku.com/) platform with static files and user-uploaded images being hosted on [AWS S3 Basket](https://aws.amazon.com/). Heroku Postgres is used for the database. 
 
-Below is the process of deploying the website to Heroku and setting up static files & images in AWS.
+## Local Deployment
+
+To run this project locally make sure you have the following:
+
+- an IDE of your choice (such as Gitpod)
+- have the following installed:
+    - [Git](https://git-scm.com/)
+    - [Python3](https://www.python.org/downloads/)
+    - [PIP](https://pypi.org/project/pip/)
+
+### Clone the GitHub Repository
+
+To clone this project and run locally please follow the below steps:
+1. Login into GitHub with your account
+2. Go to the [project repository](https://github.com/FruitbatM/trail-run-adventures)
+3. Click on the "Code" button (located next to the green "Gitpod" button)
+
+<h2 align="center"><img src="readme-files/deployment/clone.jpg" alt="Heroku new app" target="_blank" width="50%" height="50%"></h2>
+
+4. From the dropdown menu copy the HTTPS URL
+5. In your local IDE open the terminal
+6. Change your working directory to the location where you want the cloned project saved
+7. Type `git clone` and paste copied URL from Step 4
+8. Press enter to create your local clone
 
 ### **HEROKU**
+
+Below is the process of deploying the website to Heroku and setting up static files & images in AWS.
 
 1. Crate a new app in Heroku. Click on **New** --> **Create new app**
 
