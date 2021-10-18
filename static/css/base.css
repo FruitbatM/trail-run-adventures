@@ -114,7 +114,6 @@ input[name='q']::placeholder {
   margin-top: 5rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  letter-spacing: 0.15 rem;
   color: #000000;
   text-shadow: 0.07rem 0.06rem #fafafa;
 }
@@ -127,7 +126,6 @@ input[name='q']::placeholder {
 .section-heading-1 {
   margin-top: 6rem;
   font-family: 'Roboto', sans-serif;
-  letter-spacing: 0.15 rem;
 }
 
 .section-button {
@@ -170,7 +168,6 @@ input[name='q']::placeholder {
 .section-heading-2 {
   margin-top: 5rem;
   font-family: 'Roboto', sans-serif;
-  letter-spacing: 0.15 rem;
   font-size: 2.2rem;
   color: #439B94;
 }
@@ -593,7 +590,6 @@ footer {
   margin-top: 9.5rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  letter-spacing: 0.15 rem;
   color: #fafafa;
   text-shadow: 0.15rem 0.15rem #000000;
 }
@@ -816,7 +812,6 @@ thead th {
     }
 
     .section-heading-2 {
-      letter-spacing: 0.2 rem;
       font-size: 3.2rem;
       font-weight: 700;
     }
