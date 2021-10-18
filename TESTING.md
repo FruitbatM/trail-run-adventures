@@ -154,3 +154,16 @@ The product detail page for the selected product gets displayed to the user.
 Pass
 
   <h2 align="center"><img src="readme-files/testing/test_5.jpg" alt="Test case 5" target="_blank" width="60%" height="60%"></h2>
+
+
+# Code Validation
+
+- The website was validated by the [W3C Markup Validation Service](https://validator.w3.org/) to ensure there were no syntax errors or issues. 
+- [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used to validate CSS code.
+- [JSHint](https://jshint.com/) was used for JavaScript code validation was used for validation of JavaScript.
+- [PEP8 Online](http://pep8online.com/) was used for Python PEP8 compliance
+
+## [W3C Markup Validation Service](https://validator.w3.org/) - Markup Validation
+
+### Home Page
+
