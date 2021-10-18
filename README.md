@@ -67,14 +67,15 @@ ZIP: 42424 <br>
 # User Experience (UX)
 ## User Stories
 
-|      As a/an...      |                         I want the ability to...                         | So that...                                      |
-|:--------------------:|:------------------------------------------------------------------------:|:-----------------------------------------------:|
-|                      |                                                                          |                                                 |
-|                      |                                                                          |                                                 |
-| Anonymous user       | easily navigate through the site on all devices                          | find what I am looking for with an ease         |
-| Anonymous user       | gain understanding of the website's purpose from the home page           | decide will I continue browsing the site.       |
-| Anonymous user       | read about the company details, goals and aims;                          | gain confidence that I am supporting a viable   |
-| Anonymous user       | search for projects;                                                     | quickly browse which projects are available to support                |
+|      As a/an...      |                         I want the ability to...                         | So that...|
+|:--------------------:|:------------------------------------------------------------------------:|:---------:|
+|                      |                                                                          |
+|                      |                                                                          |           |
+| Potential customer   | gain understanding of the website's purpose from the home page           | I can decide will I continue browsing the site.              |                                                                            
+| Potential customer   | easily navigate through the site on all devices                          | I can find what I am looking for with an ease.               |
+| Potential customer   | create an account easily                                                 | I can purchase products.   |
+| Potential customer       | search for products by the name                                      | I can find what I am looking for.              |
+| Potential customer       | view product details                                     | I can decide will I make the purchase.              |
 |          ---         |                                    ---                                   |                              --                 |
 | Shopper user         | view products by categories                                              | I know where to search when I look for a specific product                |
 | Shopper user         | view product details                                                     | I know the product price, size description      |
@@ -461,7 +462,7 @@ To clone this project and run locally please follow the below steps:
 2. Go to the [project repository](https://github.com/FruitbatM/trail-run-adventures)
 3. Click on the "Code" button (located next to the green "Gitpod" button)
 
-<h2 align="center"><img src="readme-files/deployment/clone.jpg" alt="Heroku new app" target="_blank" width="50%" height="50%"></h2>
+<h2 align="center"><img src="readme-files/deployment/clone.jpg" alt="Heroku new app" target="_blank" width="30%" height="30%"></h2>
 
 4. From the dropdown menu copy the HTTPS URL
 5. In your local IDE open the terminal
@@ -520,7 +521,6 @@ Below is the process of deploying the website to Heroku and setting up static fi
 <h2 align="center"><img src="readme-files/deployment/settings_debug.jpg" alt="settings.py" target="_blank" width="60%" height="60%"></h2>
 
 15. Check the Activity Feed in Heroku to see Build in Progress to confirm automatic deployment is working.
-
 
 ### **AWS (Amazon Web Services)**
 
