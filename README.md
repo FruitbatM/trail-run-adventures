@@ -65,7 +65,6 @@ CVC: 424 <br>
 ZIP: 42424 <br>
 
 # User Experience (UX)
-
 ## User Stories
 
 |      As a/an...      |                         I want the ability to...                         | So that...                                      |
@@ -92,6 +91,37 @@ ZIP: 42424 <br>
 
 ## Strategy
 ### Project Goals
+
+## Scope
+
+The website will be created as a desktop-first because it is will be much easier to picture the whole structure of the website; however, it will be a fully mobile responsive website so the users using mobile devices will have no difficulties searching for the information they are interested, products, holiday adventure tours and purchase them. Many features will be available that allow the user to engage and find needed information fast and easy.
+
+The site will consist of the homepage which will give an overview of the site purpose with a search feature, brief company information, trail running experience holiday tours, shop section, a blog section and customer quotes section.
+
+Furthermore the website will contain Trail Running Holidays page with all informations the users might need for each trail runing holiday tour the company currently offers. Also, the website will contain About Us page with sub-pages Our Story and Our Team, and Shop, Blog and Contact pages.
+
+## Skeleton
+The wireframes were created in [Figma](https://www.figma.com/)
+
+Wireframes created at the start of the project for desktop and mobile can be viewed on the below links:
+
+Desktop Wireframes | Mobile Wireframes
+------------------ | ----------------
+[Homepage](readme-files/wireframes/desktop_homepage.jpg) | [Homepage]()
+[Trail Running Holidays](readme-files/wireframes/.jpg) | [Trail Running Holidays]()
+[Trail Running Holidays - detail](readme-files/wireframes/holiday_detail.jpg) | [Trail Running Holidays]()    
+[Our Story](readme-files/wireframes/desktop_about_our_story.jpg) | [Our Story]()
+[Our Team](readme-files/wireframes/desktop_our_team.jpg) | [Our Team]()
+[Shop](readme-files/wireframes/desktop_shop_all_products.jpg) | [Shop]()
+[Shop - product detail](readme-files/wireframes/product_detail.jpg) | [Shop - product detail]()
+[Shopping Cart](readme-files/wireframes/desktop_cart.jpg) | [Shopping Cart]()
+[Checkout]() | [Checkout]() - TBA
+[Blog](readme-files/wireframes/desktop_blog.jpg) | [Blog]()
+[Blog Post](readme-files/wireframes/desktop_blog_post.jpg) | [Blog]()
+[Contact](readme-files/wireframes/desktop_contact.jpg) | [Contact]()
+[Profile]() | [Profile]() - TBA
+[Log In](readme-files/wireframes/desktop_login.jpg) | [Log In]()
+[Register](readme-files/wireframes/desktop_register.jpg) | [Register]()
 
 ## Design
 ### Color Scheme
@@ -124,6 +154,15 @@ Charcoal (#3E4551) will be used only for footer section and it combines great wi
 
 - Fonts were imported from [Google Fonts](https://fonts.google.com/).
 
+
+## Imagery
+### Logo
+
+- I used [Canva](https://www.canva.com/) to design the custom logo which was used only for favicon.
+
+### Icons
+
+Icons should be obvious and very intuitive so that users can easily understand what a particular icon represents.
 
 ## Page Structure
 
