@@ -96,9 +96,33 @@ ZIP: 42424 <br>
 ## Design
 ### Color Scheme
 
+Delicate and soothing color palette will be chosen and the balance with calmer, contemporary mood for the audience will be tried to get achieved. Below colors will be used for the website:
+
+- Cultured (#F3F8F8)
+- Opal (#B3D5D2)
+- Polished Pine (#439B94) 
+- Illuminating Emarald (#149285)
+- Heliotrope Gray (#92879B)
+- Charcoal (#3E4551)
+
 <h2 align="center"><img src="readme-files/general/color_palette.png" alt="color palette" target="_blank" width="70%" height="70%"></h2>
 
 [Coolors](https://coolors.co/) was used to create a color palette.
+
+Shades of green color in particular Polished Pine color (#439B94) will be selected as primary color because it is the color of nature and health. Green is a perfect choice for outdoor brand and eco-friendliness and sustainability that TRΛIL RUN ΛDVENTURES promotes. 
+
+White will be primarily used as the background color because it represents reverence, purity, and innocence. This association calms people and influences their brain activity in a very positive way.
+
+Charcoal (#3E4551) will be used only for footer section and it combines great with the green colors on the website.
+
+## Fonts
+
+- Two fonts will be used throughout the project, **Roboto** and **Lato**. Both will be used with ``sans-serif`` font as a fallback.
+**Roboto** will be used for the main headings and paragraph sections and **Roboto** will be used for the subheadings.
+
+- These fonts pair very well together and make the website appear both prestigious and contemporary. This font combination looks elegant and highly readable.
+
+- Fonts were imported from [Google Fonts](https://fonts.google.com/).
 
 
 ## Page Structure
