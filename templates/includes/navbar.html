@@ -63,10 +63,10 @@
             </li>
             <li class="nav-item pe-5">
                 <a class="nav-link dropdown-toggle {% if request.get_full_path == '/products/' %}active-nav-link{% endif %}" 
-                    href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    href="#" id="navbarDropdownMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     SHOP
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenu">
                     <li><a class="dropdown-item" href="{% url 'products' %}?category=shirts">SHIRTS</a></li>
                     <li><a class="dropdown-item" href="{% url 'products' %}?category=accessories">ACCESSORIES</a></li>
                     <li><a class="dropdown-item" href="{% url 'products' %}?category=drinkware">DRINKWARE</a></li>
