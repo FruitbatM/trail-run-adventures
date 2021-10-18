@@ -96,66 +96,6 @@ body {
 	color: #17a2b8; /* text-info */
 }
 
-/*
-Expandable search bar - code source: https://codepen.io/ahmadbassamemran/pen/rNjMXqg
-.search-form {
-  width: fit-content;
-  height: fit-content;
-  position: relative;
-}
-
-.input-search{
-  height: 50px;
-  width: 50px;
-  border-style: none;
-  padding: 10px;
-  font-size: 18px;
-  letter-spacing: 2px;
-  outline: none;
-  border-radius: 25px;
-  transition: all .5s ease-in-out;
-  background-color: #439B94;
-  padding-right: 40px;
-  color:#fff;
-}
-
-.input-search::placeholder {
-  color: #000000;
-  font-size: 18px;
-  letter-spacing: 2px;
-  font-weight: 100;
-}
-.btn-search {
-  width: 50px;
-  height: 50px;
-  border-style: none;
-  font-size: 20px;
-  font-weight: bold;
-  outline: none;
-  cursor: pointer;
-  border-radius: 50%;
-  position: absolute;
-  right: 0px;
-  color:#fafafa;
-  background-color: #439B94;
-  pointer-events: painted;  
-}
-.btn-search:focus ~ .input-search {
-  width: 170px;
-  border-radius: 0px;
-  background: #439B94;
-  border-bottom:1px solid #000;
-  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
-}
-.input-search:focus {
-  width: 170px;
-  border-radius: 0px;
-  background-color: #439B94;
-  border-bottom:1px solid #000000;
-  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
-}
-*/
-
 input[name='q']::placeholder {
   color: #aab7c4;
 }
@@ -557,7 +497,7 @@ a {
   color: #439B94;
 }
 
-#footer-link > a {
+.footer-link > a {
   color: #33706c;
 }
 
@@ -603,12 +543,6 @@ a {
   border: none;
   background: #ccc;
 }
-
-/*
-.carousel-indicators li.active {
-  background: #28a745;
-}
-*/
 
 /* extra space for carousel arrows */
 .carousel-control-prev,
@@ -687,21 +621,11 @@ footer {
   color: #575a7b;
 }
 
-/*
-.card-img-overlay-team {
-  position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-*/
-
 .story-image {
   width: 65%;
 }
 
 /* Bootstrap toasts*/
-
 .message-container {
   position: fixed;
   top: 4.5rem;
@@ -790,7 +714,6 @@ https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 }
 
 /* Contact Form */
-
 #contact-form-button {
   background-color: #149285;
   color: #fafafa;
@@ -817,8 +740,7 @@ https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
   margin-top: 2rem;
 }
 
-/* Cart */
-
+/* Shopping Cart */
 thead th {
   padding-bottom: 0.5rem !important;
   text-align: center;
@@ -836,7 +758,7 @@ thead th {
   margin-left: 4.4rem;
 }
 
-/* Login / Register button */
+/* Login & Register button */
 
 .button-primary {
   background-color: #149285 !important;
@@ -846,7 +768,6 @@ thead th {
 .button-primary:hover, .button-primary:active {
   background-color: #11796e !important;
 }
-
 
 /* Media Queries */
 /* Display on tablet devices */  
