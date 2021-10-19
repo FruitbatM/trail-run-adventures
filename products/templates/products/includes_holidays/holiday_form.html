@@ -5,32 +5,32 @@
         <!-- Participants -->
         <h6 class="mt-4 text-uppercase">Participants:</h6>
         <div class="input-group mt-3 mb-5 justify-content-center">
-        <div class="d-flex number-of-participants-container">
-            <div class="input-group-prepend">
-                <button class="decrement-qty btn button-quantity rounded-1" 
-                    data-item_id="{{ holiday.id }}" id="decrement-qty_{{ holiday.id }}">
-                    <span class="icon">
-                        <i class="fas fa-minus"></i>
-                    </span>
-                </button>
-            </div>
-            <input class="form-control qty_input" type="number" name="quantity" 
-                min="1" max="12" value="1"
-                    data-item_id="{{ holiday.id }}"
+            <div class="d-flex number-of-participants-container">
+                <div class="input-group-prepend">
+                    <button class="decrement-qty btn button-quantity rounded-1" 
+                        data-item_id="{{ holiday.id }}" id="decrement-qty_{{ holiday.id }}">
+                        <span class="icon">
+                            <i class="fas fa-minus"></i>
+                        </span>
+                    </button>
+                </div>
+                <input class="form-control qty_input" type="number" name="quantity" 
+                    min="1" max="12" value="1" data-item_id="{{ holiday.id }}"
                     id="id_qty_{{ holiday.id }}" required>
-            <div class="input-group-append">
-                <button class="increment-qty btn button-quantity rounded-1"
-                    data-item_id="{{ holiday.id }}" id="increment-qty_{{ holiday.id }}">
-                    <span class="icon">
-                        <i class="fas fa-plus"></i>
-                    </span>
-                </button>
+                <div class="input-group-append">
+                    <button class="increment-qty btn button-quantity rounded-1"
+                        data-item_id="{{ holiday.id }}" id="increment-qty_{{ holiday.id }}">
+                        <span class="icon">
+                            <i class="fas fa-plus"></i>
+                        </span>
+                    </button>
+                </div>
             </div>
         </div>
+        <div class="modal-footer">
+            <button type="button" class="btn adjust-button text-uppercase" data-bs-dismiss="modal">Cancel</button>
+            <input type="submit" class="btn checkout-button text-uppercase px-3" value="Add to Cart">
+        </div>
+        <input type="hidden" name="redirect_url" value="{{ request.path }}">
     </div>
-    <div class="modal-footer">
-        <button type="button" class="btn adjust-button text-uppercase" data-bs-dismiss="modal">Cancel</button>
-        <input type="submit" class="btn checkout-button text-uppercase px-3" value="Add to Cart">
-    </div>
-    <input type="hidden" name="redirect_url" value="{{ request.path }}">
 </form>

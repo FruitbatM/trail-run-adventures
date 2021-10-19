@@ -41,7 +41,7 @@
                                     </span>
                                 </div>
                                 <!-- Modal - holiday difficulty level-->
-                                <div class="modal fade text-black" id="myModal" aria-hidden="true" aria-labelledby="myModalLabel" aria-hidden="true" tabindex="-1">
+                                <div class="modal fade text-black" id="myModal" aria-hidden="true" aria-labelledby="myModalLabel" tabindex="-1">
                                     <div class="modal-dialog modal-dialog-centered">
                                       <div class="modal-content">
                                         <div class="modal-header">
@@ -77,23 +77,23 @@
         <div class="row my-5">
             <div class="col-lg-6">
                 <div class="">
-                    <h2 class="holiday-heading text-uppercase text-right">
+                    <h1 class="holiday-heading text-uppercase text-right">
                         {{ holiday.name }}
-                    </h2>
+                    </h1>
                 </div>
                 <p class="holiday-date text-uppercase">
-                    Date: {{ holiday.start_date }} - {{ holiday.end_date }}
+                    <strong>Date: {{ holiday.start_date }} - {{ holiday.end_date }}</strong>
                 </p>
                 <p><small>RISK FREE BOOKING POLICY. GET A FULL REFUND IN CASE 
                     OF CANCELLATION.</small></p>
             </div>
             <div class="col-lg-6">
-                <div class="holiday-pric-info text-uppercase">
-                    <p>Early Bird available now until 01 NOVEMBER 2021</p>
+                <div class="holiday-price-info text-uppercase">
+                    <p>Early Bird available now until 01 FEBRUARY 2021</p>
                 </div>
-                <p class="holiday-date text-uppercase">
-                    <p>Early Bird available now until 01 NOVEMBER 2021</p>
-                </p>
+                <h3 class="holiday-price text-uppercase">
+                    €{{ holiday.price }} PP
+                </h3>
                 <div class="py-5">
                     <!-- Book Modal Button -->
                     <button type="button" class="btn btn-lg justify-content-center section-button text-white" 

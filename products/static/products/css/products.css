@@ -87,8 +87,17 @@ a.category-badge > span.badge:hover {
 .holiday-heading {
     font-family: 'Roboto', sans-serif;
     font-size: 2.2rem;
+    font-weight: bold;
     color: #439B94;
     margin-bottom: 2rem;
+}
+
+.holiday-date {
+    
+}
+
+.holiday-price {
+    color: #439B94;
 }
 
 #adventure-header-img {
