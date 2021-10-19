@@ -1,5 +1,5 @@
 <div class="wrapper">
-    <div id="product-container">
+    <div class="product-container">
         <div class="top">
             <a href="{% url 'holiday_detail' holiday.id %}">
                 <img src="{{ MEDIA_URL }}{{holiday.image_2}}" alt="{{ holiday.name }}" class="img-fluid">
@@ -8,8 +8,8 @@
         <div class="bottom">
             <div class="left">
                 <div class="details pb-2">
-                <h5 class="text-uppercase pb-2" id="holiday-card-name">{{ holiday.name }}</h5>
-                <p id="holiday-duration" class="text-uppercase">{{ holiday.duration }} nights</p>
+                <h5 class="text-uppercase holiday-card-name pb-2">{{ holiday.name }}</h5>
+                <p class="holiday-duration text-uppercase">{{ holiday.duration }} nights</p>
                 </div>
             </div>
         </div>
