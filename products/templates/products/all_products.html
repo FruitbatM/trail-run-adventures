@@ -72,7 +72,7 @@
 <!-- Code source: CI Walkthrough Project -->
 {% block postloadjs %}
     {{ block.super }}
-    <script type="text/javascript">
+    <script>
         $('#sort-selector').change(function() {
             let selector = $(this);
             let currentUrl = new URL(window.location);

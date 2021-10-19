@@ -42,7 +42,7 @@
     border-top: 0;
 }
 
-#product-divider {
+.product-divider {
     background: #439B94;
     height: 0.1rem !important;
     border-radius: 100%;
