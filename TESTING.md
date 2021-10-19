@@ -164,11 +164,62 @@ Pass
 
 ## [W3C Markup Validation Service](https://validator.w3.org/) - Markup Validation
 
-### Home Page
+### Home Page (`index.html`)
+- There were several Duplicte ID errors and warnings which were fixed
+
+<h2 align="center"><img src="readme-files/testing/validation_markup_home.jpg" alt="Markup Validation" target="_blank" width="60%" height="60%"></h2>
+
+### Our Story Page (`our_story.html`)
+- There are no errors
+
+<h2 align="center"><img src="readme-files/testing/validation_markup_our_story.jpg" alt="Markup Validation" target="_blank" width="60%" height="60%"></h2>
+
+### Our Team Page (`our_team.html`)
+
+- There were several Duplicte ID errors and warnings which were fixed. Also, unecessary type attribute was removed for JavaScript resources. 
+
+<h2 align="center"><img src="readme-files/testing/validation_markup_our_team.jpg" alt="Markup Validation" target="_blank" width="60%" height="60%"></h2>
+
+### Products Page (`all_products.html`)
+
+- There were several Duplicte ID errors and warnings which were fixed.
+
+<h2 align="center"><img src="readme-files/testing/validation_markup_products.jpg" alt="Markup Validation" target="_blank" width="60%" height="60%"></h2>
+
+### Product Detail Page (`holiday_detail.html`)
+
+- There was an 'Unclosed element div' error on `row` element which was fixed.
+
+<h2 align="center"><img src="readme-files/testing/validation_markup_product_detail.jpg" alt="Markup Validation" target="_blank" width="60%" height="60%"></h2>
 
 
+### Basecamp Blog Page (`basecampblog.html`)
 
-### Our Story Page
+- There were several Duplicte ID errors and warnings which were fixed.
+
+<h2 align="center"><img src="readme-files/testing/validation_markup_blog.jpg" alt="Markup Validation" target="_blank" width="60%" height="60%"></h2>
+
+### Blog Post Page (`blog_post.html`)
+
+- There are no errors
+- There is one warrning which can be ignorred
+
+<h2 align="center"><img src="readme-files/testing/validation_markup_blog_post.jpg" alt="Markup Validation" target="_blank" width="60%" height="60%"></h2>
+
+### Contact Page (`contact.html`)
+- There are no errors
+
+<h2 align="center"><img src="readme-files/testing/validation_markup_contact.jpg" alt="Markup Validation" target="_blank" width="60%" height="60%"></h2>
+
+### Log in Page (`login.html`)
+- There are no errors
+
+<h2 align="center"><img src="readme-files/testing/validation_markup_login.jpg" alt="Markup Validation" target="_blank" width="60%" height="60%"></h2>
+
+### Register Page (`signup.html`)
+- There are no errors
+
+<h2 align="center"><img src="readme-files/testing/validation_markup_register.jpg" alt="Markup Validation" target="_blank" width="60%" height="60%"></h2>
 
 
 ## [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) - CSS Validation
