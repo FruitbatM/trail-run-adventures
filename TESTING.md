@@ -294,4 +294,37 @@ All files were passed through the [PEP8](http://pep8online.com/) validator and t
 
 
 # Functionality Testing
+A comprehensive testing was executed. Further elaborated in more details below:
+
+- The website was physically tested on the following devices with different screen sizes:
+  - iPhone 7 (Safari & Google Chrome)
+  - iPhone 8 (Safari & Google Chrome)
+  - iPhone 11 (Safari & Google Chrome)
+  - Samsung GTI9505 Galaxy S4 (Chrome for Android)
+  - Samsung Galaxy 9 (Chrome for Android & Samsung Internet)
+  - Samsung Galaxy S20 (Chrome for Android & Samsung Internet)
+  - Nokia Lumia 640 LTE (Windows 10) (Microsoft Edge)
+  - HUAWEI P30 lite (Chrome for Android)
+  - Samsung Galaxy Tab A (Chrome for Android & Samsung Internet)
+  - Lenovo ThinkBook 13S (Chrome, Microsoft Edge & Firefox)
+  - external monitor 31.5" PHILIPS 322E1C
+
+The results were consistent, the website is platform-cross compatible and responsive. Furthermore, using DevTools I checked responsiveness for different screen sizes for mobile and tablet devices. Several issues were found and fixed all described under Encountered Issues section.
+
+# Encountered Issues
+
+Several bugs were encountered during the coding process:
+
+- I had and issue to render static images in the browser on the production website. 
+
+- **Fixed** by adding below code under the settings.py file under the templates section:
+  ```
+  'django.template.context_processors.static',
+  ```
+
+# Performance Testing
+
+Performance was tested using [Lighthouse](https://developers.google.com/web/tools/lighthouse) tool.
+
+## Desktop
 
