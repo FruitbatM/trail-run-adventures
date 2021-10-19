@@ -1,3 +1,11 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+
 /* Shop section */
 #shop-header {
     background: url('/static/images/products/shop_header.jpg') no-repeat center;
@@ -9,19 +17,20 @@
     margin-top: 3.5rem;
     margin-bottom: 2rem;
     font-family: 'Roboto', sans-serif;
-    letter-spacing: 0.15 rem;
     font-size: 2.2rem;
     color: #439B94;
 }
 
 .product-card-img {
     -webkit-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
     transition: 0.4s ease;
 }
 
 .zoom-effect:hover .product-card-img {
     -webkit-transform: scale(1.08);
-    transform: scale(1.08);
+    -ms-transform: scale(1.08);
+        transform: scale(1.08);
 }
 
 .card-product-title {
@@ -57,12 +66,14 @@ a.category-badge > span.badge:hover {
 
 .product-image img {
     -webkit-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
     transition: 0.4s ease;
 }
 
 .zoom-effect:hover .product-image img {
     -webkit-transform: scale(1.08);
-    transform: scale(1.08);
+    -ms-transform: scale(1.08);
+        transform: scale(1.08);
 }
 
 
@@ -75,7 +86,6 @@ a.category-badge > span.badge:hover {
 
 .holiday-heading {
     font-family: 'Roboto', sans-serif;
-    letter-spacing: 0.15 rem;
     font-size: 2.2rem;
     color: #439B94;
     margin-bottom: 2rem;
@@ -112,7 +122,8 @@ a.category-badge > span.badge:hover {
 
 .accordion-style .card {
     background: transparent;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     margin-bottom: 15px;
     margin-top: 0 !important;
     border: none;
@@ -136,7 +147,8 @@ a.category-badge > span.badge:hover {
     width: 100%;
     text-align: left;
     white-space: normal;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     padding: 15px 55px;
     text-decoration: none;
 }
@@ -144,6 +156,7 @@ a.category-badge > span.badge:hover {
 .rounded {
     border-radius: 0.25rem !important;
 }
+
 img {
     max-width: 100%;
     height: auto;
@@ -166,12 +179,22 @@ img {
     height: 40px;
     border-radius: 50%;
     background: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: translateY(-50%);
-    box-shadow: 8px 8px 30px 0 rgba(0, 0, 0, 0.12);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    -webkit-box-shadow: 8px 8px 30px 0 rgba(0, 0, 0, 0.12);
+            box-shadow: 8px 8px 30px 0 rgba(0, 0, 0, 0.12);
 }
+
 .accordion-style .btn-link:after {
     content: "-";
     position: absolute;
@@ -183,12 +206,22 @@ img {
     height: 40px;
     border-radius: 50%;
     background: #f99218;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: translateY(-50%);
-    box-shadow: 8px 8px 30px 0 rgba(0, 0, 0, 0.12);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    -webkit-box-shadow: 8px 8px 30px 0 rgba(0, 0, 0, 0.12);
+            box-shadow: 8px 8px 30px 0 rgba(0, 0, 0, 0.12);
 }
+
 .accordion-style .card-body {
     padding-top: 0px;
     padding-left: 3.5rem;
@@ -218,29 +251,36 @@ img {
 
 .modal-title {
     font-family: 'Roboto', sans-serif;
-    letter-spacing: 0.15 rem;
     font-size: 2.2rem;
     color: #439B94;
 }
 
-/* New Holiday Card */
+/* Adventure Holiday Card */
 /* Inspiration taken from: https://codepen.io/olhilton/pen/dXaqxE */
 
 .wrapper{
     width: 18.75rem;
-    background: fafafa;
+    background: #fafafa;
     margin: auto;
     position: relative;
     overflow: hidden;
     border-radius: 10px 10px 10px 10px;
-    box-shadow: 0;
-    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+        -ms-transform: scale(0.95);
+            transform: scale(0.95);
+    -webkit-transition: -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
+    transition: -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
+    -o-transition: box-shadow 0.5s, transform 0.5s;
     transition: box-shadow 0.5s, transform 0.5s;
+    transition: box-shadow 0.5s, transform 0.5s, -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
 }
 
 .wrapper:hover{
-    transform: scale(1);
-    box-shadow: 5px 20px 30px rgba(0,0,0,0.2);
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: 5px 20px 30px rgba(0,0,0,0.2);
+            box-shadow: 5px 20px 30px rgba(0,0,0,0.2);
 }
 
 #product-container{
@@ -300,6 +340,8 @@ img {
     top: -70px;
     right: -70px;
     border-radius: 0px 0px 200px 200px;
+    -webkit-transition: all 0.5s, border-radius 2s, top 1s;
+    -o-transition: all 0.5s, border-radius 2s, top 1s;
     transition: all 0.5s, border-radius 2s, top 1s;
     overflow: hidden;
 }
@@ -327,16 +369,28 @@ img {
 
 .inside:hover .contents {
     opacity: 1;
-    transform: scale(1);
-    transform: translateY(0);
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+            transform: translateY(0);
 }
 
 .inside .contents {
     padding: 5%;
     opacity: 0;
-    transform: scale(0.5);
-    transform: translateY(-200%);
+    -webkit-transform: scale(0.5);
+        -ms-transform: scale(0.5);
+            transform: scale(0.5);
+    -webkit-transform: translateY(-200%);
+        -ms-transform: translateY(-200%);
+            transform: translateY(-200%);
+    -webkit-transition: opacity 0.2s, -webkit-transform 0.8s;
+    transition: opacity 0.2s, -webkit-transform 0.8s;
+    -o-transition: opacity 0.2s, transform 0.8s;
     transition: opacity 0.2s, transform 0.8s;
+    transition: opacity 0.2s, transform 0.8s, -webkit-transform 0.8s;
 }
 
 .contents table {
