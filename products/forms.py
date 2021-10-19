@@ -53,7 +53,8 @@ class HolidayForm(forms.ModelForm):
                   'max_elavation', 'elevation_gain', 'route_image',
                   'image_1', 'image_2', 'image_3'
                   )
-    holiday_header_image = forms.ImageField(label='Header Image', required=True)
+    holiday_header_image = forms.ImageField(label='Header Image',
+                                            required=True)
     image_1 = forms.ImageField(required=True)
     image_2 = forms.ImageField(required=False)
     image_3 = forms.ImageField(required=False)

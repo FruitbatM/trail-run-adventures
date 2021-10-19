@@ -11,7 +11,7 @@
 6. [Performance Testing](#performance-testing)
 </details>
 
-# User Stories Testing
+# Testing User Stories
 
 Manual tests were carried out across all user stories and features:
 
@@ -235,3 +235,11 @@ Pass
 - There is one warning for unneccessary semicolon
 
 <h2 align="center"><img src="readme-files/testing/validation_countryfield_js.jpg" alt="JS validation for countryfield.js file" target="_blank" width="60%" height="60%"></h2>
+
+## [PEP8 Online](http://pep8online.com/) - Python PEP8 Compliant
+
+All files were passed through the [PEP8](http://pep8online.com/) validator and the results were all found to be PEP8 Compliant
+
+
+# Functionality Testing
+
