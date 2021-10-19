@@ -25,24 +25,25 @@
 {% endblock %}
 
 {% block content %}
-<!-- Trail Runing Holidays -->
-<section class="mb-5">
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col mb-5">
-                <h2 class="section-heading-2 text-center">TRAIL RUNNING EXPERIENCES</h2>
+    <!-- Trail Runing Holidays -->
+    <section class="mb-5">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col mb-5">
+                    <h2 class="section-heading-2 text-center">TRAIL RUNNING EXPERIENCES</h2>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container">
-        <div class="row mt-3">
-            {% for holiday in holidays %}
-                <div class="col-md-4 mb-4">
-                    {% include 'products/includes_holidays/holiday_card.html' %}
-                </div>
-            {% endfor %}
+        <div class="container">
+            <div class="row mt-3">
+                {% for holiday in holidays %}
+                    <div class="col-md-4 mb-4">
+                        {% include 'products/includes_holidays/holiday_card.html' %}
+                    </div>
+                {% endfor %}
+            </div>
         </div>
-    </div>
+    </section>
 
 {% endblock %}
 
