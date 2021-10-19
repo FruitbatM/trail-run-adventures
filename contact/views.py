@@ -12,14 +12,14 @@ def contact(request):
     if request.method == 'POST':
         contact_form = ContactForm(request.POST)
         if contact_form.is_valid():
-            full_name = contact_form.cleaned_data['full_name']
+            name = contact_form.cleaned_data['name']
             user_email = contact_form.cleaned_data['email']
             subject = contact_form.cleaned_data['subject']
             message = contact_form.cleaned_data['message']
             try:
                 send_mail(
                     # to capture the user email
-                    f"Message from {full_name}, <{user_email}>",
+                    f"Message from {name}, <{user_email}>",
                     message,
                     user_email,
                     [settings.DEFAULT_FROM_EMAIL],
@@ -35,7 +35,6 @@ def contact(request):
             profile = UserProfile.objects.get(user=request.user)
             user_email = profile.user.email
             contact_form = ContactForm(initial={
-                'full_name': profile.profile_full_name,
                 'email': user_email,
                 })
         else:
