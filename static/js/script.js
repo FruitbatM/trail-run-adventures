@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function(){
           el_link.classList.remove('show');
           nextEl.classList.remove('show');
         }
-      })
+      });
     });
   }
   // end if innerWidth
