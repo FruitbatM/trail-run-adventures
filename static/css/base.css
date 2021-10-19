@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Roboto:wght@300;400;500;700&display=swap');
 
 html {
@@ -65,24 +72,28 @@ body {
 .allauth-form-inner-content button,
 .allauth-form-inner-content input[type='submit'] {
 	/* btn */
-	display: inline-block;
-    font-weight: 400;
-    color: #fff;
-    text-align: center;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-color: #000;
-    border: 1px solid #000;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: 0;
+  display: inline-block;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #000;
+  border: 1px solid #000;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0;
 
-    /* standard bootstrap btn transitions */
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  /* standard bootstrap btn transitions */
+  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  -o-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
 }
 
 .allauth-form-inner-content button:hover,
@@ -136,7 +147,9 @@ input[name='q']::placeholder {
 .section-button:hover, .section-button:active {
   background-color: #439B94;
   color: #fafafa;
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .btn-outline-success {
@@ -148,7 +161,9 @@ input[name='q']::placeholder {
 .btn-outline-success:hover, .btn-outline-success:active, .btn-outline-success:visited {
   color: #000000;
   background-color: #439B94;
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .trail-p {
@@ -180,14 +195,13 @@ a {
   text-decoration: none;
 }
 
-
 /* Tour cards */
-
 .tour-card {
   max-width: 18.75rem;
   background-color: #fafafa;
   border-radius: 5px;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   position: relative;
   margin: 10px auto;
@@ -196,6 +210,8 @@ a {
 
 .tour-card img {
   height: 40vh;
+  -webkit-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
   transition: all 0.25s linear;
 }
 
@@ -230,12 +246,17 @@ a {
   right: 0px;
   background-color: #fafafa;
   z-index: 0;
-  transform: skewY(3deg);
+  -webkit-transform: skewY(3deg);
+      -ms-transform: skewY(3deg);
+          transform: skewY(3deg);
 }
 
 .tour-card:hover img {
-  transform: rotate(5deg) scale(1.1, 1.1);
-  filter: brightness(110%);
+  -webkit-transform: rotate(5deg) scale(1.1, 1.1);
+      -ms-transform: rotate(5deg) scale(1.1, 1.1);
+          transform: rotate(5deg) scale(1.1, 1.1);
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
 }
 
 .card-button {
@@ -243,34 +264,36 @@ a {
 }
 
 /* Home - Shop section */
-
 .shop-column {
   margin-bottom: 3rem;
 }
 
 .category-card-img img {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
   height: fit-content;
   width: 10.30rem;
   margin: 1.1rem auto 0 auto;
   -webkit-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
   transition: 0.4s ease;
 }
 
 .zoom-effect:hover .category-card-img img {
   -webkit-transform: scale(1.08);
-  transform: scale(1.08);
+  -ms-transform: scale(1.08);
+      transform: scale(1.08);
 }
 
 .category-card-button {
   z-index: 1;
 }
 
-/* Benefits card - WHY TRΛIL RUN ΛDVENTURES  */
+/* Benefits card - WHY TRΛIL RUN ΛDVENTURES section  */
 /* Code source with modification: https://codepen.io/maheshambure21/embed/GgVbVW?default-tab=result&theme-id=0#html-box */
 .benefit-card-block {
   position: relative;
-  /* padding: 1em 3em 1em; */
-  max-width: 1000px;
+  max-width: 1000px; /* CHECK */
   list-style: none;
   text-align: center;
 }
@@ -366,9 +389,11 @@ a {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   -webkit-transform: scale(0,1);
-  transform: scale(0,1);
+  -ms-transform: scale(0,1);
+      transform: scale(0,1);
   -webkit-transform-origin: 0 0;
-  transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+      transform-origin: 0 0;
 }
 
 .card-img-overlay::after {
@@ -379,15 +404,20 @@ a {
   border-right: 1px solid #fff;
   border-left: 1px solid #fff;
   -webkit-transform: scale(1,0);
-  transform: scale(1,0);
+  -ms-transform: scale(1,0);
+      transform: scale(1,0);
   -webkit-transform-origin: 100% 0;
-  transform-origin: 100% 0;
+  -ms-transform-origin: 100% 0;
+      transform-origin: 100% 0;
 }
 
 .card-img-overlay h3 {
   padding-top: 26%;
   -webkit-transition: -webkit-transform 0.35s;
+  transition: -webkit-transform 0.35s;
+  -o-transition: transform 0.35s;
   transition: transform 0.35s;
+  transition: transform 0.35s, -webkit-transform 0.35s;
 }
 
 .card-img-overlay p {
@@ -409,7 +439,10 @@ a {
 .card-img-overlay::after,
 .card-img-overlay p {
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, -webkit-transform 0.35s;
+  -o-transition: opacity 0.35s, transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
 }
 
 .card-img-overlay:hover img {
@@ -423,14 +456,16 @@ a {
 .benefit-card:hover .card-img-overlay::after {
   opacity: 1;
   -webkit-transform: scale(1);
-  transform: scale(1);
+  -ms-transform: scale(1);
+      transform: scale(1);
 }
 
 .benefit-card:hover .card-img-overlay::before,
 .benefit-card:hover .card-img-overlay::after {
   opacity: 1;
   -webkit-transform: scale(1);
-  transform: scale(1);
+  -ms-transform: scale(1);
+      transform: scale(1);
 }
 
 .benefit-card:hover h3,
@@ -445,12 +480,11 @@ a {
 .benefit-card:hover p,
 .benefit-card:hover img {
   -webkit-transition-delay: 0.15s;
-  transition-delay: 0.15s;
+  -o-transition-delay: 0.15s;
+     transition-delay: 0.15s;
 }
 
-
 /* Blog section on home page */
-
 .post .blog-header {
   margin-bottom: 0.94rem;
 }
@@ -487,7 +521,8 @@ a {
 
 .card-img-top {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .blog-card-title a {
@@ -724,16 +759,8 @@ https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
   border: 0.12rem solid;
 }
 
-
 .form-group {
   padding-bottom: 1rem;
-}
-
-#runners-image {
-  background: url('/static/images/running-up-the-hill.jpg') no-repeat center;
-  background-size: cover;
-  height: auto;
-  margin-top: 2rem;
 }
 
 /* Shopping Cart */
@@ -840,7 +867,8 @@ thead th {
     .card-img-top {
       width: 100%;
       height: 55vh;
-      object-fit: cover;
+      -o-object-fit: cover;
+         object-fit: cover;
     }
 
     .quote-section {
