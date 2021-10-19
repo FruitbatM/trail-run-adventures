@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light py-lg-0">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-controls="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <a class="nav-link d-lg-none d-md-flex" href="{% url 'home' %}">
@@ -19,7 +19,7 @@
             </p>
         </div>
     </a>
-    <div class="collapse navbar-collapse" id="main_nav">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto mr-2">
             <li class="nav-item active dropdown pe-5">
                 <a class="nav-link dropdown-toggle {% if request.get_full_path == '/holidays/' %}active-nav-link{% endif %}" 

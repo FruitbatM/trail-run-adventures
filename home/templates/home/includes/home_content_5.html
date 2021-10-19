@@ -10,7 +10,7 @@
     <div class="container mb-5">
         <div class="row">
             {% for blog in blog_home %}
-            <div class="col-lg-6 col-md-12" data-aos="zoom-in-down">
+                <div class="col-lg-6" data-aos="zoom-in-down">
                     <article class="blog-post mx-auto">
                         <figure class="blog">
                             <div class="blog-overlay">
@@ -26,8 +26,12 @@
                                     <a href="{% url 'blog_post' blog.id %}">{{ blog.title }}</a>
                                 </h5>
                                 <div class="blog-meta">
-                                    <div class="blog-date text-muted">{{ blog.published_date}}</div>
-                                    <div class="blog-author text-muted pb-2">{{ blog.author}}</div>
+                                    <div class="blog-date text-muted">
+                                        {{ blog.published_date}}
+                                    </div>
+                                    <div class="blog-author text-muted pb-2">
+                                        {{ blog.author}}
+                                    </div>
                                 </div>
                             </div>
                             <div class="blog-overview blog-card-text">
@@ -39,7 +43,9 @@
                                 <div class="row">
                                     <div class="col-6 text-left footer-link">
                                         <span>
-                                            <a href="{% url 'blog_post' blog.id %}" class="blog-link">Read more &#8594;</a>
+                                            <a href="{% url 'blog_post' blog.id %}" class="blog-link">
+                                                Read more &#8594;
+                                            </a>
                                         </span>
                                     </div>
                                     <div class="col-6 text-right footer-meta">
@@ -49,11 +55,10 @@
                                         </a>
                                     </div>
                                 </div>
-                                </div>
                             </div>
                         </div>
                     </article>
-                {% endfor %}
-            </div>
+                </div>
+            {% endfor %}
         </div>
     </div>
