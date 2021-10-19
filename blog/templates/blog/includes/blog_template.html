@@ -50,7 +50,7 @@
                         {% if request.user.is_superuser %}
                             <span class="ml-2">
                                 <a href="{% url 'edit_blog' blog.id %}" class="blog_edit">Edit</a> | 
-                            <!-- Delete Modal Button -->
+                                <!-- Delete Modal Button -->
                                 <button type="button" class="modal-button" data-bs-toggle="modal" data-bs-target="#deleteModal{{ blog.id }}">
                                     <span class="text-danger">Delete</span>
                                 </button>
