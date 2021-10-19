@@ -172,4 +172,38 @@ Pass
 
 
 ## [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) - CSS Validation
+
 ### base.css
+
+- There are no errors
+- There are several warnings about the vendor prefixes which can be ignored
+
+<h2 align="center"><img src="readme-files/testing/validation_base_css.jpg" alt="CSS Validation" target="_blank" width="60%" height="60%"></h2>
+
+### blog.css
+
+- There are no errors
+- There are several warnings about the vendor prefixes which can be ignored
+
+<h2 align="center"><img src="readme-files/testing/validation_blog_css.jpg" alt="CSS Validation" target="_blank" width="60%" height="60%"></h2>
+
+### checkout.css
+
+- There are no errors
+- There are several warnings about the vendor prefixes which can be ignored
+
+<h2 align="center"><img src="readme-files/testing/validation_checkout_css.jpg" alt="CSS Validation" target="_blank" width="60%" height="60%"></h2>
+
+### products.css
+
+- There are no errors
+- There are several warnings about the vendor prefixes which can be ignored
+
+<h2 align="center"><img src="readme-files/testing/validation_products_css.jpg" alt="CSS Validation" target="_blank" width="60%" height="60%"></h2>
+
+### profile.css
+
+- There are no errors
+- There are several warnings about the vendor prefixes which can be ignored
+
+<h2 align="center"><img src="readme-files/testing/validation_profile_css.jpg" alt="CSS Validation" target="_blank" width="60%" height="60%"></h2>
