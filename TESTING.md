@@ -130,7 +130,6 @@ Pass
 
   <h2 align="center"><img src="readme-files/testing/test_4.jpg" alt="Test case 4" target="_blank" width="60%" height="60%"></h2>
 
-
 ## Test Case 5
 
 > As a potential customer I want to view product details so I can decide will I make the purchase.
@@ -161,7 +160,7 @@ Pass
 - The website was validated by the [W3C Markup Validation Service](https://validator.w3.org/) to ensure there were no syntax errors or issues. 
 - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used to validate CSS code.
 - [JSHint](https://jshint.com/) was used for JavaScript code validation was used for validation of JavaScript.
-- [PEP8 Online](http://pep8online.com/) was used for Python PEP8 compliance
+- [PEP8 Online](http://pep8online.com/) was used for Python PEP8 compliance.
 
 ## [W3C Markup Validation Service](https://validator.w3.org/) - Markup Validation
 
@@ -207,3 +206,32 @@ Pass
 - There are several warnings about the vendor prefixes which can be ignored
 
 <h2 align="center"><img src="readme-files/testing/validation_profile_css.jpg" alt="CSS Validation" target="_blank" width="60%" height="60%"></h2>
+
+
+## [JSHint](https://jshint.com/) - JavaScript Validation
+
+### script.js
+- There are no errors
+- There is one warning showing for a missing semicolon which doesn't make sense since the semicolon was added
+
+<h2 align="center"><img src="readme-files/testing/validation_script_js.jpg" alt="JS validation for script.js file" target="_blank" width="60%" height="60%"></h2>
+
+### team.js
+- There are no errors
+- There are no warnings
+
+<h2 align="center"><img src="readme-files/testing/validation_team_js.jpg" alt="JS validation for team.js file" target="_blank" width="60%" height="60%"></h2>
+
+### stripe_elements.js
+
+- There are no errors
+- There are no warnings
+
+<h2 align="center"><img src="readme-files/testing/validation_stripe_elements_js.jpg" alt="JS validation for stripe_elements.js file" target="_blank" width="60%" height="60%"></h2>
+
+### countryfield.js
+
+- There are no errors
+- There is one warning for unneccessary semicolon
+
+<h2 align="center"><img src="readme-files/testing/validation_countryfield_js.jpg" alt="JS validation for countryfield.js file" target="_blank" width="60%" height="60%"></h2>
