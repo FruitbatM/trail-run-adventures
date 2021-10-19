@@ -186,7 +186,7 @@ Pass
 
 <h2 align="center"><img src="readme-files/testing/validation_markup_products.jpg" alt="Markup Validation" target="_blank" width="60%" height="60%"></h2>
 
-### Product Detail Page (`holiday_detail.html`)
+### Product Detail Page (`product_detail.html`)
 
 - There was an 'Unclosed element div' error on `row` element which was fixed.
 
