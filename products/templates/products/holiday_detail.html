@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load humanize %} 
 
 {% block title %}| Trail Runing Holiday Detail{% endblock %}
 
@@ -92,7 +93,7 @@
                     <p>Early Bird available now until 01 FEBRUARY 2021</p>
                 </div>
                 <h3 class="holiday-price text-uppercase">
-                    €{{ holiday.price }} PP
+                    €{{ holiday.price|intcomma }} PP
                 </h3>
                 <div class="py-5">
                     <!-- Book Modal Button -->

@@ -1,5 +1,6 @@
 {% extends "base.html"%}
 {% load static %}
+{% load humanize %}
 {% load bag_tools %}
 {% block extra_title %}| Shopping Cart{% endblock %}
 
@@ -41,14 +42,14 @@
                                     </td>
                                     <td class="py-5 pe-1 text-center">
                                         <p class="my-1">
-                                            €{{ item.product.price }}
+                                            €{{ item.product.price|intcomma }}
                                         </p>
                                     </td>
                                     <td class="py-4 w-25 text-center">
                                         {% include "cart/includes/cart_update_form.html" %}
                                     </td>
                                     <td class="py-4 text-center">
-                                        <p class="my-1">€{{ item.product.price | calc_subtotal:item.quantity}}</p>
+                                        <p class="my-1">€{{ item.product.price | calc_subtotal:item.quantity|intcomma}}</p>
                                     </td>
                                 </tr>
                             {% endfor %}
