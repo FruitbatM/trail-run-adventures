@@ -8,7 +8,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="Description" content="Enter your description here"/>
+        <meta name="Description" content="Running adventures to unique and jaw-dropping destinations around Europe."/>
+        <meta name="keywords" content="Running, Trail Running, Adventures, Europe">
+        <meta name="author" content="Marina Pavlovic">
       {% endblock %}
 
       {% block extra_meta %}
@@ -29,23 +31,11 @@
       {% block extra_css %}
       {% endblock %}
 
-      {% block corejs %}
-        <!-- Font Awesome icons-->
-        <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
-        <!-- Bootstrap JavaScript, Popper, jQuery -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
-        <!-- Stripe -->
-        <script src="https://js.stripe.com/v3/"></script>
-        <!-- Internal -->
-        <script src="{% static 'js/script.js' %}"></script>
-      {% endblock %}
 
       {% block extra_js %}
       {% endblock %}
       
-      <title>Trail Run Adventures {% block title %}{% endblock %}</title>
+      <title>Trail Run Adventures | Trail Running Holidays {% block title %}{% endblock %}</title>
   </head>
   <body>
     <!-- Header and Navigation -->
@@ -75,17 +65,13 @@
     </header>
 
     <!-- Page Content -->
-    <main>
-        {% block content %}
-        {% endblock %}
-        <!--Scroll Back to Top Arrow-->
-        <button onclick="topFunction()" id="arrow_2top" title="Go to top">
-            <i class="fas fa-chevron-circle-up fa-3x" aria-hidden="true"></i>
-        </button>
-    </main>
+    {% block content %}
+    {% endblock %}
 
-    <!-- Footer -->
-    {% include 'includes/footer.html' %}
+    <!--Scroll Back to Top Arrow-->
+    <button onclick="topFunction()" id="arrow_2top" title="Go to top">
+        <i class="fas fa-chevron-circle-up fa-3x" aria-hidden="true"></i>
+    </button>
 
     {% if messages %}
         <div class="message-container">
@@ -105,8 +91,26 @@
         </div>
     {% endif %}
 
+    <!-- Footer -->
+    <footer>
+        {% include 'includes/footer.html' %}
+    </footer>
+    
+    {% block corejs %}
+        <!-- Font Awesome icons-->
+        <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
+        <!-- Bootstrap JavaScript, Popper, jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+        <!-- Stripe -->
+        <script src="https://js.stripe.com/v3/"></script>
+        <!-- Internal -->
+        <script src="{% static 'js/script.js' %}"></script>
+    {% endblock %}
+
     {% block postloadjs %}
-        
+        <!-- Toast Message -->
         <script>
             let toastMessage = [].slice.call(document.querySelectorAll('.toast'));   
             let message = toastMessage.map(function (toastEl) {
@@ -123,7 +127,6 @@
                 once: true
             });
         </script>
-
     {% endblock %}
   </body>
 </html>
