@@ -164,9 +164,12 @@
         <h5 class="text-center mt-4">Interested to have more detail on this trip?</h5>
     </div>
     <div>
-        <button class="btn btn-large btn-success text-uppercase my-5">Request more info</button>
+        <a href="{% url 'contact' %}" class="btn btn-large btn-success text-uppercase my-5">
+            Request more info
+        </a>
     </div>
 </div>
+
 <div class="row mx-auto">
     <div class="col-md-6 col-sm-12 my-5">
         <img src="{{ MEDIA_URL }}{{holiday.image_2}}" class="img-fluid" alt="{{ holiday.name }}">
