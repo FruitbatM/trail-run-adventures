@@ -68,17 +68,17 @@
                                 <strong>{{ item.product.name }}</strong>
                             </p>
                             <p class="my-1 small text-muted">
-                                {% if item.product.is_holiday %}
-                                    {% if item.quantity > 1 %}
-                                        {{ item.quantity }} participants
-                                    {% else %}
-                                        {{ item.quantity }} participant
-                                    {% endif %}
-                            </p>
+                            {% if item.product.is_holiday %}
+                                {% if item.quantity > 1 %}
+                                    {{ item.quantity }} participants
                                 {% else %}
-                                    <p class="my-0 small text-muted">
-                                        Qty: {{ item.quantity }}
-                                    </p>
+                                    {{ item.quantity }} participant
+                                {% endif %}
+                            </p>
+                            {% else %}
+                                <p class="my-0 small text-muted">
+                                    Qty: {{ item.quantity }}
+                                </p>
                             {% endif %}
                             <p class="my-1 small">
                                 {% if item.product.has_sizes %}
