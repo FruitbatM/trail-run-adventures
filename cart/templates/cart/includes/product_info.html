@@ -3,14 +3,13 @@
         {{ item.product.name }}
     </strong>
 </p>
-<p class="my-1">
-    <strong>Size: </strong>
-    {% if item.product.has_sizes %}
+{% if item.product.has_sizes %}
+    <p class="my-1">
+        <strong>Size: </strong>
         {{ item.size|upper }}
-    {% else %}
-        N/A
-    {% endif %}
-</p>
+    </p>
+{% endif %}
+
 <p class="my-1 small text-muted">
     SKU: {{ item.product.sku|upper }}
 </p>
