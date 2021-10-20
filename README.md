@@ -5,7 +5,7 @@
 *Developed and designed as part of Milestone Project 4: Full Stack Frameworks
 with Django*
 
-<!-- [Please view the live project here](https://trail-run-adventures.herokuapp.com/) -->
+[Please view the live project here](https://trail-run-adventures.herokuapp.com/)
 
 ## Table of Contents
 
