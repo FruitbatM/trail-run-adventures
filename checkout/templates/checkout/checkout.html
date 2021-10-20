@@ -35,13 +35,13 @@
                     <div class="col-7 offset-2">
                         <p class="mb-1 mt-0 small text-muted">Item</p>
                     </div>
-                    <div class="col-3 text-right">
+                    <div class="col-3 text-end">
                         <p class="mb-1 mt-0 small text-muted">Subtotal</p>
                     </div>
                 </div>
                 {% for item in cart_items %}
                     <div class="row mb-4 py-2">
-                        <div class="col-3 mb-1 mb-md-3">
+                        <div class="col-2 mb-1 mb-md-3">
                             {% if item.product.is_holiday %}
                                 <a href="{% url 'holiday_detail' item.product.id %}">
                                     {% if item.product.image %}
@@ -62,24 +62,31 @@
                                 </a>
                             {% endif %}
                         </div>
-                        <div class="col-9">
+                        <div class="col-7">
                             <p class="mb-2">
                                 <strong>{{ item.product.name }}</strong>
                             </p>
-                            <p class="my-1 small">
+                            <p class="my-1 small text-muted">
                                 {% if item.product.is_holiday %}
                                     {% if item.quantity > 1 %}
                                         {{ item.quantity }} participants
                                     {% else %}
                                         {{ item.quantity }} participant
                                     {% endif %}
-                                {% endif %}
                             </p>
+                                {% else %}
+                                    <p class="my-0 small text-muted">
+                                        Qty: {{ item.quantity }}
+                                    </p>
+                            {% endif %}
                             <p class="my-1 small">
-                                Size: {% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}
-                            </p>
-                            <p class="my-0 small text-muted">
-                                Qty: {{ item.quantity }}
+                                {% if item.product.has_sizes %}
+                                    Size: {{ item.size|upper }}
+                                {% elif item.product.is_holiday %}
+                                
+                                {% else %}
+                                    Size: N/A
+                                {% endif %}
                             </p>
                         </div>
                         <div class="col-3 text-end">
@@ -125,7 +132,7 @@
                         {{ order_form.postcode | as_crispy_field }}
                         {{ order_form.country | as_crispy_field }}
                         {{ order_form.phone_number | as_crispy_field }}
-                        <div class="form-check form-check-inline float-right mr-0">
+                        <div class="form-check form-check-inline float-end mr-0">
 							{% if user.is_authenticated %}
 								<label class="form-check-label mt-3" 
                                     for="id-save-info">Save this delivery information to my profile</label>
