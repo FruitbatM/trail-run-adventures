@@ -1,28 +1,18 @@
-<form class="form update-form mx-auto" method="POST" action="{% url 'adjust_cart' item.item_id %}">
+<form class="quantity-update-form mx-auto" method="POST" id="cart-form-{{ forloop.counter }}" 
+    action="{% url 'adjust_cart' item.item_id %}">
     {% csrf_token %}
     {% if item.product.is_holiday %}
         <div class="form-group w-50">
             <div class="input-group cart-quantity">
-                <div class="input-group-prepend">
-                    <button class="decrement-qty btn btn-sm btn-black rounded-1" 
-                        data-item_id="{{ holiday.id }}" id="decrement-qty_{{ holiday.id }}">
-                        <span>
-                            <i class="fas fa-minus fa-sm"></i>
-                        </span>
-                    </button>
-                </div>
-                <input class="form-control form-control-sm qty_input" type="number"
-                    name="quantity" value="1" min="1" max="12"
-                    data-item_id="{{ holiday.id }}" id="id_qty_{{ holiday.id }}">
-                <div class="input-group-append">
-                    <button class="increment-qty btn btn-sm btn-black rounded-1"
-                        data-item_id="{{ holiday.id }}" id="increment-qty_{{ holiday.id }}">
-                        <span>
-                            <i class="fas fa-plus fa-sm"></i>
-                        </span>
-                    </button>
-                </div>
+                <input class="form-control form-control-sm qty_input" type="number" min="1" max="12"
+                    name="quantity" value="{{ item.quantity }}" required>
             </div>
+        </div>
+        <div class="d-none error-message">
+            <p class= "mt-2 text-danger small">
+               <i class="fas fa-exclamation-circle"></i>&nbsp;Invalid field. Value must be in a range of 1 to 12. 
+               <br/> Please, check your input and try again.
+            </p>
         </div>
     {% else %}
         <div class="form-group w-50">
@@ -46,14 +36,20 @@
                         </span>
                     </button>
                 </div>
-                {% if item.product.has_sizes %}
+                {% if item.product.has_sizes != item.product.is_holiday %}
                     <input type="hidden" name="product_size" value="{{ item.size }}">
                 {% endif %}
             </div>
         </div>
+        <div class="d-none error-message">
+            <p class= "mt-2 text-danger small">
+                <i class="fas fa-exclamation-circle"></i>&nbsp;Invalid field. Value must be in a range of 1 to 99. 
+                <br/> Please, check your input and try again.
+            </p>
+        </div>
     {% endif %}
 </form>
 <!--Update / Remove links-->
-<a class="update-link text-info"><small>Update</small></a>
+<a class="update-link text-info" data-number="{{ forloop.counter }}"><small>Update</small></a>
 <a class="remove-item text-danger ms-5" id="remove_{{ item.item_id }}" 
     data-product_size="{{ item.size }}"><small>Remove</small></a>

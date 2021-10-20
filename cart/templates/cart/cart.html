@@ -78,10 +78,17 @@
     <script type="text/javascript">
         // Update quantity on click
         $('.update-link').click(function(e) {
-            let form = $(this).prev('.update-form');
-            form.submit();
-        })
-    
+            let number = this.dataset.number;
+            let cartForm = document.querySelector(`#cart-form-${number}`);
+            let cartFormValid  = cartForm.checkValidity();
+            if (cartFormValid) {
+                let form = $(this).prev('.quantity-update-form');
+                form.submit();
+            } else {
+                $(this).prev().children('.error-message').removeClass("d-none");
+            }
+        });
+
         // Remove item from the cart and reload on click
         $('.remove-item').click(function(e) {
             let csrfToken = "{{ csrf_token }}";
