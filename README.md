@@ -5,7 +5,7 @@
 *Developed and designed as part of Milestone Project 4: Full Stack Frameworks
 with Django*
 
-[Please view the live project here](https://trail-run-adventures.herokuapp.com/)
+**[Please view the live project here](https://trail-run-adventures.herokuapp.com/)**
 
 ## Table of Contents
 
@@ -53,7 +53,7 @@ The project was created as a **Milestone Project 4** as a part of **Diploma in F
 
 Trail running is simply defined as going for a run at the heart of nature. It's an extremely all-round non-stadia sport and you don't need to be high in the mountains to go trail running. You simply need to be in nature.
 
-<h2 align="center"><img src="readme-files/general/project_mockup_1.jpg" alt="my account" target="_blank" width="85%" height="85%"></h2>
+<h2 align="center"><img src="readme-files/general/project_mockup_1.jpg" alt="my account" target="_blank" width="100%" height="100%"></h2>
 
 **Please note, this project is for educational purposes only and provided information is fictional. Nevertheless, all the website functionalities work.**
 
@@ -71,7 +71,7 @@ ZIP: 42424 <br>
 
 **Users**
 - To navigate the website easily and understand its purpose.
-- Get useful information about holiday adventures and offered products to purchase.
+- Get useful information about holiday adventures and offered branded products to purchase.
 - Purchase selected trail running holidays or/and products easily and securely.
 - Contact website owner to get more information about holiday adventures if needed.
 - Get information about the company and its team.
@@ -97,14 +97,19 @@ ZIP: 42424 <br>
 | Potential customer   | gain understanding of the website's purpose from the home page           | I can decide will I continue browsing the site.              |                                                                            
 | Potential customer   | easily navigate through the site on all devices                          | I can find what I am looking for with an ease.               |
 | Potential customer   | create an account easily                                                 | I can purchase products.   |
-| Potential customer       | search for products by the name                                      | I can find what I am looking for.              |
-| Potential customer       | view product details                                     | I can decide will I make the purchase.              |
-|          ---         |                                    ---                                   |                              --                 |
-| Shopper user         | view products by categories                                              | I know where to search when I look for a specific product                |
-| Shopper user         | view product details                                                     | I know the product price, size description      |
-| Shopper user         | search for a product by a keyword(s)                                     | I can find a specific product                   |
-| Shopper user         | get purchase confirmation                                                | I can ensure the purchase was confirmed         |
-| Shopper user         | register on the site                                                     | I can create my personal account                |
+| Potential customer   | search for shop products by the name                                          | I can find what I am looking for.                   |
+| Potential customer   | view product details                                                     | I can decide will I make the purchase.              |
+| Potential customer   | read insightful blog posts                                               | I can get an opportunity to learn something new.         |
+|          ---         |                                    ---                                   |                         --                 |
+| Shopper user         | view products by categories                                              | I know where to search when I look for a specific product.                |
+| Shopper user         | view product details                                                     | I know the product price, size description.      |
+| Shopper user         | search for a product by a keyword(s)                                     | I can find a specific product.               |
+| Shopper user         | get purchase confirmation                                                | I can ensure the purchase was confirmed.             |
+| Shopper user         | register on the site                                                     | I can create my personal account.               |
+| Shopper user         | to easily view the shopping cart at any time                             | I can easily proceed to the checkout page.                 |
+| Shopper user         | to view items I have added to my shopping cart                           | I can identify the subtotals and the total cost of my purchase.                   |
+| Shopper user         | to be able to adjust quantity of a particular item in the shopping cart  | I can make changes before the checkout.              |
+| Shopper user         | go through an orderning process in a simple way                          | I can have a great UX.              |
 |          ---         |                                    ---                                   |                              --                 |
 | Site admin/superuser | add new products                                                         | new products can be added to sell               |
 | Site admin/superuser | edit and update products                                                 | products are up to date in terms of price, description, etc.                   |
