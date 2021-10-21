@@ -51,7 +51,7 @@ The project was created as a **Milestone Project 4** as a part of **Diploma in F
 
 **TRΛIL RUN ΛDVENTURES** is a multi-page eCommerce web application for trail running enthusiasts and everyone who enjoys being outdoors.
 
-Trail running is simply defined as going for a run at the heart of nature. It's an extremely all-round non-stadia sport that and you don't need to be high in the mountains to go trail running. You simply need to be in nature.
+Trail running is simply defined as going for a run at the heart of nature. It's an extremely all-round non-stadia sport and you don't need to be high in the mountains to go trail running. You simply need to be in nature.
 
 <h2 align="center"><img src="readme-files/general/project_mockup_1.jpg" alt="my account" target="_blank" width="85%" height="85%"></h2>
 
@@ -65,6 +65,29 @@ CVC: 424 <br>
 ZIP: 42424 <br>
 
 # User Experience (UX)
+
+## Strategy
+### Project Goals
+
+**Users**
+- To navigate the website easily and understand its purpose.
+- Get useful information about holiday adventures and offered products to purchase.
+- Purchase selected trail running holidays or/and products easily and securely.
+- Contact website owner to get more information about holiday adventures if needed.
+- Get information about the company and its team.
+- To read insightful blog posts and leave a comment.
+- To be able to create account and update my personal information.
+- To see a history of my previous purchases.
+
+**Site Owner**
+- Engage people to do outdoor activities.
+- Motivate people to try trail running, hiking, and outdoor adventures in general.
+- Let people know about TRΛIL RUN ΛDVENTURES.
+- To be able to create/update/delete products and their infomations as an admin user.
+- Provide a fully secure, easy to use and engaging eCommerce platform to purchase trail running holidays and branded products.
+- Attractive and good quality UI design.
+- Opportunity to scale the business easily and earn profits.
+
 ## User Stories
 
 |      As a/an...      |                         I want the ability to...                         | So that...|
@@ -88,10 +111,6 @@ ZIP: 42424 <br>
 | Site admin/superuser | delete products                                                          | products can be removed from the site in case out of stock or not availbale anymore            |
 | Site admin/superuser | create blog posts                                                        | the website users are informed on interesting stories from the base camp     |
 | Site admin/superuser | delete blog posts                                                        | the blog post is removed in case it becomes outdated |
-
-
-## Strategy
-### Project Goals
 
 ## Scope
 
