@@ -859,6 +859,10 @@ thead th {
       font-weight: 700;
     }
 
+    .team-sub-heading {
+      font-size: 1.3rem;
+    }
+
     .blog-post .blog-content {
       -webkit-box-shadow: 1px 0px 20px 1px rgba(0, 0, 0, 0.15);
               box-shadow: 1px 0px 20px 1px rgba(0, 0, 0, 0.15);

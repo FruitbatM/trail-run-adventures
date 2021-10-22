@@ -92,8 +92,8 @@ a.category-badge > span.badge:hover {
     margin-bottom: 2rem;
 }
 
-.holiday-date {
-
+.heading-price {
+    text-shadow: 0.1rem 0.1rem #212324;
 }
 
 .holiday-price {
@@ -120,6 +120,17 @@ a.category-badge > span.badge:hover {
 
 .adventure-header-info {
     color: #fafafa;
+}
+
+/* position info icon - tour dificulty modal */
+.info-icon {
+    position: relative;
+    left: -1.3rem;
+    bottom: 0.8rem;
+}
+
+.icon{
+    text-shadow: -0.065rem 0 #000, 0 0.065rem #000, 0.065rem 0 #000, 0 -0.065rem #000;
 }
 
 .overview-block {
