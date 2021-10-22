@@ -102,8 +102,7 @@ ZIP: 42424 <br>
 | Potential customer   | read insightful blog posts                                               | I can get an opportunity to learn something new.         |
 |          ---         |                                    ---                                   |                         --                 |
 | Shopper user         | view products by categories                                              | I know where to search when I look for a specific product.                |
-| Shopper user         | view product details                                                     | I know the product price, size description.      |
-| Shopper user         | search for a product by a keyword(s)                                     | I can find a specific product.               |
+| Shopper user         | view product details                                                     | I know the product price, size, and description.      |
 | Shopper user         | get purchase confirmation                                                | I can ensure the purchase was confirmed.             |
 | Shopper user         | register on the site                                                     | I can create my personal account.               |
 | Shopper user         | to easily view the shopping cart at any time                             | I can easily proceed to the checkout page.                 |
@@ -111,11 +110,11 @@ ZIP: 42424 <br>
 | Shopper user         | to be able to adjust quantity of a particular item in the shopping cart  | I can make changes before the checkout.              |
 | Shopper user         | go through an orderning process in a simple way                          | I can have a great UX.              |
 |          ---         |                                    ---                                   |                              --                 |
-| Site admin/superuser | add new products                                                         | new products can be added to sell               |
+| Site admin/superuser | add new products easily                                                         | new products can be added to sell               |
 | Site admin/superuser | edit and update products                                                 | products are up to date in terms of price, description, etc.                   |
-| Site admin/superuser | delete products                                                          | products can be removed from the site in case out of stock or not availbale anymore            |
-| Site admin/superuser | create blog posts                                                        | the website users are informed on interesting stories from the base camp     |
-| Site admin/superuser | delete blog posts                                                        | the blog post is removed in case it becomes outdated |
+| Site admin/superuser | delete products                                                          | products can be removed from the site in case out of stock or not availbale anymore.            |
+| Site admin/superuser | create blog posts                                                        | the website users are informed on interesting stories from the base camp.     |
+| Site admin/superuser | delete blog posts                                                        | the blog post is removed in case it becomes outdated. |
 
 ## Scope
 

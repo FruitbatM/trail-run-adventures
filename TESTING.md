@@ -108,7 +108,7 @@ Pass
 <h2 align="center"><img src="readme-files/testing/test_3_b.jpg" alt="Test case 3 B" target="_blank" width="30%" height="30%"></h2>
 
 ## Test Case 4
-> As a potential customer I want to have an option to search for products by the name so I can find what I am looking for.
+> As a potential customer I want the ability to the ability to have an option to search for products by the name so I can find what I am looking for.
 
 **Description:**
 Verify search feature works as expected.
@@ -132,7 +132,7 @@ Pass
 
 ## Test Case 5
 
-> As a potential customer I want to view product details so I can decide will I make the purchase.
+> As a potential customer I want the ability to view product details so I can decide will I make the purchase.
 
 **Description:**
 Verify product detail page works as expected.
@@ -153,6 +153,145 @@ The product detail page for the selected product gets displayed to the user.
 Pass
 
   <h2 align="center"><img src="readme-files/testing/test_5.jpg" alt="Test case 5" target="_blank" width="60%" height="60%"></h2>
+
+## Test Case 6
+
+> As a potential customer I want the ability to read insightful blog posts so I can get an opportunity to learn something new.
+
+**Description:**
+Verify blog and blog post pages works as expected.
+
+**Steps:**
+1. Open internet browser of choice.
+2. Navigate to [TRΛIL RUN ΛDVENTURES](https://trail-run-adventures.herokuapp.com/).
+3. Click on the 'Blog' tab. Click on the blog post of your choice.
+4. Confirm the blog page and blog post page open as expected.
+
+**Expected Result**
+The blog page and blog post page gets displayed to the user.
+
+**Actual Result:**
+The blog page and blog post page gets displayed to the user.
+
+**Pass/Fail:**
+Pass
+
+  <h2 align="center"><img src="readme-files/testing/test_6_a.jpg" alt="Test case 6" target="_blank" width="60%" height="60%"></h2>
+  <h2 align="center"><img src="readme-files/testing/test_6_b.jpg" alt="Test case 6" target="_blank" width="60%" height="60%"></h2>
+
+## Test Case 7
+
+> As a shopper user I want the ability to view products by categories so I can I know where to search when I look for a specific product.
+
+**Description:**
+Verify 
+
+**Steps:**
+1. Open internet browser of choice.
+2. Navigate to [TRΛIL RUN ΛDVENTURES](https://trail-run-adventures.herokuapp.com/).
+3. Click on the 'Shop' tab.
+4. Confirm category options are available from the dropdown menu.
+
+**Expected Result**
+Shop product categories get displayed to the user.
+
+**Actual Result:**
+Shop product categories get displayed to the user.
+
+**Pass/Fail:**
+Pass
+
+## Test Case 8
+> As a shopper user I want the ability to view product details so I can know the product price, size, and description.
+
+## Test Case 9
+> As a shopper user I want the ability to get purchase confirmation so I can ensure the purchase was confirmed.
+
+## Test Case 10
+> As a shopper user I want the ability to register on the site so I can create my personal account.
+
+**Description:**
+Verify that the website provides the user with an opportunity to create a personal account.
+
+**Steps:**
+1. Open internet browser of choice.
+2. Navigate to [TRΛIL RUN ΛDVENTURES](https://trail-run-adventures.herokuapp.com/).
+3. Click on the 'My Account' icon located in the top navigation and click on the 'Register' tab. 
+4. Fill out the registration form.
+5. Verify the email address.
+6. Log in with the credentials that the user created when filling out the registration form.
+
+**Expected Result**
+A registration form will be displayed and once successfully completed and submitted the user will receive an email asking them to verify their account. Once the user's email has been verified they will be able to log in easily with the credentials they have created.
+
+**Actual Result:**
+A registration form is provided and once successfully completed and submitted the user receives an email asking them to verify their account. Once the user's email has been verified they are able to log in easily with the credentials they have created.
+
+**Pass/Fail:**
+Pass
+
+  <h2 align="center"><img src="readme-files/testing/test_10_a.jpg" alt="Test case 10" target="_blank" width="60%" height="60%"></h2>
+
+  <h2 align="center"><img src="readme-files/testing/test_10_b.jpg" alt="Test case 10" target="_blank" width="60%" height="60%"></h2>
+
+  <h2 align="center"><img src="readme-files/testing/test_10_c.jpg" alt="Test case 10" target="_blank" width="60%" height="60%"></h2>
+
+  <h2 align="center"><img src="readme-files/testing/test_10_d.jpg" alt="Test case 10" target="_blank" width="60%" height="60%"></h2>
+
+  <h2 align="center"><img src="readme-files/testing/test_10_e.jpg" alt="Test case 10" target="_blank" width="60%" height="60%"></h2>
+
+## Test Case 11
+> As a shopper user I want the ability to easily view the shopping cart at any time so I can easily proceed to the checkout page.
+
+## Test Case 12
+> As a shopper user I want the ability to view items I have added to my shopping cart at any time so that I can identify the subtotals and the total cost of my purchase.
+
+## Test Case 13
+> As a shopper user I want the ability to be able to adjust quantity of a particular item in the shopping cart so that I can make changes before the checkout.
+
+## Test Case 13
+> As a shopper user I want the ability to go through an orderning process in a simple way so that I can have a great user experience.
+
+## Test Case 14
+> As a site admin/superuser I want the ablity to add new products easily so that new products can be added to sell.
+
+## Test Case 15
+> As a site admin/superuser I want the ablity to edit and update products so that products are up to date in terms of price, description, etc.
+
+## Test Case 16
+> As a site admin/superuser I want the ablity to delete products so that products can be removed from the site in case out of stock or not availbale anymore.
+
+## Test Case 17
+> As a site admin/superuser I want the ablity to create blog posts so that the website users are informed on interesting stories from the base camp.
+
+## Test Case 18
+> As a site admin/superuser I want the ablity to delete blog posts so that the blog post is removed in case it becomes outdated.
+
+**Description:**
+Verify that the admin user can delete the blog post and that he/she will be prompted with a modal notification when 'Delete' link is clicked to make sure this is the correct action. 
+
+**Steps:**
+1. Open internet browser of choice.
+2. Navigate to [TRΛIL RUN ΛDVENTURES](https://trail-run-adventures.herokuapp.com/).
+3. Login as admin user (superuser)
+4. Click on the 'Blog' tab. 
+5. Click on 'Delete' link located at the bottom of a blog post.
+6. Modal notification window appears notifying that you are about to delete a blog post and does the user wish to proceed.
+
+**Expected Result**
+A delete link will be displayed when the user logins with the admin permission. Once the delete link is clicked a notification modal will appear asking the admin user does she/he wants to delete a blog post. Once the delete button is clicked the blog post will be deleted from the site. 
+
+**Actual Result:**
+A delete link gets displayed when the user logins with the admin permission. When the delete link is clicked a notification modal appears asking the admin user does she/he wants to delete a blog post. Wheb the delete button is clicked the blog post is deleted from the site. 
+
+**Pass/Fail:**
+Pass
+
+  <h2 align="center"><img src="readme-files/testing/test_18_a.jpg" alt="Test case 18" target="_blank" width="50%" height="50%"></h2>
+
+  <h2 align="center"><img src="readme-files/testing/test_18_b.jpg" alt="Test case 18" target="_blank" width="60%" height="60%"></h2>
+
+  <h2 align="center"><img src="readme-files/testing/test_18_c.jpg" alt="Test case 18" target="_blank" width="60%" height="60%"></h2>
 
 
 # Code Validation
