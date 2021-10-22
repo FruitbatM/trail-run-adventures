@@ -26,7 +26,7 @@
     {% include 'about/includes/meet_team_2.html' %}
 {% endblock %}
 
-{% block extra_js %}
-{{ block.supper }}
+{% block postloadjs %}
+    {{ block.super }}
     <script src="{% static 'about/js/team.js' %}"></script>
 {% endblock %}
