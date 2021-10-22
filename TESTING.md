@@ -287,11 +287,11 @@ A delete link gets displayed when the user logins with the admin permission. Whe
 **Pass/Fail:**
 Pass
 
-  <h2 align="center"><img src="readme-files/testing/test_18_a.jpg" alt="Test case 18" target="_blank" width="50%" height="50%"></h2>
+  <h2 align="center"><img src="readme-files/testing/test_18_a.jpg" alt="Test case 18" target="_blank" width="30%" height="30%"></h2>
 
-  <h2 align="center"><img src="readme-files/testing/test_18_b.jpg" alt="Test case 18" target="_blank" width="60%" height="60%"></h2>
+  <h2 align="center"><img src="readme-files/testing/test_18_b.jpg" alt="Test case 18" target="_blank" width="30%" height="30%"></h2>
 
-  <h2 align="center"><img src="readme-files/testing/test_18_c.jpg" alt="Test case 18" target="_blank" width="60%" height="60%"></h2>
+  <h2 align="center"><img src="readme-files/testing/test_18_c.jpg" alt="Test case 18" target="_blank" width="20%" height="20%"></h2>
 
 
 # Code Validation
@@ -466,4 +466,6 @@ Several bugs were encountered during the coding process:
 Performance was tested using [Lighthouse](https://developers.google.com/web/tools/lighthouse) tool.
 
 ## Desktop
+
+
 

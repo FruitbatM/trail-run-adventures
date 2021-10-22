@@ -433,7 +433,7 @@ I've used [DBDiagram](https://dbdiagram.io/home) to draw up a Database Schema.
 # Testing
 
 Testing process was written in a separate file. 
-Please click [here](TESTING.md) for the testing process.
+[Please click here for the testing process](TESTING.md) .
 
 
 # Version Control
