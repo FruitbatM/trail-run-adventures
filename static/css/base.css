@@ -45,7 +45,7 @@ body {
 }
 
 .list-inline {
-  padding-left: 7rem;
+  padding-left: 6rem;
 }
 
 .text-success-cart {
@@ -119,6 +119,7 @@ input[name='q']::placeholder {
 #home-header {
     background: url('/static/images/hero_image.jpg') no-repeat center;
     background-size: cover;
+    height: 39rem;
 }
 
 .main-heading {
@@ -811,6 +812,10 @@ thead th {
     width: 9.4rem;
   }
 
+  #home-header {
+    height: 40rem;
+}
+
   .tour-card img {
     height: 25vh;
   }
@@ -837,9 +842,17 @@ thead th {
 @media screen 
   and (min-width: 1024px) {
 
+    .navbar {
+      font-size: 1.1rem;
+    }
+
     #brand-logo {
       width: 9.4rem;
     }
+
+    #home-header {
+      height: 33rem;
+  }
 
     .section-heading-2 {
       font-size: 3.2rem;
