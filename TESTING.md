@@ -465,7 +465,46 @@ Several bugs were encountered during the coding process:
 
 Performance was tested using [Lighthouse](https://developers.google.com/web/tools/lighthouse) tool.
 
-## Desktop
+## Home page
+### Desktop
+
+<details>
+  <summary>Click to view report results</summary>
+    <h2 align="center"><img src="readme-files/testing/lighthouse/home_desktop.jpg" alt="lighthouse test" target="_blank" width="40%" height="40%"></h2>
+</details>
+
+## Mobile
 
 
+## Our Story page
+### Desktop
 
+<details>
+  <summary>Click to view report results</summary>
+    <h2 align="center"><img src="readme-files/testing/lighthouse/our_story_desktop.jpg" alt="lighthouse test" target="_blank" width="40%" height="40%"></h2>
+</details>
+
+For desktop performance, results were similar every time. The result is somewhat lover for 'Best Practices' due to Trust and Safety - the page 'Does not use HTTPS'. Since this is a project for educational purpose only it is not required to instal SSL certificate and therefore this warning can be ignored.
+
+The performance results are overall satisfying as the website is heavy loaded with the content.
+
+### Mobile
+
+## Our Team page
+### Desktop
+
+<details>
+  <summary>Click to view report results</summary>
+    <h2 align="center"><img src="readme-files/testing/lighthouse/our_team_desktop.jpg" alt="lighthouse test" target="_blank" width="40%" height="40%"></h2>
+</details>
+
+### Mobile
+
+## Blog page
+### Desktop
+
+  <summary>Click to view report results</summary>
+    <h2 align="center"><img src="readme-files/testing/lighthouse/blog_desktop.jpg" alt="lighthouse test" target="_blank" width="40%" height="40%"></h2>
+</details>
+
+### Mobile
