@@ -24,9 +24,7 @@
 - Home page images:
     - Hero background photo by <a href="https://unsplash.com/@kalenemsley?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kalen Emsley</a> on <a href="https://unsplash.com/s/photos/trail-running?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
     - [Landscape background of mountains vector with river illustration](https://www.rawpixel.com/image/2905608/free-illustration-vector-landscape-river-stream)
-
-
-- Photo by <a href="https://unsplash.com/@shawnlevie?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Shawn Levie</a> on <a href="https://unsplash.com/s/photos/trail-running?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    - Photo by <a href="https://unsplash.com/@shawnlevie?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Shawn Levie</a> on <a href="https://unsplash.com/s/photos/trail-running?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
 - About Us page:
     - Our Story page images
@@ -35,11 +33,10 @@
   
     - Our Team page images:
         - Hero background photo by <a href="https://unsplash.com/@peterconlan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Peter Conlan</a> on <a href="https://unsplash.com/s/photos/faroe-islands-trail?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
         - https://www.pexels.com/photo/cheerful-sportswoman-running-along-hill-in-summer-3771112/
         - Photo by <a href="https://unsplash.com/@bmetzler2017?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Brian Metzler</a> on <a href="https://unsplash.com/s/photos/trail-running?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        - Photo by <a href="https://unsplash.com/@greg_rosenke?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Greg Rosenke</a> on <a href="https://unsplash.com/s/photos/trail-running?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   
-
 - Blog page images:
     - blog hero image "Woman With White Sunvisor Running" from [Pexels](https://www.pexels.com/photo/woman-with-white-sunvisor-running-40751/)
     - Photo by <a href="https://unsplash.com/@greg_rosenke?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Greg Rosenke</a> on <a href="https://unsplash.com/s/photos/trail-running?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
@@ -52,6 +49,7 @@
   
 - Trail running holidays page images:
     - Photo by <a href="https://unsplash.com/@robingaillotdrevon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Robin GAILLOT-DREVON</a> on <a href="https://unsplash.com/s/photos/chamonix?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
     - Tour Du Mont Blanc
         - Photo by <a href="https://unsplash.com/@kidka?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Marc Kargel</a> on <a href="https://unsplash.com/s/photos/mont-blanc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
         - Photo by <a href="https://unsplash.com/@benobro?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">ben o'bro</a> on <a href="https://unsplash.com/s/photos/mont-blanc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
@@ -60,7 +58,10 @@
         - https://free4kwallpapers.com/uploads/originals/2018/07/21/somewhere-above-courmayeur-italy-on-the-tour-du-mont-blanc-wallpaper.jpg
 
     - Azores
-        - 
+        - Photo by <a href="https://unsplash.com/@scandinavian_monk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Martin Munk</a> on <a href="https://unsplash.com/s/photos/azores?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        - Photo by <a href="https://unsplash.com/@lm9808?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Melina Lorenz</a> on <a href="https://unsplash.com/s/photos/azores?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        - Photo by <a href="https://unsplash.com/@nabozzz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Daniele Nabissi</a> on <a href="https://unsplash.com/s/photos/azores?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
 
     - Faroe Islands
         - Photo by <a href="https://unsplash.com/@dylanshaw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Dylan Shaw</a> on <a href="https://unsplash.com/s/photos/faroe-islands-trail?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
