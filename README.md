@@ -626,25 +626,9 @@ Below is the process of deploying the website to Heroku and setting up static fi
 <h2 align="center"><img src="readme-files/deployment/heroku_email.jpg" alt="email settings" target="_blank" width="50%" height="50%"></h2>
 <h2 align="center"><img src="readme-files/deployment/settings_email.jpg" alt="email settings" target="_blank" width="50%" height="50%"></h2>
 
-
 # Credits
 
-## Code
-- Back to top arrow code with small modification was sourced from [w3schools](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp)
-
-## Media
-
-### Images
-
-### Icons
-- All icons were sourced from [Font Awesome](https://fontawesome.com/)
-
-
-## Content
-
-Below website was used for a general layout inspiration:
-TBA
-
+Credits were listed in a separate file. Please click here to view [CREDITS.md](CREDITS.md)) file.
 
 # Acknowledgements
 
