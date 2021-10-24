@@ -73,6 +73,10 @@
     outline: transparent;
 }
 
+.blog-meta {
+  font-size: 0.9rem;
+}
+
 /* Media Queries */
 /* Display on tablet devices */  
 

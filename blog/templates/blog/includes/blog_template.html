@@ -30,22 +30,36 @@
                     <div class="blog-card" style="width: 18rem;">
                         <div class="blog-image">
                             <a href="{% url 'blog_post' blog.id %}">
-                                <img src="{{ MEDIA_URL }}{{ blog.header_image }}" class="blog-card-img-top img-fluid" alt="{{ blog.title}}">
+                                <img src="{{ MEDIA_URL }}{{ blog.blog_image_1 }}" class="blog-card-img-top img-fluid" alt="{{ blog.title}}">
                             </a>
                         </div>
                         <div class="blog-card-body pt-4">
                             <h5 class="blog-card-title text-uppercase">
                                 <a href="{% url 'blog_post' blog.id %}">{{ blog.title }}</a>
                             </h5>
+                            <div class="blog-meta text-muted pb-2">
+                                {{ blog.author}} | {{ blog.published_date }}
+                            </div>
                             <p class="blog-card-text">
                                 {{ blog.intro_paragraph_1|truncatechars:160|safe }}
-                                <span>
-                                    <a href="{% url 'blog_post' blog.id %}" class="blog-link">Read more &#8594;</a>
-                                </span>
                             </p>
-                            <p class="blog-date text-secondary">
-                                {{ blog.published_date }}
-                            </p>
+                        </div>
+                        <div class="blog-footer">
+                            <div class="row">
+                                <div class="col-6 text-left footer-link">
+                                    <span>
+                                        <a href="{% url 'blog_post' blog.id %}" class="blog-link">
+                                            Read more &#8594;
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="col-6 text-end footer-meta">
+                                    <a href="{% url 'blog_post' blog.id %}" class="blog-comment">
+                                        <i class="fas fa-comment-alt pe-1" aria-hidden="true"></i>
+                                        {{ blog.comments.count }}
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                         {% if request.user.is_superuser %}
                             <span class="ml-2">
