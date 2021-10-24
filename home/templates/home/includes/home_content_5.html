@@ -1,3 +1,5 @@
+{% load humanize %}
+
 <!-- Blog section -->
 <section class="blog-section carousel-background">
     <div class="container mt-5">
@@ -25,13 +27,8 @@
                                 <h5 class="blog-card-title">
                                     <a href="{% url 'blog_post' blog.id %}">{{ blog.title }}</a>
                                 </h5>
-                                <div class="blog-meta">
-                                    <div class="blog-date text-muted">
-                                        {{ blog.published_date}}
-                                    </div>
-                                    <div class="blog-author text-muted pb-2">
-                                        {{ blog.author}}
-                                    </div>
+                                <div class="blog-meta text-muted">
+                                    {{ blog.author}} | {{ blog.published_date | naturaltime }}
                                 </div>
                             </div>
                             <div class="blog-overview blog-card-text">

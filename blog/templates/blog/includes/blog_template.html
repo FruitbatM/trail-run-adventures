@@ -1,3 +1,5 @@
+{% load humanize %}
+
 <!-- Blog Header-->
  <section>
     <div class="container mt-2">
@@ -38,7 +40,7 @@
                                 <a href="{% url 'blog_post' blog.id %}">{{ blog.title }}</a>
                             </h5>
                             <div class="blog-meta text-muted pb-2">
-                                {{ blog.author}} | {{ blog.published_date }}
+                                {{ blog.author}} | {{ blog.published_date | naturaltime }}
                             </div>
                             <p class="blog-card-text">
                                 {{ blog.intro_paragraph_1|truncatechars:160|safe }}
