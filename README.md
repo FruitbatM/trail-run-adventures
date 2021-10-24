@@ -102,7 +102,6 @@ ZIP: 42424 <br>
 | Potential customer   | read insightful blog posts                                               | I can get an opportunity to learn something new.         |
 |          ---         |                                    ---                                   |                         --                 |
 | Shopper user         | view products by categories                                              | I know where to search when I look for a specific product.                |
-| Shopper user         | view product details                                                     | I know the product price, size, and description.      |
 | Shopper user         | get purchase confirmation                                                | I can ensure the purchase was confirmed.             |
 | Shopper user         | register on the site                                                     | I can create my personal account.               |
 | Shopper user         | to easily view the shopping cart at any time                             | I can easily proceed to the checkout page.                 |

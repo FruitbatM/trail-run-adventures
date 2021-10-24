@@ -202,12 +202,39 @@ Shop product categories get displayed to the user.
 Pass
 
 ## Test Case 8
-> As a shopper user I want the ability to view product details so I can know the product price, size, and description.
-
-## Test Case 9
 > As a shopper user I want the ability to get purchase confirmation so I can ensure the purchase was confirmed.
 
-## Test Case 10
+**Description:**
+Verify that the site provides the user with a confirmation email after a payment.
+
+**Steps:**
+1. Open internet browser of choice.
+2. Navigate to [TRΛIL RUN ΛDVENTURES](https://trail-run-adventures.herokuapp.com/).
+3. Click on the 'Shop' tab and select and select one of the product categories from the drop down menu
+4. Click on the product you wish to purhase.
+5. A detail product page will open.
+6. Click 'Add to Cart' button beneth the product description.
+7. Navigate to the Cart page.
+8. Click 'Secure Checkout' button.
+9. Fill out hte payment form as instructed.
+10. If the payment was successfull, checkout success page with the order details will appear.
+11. The user will receive the confirmation email in the user's email inbox.
+
+**Expected Result**
+The site will provide the user with a confirmation email after a payment.
+
+**Actual Result:**
+The site provides the user with a confirmation email after a payment.
+
+**Pass/Fail:**
+Pass
+
+  <h2 align="center"><img src="readme-files/testing/test_9_a.jpg" alt="Test case 9" target="_blank" width="60%" height="60%"></h2>
+
+*Email confirmation*
+  <h2 align="center"><img src="readme-files/testing/test_9_b.jpg" alt="Test case 9" target="_blank" width="60%" height="60%"></h2>
+
+## Test Case 9
 > As a shopper user I want the ability to register on the site so I can create my personal account.
 
 **Description:**
@@ -240,23 +267,100 @@ Pass
 
   <h2 align="center"><img src="readme-files/testing/test_10_e.jpg" alt="Test case 10" target="_blank" width="60%" height="60%"></h2>
 
-## Test Case 11
+## Test Case 10
 > As a shopper user I want the ability to easily view the shopping cart at any time so I can easily proceed to the checkout page.
 
-## Test Case 12
+**Description:**
+Verify that the shopping cart icon is displayed on all pages and devices so the user can easily proceed to the Cart page.
+
+**Steps:**
+1. Open internet browser of choice.
+2. Navigate to [TRΛIL RUN ΛDVENTURES](https://trail-run-adventures.herokuapp.com/).
+3. Shopping cart icon is located in the top navigation right corner.
+4. Once the shopping cart icon is clicked, the Cart page gets opened.
+
+**Expected Result**
+Shopping cart icon is displayed on all pages and devices.
+
+**Actual Result:**
+Shopping cart icon is displayed on all pages and devices.
+
+**Pass/Fail:**
+Pass
+
+## Test Case 11
 > As a shopper user I want the ability to view items I have added to my shopping cart at any time so that I can identify the subtotals and the total cost of my purchase.
 
-## Test Case 13
+
+
+## Test Case 12
 > As a shopper user I want the ability to be able to adjust quantity of a particular item in the shopping cart so that I can make changes before the checkout.
 
 ## Test Case 13
 > As a shopper user I want the ability to go through an orderning process in a simple way so that I can have a great user experience.
 
+
+
 ## Test Case 14
 > As a site admin/superuser I want the ablity to add new products easily so that new products can be added to sell.
 
+**Description:**
+Verify that the admin user can add a new product.
+
+**Steps:**
+1. Open internet browser of choice.
+2. Navigate to [TRΛIL RUN ΛDVENTURES](https://trail-run-adventures.herokuapp.com/).
+3. Login as admin user (superuser).
+4. Click on the Account icon and select 'Product Management'.
+5. Fill out the product form as instructed.
+6. Click 'Add Product' button when all required fields were added.
+7. Make sure the product was added by typing a product keyword in the search bar.
+
+**Expected Result:**
+A new product will be added and displayed on the Shop page.
+
+**Actual Result:**
+A new product was added and displayed on the Shop page.
+
+**Pass/Fail:**
+Pass
+
+  <h2 align="center"><img src="readme-files/testing/test_14_a.jpg" alt="Test case 14" target="_blank" width="30%" height="30%"></h2>
+
+  <h2 align="center"><img src="readme-files/testing/test_14_b.jpg" alt="Test case 14" target="_blank" width="30%" height="30%"></h2>
+
 ## Test Case 15
 > As a site admin/superuser I want the ablity to edit and update products so that products are up to date in terms of price, description, etc.
+
+**Description:**
+Verify that the admin user can edit products.
+
+**Steps:**
+1. Open internet browser of choice.
+2. Navigate to [TRΛIL RUN ΛDVENTURES](https://trail-run-adventures.herokuapp.com/).
+3. Login as admin user (superuser).
+4. Search for a product of choice.
+5. Click on the 'Edit' link which is located both on the products page and product details page.
+6. A 'Edit a Product' form will show.
+7. Update any needed field/s and click 'Update Product' button.
+8. The product details were updated.
+
+**Expected Result:**
+Product details will be updated under the admin user.
+
+**Actual Result:**
+Product details were updated when logged in as admin user.
+
+**Pass/Fail:**
+Pass
+
+  <h2 align="center"><img src="readme-files/testing/test_15_a.jpg" alt="Test case 15" target="_blank" width="30%" height="30%"></h2>
+
+  <h2 align="center"><img src="readme-files/testing/test_15_b.jpg" alt="Test case 15" target="_blank" width="30%" height="30%"></h2>
+
+  <h2 align="center"><img src="readme-files/testing/test_15_c.jpg" alt="Test case 15" target="_blank" width="30%" height="30%"></h2>
+
+  <h2 align="center"><img src="readme-files/testing/test_15_d.jpg" alt="Test case 15" target="_blank" width="20%" height="20%"></h2>
 
 ## Test Case 16
 > As a site admin/superuser I want the ablity to delete products so that products can be removed from the site in case out of stock or not availbale anymore.
@@ -273,7 +377,7 @@ Verify that the admin user can delete the blog post and that he/she will be prom
 **Steps:**
 1. Open internet browser of choice.
 2. Navigate to [TRΛIL RUN ΛDVENTURES](https://trail-run-adventures.herokuapp.com/).
-3. Login as admin user (superuser)
+3. Login as admin user (superuser).
 4. Click on the 'Blog' tab. 
 5. Click on 'Delete' link located at the bottom of a blog post.
 6. Modal notification window appears notifying that you are about to delete a blog post and does the user wish to proceed.
@@ -583,6 +687,6 @@ Performance was tested using [Lighthouse](https://developers.google.com/web/tool
     <h2 align="center"><img src="readme-files/testing/lighthouse/contact_mobile.jpg" alt="lighthouse test" target="_blank" width="40%" height="40%"></h2>
 </details>
 
-The results are somewhat lower for Performance and  Accessibility. For accessibility primarily due to heading elements not being in a sequentially-descending order (h4 & h5). Also, footer links don't have Links do not have a discernible name. Accessibility is now improved on all pages and I will further working on improving this. 
+The results are somewhat lower for Performance and  Accessibility. For accessibility primarily due to heading elements not being in a sequentially-descending order (h4 & h5) and also, footer links don't have Links do not have a discernible name. Accessibility is now improved on all pages and I will further work on improving this. 
 
 The main issues for Performance, primarily on mobile devices is due to the type and size of the images, unused CSS and JS CDNs. The performance results are overall satisfying as the website is heavy loaded with the content.
