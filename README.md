@@ -628,7 +628,7 @@ Below is the process of deploying the website to Heroku and setting up static fi
 
 # Credits
 
-Credits were listed in a separate file. Please click here to view [CREDITS.md](CREDITS.md)) file.
+Credits were listed in a separate file. Please click here to view [CREDITS.md](CREDITS.md) file.
 
 # Acknowledgements
 

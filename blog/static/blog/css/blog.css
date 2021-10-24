@@ -42,8 +42,8 @@
   }
 
   /* Blogs from Base Camp */
-.blog-card-title {
-    color: #2e7a74;
+.blog-card-title a {
+    color: #357c76;
   }
   
   .blog-link {

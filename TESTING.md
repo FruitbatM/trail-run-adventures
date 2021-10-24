@@ -463,7 +463,7 @@ Several bugs were encountered during the coding process:
 
 # Performance Testing
 
-Performance was tested using [Lighthouse](https://developers.google.com/web/tools/lighthouse) tool.
+Performance was tested using [Lighthouse](https://developers.google.com/web/tools/lighthouse) which is an-open source, automated tool for improving the quality of web pages.
 
 ## Home page
 ### Desktop
@@ -475,6 +475,35 @@ Performance was tested using [Lighthouse](https://developers.google.com/web/tool
 
 ## Mobile
 
+## Trail Running Adventures (Holidays) page
+### Desktop
+
+<details>
+  <summary>Click to view report results</summary>
+    <h2 align="center"><img src="readme-files/testing/lighthouse/holidays_desktop.jpg" alt="lighthouse test" target="_blank" width="40%" height="40%"></h2>
+</details>
+
+### Mobile
+
+<details>
+  <summary>Click to view report results</summary>
+    <h2 align="center"><img src="readme-files/testing/lighthouse/holidays_mobile.jpg" alt="lighthouse test" target="_blank" width="40%" height="40%"></h2>
+</details>
+
+## Trail Running Adventures detail (Holidays detail) page
+### Desktop
+
+<details>
+  <summary>Click to view report results</summary>
+    <h2 align="center"><img src="readme-files/testing/lighthouse/holiday_detail_desktop.jpg" alt="lighthouse test" target="_blank" width="40%" height="40%"></h2>
+</details>
+
+### Mobile
+
+<details>
+  <summary>Click to view report results</summary>
+    <h2 align="center"><img src="readme-files/testing/lighthouse/holiday_detail_mobile.jpg" alt="lighthouse test" target="_blank" width="40%" height="40%"></h2>
+</details>
 
 ## Our Story page
 ### Desktop
@@ -484,9 +513,6 @@ Performance was tested using [Lighthouse](https://developers.google.com/web/tool
     <h2 align="center"><img src="readme-files/testing/lighthouse/our_story_desktop.jpg" alt="lighthouse test" target="_blank" width="40%" height="40%"></h2>
 </details>
 
-For desktop performance, results were similar every time. The result is somewhat lover for 'Best Practices' due to Trust and Safety - the page 'Does not use HTTPS'. Since this is a project for educational purpose only it is not required to instal SSL certificate and therefore this warning can be ignored.
-
-The performance results are overall satisfying as the website is heavy loaded with the content.
 
 ### Mobile
 
@@ -500,11 +526,63 @@ The performance results are overall satisfying as the website is heavy loaded wi
 
 ### Mobile
 
+
+## Shop products page
+### Desktop
+
+<details>
+  <summary>Click to view report results</summary>
+    <h2 align="center"><img src="readme-files/testing/lighthouse/shop_desktop.jpg" alt="lighthouse test" target="_blank" width="40%" height="40%"></h2>
+</details>
+
+### Mobile
+
+<details>
+  <summary>Click to view report results</summary>
+    <h2 align="center"><img src="readme-files/testing/lighthouse/shop_mobile.jpg" alt="lighthouse test" target="_blank" width="40%" height="40%"></h2>
+</details>
+
+## Shop products detail page
+### Desktop
+
+<details>
+  <summary>Click to view report results</summary>
+    <h2 align="center"><img src="readme-files/testing/lighthouse/product_detail_desktop.jpg" alt="lighthouse test" target="_blank" width="40%" height="40%"></h2>
+</details>
+
+### Mobile
+
+<details>
+  <summary>Click to view report results</summary>
+    <h2 align="center"><img src="readme-files/testing/lighthouse/product_detail_mobile.jpg" alt="lighthouse test" target="_blank" width="40%" height="40%"></h2>
+</details>
+
 ## Blog page
 ### Desktop
 
+<details>
   <summary>Click to view report results</summary>
     <h2 align="center"><img src="readme-files/testing/lighthouse/blog_desktop.jpg" alt="lighthouse test" target="_blank" width="40%" height="40%"></h2>
 </details>
 
 ### Mobile
+
+
+## Contact page
+### Desktop
+
+<details>
+  <summary>Click to view report results</summary>
+    <h2 align="center"><img src="readme-files/testing/lighthouse/contact_desktop.jpg" alt="lighthouse test" target="_blank" width="40%" height="40%"></h2>
+</details>
+
+### Mobile
+
+<details>
+  <summary>Click to view report results</summary>
+    <h2 align="center"><img src="readme-files/testing/lighthouse/contact_mobile.jpg" alt="lighthouse test" target="_blank" width="40%" height="40%"></h2>
+</details>
+
+The results are somewhat lower for Performance and  Accessibility. For accessibility primarily due to heading elements not being in a sequentially-descending order (h4 & h5). Also, footer links don't have Links do not have a discernible name. Accessibility is now improved on all pages and I will further working on improving this. 
+
+The main issues for Performance, primarily on mobile devices is due to the type and size of the images, unused CSS and JS CDNs. The performance results are overall satisfying as the website is heavy loaded with the content.
