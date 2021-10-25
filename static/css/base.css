@@ -119,7 +119,7 @@ input[name='q']::placeholder {
 #home-header {
     background: url('/static/images/hero_image.jpg') no-repeat center;
     background-size: cover;
-    height: 39rem;
+    height: 36rem;
 }
 
 .main-heading {
@@ -229,7 +229,7 @@ a {
   right: 0px;
   top: -70px;
   color: #fafafa;
-  font-size: 17px;
+  font-size: 1.065rem;
 }
 
 .tour-card .card-description {
@@ -294,16 +294,15 @@ a {
 /* Code source with modification: https://codepen.io/maheshambure21/embed/GgVbVW?default-tab=result&theme-id=0#html-box */
 .benefit-card-block {
   position: relative;
-  max-width: 1000px; /* CHECK */
+  max-width: 62.5rem; /* CHECK */
   list-style: none;
   text-align: center;
 }
 
 .benefit-card-block .benefit-card {
   position: relative;
-  float: left;
   overflow: hidden;
-  margin: 10px 1%;
+  margin: 0.625rem 1%;
   min-width: 320px;
   max-width: 480px;
   max-height: 360px;
@@ -818,6 +817,10 @@ thead th {
 
   .tour-card img {
     height: 25vh;
+  }
+
+  .benefit-card-block .benefit-card {
+    height: 440px;
   }
 
   .blog-post-heading {
