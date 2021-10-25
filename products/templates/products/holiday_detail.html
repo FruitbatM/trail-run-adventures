@@ -11,30 +11,30 @@
 {% block header_content %}
     <div class="container-fluid">
         <div id="adventure-header">
-            <img src="{{ MEDIA_URL }}{{ holiday.holiday_header_image }}" id="adventure-header-img" alt="{{ holiday.name }}">
+            <img src="{{ MEDIA_URL }}{{ holiday.holiday_header_image }}" class="img-fluid" id="adventure-header-img" alt="{{ holiday.name }}">
             <div class="container">
                 <div class="row text-center">
-                    <div class="col-12 my-auto mx-auto">
+                    <div class="col-12 col-sm-6 my-auto mx-auto">
                         <div id="adventure-header-block">
                             <h1 class="display-4 team-heading text-uppercase">
                                 {{ holiday.name }}
                             </h1>
-                            <h5 class="team-sub-heading col-lg-8 offset-lg-2 pt-4">
+                            <h5 class="team-sub-heading col-lg-8 offset-lg-2 pt-4 p-2">
                                 {{ holiday.header_paragraph }}
                             </h5>
                             <div class="adventure-header-info py-5">
-                                <div class="d-inline pe-4">
+                                <div class="d-inline pe-3">
                                     <i class="fas fa-history fa-3x h-icon"></i>
                                     <span>{{ holiday.duration }} nights</span>
                                 </div>
-                                <div class="d-inline ps-4 pe-4">
+                                <div class="d-inline ps-3 pe-3">
                                     <i class="fas fa-ruler fa-3x h-icon d-inline"></i>
                                     <span>{{ holiday.distance }} km</span>
                                 </div>
-                                <div class="d-inline ps-4 pe-4">
+                                <div class="d-inline ps-3 pe-3">
                                     <i class="fab fa-cloudscale fa-3x h-icon d-inline"></i>
                                     <span>{{ holiday.level }}</span>
-                                    <span class="info-icon h-icon">
+                                    <span class="info-icon h-icon d-none d-sm-block">
                                         <a href="#myModal" data-bs-toggle="modal">
                                             <i class="fas fa-info-circle fa-1x text-white"></i>
                                         </a>
@@ -60,8 +60,8 @@
                                     </div>
                                   </div>
                                 </div>
-                                <div class="pt-5">
-                                    <h5 class="text-white heading-price">€ {{ holiday.price|intcomma }} per person</h5>
+                                <div>
+                                    <h5 class="text-white heading-price d-none d-sm-block">€ {{ holiday.price|intcomma }} per person</h5>
                                 </div>
                             </div>
                         </div>

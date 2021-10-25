@@ -164,6 +164,7 @@ a.category-badge > span.badge:hover {
 
 .h-icon{
     text-shadow: -0.065rem 0 #000, 0 0.065rem #000, 0.065rem 0 #000, 0 -0.065rem #000;
+    font-size: 2rem !important;
 }
 
 .overview-block {
@@ -308,7 +309,7 @@ img {
     color: #439B94;
 }
 
-/* Adventure Holiday Card */
+/* Trail Run Adventure Holiday Card */
 /* Inspiration taken from: https://codepen.io/olhilton/pen/dXaqxE */
 
 .wrapper{
@@ -484,6 +485,18 @@ img {
         margin-left: 0 !important;
         margin-right: 0 !important;
         text-align: left !important;
+    }
+
+    .heading-price {
+        font-size: 1.5rem;
+    }
+
+    .team-sub-heading {
+        font-size: 1.6rem;
+    }
+
+    .team-heading {
+        font-size: 3.2rem;
     }
 }
 
