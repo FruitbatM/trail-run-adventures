@@ -781,10 +781,6 @@ thead th {
   width: 15%;
 }
 
-.cart-quantity {
-  margin-left: 4.4rem;
-}
-
 /* Login & Register button */
 
 .button-primary {
@@ -841,6 +837,10 @@ thead th {
 
   .team-heading {
     margin-top: 18rem;
+  }
+
+  .empty-container {
+    min-height: 50vh;
   }
 }
 
