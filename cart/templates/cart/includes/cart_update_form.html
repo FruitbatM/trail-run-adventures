@@ -1,9 +1,9 @@
-<form class="quantity-update-form mx-auto" method="POST" id="cart-form-{{ forloop.counter }}" 
+<form class="quantity-update-form" method="POST" id="cart-form-{{ forloop.counter }}" 
     action="{% url 'adjust_cart' item.item_id %}">
     {% csrf_token %}
     {% if item.product.is_holiday %}
-        <div class="form-group w-50">
-            <div class="input-group cart-quantity">
+        <div class="form-group w-50 mx-auto">
+            <div class="input-group">
                 <input class="form-control form-control-sm qty_input" type="number" min="1" max="12"
                     name="quantity" value="{{ item.quantity }}" required>
             </div>
@@ -16,8 +16,8 @@
             </p>
         </div>
     {% else %}
-        <div class="form-group w-50">
-            <div class="input-group cart-quantity">
+        <div class="form-group w-50 mx-auto">
+            <div class="input-group">
                 <div class="input-group-prepend">
                     <button class="decrement-qty btn btn-sm btn-black rounded-1" 
                         data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">

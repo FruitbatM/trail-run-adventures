@@ -8,7 +8,7 @@
     <div class="container">
         <div class="row text-center">
             <div class="col-12 my-auto mx-auto mt-4">
-                <h3 class=" section-heading-2 text-uppercase mt-4 mb-5">
+                <h3 class="section-heading-2 text-uppercase mt-4 mb-5">
                     Shopping Cart
                 </h3>
             </div>
@@ -21,12 +21,45 @@
         <div class="row">
             <div class="col">
                 {% if cart_items %}
-                    <div class="table-responsive rounded">
+                    <div class="d-block d-sm-none">
+                        <div class="row">
+                            <div class="col">
+                                {% include "cart/includes/cart_total.html" %}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col mb-3">
+                                {% include "cart/includes/cart_buttons.html" %}
+                            </div>
+                        </div>
+                        {% for item in cart_items %}
+                            <div class="row">
+                                <div class="col-12 w-50 col-sm-6 mx-auto my-2">
+                                    {% include "cart/includes/product_image.html" %}
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 text-center mb-2">
+                                {% include "cart/includes/product_info.html" %}
+                            </div>
+                            <div class="col-12 col-sm-6 text-center order-sm-last">
+                                <p class="my-0">Price: €{{ item.product.price|intcomma }}</p>
+                                <p class="mt-2">
+                                    <strong>Subtotal: </strong>
+                                    €{{ item.product.price | calc_subtotal:item.quantity }}
+                                </p>
+                            </div>
+                            <div class="col-12 text-center mb-3 pb-2">
+                                {% include "cart/includes/cart_update_form.html" %}
+                            </div>
+                            <hr>
+                        {% endfor %}
+                    </div>
+                    <div class="table-responsive rounded d-none d-md-block">
                         <table class="table table-sm table-borderless">
                             <thead class="font-italic">
                                 <tr class="hrline">
                                     <th scope="col">Product</th>
-                                    <th scope="col" class="ps-4" style="width: 35%;">Description</th>
+                                    <th scope="col" class="ps-4" style="width: 25%;">Description</th>
                                     <th scope="col">Price</th>
                                     <th scope="col">Quantity</th>
                                     <th scope="col">Subtotal</th>
@@ -64,7 +97,7 @@
                         </table>
                     </div>
                 {% else %}
-                <!-- Empty cart -->
+                    <!-- Empty cart -->
                     {% include "cart/includes/empty_cart.html" %}
                 {% endif %}
             </div>
