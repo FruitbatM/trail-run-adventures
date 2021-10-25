@@ -565,6 +565,16 @@ Several bugs were encountered during the coding process:
   'django.template.context_processors.static',
   ```
 
+- Full screen height issue on empty_cart.html page on tablet devices ('min-width: 764px'). The gap was showing between the bottom of the page and footer section.
+
+**Fixed** by adding the following css code:
+  ```
+    .empty-container {
+      min-height: 50vh;
+  }
+  ```
+
+
 # Performance Testing
 
 Performance was tested using [Lighthouse](https://developers.google.com/web/tools/lighthouse) which is an-open source, automated tool for improving the quality of web pages.

@@ -14,7 +14,11 @@
 
 # Code
 
+- Many functionalities were addapted from Code Institute walkthrough project (Boutique Ado)
 - Back to top arrow code with small modification was sourced from [w3schools](https://www.w3schools.com/howto/howto_js_scroll_to_top.asp)
+- Navbar, footer, and modalfunctionalities were sourced from Bootstrap framework
+- Benefits card image hover was sourced with modification from https://codepen.io/maheshambure21/embed/GgVbVW?default-tab=result&theme-id=0#html-box */
+- Trail run adventure holiday cards - code was sourced with modification from: Inspiration taken from: https://codepen.io/olhilton/pen/dXaqxE
 
 # Media
 
