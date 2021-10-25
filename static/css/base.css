@@ -811,7 +811,7 @@ thead th {
     padding-top: 3.75rem;
   }
 
-  #brand-logo {
+  .brand-logo {
     width: 9.4rem;
   }
 
@@ -851,10 +851,6 @@ thead th {
 
     .navbar {
       font-size: 1.1rem;
-    }
-
-    #brand-logo {
-      width: 9.4rem;
     }
 
     #home-header {
@@ -932,4 +928,11 @@ resource: https://coderwall.com/p/mwvbea/media-queries-only-for-the-iphone-5-par
   and (-webkit-device-pixel-ratio: 2) 
   and (min-aspect-ratio: 40/71) and (orientation:portrait) {
 
+    .brand-logo {
+      width: 6.4rem;
+    }
+
+    .fa-shopping-cart {
+      font-size: 0.9rem !important;
+    }
 }
