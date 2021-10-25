@@ -370,6 +370,10 @@ a {
   height: 22rem;
 }
 
+.benefit-card {
+  margin: 0.625rem auto !important;
+}
+
 .card-img-overlay {
   padding: 3em;
 }
