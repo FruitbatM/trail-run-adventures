@@ -7,9 +7,10 @@
 2. [Code Validation](#code-validation)
 3. [Functionality Testing](#functionality-testing)
 4. [Django Unit Testing](#django-unit-testing)
-5. [Encountered Issues](#encountered-issues)
-6. [Web Accessibility](#web-accessibility)
-7. [Performance Testing](#performance-testing)
+5. [Defensive Programming and Security](#defensive-programming-and-security)
+6. [Encountered Issues](#encountered-issues)
+7. [Web Accessibility](#web-accessibility)
+8. [Performance Testing](#performance-testing)
 </details>
 
 # Testing User Stories
@@ -590,15 +591,26 @@ You can run also coverage HTML to show the report on the GUI.
   coverage html
   ```
 
-To open the report you can run the following command: `python3 -m http.server`
-
+To open the report you can run the following command: 
+  ```
+  python3 -m http.server
+  ```
 
 To run the tests in the terminal the following command needs to be typed:
   `python3 manage.py test`
 
 
-what tests might be needed in the application.
+# Defensive Programming and Security
 
+## Defensive Programming
+
+- I have used code in my project to make sure actions cannot occur by placing URLs into the browser. If for example a user types in the URL to edit or delete a product or blog post the application has been programmed to redirect the user elsewhere and show an error message.
+
+- A confirmation modal was added to check if the admin user is sure she/he wants to delete anything on the site such as, deleting the product, holiday tour, or deleting a blog post. This should minimize the user error by deleting things by mistake.
+
+## Security
+
+- For passwords I have used Django allauth to handle the user's login and registration. This stores the users passwords as hashed key for security. It also makes sure the users need to confirm their emails as an extra security measure.
 
 # Encountered Issues
 
