@@ -435,7 +435,6 @@ Pass
 
 <h2 align="center"><img src="readme-files/testing/validation_markup_product_detail.jpg" alt="Markup Validation" target="_blank" width="60%" height="60%"></h2>
 
-
 ### Basecamp Blog Page (`basecampblog.html`)
 
 - There were several Duplicte ID errors and warnings which were fixed.
@@ -565,6 +564,74 @@ Several bugs were encountered during the coding process:
   'django.template.context_processors.static',
   ```
 
+- Below errow was received when adding products to cart.
+
+    <h2 align="center"><img src="readme-files/testing/add_to_cart.jpg" alt="lighthouse test" target="_blank" width="40%" height="40%"></h2>
+
+- **Fixed** by adding below code in views.py file:
+
+  ```
+  def adjust_cart(request, item_id):
+    """
+    Adjust the quantity of the specified product / holiday to the
+    specified amount
+    """
+
+    product = get_object_or_404(Product, pk=item_id)
+    quantity = int(request.POST.get('quantity'))
+    size = None
+    if 'product_size' in request.POST:
+        size = request.POST['product_size']
+    cart = request.session.get('cart', {})
+
+    if size:
+        if quantity > 0:
+            cart[item_id]['items_by_size'][size] = quantity
+            messages.success(request, f'Updated size \
+                            {size.upper()} {product.name} quantity to \
+                            {cart[item_id]["items_by_size"][size]}')
+        else:
+            del cart[item_id]['items_by_size'][size]
+            if not cart[item_id]['items_by_size']:
+                cart.pop(item_id)
+            messages.success(request, f'Removed size \
+                            {size.upper()} {product.name} from your cart')
+    else:
+        if quantity > 0:
+            cart[item_id] = quantity
+            messages.success(request, f'Updated \
+                            {product.name} quantity to {cart[item_id]}')
+        else:
+            cart.pop(item_id)
+            messages.success(request, f'Removed \
+                            {product.name} from your cart')
+
+    request.session['cart'] = cart
+    return redirect(reverse('view_cart'))
+  ```
+
+- I had an issue with completing the functionality for adding a holiday product since holiday product is consisting of several models. 
+
+- **Fixed** by adding below code snippet in views.py file:
+
+    ```
+     if request.method == 'POST':
+        holiday_form = HolidayForm(request.POST, request.FILES)
+        itinerary_form = ItineraryForm(request.POST, request.FILES)
+        if holiday_form.is_valid() and itinerary_form.is_valid():
+            holiday = holiday_form.save(commit=False)
+            holiday.is_holiday = True
+            holiday.save()
+            itinerary = Itinerary.objects.create(holiday=holiday,
+                                                 name=holiday.name)
+            itinerary.save()
+            holiday.save()
+            itinerary_form = itinerary_form.save(commit=False)
+            itinerary_form.itinerary = holiday.itinerary
+            holiday.save()
+            itinerary_form.save()
+    ```
+
 - Full screen height issue on empty_cart.html page on tablet devices ('min-width: 764px'). The gap was showing between the bottom of the page and footer section.
 
 **Fixed** by adding the following css code:
@@ -574,6 +641,67 @@ Several bugs were encountered during the coding process:
   }
   ```
 
+# Web Accessibility
+
+Several pages were tested to ensure the website is accessible to people with disabilities using the [Web Accessibility](https://www.webaccessibility.com/) checker.
+
+## Home page
+
+<details>
+  <summary>Click to view the results</summary>
+    <h2 align="center"><img src="readme-files/testing/accessibility/accessibility_home.jpg" alt="lighthouse test" target="_blank" width="40%" height="40%"></h2>
+</details>
+
+## Adventure holidays page - all
+
+<details>
+  <summary>Click to view the results</summary>
+    <h2 align="center"><img src="readme-files/testing/accessibility/accessibility_holidays.jpg" alt="lighthouse test" target="_blank" width="40%" height="40%"></h2>
+</details>
+
+## Adventure holiday detail page
+
+<details>
+  <summary>Click to view the results</summary>
+    <h2 align="center"><img src="readme-files/testing/accessibility/accessibility_holiday_detail.jpg" alt="lighthouse test" target="_blank" width="40%" height="40%"></h2>
+</details>
+
+## Our Story page
+
+<details>
+  <summary>Click to view the results</summary>
+    <h2 align="center"><img src="readme-files/testing/accessibility/accessibility_story.jpg" alt="lighthouse test" target="_blank" width="40%" height="40%"></h2>
+</details>
+
+## Our Team page
+
+<details>
+  <summary>Click to view the results</summary>
+    <h2 align="center"><img src="readme-files/testing/accessibility/accessibility_team.jpg" alt="lighthouse test" target="_blank" width="40%" height="40%"></h2>
+</details>
+
+## Shop page
+
+<details>
+  <summary>Click to view the results</summary>
+    <h2 align="center"><img src="readme-files/testing/accessibility/accessibility_shop.jpg" alt="lighthouse test" target="_blank" width="40%" height="40%"></h2>
+</details>
+
+## Blog page
+
+<details>
+  <summary>Click to view the results</summary>
+    <h2 align="center"><img src="readme-files/testing/accessibility/accessibility_blog.jpg" alt="accessibility test" target="_blank" width="40%" height="40%"></h2>
+</details>
+
+## Contact page
+
+<details>
+  <summary>Click to view the results</summary>
+    <h2 align="center"><img src="readme-files/testing/accessibility/accessibility_contact.jpg" alt="accessibility test" target="_blank" width="40%" height="40%"></h2>
+</details>
+
+Overall, the pages received a very good accessibility score of 96% average.
 
 # Performance Testing
 
