@@ -15,33 +15,32 @@ with Django*
 
 1. [Overview](#overview)
 2. [User Experience UX](#user-experience-ux)
-    - [User Stories](#user-stories)
     - [Strategy](#strategy)
+        - [Project Goals](#project-goals)
+        - [User Stories](#user-stories)
     - [Scope](#scope)
     - [Structure](#structure)
     - [Skeleton](#skeleton)
     - [Design](#design)
-    - [Color Scheme](#color-scheme)
-    - [Fonts](#fonts)
-    - [Imagery](#imagery)
-    - [Logo](#logo)
-    - [Icons](#icons)
+        - [Color Scheme](#color-scheme)
+        - [Fonts](#fonts)
+        - [Imagery](#imagery)
 3. [Features](#features)
     - [Existing Features](#existing-features)
     - [Future Implementation](#future-implementation)
-4. [Database](#database)
+4. [Django Apps](#django-apps)
+    - [Database](#database)
+    - [Apps and Data Models](#apps-and-data-models)
 5. [Technologies](#technologies)
 6. [Testing](#testing)
-7. [Deployment](#deployment)
+7. [Version Control](#version-control)
+8. [Deployment](#deployment)
     - [GitHub pages](#github-pages)
     - [Forking the Repository](#forking-the-repository)
     - [Local Deployment](#local-deployment)
-8. [Credits](#credits)
-    - [Code](#code)
-    - [Media](#media)
-    - [Content](#content)
-9. [Acknowledgements](#acknowledgements)
-10. [Disclaimer](#disclaimer)
+9. [Credits](#credits)
+10. [Acknowledgements](#acknowledgements)
+11. [Disclaimer](#disclaimer)
 
 </details>
 
@@ -68,7 +67,7 @@ expiration date: 04 / 24 <br>
 CVC: 424 <br>
 ZIP: 42424 <br>
 
-- For the assessor, I have included the admin login details in the comments section when submitting the project.
+*For the assessor, I have included the admin login details in the comments section when submitting the project.*
 
 # User Experience (UX)
 
@@ -251,7 +250,7 @@ Icons should be obvious and very intuitive so that users can easily understand w
 
         </br>
 
-        <h2 align="center"><img src="readme-files/general/intro.jpg" alt="Introduction" target="_blank" width="60%" height="60%"></h2>
+        <h2 align="center"><img src="readme-files/general/intro.jpg" alt="Introduction" target="_blank" width="40%" height="40%"></h2>
 
         - **Trail Running Holidays** section displays three trail running holiday tour cards. Holiday tour cards consist of animated on hover image with tour title, and a card content section. On the bottom section part, a button "Explore more" is located that redirects to the Trail Running Holidays page.
 
@@ -303,34 +302,74 @@ Icons should be obvious and very intuitive so that users can easily understand w
 
         </br>
 
-        <h2 align="center"><img src="readme-files/general/contact_us.jpg" alt="Introduction" target="_blank" width="60%" height="60%"></h2>
+        <h2 align="center"><img src="readme-files/general/contact_us.jpg" alt="Introduction" target="_blank" width="40%" height="40%"></h2>
+
+        </br>
+
+        <h2 align="center"><img src="readme-files/general/contact_us.jpg" alt="Introduction" target="_blank" width="40%" height="40%"></h2>
 
 - Products App
+    - products app consists of 2 pages:
+        - **Trail Running Holidays** page consits of a list holidays where all holidays are visible to the user organized in six cards. Cards consist of image and footer section with holiday title and duration info. When the user hovers over the info icon locate in left top corner the overlay appears with addition tour information.
+
+    </br>
+
+    <h2 align="center"><img src="readme-files/general/holidays.jpg" alt="Introduction" target="_blank" width="40%" height="40%"></h2>
+
+    - **Shop** page located under the 'Shop' tab contains all branded products the user can purchase. Products are categoriezed in 3 categories: Shirts, Drinkware and Accessories.
 
 - Cart App
     - cart is a standard eCommerce functionality which aids the checkout process. A cart icon is displayed in the top right website's corner. 
     - The cart icon with the grand total will be displayed if there are items added to the cart. The cart icon changes the color to green when a product is added to the cart to catch the user's attention. 
-    - After clickign on the cart icon, the user gets an overview of all the products put into the cart. The user can also modify the quantity of the added products as well as remove the products from the cart. 
-    - all the products in the cart are also linked to their product details page so that the user has an easy access to each item in case they whish to check it again before proceeding with the checkout process.
+    - After clicking on the cart icon, the user gets an overview of all the products put into the cart. The user can also modify the quantity of the added products as well as remove the products from the cart. 
+    - all the products in the cart are also linked to their product details page so that the user has an easy access to each item in case they wish to check it again before proceeding with the checkout process.
     - if the user tries to access their empty cart, a message gets displayed that nothing has been added yet and encourage them to go to the shop.
 
-
 - Checkout App
+    - Once the user is happy with their cart they can proceed to the checkout page.
+    - On the checkout page the checkout form and a list of their cart items with the the total amount is displayed.
 
+    - Order confirmation page
+        - Once the order has been confirmed the user is then directed to the order confirmation page.
+        - The user is then shown the order details and the order number.
+        - A confirmation email will also be sent to the user.
 
+        </br>
 
-- Profiles App
+        <h2 align="center"><img src="readme-files/testing/test_9_a.jpg" alt="Test case 8" target="_blank" width="60%" height="50%"></h2>
 
+        *Email confirmation*
+        <h2 align="center"><img src="readme-files/testing/test_9_b.jpg" alt="Test case 8" target="_blank" width="60%" height="50%"></h2>
 
 - Toasts
     - alert messages to site visitors divided into 4 categories: `toast_success`, `toast_info`, `toast_warning`, and `toast_error`
     - toasts appear on every page whenever a certain action has been done by the user.
-    - their purpose is to give feedback on the action a user has just performed, such as logging in, logging out, adding a product to the cart, etc
+    - their purpose is to give feedback on the action a user has just performed, such as logging in, logging out, adding a product to the cart, etc.
 
 - Django allauth
     - `django-allauth` is a Python package. According to the [django-allauth](https://django-allauth.readthedocs.io/en/latest/) docs, it is an "integrated set of Django applications addressing authentication, registration, account management as well as 3rd party (social) account authentication."
-    - it provides a set of features such as signup, login, logout and password change
+    - it provides a set of features such as signup, login, logout, and password change
     - after register, a verification e-mail is sent to the registered e-mail to confirm it. Once confirmed, the user can log in with their credentials and access the profile
+
+    - Register
+        - If the user isn't register she/he can click the register link and be redirected to the register page.
+        - Here the user can fill in the register form to signup.
+        - The page also has a link to the login in case user has navigated here but has already been registered.
+
+        </br>
+
+        <h2 align="center"><img src="readme-files/general/register.jpg" alt="Regitration form" target="_blank" width="40%" height="40%"></h2>
+
+    - Login
+
+        - Once the user has been registered she/he can use the login feature.
+        - The users can fill out their login details.
+        - There is a link to the regiser page in case a user has navigated here by mistake.
+        - There is also a link to reset the password.
+
+        </br>
+
+        <h2 align="center"><img src="readme-files/general/login.jpg" alt="Login form" target="_blank" width="40%" height="40%"></h2>
 
 - Interactive
     - back to top arrow button will appear on the lower right of the page when the user starts to scroll down the page
@@ -345,20 +384,16 @@ Icons should be obvious and very intuitive so that users can easily understand w
 
 - 404 and 500 error pages
     - if a user navigates to a page which does not exist or if they do not have permission to access, they will be directed to a 404 error page
-    - if there are an internal problems with the server, a 500 error page will appear
+    - if there is an internal problems with the server, a 500 error page will appear
 
 ## Future Implementation
 
 - Wishlist
     - a feature that allows authenticated users to save (wishlist) items for later purchase.
-
 - Product reviews
-    - the idea would be to implement ratings and product reviews on product pages.
-
+    - the idea would be to implement ratings and product reviews on product and holiday pages.
 - Pagination
-
 - Real time chat
-
 
 # Django Apps
 
@@ -399,7 +434,7 @@ During the development phase I worked with sqlite3 database which is installed w
 - Stores information about each placed order.
 
 **ORDER LINE ITEM**
-- Stores inormation from the order, used in the calculation in Order model. 
+- Stores information from the order, used in the calculation in Order model. 
 
 ### **Products app**
 
@@ -445,8 +480,8 @@ I've used [DBDiagram](https://dbdiagram.io/home) to draw up a Database Schema.
 - [Bootstrap v.5.1](https://getbootstrap.com/docs/5.1/getting-started/introduction/) was used to aid in responsive, mobile-first website design. I used Bootstrap to create grid layouts, navbar, cards, forms, buttons and other features.
 - [SQLite](https://www.sqlite.org/index.html) Django built-in database as a database in development mode.
 - [PostgreSQL](https://landing.aiven.io/en/aiven-for-postgresql/) (Heroku built-in) as a database in production mode.
-- [Django](https://www.djangoproject.com/) 
-- [Stripe](https://stripe.com/)
+- [Django](https://www.djangoproject.com/) is a high-level Python web framework that encourages rapid development and clean, pragmatic design.
+- [Stripe](https://stripe.com/) has been used for the payment function of the e-commerce shop.
 - [AWS](https://aws.amazon.com/) (Amazon Web Services) for hosting static files and images for the website
 - [jQuery](https://jquery.com/) was used to simplify DOM manipulation.
 - [Figma](https://www.figma.com/) was used to create the wireframes for the website.
@@ -462,20 +497,19 @@ I've used [DBDiagram](https://dbdiagram.io/home) to draw up a Database Schema.
 - [Adobe Photoshop Express](https://photoshop.adobe.com/) was used for resizing and cropping the images used on the website.
 - [TinyJPG](https://tinyjpg.com/) was used for compressing images while preserving transparency.
 - [Techsini](http://techsini.com/multi-mockup/index.php) was used to create the responsive mockup image.
-- [Paint 3D](https://www.microsoft.com/en-us/p/paint-3d/9nblggh5fv99?activetab=pivot:overviewtab) was used to modifiy couple of images.
+- [Paint 3D](https://www.microsoft.com/en-us/p/paint-3d/9nblggh5fv99?activetab=pivot:overviewtab) was used to modifiy and crop images.
 - [Coolors](https://coolors.co/) was used for color palette used on the website.
 - [CSS Autoprefixer](https://autoprefixer.github.io/) was used for adding CSS vendor prefixes.
 - [Google Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools) was used to test and debug the code.
 - [Animate On Scroll Library](https://michalsnik.github.io/aos/) was used to integrate animate on scroll effect on home page.
 - [Randomkeygen](https://randomkeygen.com/) was used to generate random passwords and keys.
 - [Canva](https://www.canva.com/) was used to design and create the brand logo and favicon
-
+- [Dbdiagram](https://dbdiagram.io/) was used to make a diagram of my database schema.
 
 # Testing
 
 Testing process was written in a separate file. 
 [Please click here for the testing process](TESTING.md) .
-
 
 # Version Control
 
@@ -489,7 +523,7 @@ Testing process was written in a separate file.
 
 <h2 align="center"><img src="readme-files/general/new_repository_create.jpg" alt="New repository" target="_blank" width="60%" height="60%"></h2>
 
-3. Open the repository with [Gitpod](https://www.gitpod.io/). By using Code Institue Template, initialisation including initial commit is done. `gitignore` file, which is very important for the project including some confidential information, is created with Code Institute template so not necessary to create it.<br>
+3. Open the repository with [Gitpod](https://www.gitpod.io/). By using Code Institute Template, initialization including initial commit is done. `gitignore` file, which is very important for the project including some confidential information, is created with Code Institute template so not necessary to create it.<br>
 
 <h2 align="center"><img src="readme-files/general/repo_gitpod_button.jpg" alt="New repository" target="_blank" width="60%" height="60%"></h2>
 
