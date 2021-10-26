@@ -6,9 +6,10 @@
 1. [Testing User Stories](#testing-user-stories)
 2. [Code Validation](#code-validation)
 3. [Functionality Testing](#functionality-testing)
-4. [Encountered Issues](#encountered-issues)
-5. [Web Accessibility](#web-accessibility)
-6. [Performance Testing](#performance-testing)
+4. [Django Unit Testing](#django-unit-testing)
+5. [Encountered Issues](#encountered-issues)
+6. [Web Accessibility](#web-accessibility)
+7. [Performance Testing](#performance-testing)
 </details>
 
 # Testing User Stories
@@ -552,6 +553,52 @@ A comprehensive testing was executed. Further elaborated in more details below:
   - external monitor 31.5" PHILIPS 322E1C
 
 The results were consistent, the website is platform-cross compatible and responsive. Furthermore, using DevTools I checked responsiveness for different screen sizes for mobile and tablet devices. Several issues were found and fixed all described under Encountered Issues section.
+
+# Django Unit Testing
+
+- The inital plan was to test each app using Django unit testing. However, due to lack of time this was only partially achieved.
+- Tests were written to test the Models, Views and Forms.
+
+I've used Coverage.py which is a python test coverage reporting tool that shows how much of your code is tested and potentially offers suggestions on what other tests need to be created.
+
+First, install coverage with the following command
+  ```
+  pip3 install coverage
+  ```
+
+You can ran coverage to make sure it is installed properly and to see what version got installed:
+  ```
+  coverage --version
+  ```
+
+To run a test you can type the below command: 
+  ```
+  coverage run manage.py test
+  ```
+To test and individual app you can run it wit below command:
+  ```
+  coverage run manage.py test <app name>
+  ```
+
+To view a coverage report and to overview of all the things and potentially where tests might need to occur or where they might be needed, type the following command in the terminal:
+  ```
+  coverage report
+  ```
+
+You can run also coverage HTML to show the report on the GUI. 
+  ```
+  coverage html
+  ```
+
+To open the report you can run the following command: `python3 -m http.server`
+
+
+To run the tests in the terminal the following command needs to be typed:
+  `python3 manage.py test`
+
+
+what tests might be needed in the application.
+
 
 # Encountered Issues
 
