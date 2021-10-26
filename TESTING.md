@@ -8,9 +8,10 @@
 3. [Functionality Testing](#functionality-testing)
 4. [Django Unit Testing](#django-unit-testing)
 5. [Defensive Programming and Security](#defensive-programming-and-security)
-6. [Encountered Issues](#encountered-issues)
-7. [Web Accessibility](#web-accessibility)
-8. [Performance Testing](#performance-testing)
+6. [Manual Testing](#manual-testing)
+7. [Encountered Issues](#encountered-issues)
+8. [Web Accessibility](#web-accessibility)
+9. [Performance Testing](#performance-testing)
 </details>
 
 # Testing User Stories
@@ -293,15 +294,83 @@ Pass
 ## Test Case 11
 > As a shopper user I want the ability to view items I have added to my shopping cart at any time so that I can identify the subtotals and the total cost of my purchase.
 
+**Description:**
+Verify that the user can see shopping cart on every webiste page and on all devices.
 
+**Steps:**
+1. Open internet browser of choice.
+2. Navigate to [TRΛIL RUN ΛDVENTURES](https://trail-run-adventures.herokuapp.com/).
+3. Select at least one product and add it to the cart.
+4. Shopping cart icon displayed in the top right corner will update to green color with the cart amount.
+5. Clicking the shopping cart icon reverts the user to shopping cart page.
+
+**Expected Result:**
+The shopping cart icon will change the color to green when at least one item was added to the cart. The cart amount will update correctly when each new item will be added to the cart. And once the icon is clicked the user will be reverted to the shopping cart page.
+
+**Actual Result:**
+The shopping cart icon changes the color to green when at least one item was added to the cart. The cart amount updates correctly when each new item is added to the cart. And once the icon is clicked the user is reverted to the shopping cart page.
+
+**Pass/Fail:**
+Pass
 
 ## Test Case 12
 > As a shopper user I want the ability to be able to adjust quantity of a particular item in the shopping cart so that I can make changes before the checkout.
 
+**Description:**
+Verify that the user can adjust quantity of a particular shop product item as well for holiday tours in the shopping cart.
+
+**Steps:**
+1. Open internet browser of choice.
+2. Navigate to [TRΛIL RUN ΛDVENTURES](https://trail-run-adventures.herokuapp.com/).
+3. Select one product from shop tab and one product from Trail running holidays and add them to the cart.
+4. Update item quantitities on the Shopping Cart page.
+5. Try adding quantity < 0.
+6. Try adding quantity > 99 for shop product.
+7. Try adding quantity > 12 for a holiday tour.
+
+**Expected Result:**
+The user will not be able to add the quantity < or = 0 and qunatity > 99 for shop products and > 12 for holiday tours respectively. The user will get the error message if incorrect quantity input was added.
+
+**Actual Result:**
+The user is not able to add the quantity < 0 and qunatity > 99 for shop products and > 12 for holiday tours respectively. The user gets the error message if incorrect quantity input was added.
+
+  <h2 align="center"><img src="readme-files/testing/test_restriction_product.jpg" alt="Test case 12" target="_blank" width="60%" height="60%"></h2>
+
+  <h2 align="center"><img src="readme-files/testing/test_restriction_holiday.jpg" alt="Test case 12" target="_blank" width="60%" height="60%"></h2>
+
+  <h2 align="center"><img src="readme-files/testing/restriction_3.jpg" alt="Test case 12" target="_blank" width="60%" height="60%"></h2>
+
+**Pass/Fail:**
+Pass
+
 ## Test Case 13
 > As a shopper user I want the ability to go through an orderning process in a simple way so that I can have a great user experience.
 
+**Steps:**
+1. Open internet browser of choice.
+2. Navigate to [TRΛIL RUN ΛDVENTURES](https://trail-run-adventures.herokuapp.com/).
+3. Select one product from shop tab and one product from Trail running holidays and add them to the cart.
+4. Click on the 'Secure checkout' button.
+5. Fill out the checkout form as instructed.
+6. Order confirmation is received upon order completition.
+7. User recieves Order Confirmation in email inbox.
 
+**Expected Result:**
+Ordering process goes smoothly and the user will receive the order confirmation.
+
+**Actual Result:**
+Ordering process went smoothly and the user received the order confirmation.
+
+**Pass/Fail:**
+Pass
+
+  <h2 align="center"><img src="readme-files/testing/test_13_a.jpg" alt="Test case 13" target="_blank" width="30%" height="30%"></h2>
+
+  <h2 align="center"><img src="readme-files/testing/test_13_b.jpg" alt="Test case 13" target="_blank" width="40%" height="40%"></h2>
+
+  <h2 align="center"><img src="readme-files/testing/test_13_c.jpg" alt="Test case 13" target="_blank" width="40%" height="40%"></h2>
+
+  <h2 align="center"><img src="readme-files/testing/test_13_d.jpg" alt="Test case 13" target="_blank" width="40%" height="40%"></h2>
 
 ## Test Case 14
 > As a site admin/superuser I want the ablity to add new products easily so that new products can be added to sell.
@@ -367,8 +436,37 @@ Pass
 ## Test Case 16
 > As a site admin/superuser I want the ablity to delete products so that products can be removed from the site in case out of stock or not availbale anymore.
 
+**Description:**
+Verify that the admin user can delete a product and that he/she will be prompted with a modal notification when 'Delete' link is clicked to make sure this is the correct action. 
+
+**Steps:**
+1. Open internet browser of choice.
+2. Navigate to [TRΛIL RUN ΛDVENTURES](https://trail-run-adventures.herokuapp.com/).
+3. Login as admin user (superuser).
+4. Click on the 'Shop' tab. 
+5. Find the product that needs to be deleted.
+6. Click on 'Delete' link located at the bottom of product.
+6. Modal notification window appears notifying that you are about to delete a blog post and does the user wish to proceed.
+
+**Expected Result**
+A delete link will be displayed when the user logins with the admin user permission. Once the delete link is clicked a notification modal will appear asking the admin user does she/he wants to delete a product. Once the delete button is clicked the product will be deleted from the site. 
+
+**Actual Result:**
+A delete link gets displayed when the user logins with the admin permission. When the delete link is clicked a notification modal appears asking the admin user does she/he wants to delete a product. When the delete button is clicked the product is deleted from the site. 
+
+**Pass/Fail:**
+Pass
+
+  <h2 align="center"><img src="readme-files/testing/test_16_a.jpg" alt="Test case 15" target="_blank" width="30%" height="30%"></h2>
+
+  <h2 align="center"><img src="readme-files/testing/test_16_b.jpg" alt="Test case 15" target="_blank" width="30%" height="30%"></h2>
+
+  <h2 align="center"><img src="readme-files/testing/test_16_c.jpg" alt="Test case 15" target="_blank" width="20%" height="20%"></h2>
+
 ## Test Case 17
 > As a site admin/superuser I want the ablity to create blog posts so that the website users are informed on interesting stories from the base camp.
+
+TO BE ADDED
 
 ## Test Case 18
 > As a site admin/superuser I want the ablity to delete blog posts so that the blog post is removed in case it becomes outdated.
@@ -388,7 +486,7 @@ Verify that the admin user can delete the blog post and that he/she will be prom
 A delete link will be displayed when the user logins with the admin permission. Once the delete link is clicked a notification modal will appear asking the admin user does she/he wants to delete a blog post. Once the delete button is clicked the blog post will be deleted from the site. 
 
 **Actual Result:**
-A delete link gets displayed when the user logins with the admin permission. When the delete link is clicked a notification modal appears asking the admin user does she/he wants to delete a blog post. Wheb the delete button is clicked the blog post is deleted from the site. 
+A delete link gets displayed when the user logins with the admin permission. When the delete link is clicked a notification modal appears asking the admin user does she/he wants to delete a blog post. When the delete button is clicked the blog post is deleted from the site. 
 
 **Pass/Fail:**
 Pass
@@ -599,18 +697,38 @@ To open the report you can run the following command:
 To run the tests in the terminal the following command needs to be typed:
   `python3 manage.py test`
 
-
 # Defensive Programming and Security
-
 ## Defensive Programming
 
-- I have used code in my project to make sure actions cannot occur by placing URLs into the browser. If for example a user types in the URL to edit or delete a product or blog post the application has been programmed to redirect the user elsewhere and show an error message.
+- I have used code in my project to make sure actions cannot occur by placing URLs into the browser. If for example a non admin user types in the URL to edit or delete a product or blog post the application has been programmed to redirect the user elsewhere and show an error message.
+
+<h2 align="center"><img src="readme-files/testing/defensive_1.jpg" alt="defensive programming testing" target="_blank" width="60%" height="60%"></h2>
+
+<h2 align="center"><img src="readme-files/testing/defensive_2.jpg" alt="defensive programming testing" target="_blank" width="60%" height="60%"></h2>
 
 - A confirmation modal was added to check if the admin user is sure she/he wants to delete anything on the site such as, deleting the product, holiday tour, or deleting a blog post. This should minimize the user error by deleting things by mistake.
+
+  <h2 align="center"><img src="readme-files/testing/test_18_b.jpg" alt="defensive_3" target="_blank" width="30%" height="30%"></h2>
 
 ## Security
 
 - For passwords I have used Django allauth to handle the user's login and registration. This stores the users passwords as hashed key for security. It also makes sure the users need to confirm their emails as an extra security measure.
+
+# Manual Testing
+- All website functionality was also tested manually to ensure it all worked correctly.
+
+## Cart Functionality
+
+## Checkout Functionality
+
+## Contact Form
+
+## Blog Functionality
+
+
+
+## Tour Difficulty Modal
+
 
 # Encountered Issues
 
