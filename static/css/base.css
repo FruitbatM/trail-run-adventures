@@ -487,6 +487,10 @@ a {
      transition-delay: 0.15s;
 }
 
+.benefit-title, .benefit-para {
+  text-shadow: 0.1rem 0.1rem #343a40;
+}
+
 /* Blog section on home page */
 .post .blog-header {
   margin-bottom: 0.94rem;
