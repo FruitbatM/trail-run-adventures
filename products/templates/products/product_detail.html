@@ -47,7 +47,7 @@
                 {% endif %}
                 {% if product.rating %}
                     <small class="rating">
-                        <i class="fas fa-star"></i><span class="ms-1">{{product.rating}} / 5</span>
+                        <i class="fas fa-star"></i><span class="ms-1">{{product.rating|floatformat}} / 5</span>
                     </small>
                 {% else %}
                     <small class="text-muted">
