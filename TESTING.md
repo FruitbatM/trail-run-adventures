@@ -23,21 +23,21 @@ Manual tests were carried out across all user stories and features:
 > As a potential customer I want the ability gain understanding of the website's purpose from the home page so that I can decide will I continue browsing the site.
 
 **Description:**
-Verify that the website's purpose is clear when a user navigates to the sites homepage.
+Verify that the website's purpose is clear when a user navigates to the websie homepage.
 
 **Steps:**
 1. Open internet browser of choice.
 2. Navigate to [TRΛIL RUN ΛDVENTURES](https://trail-run-adventures.herokuapp.com/).
-3. Read the headline and subheadline on the hero image.
-3. Strategically placed headline and subheadline indicate to the user what is the website's purpose.
+3. Read the headline and sub headline on the hero image.
+3. Strategically placed headline and sub headline indicate to the user what is the website's purpose.
 4. Scroll to the content beneath the website's hero image and read the main heading and paragraph.
 
 **Expected Result**
-- Strategically placed headline and subheadline on the hero image indicate to the user what is the website's purpose.
+- Strategically placed headline and sub headline on the hero image indicate to the user what is the website's purpose.
 - A first section on the home page explains in more detail the website's purpose.
 
 **Actual Result:**
-- Strategically placed headline and subheadline on the hero image indicate to the user what is the website's purpose.
+- Strategically placed headline and sub headline on the hero image indicate to the user what is the website's purpose.
 - A first section on the home page explains in more detail the website's purpose.
 
 **Pass/Fail:**
@@ -99,7 +99,7 @@ Verify that the site provides the user with an ability to create an account easi
 When the user clicks on the Register tab, a registration form will get displayed and once successfully completed and submitted the user will receive an email asking her/him to verify their account. Once the user's email has been verified the user will be able to log in with the credentials they have created.
 
 **Actual Result:**
-A registration form is displayed and once successfully completed and submitted the user receives the email asking them to verify their account. Once the user's email has been verified they are able to log inwith the credentials they have created.
+A registration form is displayed and once successfully completed and submitted the user receives the email asking them to verify their account. Once the user's email has been verified, they are able to log in with the credentials they have created.
 
 **Pass/Fail:**
 Pass
@@ -171,10 +171,10 @@ Verify blog and blog post pages works as expected.
 4. Confirm the blog page and blog post page open as expected.
 
 **Expected Result**
-The blog page and blog post page gets displayed to the user.
+The blog page and blog post page get displayed to the user.
 
 **Actual Result:**
-The blog page and blog post page gets displayed to the user.
+The blog page and blog post page get displayed to the user.
 
 **Pass/Fail:**
 Pass
@@ -213,14 +213,14 @@ Verify that the site provides the user with a confirmation email after a payment
 **Steps:**
 1. Open internet browser of choice.
 2. Navigate to [TRΛIL RUN ΛDVENTURES](https://trail-run-adventures.herokuapp.com/).
-3. Click on the 'Shop' tab and select and select one of the product categories from the drop down menu
-4. Click on the product you wish to purhase.
+3. Click on the 'Shop' tab and select and select one of the product categories from the drop-down menu
+4. Click on the product you wish to purchase.
 5. A detail product page will open.
-6. Click 'Add to Cart' button beneth the product description.
+6. Click 'Add to Cart' button beneath the product description.
 7. Navigate to the Cart page.
 8. Click 'Secure Checkout' button.
-9. Fill out hte payment form as instructed.
-10. If the payment was successfull, checkout success page with the order details will appear.
+9. Fill out the payment form as instructed.
+10. If the payment was successful, checkout success page with the order details will appear.
 11. The user will receive the confirmation email in the user's email inbox.
 
 **Expected Result**
@@ -232,10 +232,10 @@ The site provides the user with a confirmation email after a payment.
 **Pass/Fail:**
 Pass
 
-  <h2 align="center"><img src="readme-files/testing/test_9_a.jpg" alt="Test case 9" target="_blank" width="60%" height="60%"></h2>
+  <h2 align="center"><img src="readme-files/testing/test_9_a.jpg" alt="Test case 8" target="_blank" width="60%" height="50%"></h2>
 
 *Email confirmation*
-  <h2 align="center"><img src="readme-files/testing/test_9_b.jpg" alt="Test case 9" target="_blank" width="60%" height="60%"></h2>
+  <h2 align="center"><img src="readme-files/testing/test_9_b.jpg" alt="Test case 8" target="_blank" width="60%" height="50%"></h2>
 
 ## Test Case 9
 > As a shopper user I want the ability to register on the site so I can create my personal account.
@@ -252,23 +252,23 @@ Verify that the website provides the user with an opportunity to create a person
 6. Log in with the credentials that the user created when filling out the registration form.
 
 **Expected Result**
-A registration form will be displayed and once successfully completed and submitted the user will receive an email asking them to verify their account. Once the user's email has been verified they will be able to log in easily with the credentials they have created.
+A registration form will be displayed and once successfully completed and submitted the user will receive an email asking them to verify their account. Once the user's email has been verified, they will be able to log in easily with the credentials they have created.
 
 **Actual Result:**
-A registration form is provided and once successfully completed and submitted the user receives an email asking them to verify their account. Once the user's email has been verified they are able to log in easily with the credentials they have created.
+A registration form is provided and once successfully completed and submitted the user receives an email asking them to verify their account. Once the user's email has been verified, they are able to log in easily with the credentials they have created.
 
 **Pass/Fail:**
 Pass
 
-  <h2 align="center"><img src="readme-files/testing/test_10_a.jpg" alt="Test case 10" target="_blank" width="60%" height="60%"></h2>
+  <h2 align="center"><img src="readme-files/testing/test_10_a.jpg" alt="Test case 10" target="_blank" width="50%" height="50%"></h2>
 
-  <h2 align="center"><img src="readme-files/testing/test_10_b.jpg" alt="Test case 10" target="_blank" width="60%" height="60%"></h2>
+  <h2 align="center"><img src="readme-files/testing/test_10_b.jpg" alt="Test case 10" target="_blank" width="50%" height="50%"></h2>
 
   <h2 align="center"><img src="readme-files/testing/test_10_c.jpg" alt="Test case 10" target="_blank" width="60%" height="60%"></h2>
 
-  <h2 align="center"><img src="readme-files/testing/test_10_d.jpg" alt="Test case 10" target="_blank" width="60%" height="60%"></h2>
+  <h2 align="center"><img src="readme-files/testing/test_10_d.jpg" alt="Test case 10" target="_blank" width="30%" height="30%"></h2>
 
-  <h2 align="center"><img src="readme-files/testing/test_10_e.jpg" alt="Test case 10" target="_blank" width="60%" height="60%"></h2>
+  <h2 align="center"><img src="readme-files/testing/test_10_e.jpg" alt="Test case 10" target="_blank" width="30%" height="30%"></h2>
 
 ## Test Case 10
 > As a shopper user I want the ability to easily view the shopping cart at any time so I can easily proceed to the checkout page.
@@ -279,7 +279,7 @@ Verify that the shopping cart icon is displayed on all pages and devices so the 
 **Steps:**
 1. Open internet browser of choice.
 2. Navigate to [TRΛIL RUN ΛDVENTURES](https://trail-run-adventures.herokuapp.com/).
-3. Shopping cart icon is located in the top navigation right corner.
+3. Shopping cart icon is located at the top navigation right corner.
 4. Once the shopping cart icon is clicked, the Cart page gets opened.
 
 **Expected Result**
@@ -295,14 +295,14 @@ Pass
 > As a shopper user I want the ability to view items I have added to my shopping cart at any time so that I can identify the subtotals and the total cost of my purchase.
 
 **Description:**
-Verify that the user can see shopping cart on every webiste page and on all devices.
+Verify that the user can see shopping cart on all website pages and on all devices.
 
 **Steps:**
 1. Open internet browser of choice.
 2. Navigate to [TRΛIL RUN ΛDVENTURES](https://trail-run-adventures.herokuapp.com/).
 3. Select at least one product and add it to the cart.
 4. Shopping cart icon displayed in the top right corner will update to green color with the cart amount.
-5. Clicking the shopping cart icon reverts the user to shopping cart page.
+5. Clicking the shopping cart icon reverts the user to shopping cart page where correct subtotal and total amounts are displayed.
 
 **Expected Result:**
 The shopping cart icon will change the color to green when at least one item was added to the cart. The cart amount will update correctly when each new item will be added to the cart. And once the icon is clicked the user will be reverted to the shopping cart page.
@@ -323,22 +323,22 @@ Verify that the user can adjust quantity of a particular shop product item as we
 1. Open internet browser of choice.
 2. Navigate to [TRΛIL RUN ΛDVENTURES](https://trail-run-adventures.herokuapp.com/).
 3. Select one product from shop tab and one product from Trail running holidays and add them to the cart.
-4. Update item quantitities on the Shopping Cart page.
+4. Update item quantities on the Shopping Cart page.
 5. Try adding quantity < 0.
 6. Try adding quantity > 99 for shop product.
 7. Try adding quantity > 12 for a holiday tour.
 
 **Expected Result:**
-The user will not be able to add the quantity < or = 0 and qunatity > 99 for shop products and > 12 for holiday tours respectively. The user will get the error message if incorrect quantity input was added.
+The user will not be able to add the quantity < or = 0 and quantity > 99 for shop products and > 12 for holiday tours respectively. The user will get the error message if incorrect quantity input was added.
 
 **Actual Result:**
-The user is not able to add the quantity < 0 and qunatity > 99 for shop products and > 12 for holiday tours respectively. The user gets the error message if incorrect quantity input was added.
+The user is not able to add the quantity < 0 and quantity > 99 for shop products and > 12 for holiday tours respectively. The user gets the error message if incorrect quantity input was added.
 
   <h2 align="center"><img src="readme-files/testing/test_restriction_product.jpg" alt="Test case 12" target="_blank" width="60%" height="60%"></h2>
 
   <h2 align="center"><img src="readme-files/testing/test_restriction_holiday.jpg" alt="Test case 12" target="_blank" width="60%" height="60%"></h2>
 
-  <h2 align="center"><img src="readme-files/testing/restriction_3.jpg" alt="Test case 12" target="_blank" width="60%" height="60%"></h2>
+  <h2 align="center"><img src="readme-files/testing/restriction_3.jpg" alt="Test case 12" target="_blank" width="30%" height="30%"></h2>
 
 **Pass/Fail:**
 Pass
@@ -352,14 +352,14 @@ Pass
 3. Select one product from shop tab and one product from Trail running holidays and add them to the cart.
 4. Click on the 'Secure checkout' button.
 5. Fill out the checkout form as instructed.
-6. Order confirmation is received upon order completition.
-7. User recieves Order Confirmation in email inbox.
+6. Order confirmation is received upon order competition.
+7. User receives Order Confirmation in email inbox.
 
 **Expected Result:**
-Ordering process goes smoothly and the user will receive the order confirmation.
+Ordering process goes smoothly, and the user will receive the order confirmation.
 
 **Actual Result:**
-Ordering process went smoothly and the user received the order confirmation.
+Ordering process went smoothly, and the user received the order confirmation.
 
 **Pass/Fail:**
 Pass
@@ -401,7 +401,7 @@ Pass
   <h2 align="center"><img src="readme-files/testing/test_14_b.jpg" alt="Test case 14" target="_blank" width="30%" height="30%"></h2>
 
 ## Test Case 15
-> As a site admin/superuser I want the ablity to edit and update products so that products are up to date in terms of price, description, etc.
+> As a site admin/superuser I want the ability to edit and update products so that products are up to date in terms of price, description, etc.
 
 **Description:**
 Verify that the admin user can edit products.
@@ -431,10 +431,10 @@ Pass
 
   <h2 align="center"><img src="readme-files/testing/test_15_c.jpg" alt="Test case 15" target="_blank" width="30%" height="30%"></h2>
 
-  <h2 align="center"><img src="readme-files/testing/test_15_d.jpg" alt="Test case 15" target="_blank" width="20%" height="20%"></h2>
+  <h2 align="center"><img src="readme-files/testing/test_15_d.jpg" alt="Test case 15" target="_blank" width="30%" height="30%"></h2>
 
 ## Test Case 16
-> As a site admin/superuser I want the ablity to delete products so that products can be removed from the site in case out of stock or not availbale anymore.
+> As a site admin/superuser I want the ability to delete products so that products can be removed from the site in case out of stock or not available anymore.
 
 **Description:**
 Verify that the admin user can delete a product and that he/she will be prompted with a modal notification when 'Delete' link is clicked to make sure this is the correct action. 
@@ -449,10 +449,10 @@ Verify that the admin user can delete a product and that he/she will be prompted
 6. Modal notification window appears notifying that you are about to delete a blog post and does the user wish to proceed.
 
 **Expected Result**
-A delete link will be displayed when the user logins with the admin user permission. Once the delete link is clicked a notification modal will appear asking the admin user does she/he wants to delete a product. Once the delete button is clicked the product will be deleted from the site. 
+A delete link will be displayed when the user logins with the admin user permission. Once the delete link is clicked a notification modal will appear asking the admin user does, she/he wants to delete a product. Once the delete button is clicked the product will be deleted from the site. 
 
 **Actual Result:**
-A delete link gets displayed when the user logins with the admin permission. When the delete link is clicked a notification modal appears asking the admin user does she/he wants to delete a product. When the delete button is clicked the product is deleted from the site. 
+A delete link gets displayed when the user logins with the admin permission. When the delete link is clicked a notification modal appears asking the admin user does, she/he wants to delete a product. When the delete button is clicked the product is deleted from the site. 
 
 **Pass/Fail:**
 Pass
@@ -464,12 +464,12 @@ Pass
   <h2 align="center"><img src="readme-files/testing/test_16_c.jpg" alt="Test case 15" target="_blank" width="20%" height="20%"></h2>
 
 ## Test Case 17
-> As a site admin/superuser I want the ablity to create blog posts so that the website users are informed on interesting stories from the base camp.
+> As a site admin/superuser I want the ability to create blog posts so that the website users are informed on interesting stories from the base camp.
 
 TO BE ADDED
 
 ## Test Case 18
-> As a site admin/superuser I want the ablity to delete blog posts so that the blog post is removed in case it becomes outdated.
+> As a site admin/superuser I want the ability to delete blog posts so that the blog post is removed in case it becomes outdated.
 
 **Description:**
 Verify that the admin user can delete the blog post and that he/she will be prompted with a modal notification when 'Delete' link is clicked to make sure this is the correct action. 
@@ -483,10 +483,10 @@ Verify that the admin user can delete the blog post and that he/she will be prom
 6. Modal notification window appears notifying that you are about to delete a blog post and does the user wish to proceed.
 
 **Expected Result**
-A delete link will be displayed when the user logins with the admin permission. Once the delete link is clicked a notification modal will appear asking the admin user does she/he wants to delete a blog post. Once the delete button is clicked the blog post will be deleted from the site. 
+A delete link will be displayed when the user logins with the admin permission. Once the delete link is clicked a notification modal will appear asking the admin user does, she/he wants to delete a blog post. Once the delete button is clicked the blog post will be deleted from the site. 
 
 **Actual Result:**
-A delete link gets displayed when the user logins with the admin permission. When the delete link is clicked a notification modal appears asking the admin user does she/he wants to delete a blog post. When the delete button is clicked the blog post is deleted from the site. 
+A delete link gets displayed when the user logins with the admin permission. When the delete link is clicked a notification modal appears asking the admin user does, she/he wants to delete a blog post. When the delete button is clicked the blog post is deleted from the site. 
 
 **Pass/Fail:**
 Pass
@@ -508,7 +508,7 @@ Pass
 ## [W3C Markup Validation Service](https://validator.w3.org/) - Markup Validation
 
 ### Home Page (`index.html`)
-- There were several Duplicte ID errors and warnings which were fixed
+- There were several Duplicate ID errors and warnings which were fixed
 
 <h2 align="center"><img src="readme-files/testing/validation_markup_home.jpg" alt="Markup Validation" target="_blank" width="60%" height="60%"></h2>
 
@@ -519,7 +519,7 @@ Pass
 
 ### Our Team Page (`our_team.html`)
 
-- There were several Duplicte ID errors and warnings which were fixed. Also, unecessary type attribute was removed for JavaScript resources. 
+- There were several Duplicate ID errors and warnings which were fixed. Also, unecessary type attribute was removed for JavaScript resources. 
 
 <h2 align="center"><img src="readme-files/testing/validation_markup_our_team.jpg" alt="Markup Validation" target="_blank" width="60%" height="60%"></h2>
 
@@ -537,14 +537,14 @@ Pass
 
 ### Basecamp Blog Page (`basecampblog.html`)
 
-- There were several Duplicte ID errors and warnings which were fixed.
+- There were several Duplicate ID errors and warnings which were fixed.
 
 <h2 align="center"><img src="readme-files/testing/validation_markup_blog.jpg" alt="Markup Validation" target="_blank" width="60%" height="60%"></h2>
 
 ### Blog Post Page (`blog_post.html`)
 
 - There are no errors
-- There is one warrning which can be ignorred
+- There is one warning which can be ignored
 
 <h2 align="center"><img src="readme-files/testing/validation_markup_blog_post.jpg" alt="Markup Validation" target="_blank" width="60%" height="60%"></h2>
 
@@ -626,7 +626,7 @@ Pass
 ### countryfield.js
 
 - There are no errors
-- There is one warning for unneccessary semicolon
+- There is one warning for unnecessary semicolon
 
 <h2 align="center"><img src="readme-files/testing/validation_countryfield_js.jpg" alt="JS validation for countryfield.js file" target="_blank" width="60%" height="60%"></h2>
 
@@ -655,22 +655,22 @@ The results were consistent, the website is platform-cross compatible and respon
 
 # Django Unit Testing
 
-- The inital plan was to test each app using Django unit testing. However, due to lack of time this was only partially achieved.
+- The initial plan was to test each app using Django unit testing. However, due to lack of time this was only partially achieved.
 - Tests were written to test the Models, Views and Forms.
 
 I've used Coverage.py which is a python test coverage reporting tool that shows how much of your code is tested and potentially offers suggestions on what other tests need to be created.
 
-First, install coverage with the following command
+First, install coverage with the following command:
   ```
   pip3 install coverage
   ```
 
-You can ran coverage to make sure it is installed properly and to see what version got installed:
+You can run coverage to make sure it is installed properly and to see what version got installed:
   ```
   coverage --version
   ```
 
-To run a test you can type the below command: 
+To run a test, you can type the below command: 
   ```
   coverage run manage.py test
   ```
@@ -684,27 +684,30 @@ To view a coverage report and to overview of all the things and potentially wher
   coverage report
   ```
 
-You can run also coverage HTML to show the report on the GUI. 
+You can also run coverage HTML to show the report on the GUI. 
   ```
   coverage html
   ```
 
-To open the report you can run the following command: 
+To open the report, you can run the following command: 
   ```
   python3 -m http.server
   ```
 
-To run the tests in the terminal the following command needs to be typed:
-  `python3 manage.py test`
+<details>
+  <summary>Click to view the coverage report results</summary>
+    <h2 align="center"><img src="readme-files/testing/coverage_report.png" alt="lighthouse test" target="_blank" width="40%" height="40%"></h2>
+</details>
+</br>
 
 # Defensive Programming and Security
 ## Defensive Programming
 
 - I have used code in my project to make sure actions cannot occur by placing URLs into the browser. If for example a non admin user types in the URL to edit or delete a product or blog post the application has been programmed to redirect the user elsewhere and show an error message.
 
-<h2 align="center"><img src="readme-files/testing/defensive_1.jpg" alt="defensive programming testing" target="_blank" width="60%" height="60%"></h2>
+<h2 align="center"><img src="readme-files/testing/defensive_1.jpg" alt="defensive programming testing" target="_blank" width="40%" height="40%"></h2>
 
-<h2 align="center"><img src="readme-files/testing/defensive_2.jpg" alt="defensive programming testing" target="_blank" width="60%" height="60%"></h2>
+<h2 align="center"><img src="readme-files/testing/defensive_2.jpg" alt="defensive programming testing" target="_blank" width="40%" height="40%"></h2>
 
 - A confirmation modal was added to check if the admin user is sure she/he wants to delete anything on the site such as, deleting the product, holiday tour, or deleting a blog post. This should minimize the user error by deleting things by mistake.
 
@@ -1002,6 +1005,6 @@ Performance was tested using [Lighthouse](https://developers.google.com/web/tool
     <h2 align="center"><img src="readme-files/testing/lighthouse/contact_mobile.jpg" alt="lighthouse test" target="_blank" width="40%" height="40%"></h2>
 </details>
 
-The results are somewhat lower for Performance and  Accessibility. For accessibility primarily due to heading elements not being in a sequentially-descending order (h4 & h5) and also, footer links don't have Links do not have a discernible name. Accessibility is now improved on all pages and I will further work on improving this. 
+The results are somewhat lower for Performance and  Accessibility. For accessibility primarily due to heading elements not being in a sequentially-descending order (h4 & h5) and also, footer links don't have Links do not have a discernible name. Accessibility is now improved on all pages, and I will further work on improving this. 
 
 The main issues for Performance, primarily on mobile devices is due to the type and size of the images, unused CSS and JS CDNs. The performance results are overall satisfying as the website is heavy loaded with the content.
