@@ -151,15 +151,23 @@ a.category-badge > span.badge:hover {
     right: 16px;
 }
 
+.adventure-data {
+    text-shadow: -0.065rem 0 #000, 0 0.065rem #000, 0.065rem 0 #000, 0 -0.065rem #000;
+}
+
 .adventure-header-info {
     color: #fafafa;
 }
 
 /* position info icon - tour dificulty modal */
-.info-icon {
+.h-info-icon {
     position: relative;
-    left: -1.3rem;
     bottom: 0.8rem;
+    text-shadow: -0.065rem 0 #000, 0 0.065rem #000, 0.065rem 0 #000, 0 -0.065rem #000;
+}
+
+.fa-info {
+    color: #f99218 !important;
 }
 
 .h-icon{
@@ -380,10 +388,10 @@ img {
     padding: 0.75rem;
     float: left;
 }
-                  
+
 .fa-info-circle {
-    font-size: 20px;
-    padding: 30px;
+    font-size: 1.25rem;
+    padding: 1.875rem;
     color: white;
 }
 
