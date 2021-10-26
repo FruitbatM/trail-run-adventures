@@ -49,20 +49,26 @@ with Django*
 
 The project was created as a **Milestone Project 4** as a part of **Diploma in Full Stack Software Development** with **Code Institute**. The project is developed using Django, a high-level Python web framework, JavaScript, HTML, CSS, and Bootstrap framework.
 
-**TRΛIL RUN ΛDVENTURES** is a multi-page eCommerce web application for trail running enthusiasts and everyone who enjoys being outdoors.
+**TRΛIL RUN ΛDVENTURES** is a multi-page eCommerce web application for trail running enthusiasts and everyone who enjoys being outdoors. The website offers the users to buy trail running adventure holidays and custom branded products. 
+
+The project was conceptualized to give unique travel experiences whilst running spectacular trails to unique and jaw-dropping destinations around Europe. 
 
 Trail running is simply defined as going for a run at the heart of nature. It's an extremely all-round non-stadia sport and you don't need to be high in the mountains to go trail running. You simply need to be in nature.
 
-<h2 align="center"><img src="readme-files/general/project_mockup_1.jpg" alt="my account" target="_blank" width="100%" height="100%"></h2>
+<h2 align="center"><img src="readme-files/general/mockup.jpg" alt="my account" target="_blank" width="100%" height="100%"></h2>
+
+Mockup responsive image was created with [Techsini](https://techsini.com/).
 
 **Please note, this project is for educational purposes only and provided information is fictional. Nevertheless, all the website functionalities work.**
 
-Test transaction details:
+Test credit card details:
 
 credit card: 4242 4242 4242 4242 <br>
 expiration date: 04 / 24 <br>
 CVC: 424 <br>
 ZIP: 42424 <br>
+
+- For the assessor, I have included the admin login details in the comments section when submitting the project.
 
 # User Experience (UX)
 
@@ -83,7 +89,7 @@ ZIP: 42424 <br>
 - Engage people to do outdoor activities.
 - Motivate people to try trail running, hiking, and outdoor adventures in general.
 - Let people know about TRΛIL RUN ΛDVENTURES.
-- To be able to create/update/delete products and their infomations as an admin user.
+- To be able to create/update/delete products and their information as an admin user.
 - Provide a fully secure, easy to use and engaging eCommerce platform to purchase trail running holidays and branded products.
 - Attractive and good quality UI design.
 - Opportunity to scale the business easily and earn profits.
@@ -107,23 +113,23 @@ ZIP: 42424 <br>
 | Shopper user         | to easily view the shopping cart at any time                             | I can easily proceed to the checkout page.                 |
 | Shopper user         | to view items I have added to my shopping cart                           | I can identify the subtotals and the total cost of my purchase.                   |
 | Shopper user         | to be able to adjust quantity of a particular item in the shopping cart  | I can make changes before the checkout.              |
-| Shopper user         | go through an orderning process in a simple way                          | I can have a great UX.              |
+| Shopper user         | go through an ordering process in a simple way                          | I can have a great UX.              |
 |          ---         |                                    ---                                   |                              --                 |
 | Site admin/superuser | add new products easily                                                         | new products can be added to sell               |
 | Site admin/superuser | edit and update products                                                 | products are up to date in terms of price, description, etc.                   |
-| Site admin/superuser | delete products                                                          | products can be removed from the site in case out of stock or not availbale anymore.            |
+| Site admin/superuser | delete products                                                          | products can be removed from the site in case out of stock or not available anymore.            |
 | Site admin/superuser | create blog posts                                                        | the website users are informed on interesting stories from the base camp.     |
 | Site admin/superuser | delete blog posts                                                        | the blog post is removed in case it becomes outdated. |
 
 ## Scope
 
-The website will be created as a desktop-first because it is will be much easier to picture the whole structure of the website; however, it will be a fully mobile responsive website so the users using mobile devices will have no difficulties searching for the information they are interested, products, holiday adventure tours and purchase them. Many features will be available that allow the user to engage and find needed information fast and easy.
+The website will be created as a desktop-first because it will be much easier to conceptualize the whole structure of the website; however, it will be a fully mobile responsive website so the users using mobile devices will have no difficulties searching for the information they are interested, and to purchase branded products and trail running holidays. Many features will be available that allow the user to engage and find needed information fast and easy.
 
 The site will consist of the homepage which will give an overview of the site purpose with a search feature, brief company information, trail running experience holiday tours, shop section, a blog section and customer quotes section.
 
-Furthermore the website will contain Trail Running Holidays page with all informations the users might need for each trail runing holiday tour the company currently offers. Also, the website will contain About Us page with sub-pages Our Story and Our Team, and Shop, Blog and Contact pages.
+Furthermore, the website will contain Trail Running Holidays page with all information the users might need for each trail running adventure the company currently offers. Also, the website will contain About Us page with sub-pages Our Story and Our Team, Shop, Blog and Contact pages.
 
-## Strucutre
+## Structure
 
 Below is the website page structure to show the core relationships between the pages.
 
@@ -148,7 +154,7 @@ Desktop Wireframes | Mobile Wireframes
 [Shopping Cart](readme-files/wireframes/desktop_cart.jpg) | [Shopping Cart]()
 [Checkout]() | [Checkout]() - TBA
 [Blog](readme-files/wireframes/desktop_blog.jpg) | [Blog]()
-[Blog Post](readme-files/wireframes/desktop_blog_post.jpg) | [Blog]()
+[Blog Post](readme-files/wireframes/desktop_blog_post.jpg) | [Blog Post]()
 [Contact](readme-files/wireframes/desktop_contact.jpg) | [Contact]()
 [Profile]() | [Profile]() - TBA
 [Log In](readme-files/wireframes/desktop_login.jpg) | [Log In]()
@@ -199,19 +205,19 @@ Icons should be obvious and very intuitive so that users can easily understand w
 
 - Navbar
     - responsive on all devices
-    - the logo is located in the top left corner on large devices (desktop) and in the center on the smaller devices (tablets and mobile phones). When logo is clicked it redirects a user to the home page. On smaller devices (tablet, mobile) the navbar is collapsed into a hamburger menu.
-    - a search box is a part of the top navigation loacted at upper center of navbar where a user can search for products. On mobile and tablet devices it is located under the hamburger menu.
-    - navbar contains also my account and cart icons. The cart icon with grand total will be displayed if there are items added to the cart. It changes colour to the green when a product is added to the cart to catch the user's attention. Clicking the cart icon redirects a user to the shopping cart page.
+    - the logo is in the top left corner on large devices (desktop) and in the center on the smaller devices (tablets and mobile phones). When logo is clicked it redirects a user to the home page. On smaller devices (tablet, mobile) the navbar is collapsed into a hamburger menu.
+    - a search box is a part of the top navigation located at upper center of navbar where a user can search for products. On mobile and tablet devices it is located under the hamburger menu.
+    - navbar also contains my account and cart icons. The cart icon with grand total will be displayed if there are items added to the cart. It changes colour to the green when a product is added to the cart to catch the user's attention. Clicking the cart icon redirects a user to the shopping cart page.
     - the difference in My Account display is for a regular user and for admin (super user).<br>
     
 
-    For **Admin user** (superuser) it contains Product Management, Holiday Management, Add New Blog, My Profile, and Logout links. Under the Product Management page, the admin can add new products <br>
+    For **Admin user** (superuser) it contains Product Management, Holiday Management, Add New Blog, My Profile, and Logout links. Under the Product Management page, the admin can add new products and under the Holiday Management holiday adventures can be added. <br>
 
-    <h2 align="center"><img src="readme-files/features/admin_user.jpg" alt="my account" target="_blank" width="30%" height="30%"></h2>
+    <h2 align="center"><img src="readme-files/features/admin_user.jpg" alt="my account" target="_blank" width="40%" height="40%"></h2>
 
     For a **Regular user** it contains My Profile, Logout and Order History (only if order was placed) links. <br>
 
-    <h2 align="center"><img src="readme-files/features/regular_user.jpg" alt="my account" target="_blank" width="30%" height="30%"></h2>
+    <h2 align="center"><img src="readme-files/features/regular_user.jpg" alt="my account" target="_blank" width="40%" height="40%"></h2>
 
 - Search Functionality
     - as previously mentioned, a search box is part of the top navigation and is, therefore, accessible on all pages.
@@ -237,31 +243,67 @@ Icons should be obvious and very intuitive so that users can easily understand w
 
         - **Hero image** contains a full-screen background image, main heading with a sub-heading and "Explore" button that redirects a user to the Trail running holidays page. The purpose of the effective hero image is used to gain instant user attention and to call to an action.
 
-        - **Introduction** section contains an introduction about the company, what it offers and what can be explored on the website. It contains a heading, a paragraph section and "Find out more" button which redirects to Our Story page. Also a mountain range image is placed as a background in order to grab users attention.
+        </br>
 
-        - **Trail Running Holidays** section displays three trail running holiday tour cards. Holiday tour cards consist of animated on hover image with tour title, and a card content section. On the bottom section par, a button "Explore more" is located that redirects to the Trail Running Holidays page.
+        <h2 align="center"><img src="readme-files/testing/test_1_a.jpg" alt="Hero image" target="_blank" width="60%" height="60%"></h2>
+
+        - **Introduction** section contains an introduction about the company, what it offers and what can be explored on the website. It contains a heading, a paragraph section and "Find out more" button which redirects to Our Story page. Also, a mountain range image is placed as a background in order to grab users attention.
+
+        </br>
+
+        <h2 align="center"><img src="readme-files/general/intro.jpg" alt="Introduction" target="_blank" width="60%" height="60%"></h2>
+
+        - **Trail Running Holidays** section displays three trail running holiday tour cards. Holiday tour cards consist of animated on hover image with tour title, and a card content section. On the bottom section part, a button "Explore more" is located that redirects to the Trail Running Holidays page.
+
+        </br>
+
+        <h2 align="center"><img src="readme-files/general/trail_running_exp.jpg" alt="Introduction" target="_blank" width="60%" height="60%"></h2>
 
         - **Shop products** section displays three product categories (Shirts, Accessories, and Drinkware) along with a button "Shop All" which redirects to the Products page.
 
-        - **Benefits** section provides information to the user about some of the advantages of the company and why to make the business with us. Three cards with animation were stratigically placed. When the user hovers over each image, additional text with animation will appear. Also when the user clicks on the each image it redirects the user to Our Story page.
+        </br>
+
+        <h2 align="center"><img src="readme-files/general/shop_section.jpg" alt="Introduction" target="_blank" width="60%" height="60%"></h2>
+
+        - **Benefits** section provides information to the user about some of the advantages of the company and why to do the business with us. Three cards with animation were strategically placed. When the user hovers over each image, additional text with animation will appear. Also, when the user clicks on each image it redirects the user to Our Story page.
+
+        </br>
+
+        <h2 align="center"><img src="readme-files/general/benefits_section.jpg" alt="Introduction" target="_blank" width="60%" height="60%"></h2>
 
         - **Blog** section (News from Basecamp) contains two blog post with an image and a blog content. At the bottom a 'comment' icon is located which indicates are there any comments added to a particular blog post.
 
-        - **Customer Reviews** section contains the customer's reviews carousel. This section is static but it is planned to implement a dynamic showcase of user's reviews.
+        </br>
+
+        <h2 align="center"><img src="readme-files/general/basecamp.jpg" alt="Introduction" target="_blank" width="60%" height="60%"></h2>
+
+        - **Customer Reviews** section contains the customer's reviews carousel. This section is static, but it is planned to implement a dynamic showcase of user's reviews.
+
+        </br>
+
+        <h2 align="center"><img src="readme-files/general/quotes.jpg" alt="Introduction" target="_blank" width="60%" height="60%"></h2>
 
 - About Us
-    - About Us consists of two pages **Our Story** and **Our Team**. Our Story page provider an information to the user about the main focus of the website, the company, purpose and benefits booking a tour or make a purchase on the website shop. Our Team page gives a shrot introduction to TRΛIL RUN ΛDVENTURES Team with a image and short bio of each team member.
+    - About Us consists of two pages **Our Story** and **Our Team**. Our Story page provider an information to the user about the focus of the website, the company, purpose, and benefits booking a tour or make a purchase on the website shop. Our Team page gives a short introduction to TRΛIL RUN ΛDVENTURES Team with an image and short bio of each team member.
+
+        </br>
+
+        <h2 align="center"><img src="readme-files/general/our_team.jpg" alt="Introduction" target="_blank" width="60%" height="60%"></h2>
 
 - Blog App
-    - this page mostly relies on textual content with images and can be divided into 3 parts - basecampblog , blogs posts and admin blog management activities.
+    - this page mostly relies on textual content with images and can be divided into 3 parts - basecamp blog, blogs posts and admin blog management activities.
         - **basecampblog** displays short introductions to all available blog posts and links to them.
-        - **blog posts** are individual blog entries, each adressing a topic related to trail running, outdoors, sustainability, and similar subjects.
-        - **admin blog management** includes adding, editing and deleting blog posts. Users with admin rights have permission to do that directly in the UI through forms. In case of deleting a blog post, a modal will open to check if the user really wants to proceed with this action.
+        - **blog posts** are individual blog entries, each addressing a topic related to trail running, outdoors, sustainability, and similar subjects.
+        - **admin blog management** includes adding, editing, and deleting blog posts. Users with admin rights have permission to do that directly in the UI through forms. In case of deleting a blog post, a modal will open to check if the user really wants to proceed with this action.
 
 - Contact App
     - contact page consists of 2 sections:
-        - *Contact form* where users can reach the company by inputing their details (full name, email) and write a subjet and a message inquiry. The email will be sent to the website admin.
+        - *Contact form* where users can reach the company by inputting their details (full name, email) and write a subject and a message inquiry. The email will be sent to the website admin.
         - *Company contact details* provides an information about the working hours and telephone number.
+
+        </br>
+
+        <h2 align="center"><img src="readme-files/general/contact_us.jpg" alt="Introduction" target="_blank" width="60%" height="60%"></h2>
 
 - Products App
 

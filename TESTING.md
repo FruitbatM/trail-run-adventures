@@ -302,13 +302,13 @@ Verify that the user can see shopping cart on all website pages and on all devic
 2. Navigate to [TRΛIL RUN ΛDVENTURES](https://trail-run-adventures.herokuapp.com/).
 3. Select at least one product and add it to the cart.
 4. Shopping cart icon displayed in the top right corner will update to green color with the cart amount.
-5. Clicking the shopping cart icon reverts the user to shopping cart page where correct subtotal and total amounts are displayed.
+5. Clicking the shopping cart icon redirects the user to shopping cart page where correct subtotal and total amounts are displayed.
 
 **Expected Result:**
-The shopping cart icon will change the color to green when at least one item was added to the cart. The cart amount will update correctly when each new item will be added to the cart. And once the icon is clicked the user will be reverted to the shopping cart page.
+The shopping cart icon will change the color to green when at least one item was added to the cart. The cart amount will update correctly when each new item will be added to the cart. And once the icon is clicked the user will be redirected to the shopping cart page.
 
 **Actual Result:**
-The shopping cart icon changes the color to green when at least one item was added to the cart. The cart amount updates correctly when each new item is added to the cart. And once the icon is clicked the user is reverted to the shopping cart page.
+The shopping cart icon changes the color to green when at least one item was added to the cart. The cart amount updates correctly when each new item is added to the cart. And once the icon is clicked the user is redirected to the shopping cart page.
 
 **Pass/Fail:**
 Pass
