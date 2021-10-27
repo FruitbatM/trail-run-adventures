@@ -912,16 +912,6 @@ thead th {
     }
 }
 
-/* For iPad Pro 12.9" 
-Credit: https://css-tricks.com/snippets/css/media-queries-for-standard-devices/#top-of-site
-Portrait and Landscape */
-@media only screen 
-  and (min-width: 1024px) 
-  and (max-width: 1366px)
-  and (-webkit-min-device-pixel-ratio: 2)  {
-
-}
-
 /* iPhone 5 only (portrait mode)
 resource: https://coderwall.com/p/mwvbea/media-queries-only-for-the-iphone-5-part-i */ 
 
