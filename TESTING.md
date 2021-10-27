@@ -740,19 +740,6 @@ To open the report, you can run the following command:
 # Manual Testing
 - All website functionality was also tested manually to ensure it all worked correctly.
 
-## Cart Functionality
-
-## Checkout Functionality
-
-## Contact Form
-
-## Blog Functionality
-
-
-
-## Tour Difficulty Modal
-
-
 # Encountered Issues
 
 Several bugs were encountered during the coding process:
@@ -843,8 +830,7 @@ Several bugs were encountered during the coding process:
 
 - Issue with not showing logo image on 500 template
 
-  <h2 align="center"><img src="readme-files/testing/
-  500.jpg" alt="lighthouse test" target="_blank" width="40%" height="40%"></h2>
+  <h2 align="center"><img src="readme-files/testing/500.jpg" alt="lighthouse test" target="_blank" width="40%" height="40%"></h2>
 
   Although per tutor support the url path was changed to media, the logo image still isn't showing on custom 500 template. 500 Internal Server Error was triggered on purpose to test this page.
 
@@ -944,6 +930,11 @@ Performance was tested using [Lighthouse](https://developers.google.com/web/tool
 
 ## Mobile
 
+<details>
+  <summary>Click to view report results</summary>
+    <h2 align="center"><img src="readme-files/testing/lighthouse/home_mobile.jpg" alt="lighthouse test" target="_blank" width="40%" height="40%"></h2>
+</details>
+
 ## Trail Running Adventures (Holidays) page
 ### Desktop
 
@@ -982,9 +973,6 @@ Performance was tested using [Lighthouse](https://developers.google.com/web/tool
     <h2 align="center"><img src="readme-files/testing/lighthouse/our_story_desktop.jpg" alt="lighthouse test" target="_blank" width="40%" height="40%"></h2>
 </details>
 
-
-### Mobile
-
 ## Our Team page
 ### Desktop
 
@@ -992,9 +980,6 @@ Performance was tested using [Lighthouse](https://developers.google.com/web/tool
   <summary>Click to view report results</summary>
     <h2 align="center"><img src="readme-files/testing/lighthouse/our_team_desktop.jpg" alt="lighthouse test" target="_blank" width="40%" height="40%"></h2>
 </details>
-
-### Mobile
-
 
 ## Shop products page
 ### Desktop
@@ -1033,9 +1018,6 @@ Performance was tested using [Lighthouse](https://developers.google.com/web/tool
   <summary>Click to view report results</summary>
     <h2 align="center"><img src="readme-files/testing/lighthouse/blog_desktop.jpg" alt="lighthouse test" target="_blank" width="40%" height="40%"></h2>
 </details>
-
-### Mobile
-
 
 ## Contact page
 ### Desktop
