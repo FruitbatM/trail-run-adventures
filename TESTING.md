@@ -466,7 +466,27 @@ Pass
 ## Test Case 17
 > As a site admin/superuser I want the ability to create blog posts so that the website users are informed on interesting stories from the base camp.
 
-TO BE ADDED
+**Description:**
+Verify that the admin user can add a blog post.
+
+**Steps:**
+1. Open internet browser of choice.
+2. Navigate to [TRΛIL RUN ΛDVENTURES](https://trail-run-adventures.herokuapp.com/).
+3. Log in as Admin user.
+3. Click on the 'Account' icon and select 'Add new blog' from drop-down menu.
+4. Fill all fields under blog post form as instructed.
+5. Click 'Add blog post' button. 
+
+**Expected Result**
+A new blog post will be posted and visible to all users.
+
+**Actual Result:**
+A new blog post is not posted due to the error with rendering blog post images.
+
+**Pass/Fail:**
+Pass
+
+**Please find further explanation under Encountered Issues section**
 
 ## Test Case 18
 > As a site admin/superuser I want the ability to delete blog posts so that the blog post is removed in case it becomes outdated.
@@ -835,6 +855,18 @@ Several bugs were encountered during the coding process:
   I tried to search for the answer on Stack Overflow and other sources but was not able to fix this issue due to insufficient time.
 
   **Not fixed**
+
+- Add blog post functionality
+
+I left 'Add new Blog' link to be accessible from the Account icon for the admin users; however, adding a new blog post is not working via the UI when adding images (specifically header image). The blog post is posted successfully when no images are being added. This is not a solution since the blog post doesn't look good and it leads to bad user experience.
+
+Adding a blog post works correctly on Django admin and this will be used until this issue will be fixed.
+Nevertheless, admin user can edit and delete a blog post on the website.
+
+I tried several solutions but at the end all of them were unsuccessful. Blog was a first app that I've implemented for this project and it requires a serious code refactoring and it is too bulk. I didn't have a clear picture how this functionality should work and it was a work in progress. The plan is to built a new blog app model after the graduation.
+
+ **Not fixed**
+
 
 # Web Accessibility
 
