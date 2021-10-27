@@ -5,7 +5,7 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <a class="nav-link d-lg-none d-md-flex" href="{% url 'home' %}">
-        <img src="{{ MEDIA_URL }}logo_trail.png" alt="Website logo" class="brand-logo" loading="lazy">
+        <img src="{% static 'images/logo_trail.png' %}" alt="Logo" class="brand-logo" loading="lazy">
     </a>
     <!-- Shopping Cart -->
     <a href="{% url 'view_cart' %}" class="{% if grand_total %}text-success-cart font-weight-bold{% else %}text-black{% endif %} 
