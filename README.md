@@ -212,11 +212,11 @@ Icons should be obvious and very intuitive so that users can easily understand w
 
     For **Admin user** (superuser) it contains Product Management, Holiday Management, Add New Blog, My Profile, and Logout links. Under the Product Management page, the admin can add new products and under the Holiday Management holiday adventures can be added. <br>
 
-    <h2 align="center"><img src="readme-files/features/admin_user.jpg" alt="my account" target="_blank" width="40%" height="40%"></h2>
+    <h2 align="center"><img src="readme-files/features/admin_user.jpg" alt="my account" target="_blank" width="30%" height="30%"></h2>
 
     For a **Regular user** it contains My Profile, Logout and Order History (only if order was placed) links. <br>
 
-    <h2 align="center"><img src="readme-files/features/regular_user.jpg" alt="my account" target="_blank" width="40%" height="40%"></h2>
+    <h2 align="center"><img src="readme-files/features/regular_user.jpg" alt="my account" target="_blank" width="30%" height="30%"></h2>
 
 - Search Functionality
     - as previously mentioned, a search box is part of the top navigation and is, therefore, accessible on all pages.
@@ -692,14 +692,14 @@ Below is the process of deploying the website to Heroku and setting up static fi
 
 10. Add Stripe keys to Heroku Config Vars and create a new webhook endpoint.
 
-<h2 align="center"><img src="readme-files/deployment/heroku_stripe.jpg" target="_blank" width="50%" height="50%"></h2>
+<h2 align="center"><img src="readme-files/deployment/heroku_stripe.jpg" target="_blank" width="30%" height="30%"></h2>
 
 <h2 align="center"><img src="readme-files/deployment/stripe_webhook.jpg" alt="stipe webhook" target="_blank" width="50%" height="50%"></h2>
 
 11. Create Gmail account, add email host pass & user to Heroku Config Vars and add code to `settings.py` file.
 
-<h2 align="center"><img src="readme-files/deployment/heroku_email.jpg" alt="email settings" target="_blank" width="50%" height="50%"></h2>
-<h2 align="center"><img src="readme-files/deployment/settings_email.jpg" alt="email settings" target="_blank" width="50%" height="50%"></h2>
+<h2 align="center"><img src="readme-files/deployment/heroku_email.jpg" alt="email settings" target="_blank" width="30%" height="30%"></h2>
+<h2 align="center"><img src="readme-files/deployment/settings_email.jpg" alt="email settings" target="_blank" width="30%" height="30%"></h2>
 
 # Credits
 
