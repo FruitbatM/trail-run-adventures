@@ -306,7 +306,7 @@ Icons should be obvious and very intuitive so that users can easily understand w
 
         </br>
 
-        <h2 align="center"><img src="readme-files/general/contact_us.jpg" alt="Introduction" target="_blank" width="40%" height="40%"></h2>
+        <h2 align="center"><img src="readme-files/general/contact_email.jpg" alt="Introduction" target="_blank" width="40%" height="40%"></h2>
 
 - Products App
     - products app consists of 2 pages:
