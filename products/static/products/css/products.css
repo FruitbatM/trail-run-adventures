@@ -121,6 +121,14 @@ a.category-badge > span.badge:hover {
     min-height: 80vh;
 }
 
+.top-heading {
+    margin-top: 6rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #fafafa;
+    text-shadow: 0.15rem 0.15rem #000000;
+}
+
 .holiday-heading {
     font-family: 'Roboto', sans-serif;
     font-size: 2.2rem;
@@ -141,7 +149,7 @@ a.category-badge > span.badge:hover {
     background-position: center;
     background-size: cover;
     width: auto;
-    height: 80vh;
+    height: 60vh;
 }
 
 #adventure-header {
@@ -499,6 +507,10 @@ img {
         text-align: left !important;
     }
 
+    #adventure-header-img {
+        height: 70vh;
+    }
+
     .heading-price {
         font-size: 1.5rem;
     }
@@ -516,6 +528,10 @@ img {
 @media screen 
   and (min-width: 1024px) {
 
+    .top-heading {
+        margin-top: 7.5rem;
+    }
+    
     #adventure-header-img {
         width: 100%;
         height: 100vh;
