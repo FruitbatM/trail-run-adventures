@@ -10,9 +10,9 @@
     <div class="container p-3">
         <div class="row text-center mt-2">
             <div class="col-12 my-auto mx-auto mt-4">
-                <h3 class="section-heading-2 text-uppercase mt-4 mb-5">
+                <h4 class="section-heading-2 text-uppercase mt-4 mb-5">
                     My Profile
-                </h3>
+                </h4>
                 <hr class="hrline">
             </div>
         </div>
@@ -52,50 +52,51 @@
                 </div>
                 <!-- Order Summary -->
                 <div class="row p-3 order-history">
-                {% if not orders %}
-                    <p class="text-center pt-3">There are no orders yet</p>
-                {% endif %}
+                    {% if not orders %}
+                        <p class="text-center pt-3">There are no orders yet</p>
+                    {% endif %}
 
-                {% for order in orders %}
-                    <!-- Order Number -->
-                    <div class="col-6 col-md-2">
-                        <p class="d-md-none fw-bold">Order No.</p>
-                        <p>
-                            <a class="small d-md-none" href="{% url 'order_history' order.order_number %}"
-                                title="{{ order.order_number }}">
-                                    {{ order.order_number|truncatechars:12 }}
-                            </a>
-                            <a class="small d-none d-md-block" href="{% url 'order_history' order.order_number %}"
-                                title="{{ order.order_number }}">
-                                    {{ order.order_number|truncatechars:6 }}
-                            </a>
-                        </p>
-                    </div>
-                    <!-- Order Date -->
-                    <div class="col-6 col-md-2">
-                        <p class="d-md-none">Date</p>
-                        <p class="small">{{ order.date|date:"d M y" }}</p>
-                    </div>
-                    <!-- Order Products -->
-                    <div class="col-12 col-md-5">
-                        <p class="d-md-none">Item&#40;s&#41;</p>
-                        <ul class="list-unstyled">
-                            {% for item in order.lineitems.all %}
-                                <li class="mb-2">
-                                    {{ item.product.name }} 
-                                    {% if item.product.has_sizes %}
-                                        <span class="small text-muted">&#91;Size: {{ item.product_size|upper }}&#93;</span>
-                                    {% endif %} x {{ item.quantity }}
-                                </li>
-                            {% endfor %}
-                        </ul>
-                        <hr class="d-md-none">
-                    </div>
-                    <!-- Order Total -->
-                    <div class="d-none d-md-inline-block col-md-3 text-end">
-                        <p>€{{ order.grand_total }}</p>
-                    </div>
-                {% endfor %}
+                    {% for order in orders %}
+                        <!-- Order Number -->
+                        <div class="col-6 col-md-2">
+                            <p class="d-md-none fw-bold">Order No.</p>
+                            <p>
+                                <a class="small d-md-none" href="{% url 'order_history' order.order_number %}"
+                                    title="{{ order.order_number }}">
+                                        {{ order.order_number|truncatechars:12 }}
+                                </a>
+                                <a class="small d-none d-md-block" href="{% url 'order_history' order.order_number %}"
+                                    title="{{ order.order_number }}">
+                                        {{ order.order_number|truncatechars:6 }}
+                                </a>
+                            </p>
+                        </div>
+                        <!-- Order Date -->
+                        <div class="col-6 col-md-2">
+                            <p class="d-md-none">Date</p>
+                            <p class="small">{{ order.date|date:"d M y" }}</p>
+                        </div>
+                        <!-- Order Products -->
+                        <div class="col-12 col-md-5">
+                            <p class="d-md-none">Item&#40;s&#41;</p>
+                            <ul class="list-unstyled">
+                                {% for item in order.lineitems.all %}
+                                    <li class="mb-2">
+                                        {{ item.product.name }} 
+                                        {% if item.product.has_sizes %}
+                                            <span class="small text-muted">&#91;Size: {{ item.product_size|upper }}&#93;</span>
+                                        {% endif %} x {{ item.quantity }}
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                            <hr class="d-md-none">
+                        </div>
+                        <!-- Order Total -->
+                        <div class="d-none d-md-inline-block col-md-3 text-end">
+                            <p>€{{ order.grand_total }}</p>
+                        </div>
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>
@@ -103,5 +104,5 @@
 
 {% block postloadjs %}
     {{ block.super }}
-    <script type="text/javascript" src="{% static 'profiles/js/countryfield.js' %}"></script>
+    <script src="{% static 'profiles/js/countryfield.js' %}"></script>
 {% endblock %}
