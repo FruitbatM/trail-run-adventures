@@ -821,6 +821,21 @@ Several bugs were encountered during the coding process:
   }
   ```
 
+- Issue with not showing logo image on 500 template
+
+  <h2 align="center"><img src="readme-files/testing/
+  500.jpg" alt="lighthouse test" target="_blank" width="40%" height="40%"></h2>
+
+  Although per tutor support the url path was changed to media, the logo image still isn't showing on custom 500 template. 500 Internal Server Error was triggered on purpose to test this page.
+
+  ```
+  <img src="{{ MEDIA_URL }}logo_trail.png"
+  ```
+  
+  I tried to search for the answer on Stack Overflow and other sources but was not able to fix this issue due to insufficient time.
+
+  **Not fixed**
+
 # Web Accessibility
 
 Several pages were tested to ensure the website is accessible to people with disabilities using the [Web Accessibility](https://www.webaccessibility.com/) checker.

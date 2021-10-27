@@ -141,23 +141,23 @@ The wireframes were created in [Figma](https://www.figma.com/)
 
 Wireframes created at the start of the project for desktop and mobile can be viewed on the below links:
 
-Desktop Wireframes | Mobile Wireframes
------------------- | ----------------
-[Homepage](readme-files/wireframes/desktop_homepage.jpg) | [Homepage]()
-[Trail Running Holidays](readme-files/wireframes/.jpg) | [Trail Running Holidays]() - TBA
-[Trail Running Holidays - detail](readme-files/wireframes/desktop_holiday_detail.jpg) | [Trail Running Holidays]()    
-[Our Story](readme-files/wireframes/desktop_about_our_story.jpg) | [Our Story]()
-[Our Team](readme-files/wireframes/desktop_our_team.jpg) | [Our Team]()
-[Shop](readme-files/wireframes/desktop_shop_all_products.jpg) | [Shop]()
-[Shop - product detail](readme-files/wireframes/product_detail.jpg) | [Shop - product detail]()
-[Shopping Cart](readme-files/wireframes/desktop_cart.jpg) | [Shopping Cart]()
-[Checkout]() | [Checkout]() - TBA
-[Blog](readme-files/wireframes/desktop_blog.jpg) | [Blog]()
-[Blog Post](readme-files/wireframes/desktop_blog_post.jpg) | [Blog Post]()
-[Contact](readme-files/wireframes/desktop_contact.jpg) | [Contact]()
-[Profile]() | [Profile]() - TBA
-[Log In](readme-files/wireframes/desktop_login.jpg) | [Log In]()
-[Register](readme-files/wireframes/desktop_register.jpg) | [Register]()
+Desktop Wireframes | 
+------------------ |
+[Homepage](readme-files/wireframes/desktop_homepage.jpg) |
+[Trail Running Holidays](readme-files/wireframes/.jpg) |
+[Trail Running Holidays - detail](readme-files/wireframes/desktop_holiday_detail.jpg) |
+[Our Story](readme-files/wireframes/desktop_about_our_story.jpg) | 
+[Our Team](readme-files/wireframes/desktop_our_team.jpg) |
+[Shop](readme-files/wireframes/desktop_shop_all_products.jpg) |
+[Shop - product detail](readme-files/wireframes/product_detail.jpg) |
+[Shopping Cart](readme-files/wireframes/desktop_cart.jpg) |
+[Checkout]() |
+[Blog](readme-files/wireframes/desktop_blog.jpg) |
+[Blog Post](readme-files/wireframes/desktop_blog_post.jpg) |
+[Contact](readme-files/wireframes/desktop_contact.jpg) |
+[Profile]() |
+[Log In](readme-files/wireframes/desktop_login.jpg) | 
+[Register](readme-files/wireframes/desktop_register.jpg) |
 
 ## Design
 ### Color Scheme
