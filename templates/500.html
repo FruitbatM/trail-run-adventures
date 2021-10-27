@@ -1,9 +1,220 @@
-{% extends "base.html" %}
 {% load static %}
+{% load humanize %}
 
-{% block title %}
-500
-{% endblock %}
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <div class="container-fluid d-none d-lg-flex mt-1">
+            <div class="container">
+                <div class="row bg-white">
+                    <div class="col-lg-4 my-auto py-lg-0 text-lg-left">
+                    </div>
+                    <div class="col-lg-4 my-auto py-1 py-lg-0">
+                        <form method="GET" action="{% url 'products' %}" class="search-input-mob">
+                            <div class="input-group border-black">
+                                <input class="form-control" type="text" name="q" placeholder="Search Products" maxlength="50">
+                                <div class="input-group-button">
+                                    <button class="form-control" type="submit" aria-label="submit keyword">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- My Acccount -->
+                    <div class="col-lg-4 my-auto py-1 py-lg-0">
+                        <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+                            <li class="list-inline-item dropdown">
+                                <a class="nav-link text-black" href="#" id="user-options" data-bs-toggle="dropdown" 
+                                    aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-user fa-lg icon"></i>
+                                    <br>
+                                    ACCOUNT
+                                </a>
+                                <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                                    {% if request.user.is_authenticated %}
+                                        {% if request.user.is_superuser %}
+                                            <a class="dropdown-item" href="{% url 'add_product' %}">PRODUCT MANAGEMENT</a>
+                                            <a class="dropdown-item" href="{% url 'add_holiday' %}">HOLIDAY MANAGEMENT</a>
+                                            <a class="dropdown-item" href="{% url 'add_blog' %}">ADD NEW BLOG</a>
+                                        {% endif %}
+                                        <a class="dropdown-item" href="{% url 'profile' %}">MY PROFILE</a>
+                                        <a class="dropdown-item" href="{% url 'account_logout' %}">LOGOUT</a>
+                                    {% else %}
+                                        <a class="dropdown-item" href="{% url 'account_signup' %}">REGISTER</a>
+                                        <a class="dropdown-item" href="{% url 'account_login' %}">LOGIN</a>
+                                    {% endif %}
+                                </div>
+                            </li>
+                            <li class="list-inline-item">
+                                <!-- Shopping Cart -->
+                                <a class="{% if grand_total %}text-success-cart font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_cart' %}">
+                                    <div class="text-center">
+                                        <div><i class="fas fa-shopping-cart fa-lg"></i></div>
+                                        <p class="my-0">
+                                            {% if grand_total %}
+                                                €{{ grand_total|floatformat:2|intcomma }}
+                                            {% else %}
+                                                €0.00
+                                            {% endif %}
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row bg-white mb-2">
+                    <nav class="navbar navbar-expand-lg navbar-light py-lg-0">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!-- Shopping Cart -->
+                        <a href="{% url 'view_cart' %}" class="{% if grand_total %}text-success-cart font-weight-bold{% else %}text-black{% endif %} 
+                            nav-link d-lg-none d-xl-none cart-link-mob">
+                            <div class="text-center">
+                                <div><i class="fas fa-shopping-cart fa-lg"></i></div>
+                                <p class="my-0">
+                                    {% if grand_total %}
+                                        €{{ grand_total|floatformat:2|intcomma }}
+                                    {% else %}
+                                        €0.00
+                                    {% endif %}
+                                </p>
+                            </div>
+                        </a>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto mr-2">
+                                <li class="nav-item active dropdown pe-5">
+                                    <a class="nav-link dropdown-toggle {% if request.get_full_path == '/holidays/' %}active-nav-link{% endif %}" 
+                                        aria-current="page" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" 
+                                        aria-expanded="false">
+                                        TRAIL RUNNING HOLIDAYS
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li>
+                                            <a class="dropdown-item" href="{% url 'holidays' %}1">TOUR DU MONT BLANC, FRANCE</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="{% url 'holidays' %}2">AZORES, PORTUGAL</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="{% url 'holidays' %}3">FAROE ISLANDS</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="{% url 'holidays' %}4">ITALIAN DOLOMITES</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="{% url 'holidays' %}5">JULIAN ALPS, SLOVENIA</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="{% url 'holidays' %}6">EIGER, SWITZERLAND</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="{% url 'holidays' %}">ALL HOLIDAYS</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown pe-5">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" 
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        ABOUT US
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <li><a class="dropdown-item" href="{% url 'our_story' %}">OUR STORY</a></li>
+                                        <li><a class="dropdown-item" href="{% url 'our_team' %}">OUR TEAM</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item pe-5">
+                                    <a class="nav-link dropdown-toggle {% if request.get_full_path == '/products/' %}active-nav-link{% endif %}" 
+                                        href="#" id="navbarDropdownMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        SHOP
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenu">
+                                        <li><a class="dropdown-item" href="{% url 'products' %}?category=shirts">SHIRTS</a></li>
+                                        <li><a class="dropdown-item" href="{% url 'products' %}?category=accessories">ACCESSORIES</a></li>
+                                        <li><a class="dropdown-item" href="{% url 'products' %}?category=drinkware">DRINKWARE</a></li>
+                                        <li><a class="dropdown-item" href="{% url 'products' %}">ALL PRODUCTS</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item pe-5">
+                                    <a class="nav-link {% if request.get_full_path == '/basecampblog/' %}active-nav-link{% endif %}" 
+                                        href="{% url 'basecampblog' %}">
+                                        BLOG
+                                    </a>
+                                </li>
+                                <li class="nav-item pe-5">
+                                    <a class="nav-link {% if request.get_full_path == '/contact/' %}active-nav-link{% endif %}" 
+                                        href="{% url 'contact' %}">
+                                        CONTACT
+                                    </a>
+                                </li>
+                                <li><hr class="d-lg-none"></li>
+                                <!-- NAV account links -->
+                                <li class="top-nav-links d-lg-none">
+                                    <ul class="navbar-nav mr-auto pl-0">
+                                    {% if request.user.is_authenticated %}
+                                        {% if request.user.is_superuser %}
+                                        <li>
+                                            <a class="dropdown-item nav-link" href="{% url 'add_product' %}">PRODUCT MANAGEMENT</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item nav-link" href="{% url 'add_holiday' %}">HOLIDAY MANAGEMENT</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item nav-link" href="{% url 'add_blog' %}">ADD NEW BLOG</a>
+                                        </li>
+                                        <li>
+                                            <div class="line d-lg-none"></div>
+                                        </li>
+                                        {% endif %}
+                                        <li>
+                                            <a class="dropdown-item nav-link" href="{% url 'profile' %}">MY PROFILE</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item nav-link" href="{% url 'account_logout' %}">LOGOUT</a>
+                                        </li>
+                                    {% else %}
+                                    <li>
+                                        <a class="dropdown-item nav-link" href="{% url 'account_signup' %}">REGISTER</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item nav-link" href="{% url 'account_login' %}">LOGIN</a>
+                                    </li>
+                                    {% endif %}
+                                    </ul>
+                                </li>
+                                <li class="search-mob">
+                                    <form method="GET" action="{% url 'products' %}" class="search-input-mob">
+                                        <div class="input-group border-black">
+                                            <input class="form-control" type="text" name="q" placeholder="Search Products" maxlength="50">
+                                            <div class="input-group-button">
+                                                <button class="form-control" type="submit" aria-label="submit keyword">
+                                                    <i class="fas fa-search"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="header-content">
+            <div class="container-fluid" id="hero-content">
+                <div class="row">
+                    {% block header_content %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    </header>
 
 {% block content%}
     <!-- 500 Error -->
